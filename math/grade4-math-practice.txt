@@ -1,0 +1,142 @@
+Grade 4 Math Practice Worksheet
+(Mid-Level · ICPS Preparation)
+================================================
+
+PART 1: Whole Number Operations & Number Sense
+------------------------------------------------
+
+1. Calculate:  456 × 7 − 389 = ?
+
+2. Find the pattern and fill in the blank:
+   3, 7, 15, 31, ___, 127
+
+3. How many integers from 1 to 50 are divisible by BOTH 3 and 4?
+
+
+PART 2: Factors & Multiples
+------------------------------------------------
+
+4. List ALL the factors of 36.
+   How many factors does 36 have in total?
+
+5. Marcus has some candies. When he tries to share them equally among
+   4 friends, 6 friends, or 9 friends, there are no leftovers.
+   What is the LEAST number of candies he could have?
+
+
+PART 3: Fractions & Decimals
+------------------------------------------------
+
+6. Calculate:  3/4 + 5/6 = ?
+   (Write your answer as a simplified fraction.)
+
+7. A rope is 2.4 meters long. After cutting off 3/8 of it,
+   how many meters are left?
+
+
+PART 4: Geometry & Area
+------------------------------------------------
+
+8. A rectangle is 12 cm long and 8 cm wide.
+   A circle with radius 3 cm is cut out from the rectangle.
+   What is the remaining area? (Use pi = 3.14)
+
+9. A right triangle has one angle of 90 degrees and another angle of 35 degrees.
+   What is the measure of the third angle?
+
+
+PART 5: Logic & Word Problems
+------------------------------------------------
+
+10. There are red, yellow, and blue balls.
+    - Red balls are 5 more than yellow balls.
+    - Yellow balls are twice as many as blue balls.
+    - The total number of all three colors is 45.
+    How many blue balls are there?
+
+11. Emma goes jogging every morning.
+    On Day 1 she runs 200 meters.
+    Each day she runs 50 meters more than the day before.
+    a) How far does she run on Day 7?
+    b) What is the total distance she runs over 7 days?
+
+
+PART 6: Challenge (Optional)
+------------------------------------------------
+
+12. A two-digit number has the following properties:
+    - The units digit is 3 more than the tens digit.
+    - The product of the two digits equals twice the sum of the two digits.
+    What is this two-digit number?
+
+
+================================================
+ANSWER KEY
+================================================
+
+1.  456 x 7 = 3,192
+    3,192 - 389 = 2,803
+    Answer: 2,803
+
+2.  Pattern: each term = previous term x 2 + 1
+    3 -> 7 -> 15 -> 31 -> 63 -> 127
+    Answer: 63
+
+3.  Must be divisible by LCM(3, 4) = 12
+    Multiples of 12 from 1 to 50: 12, 24, 36, 48
+    Answer: 4 numbers
+
+4.  Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36
+    Answer: 9 factors
+
+5.  LCM(4, 6, 9):
+    4 = 2^2,  6 = 2 x 3,  9 = 3^2
+    LCM = 2^2 x 3^2 = 36
+    Answer: 36 candies
+
+6.  3/4 + 5/6
+    Common denominator = 12
+    = 9/12 + 10/12 = 19/12
+    Answer: 19/12  (or 1 and 7/12)
+
+7.  Cut off: 2.4 x (3/8) = 0.9 m
+    Remaining: 2.4 - 0.9 = 1.5 m
+    Answer: 1.5 meters
+
+8.  Rectangle area: 12 x 8 = 96 cm^2
+    Circle area: 3.14 x 3^2 = 3.14 x 9 = 28.26 cm^2
+    Remaining: 96 - 28.26 = 67.74 cm^2
+    Answer: 67.74 cm^2
+
+9.  Sum of angles in a triangle = 180 degrees
+    Third angle: 180 - 90 - 35 = 55 degrees
+    Answer: 55 degrees
+
+10. Let blue = b
+    yellow = 2b
+    red = 2b + 5
+    Total: b + 2b + (2b + 5) = 5b + 5 = 45
+    5b = 40
+    b = 8
+    Answer: 8 blue balls
+    (Check: blue=8, yellow=16, red=21 -> 8+16+21 = 45 ✓)
+
+11. a) Day 7: 200 + (7 - 1) x 50 = 200 + 300 = 500 meters
+    b) Total (arithmetic series):
+       Sum = (number of terms) / 2 x (first term + last term)
+           = 7/2 x (200 + 500)
+           = 3.5 x 700
+           = 2,450 meters
+    Answer: a) 500 meters    b) 2,450 meters total
+
+12. Let tens digit = t,  units digit = t + 3
+    Product of digits = t x (t + 3)
+    Sum of digits = t + (t + 3) = 2t + 3
+    Condition: t(t + 3) = 2 x (2t + 3)
+    t^2 + 3t = 4t + 6
+    t^2 - t - 6 = 0
+    (t - 3)(t + 2) = 0
+    t = 3  (t = -2 is rejected since digits must be positive)
+    Units digit = 3 + 3 = 6
+    Answer: 36
+    (Check: product = 3 x 6 = 18;  sum = 3 + 6 = 9;  18 = 2 x 9 ✓)
