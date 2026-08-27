@@ -1,0 +1,137 @@
+[
+  {
+    "id": "g4-icps-001",
+    "version": 1,
+    "topic": "Patterns",
+    "difficulty": 1,
+    "type": "text",
+    "prompt": "Find the next number:\n4, 9, 14, 19, 24, ____",
+    "answers": ["29"],
+    "hint": "Look at how much the numbers increase each time.",
+    "solution": "Each number increases by 5. 24 + 5 = 29."
+  },
+  {
+    "id": "g4-icps-002",
+    "version": 1,
+    "topic": "Number Sense",
+    "difficulty": 1,
+    "type": "choice",
+    "prompt": "Which number is divisible by both 3 and 4?",
+    "choices": ["18", "20", "24", "30"],
+    "answers": ["24"],
+    "hint": "A number divisible by both 3 and 4 is divisible by 12.",
+    "solution": "24 is a multiple of 12, so it is divisible by both 3 and 4."
+  },
+  {
+    "id": "g4-icps-003",
+    "version": 1,
+    "topic": "Operations",
+    "difficulty": 1,
+    "type": "text",
+    "prompt": "Calculate:  348 + 275 - 126 = ?",
+    "answers": ["497"],
+    "hint": "Add first, then subtract carefully.",
+    "solution": "348 + 275 = 623. Then 623 - 126 = 497."
+  },
+  {
+    "id": "g4-icps-004",
+    "version": 1,
+    "topic": "Factors and Multiples",
+    "difficulty": 2,
+    "type": "text",
+    "prompt": "List the common factors of 18 and 24. How many common factors are there?",
+    "answers": ["1,2,3,6", "1, 2, 3, 6", "4"],
+    "hint": "List all factors of each number, then find the ones that appear in both lists.",
+    "solution": "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Common factors: 1, 2, 3, 6. There are 4."
+  },
+  {
+    "id": "g4-icps-005",
+    "version": 1,
+    "topic": "Logic",
+    "difficulty": 2,
+    "type": "choice",
+    "prompt": "Three friends have different pets: a cat, a dog, and a rabbit.\nAva does not have the dog. Ben has the rabbit. Chloe does not have the cat.\nWhich pet does Ava have?",
+    "choices": ["cat", "dog", "rabbit"],
+    "answers": ["cat"],
+    "hint": "Start with Ben. Then use the pets that are left.",
+    "solution": "Ben has the rabbit. Ava and Chloe have the cat and dog. Ava does not have the dog, so Ava has the cat."
+  },
+  {
+    "id": "g4-icps-006",
+    "version": 1,
+    "topic": "Fractions",
+    "difficulty": 2,
+    "type": "choice",
+    "prompt": "Which fraction is equivalent to 3/4?",
+    "choices": ["6/12", "9/12", "10/12", "12/18"],
+    "answers": ["9/12"],
+    "hint": "Multiply the numerator and denominator by the same number.",
+    "solution": "3/4 × 3/3 = 9/12."
+  },
+  {
+    "id": "g4-icps-007",
+    "version": 1,
+    "topic": "Geometry",
+    "difficulty": 2,
+    "type": "text",
+    "prompt": "A rectangle is 9 cm long and 5 cm wide. What is its perimeter?",
+    "answers": ["28", "28 cm"],
+    "hint": "Perimeter means the distance around the shape.",
+    "solution": "Perimeter = 2 × (9 + 5) = 28 cm."
+  },
+  {
+    "id": "g4-icps-008",
+    "version": 1,
+    "topic": "Word Problems",
+    "difficulty": 2,
+    "type": "text",
+    "prompt": "Mia reads 12 pages on Monday. Each day after that, she reads 4 more pages than the day before. How many pages does she read on Friday?",
+    "answers": ["28", "28 pages"],
+    "hint": "Count Monday, Tuesday, Wednesday, Thursday, Friday.",
+    "solution": "Monday 12, Tuesday 16, Wednesday 20, Thursday 24, Friday 28."
+  },
+  {
+    "id": "g4-icps-009",
+    "version": 1,
+    "topic": "Combinatorics",
+    "difficulty": 3,
+    "type": "text",
+    "prompt": "Six students each shake hands with every other student exactly once. How many handshakes are there in all?",
+    "answers": ["15"],
+    "hint": "The first student has 5 handshakes, the next new ones are 4, then 3, then 2, then 1.",
+    "solution": "5 + 4 + 3 + 2 + 1 = 15 handshakes."
+  },
+  {
+    "id": "g4-icps-010",
+    "version": 1,
+    "topic": "Age Problems",
+    "difficulty": 3,
+    "type": "text",
+    "prompt": "A father is 40 years old. His son is 10 years old. In how many years will the father be 3 times as old as his son?",
+    "answers": ["5", "5 years"],
+    "hint": "Try a table. In x years, their ages are 40 + x and 10 + x.",
+    "solution": "In 5 years, the father will be 45 and the son will be 15. 45 is 3 × 15."
+  },
+  {
+    "id": "g4-icps-011",
+    "version": 1,
+    "topic": "Area",
+    "difficulty": 3,
+    "type": "text",
+    "prompt": "Using 12 unit squares, you can make rectangles with whole-number side lengths. Which rectangle has the smallest perimeter?",
+    "answers": ["3x4", "4x3", "3 x 4", "4 x 3", "3 by 4", "4 by 3"],
+    "hint": "List factor pairs of 12: 1×12, 2×6, 3×4.",
+    "solution": "Perimeters: 1×12 gives 26, 2×6 gives 16, and 3×4 gives 14. The 3×4 rectangle has the smallest perimeter."
+  },
+  {
+    "id": "g4-icps-012",
+    "version": 1,
+    "topic": "Challenge",
+    "difficulty": 3,
+    "type": "text",
+    "prompt": "A two-digit number has a tens digit that is 2 less than its ones digit. The sum of the digits is 10. What is the number?",
+    "answers": ["46"],
+    "hint": "Find two digits that add to 10 and differ by 2.",
+    "solution": "The digits 4 and 6 add to 10, and the tens digit 4 is 2 less than the ones digit 6. The number is 46."
+  }
+]
