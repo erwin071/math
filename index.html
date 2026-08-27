@@ -265,6 +265,7 @@
         <select id="mode">
           <option value="ordered">Ordered practice</option>
           <option value="random">Random practice</option>
+          <option value="review">Review wrong answers</option>
         </select>
       </div>
       <button id="restartBtn" class="secondary">Restart Practice</button>
@@ -540,6 +541,7 @@
       const topic = els.topicFilter.value;
       const difficulty = els.difficultyFilter.value;
       let pool = questions.filter(q => (topic === 'all' || q.topic === topic) && (difficulty === 'all' || String(q.difficulty) === difficulty));
+      if (els.mode.value === 'review') pool = pool.filter(q => state.questionState[q.id]?.status === 'review');
       if (els.mode.value === 'random') pool = shuffle(pool);
       state.pool = pool;
       state.index = keepIndex ? Math.min(state.index, Math.max(pool.length - 1, 0)) : 0;
@@ -550,7 +552,7 @@
       const q = state.pool[state.index]; updateStats();
       els.feedback.className = 'feedback'; els.feedback.textContent = ''; els.solutionBox.open = false; els.choices.innerHTML = ''; els.answerInput.value = '';
       if (!q) {
-        els.prompt.textContent = 'No questions match this filter. Try another topic or level.';
+        els.prompt.textContent = 'No questions match this filter. If Review mode is selected, there are no wrong answers to review yet.';
         els.shortAnswer.style.display = 'none'; els.prevBtn.disabled = true; els.nextBtn.disabled = true; return;
       }
       const qs = getQuestionState(q);
