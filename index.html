@@ -68,6 +68,19 @@
       align-items: end;
     }
 
+    .backup-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 12px 14px;
+      margin: -4px 0 16px;
+    }
+    .backup-bar button { width: auto; }
+    .backup-status { color: var(--muted); font-size: 0.9rem; font-weight: 700; }
+    .danger { background: #be123c; }
+    .danger:hover { background: #9f1239; }
+
     label {
       display: block;
       font-weight: 700;
@@ -76,7 +89,7 @@
       margin-bottom: 6px;
     }
 
-    select, button, input[type="text"] {
+    select, button, input[type="text"], input[type="file"] {
       font: inherit;
       border-radius: 12px;
       border: 1px solid var(--border);
@@ -220,7 +233,7 @@
       .toolbar { grid-template-columns: 1fr; }
       .stats { grid-template-columns: repeat(2, 1fr); }
       .answer-row, .nav { flex-direction: column; }
-      .answer-row button, .nav button { width: 100%; }
+      .answer-row button, .nav button, .backup-bar button { width: 100%; }
     }
   </style>
 </head>
@@ -254,7 +267,15 @@
           <option value="random">Random practice</option>
         </select>
       </div>
-      <button id="restartBtn" class="secondary">Restart</button>
+      <button id="restartBtn" class="secondary">Restart Practice</button>
+    </section>
+
+    <section class="backup-bar card" aria-label="Backup controls">
+      <button id="exportBtn" class="ghost">Export JSON</button>
+      <button id="importBtn" class="ghost">Import JSON</button>
+      <button id="clearStorageBtn" class="danger">Clear Saved Progress</button>
+      <input id="importFile" type="file" accept="application/json,.json" hidden />
+      <span id="backupStatus" class="backup-status">Progress autosaves on this device.</span>
     </section>
 
     <section class="stats" aria-label="Progress">
@@ -305,12 +326,14 @@
   <script>
     const questions = [
       {
+        id: "g4-icps-001", version: 1,
         topic: "Patterns", difficulty: 1, type: "text",
         prompt: "Find the next number:\n4, 9, 14, 19, 24, ____",
         answers: ["29"], hint: "Look at how much the numbers increase each time.",
         solution: "Each number increases by 5. 24 + 5 = 29."
       },
       {
+        id: "g4-icps-002", version: 1,
         topic: "Number Sense", difficulty: 1, type: "choice",
         prompt: "Which number is divisible by both 3 and 4?",
         choices: ["18", "20", "24", "30"], answers: ["24"],
@@ -318,12 +341,14 @@
         solution: "24 is a multiple of 12, so it is divisible by both 3 and 4."
       },
       {
+        id: "g4-icps-003", version: 1,
         topic: "Operations", difficulty: 1, type: "text",
         prompt: "Calculate:  348 + 275 - 126 = ?",
         answers: ["497"], hint: "Add first, then subtract carefully.",
         solution: "348 + 275 = 623. Then 623 - 126 = 497."
       },
       {
+        id: "g4-icps-004", version: 1,
         topic: "Factors and Multiples", difficulty: 2, type: "text",
         prompt: "List the common factors of 18 and 24. How many common factors are there?",
         answers: ["1,2,3,6", "1, 2, 3, 6", "4"],
@@ -331,6 +356,7 @@
         solution: "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Common factors: 1, 2, 3, 6. There are 4."
       },
       {
+        id: "g4-icps-005", version: 1,
         topic: "Logic", difficulty: 2, type: "choice",
         prompt: "Three friends have different pets: a cat, a dog, and a rabbit.\nAva does not have the dog. Ben has the rabbit. Chloe does not have the cat.\nWhich pet does Ava have?",
         choices: ["cat", "dog", "rabbit"], answers: ["cat"],
@@ -338,6 +364,7 @@
         solution: "Ben has the rabbit. Ava and Chloe have the cat and dog. Ava does not have the dog, so Ava has the cat."
       },
       {
+        id: "g4-icps-006", version: 1,
         topic: "Fractions", difficulty: 2, type: "choice",
         prompt: "Which fraction is equivalent to 3/4?",
         choices: ["6/12", "9/12", "10/12", "12/18"], answers: ["9/12"],
@@ -345,30 +372,35 @@
         solution: "3/4 × 3/3 = 9/12."
       },
       {
+        id: "g4-icps-007", version: 1,
         topic: "Geometry", difficulty: 2, type: "text",
         prompt: "A rectangle is 9 cm long and 5 cm wide. What is its perimeter?",
         answers: ["28", "28 cm"], hint: "Perimeter means the distance around the shape.",
         solution: "Perimeter = 2 × (9 + 5) = 28 cm."
       },
       {
+        id: "g4-icps-008", version: 1,
         topic: "Word Problems", difficulty: 2, type: "text",
         prompt: "Mia reads 12 pages on Monday. Each day after that, she reads 4 more pages than the day before. How many pages does she read on Friday?",
         answers: ["28", "28 pages"], hint: "Count Monday, Tuesday, Wednesday, Thursday, Friday.",
         solution: "Monday 12, Tuesday 16, Wednesday 20, Thursday 24, Friday 28."
       },
       {
+        id: "g4-icps-009", version: 1,
         topic: "Combinatorics", difficulty: 3, type: "text",
         prompt: "Six students each shake hands with every other student exactly once. How many handshakes are there in all?",
         answers: ["15"], hint: "The first student has 5 handshakes, the next new ones are 4, then 3, then 2, then 1.",
         solution: "5 + 4 + 3 + 2 + 1 = 15 handshakes."
       },
       {
+        id: "g4-icps-010", version: 1,
         topic: "Age Problems", difficulty: 3, type: "text",
         prompt: "A father is 40 years old. His son is 10 years old. In how many years will the father be 3 times as old as his son?",
         answers: ["5", "5 years"], hint: "Try a table. In x years, their ages are 40 + x and 10 + x.",
         solution: "In 5 years, the father will be 45 and the son will be 15. 45 is 3 × 15."
       },
       {
+        id: "g4-icps-011", version: 1,
         topic: "Area", difficulty: 3, type: "text",
         prompt: "Using 12 unit squares, you can make rectangles with whole-number side lengths. Which rectangle has the smallest perimeter?",
         answers: ["3x4", "4x3", "3 x 4", "4 x 3", "3 by 4", "4 by 3"],
@@ -376,6 +408,7 @@
         solution: "Perimeters: 1×12 gives 26, 2×6 gives 16, and 3×4 gives 14. The 3×4 rectangle has the smallest perimeter."
       },
       {
+        id: "g4-icps-012", version: 1,
         topic: "Challenge", difficulty: 3, type: "text",
         prompt: "A two-digit number has a tens digit that is 2 less than its ones digit. The sum of the digits is 10. What is the number?",
         answers: ["46"], hint: "Find two digits that add to 10 and differ by 2.",
@@ -383,19 +416,23 @@
       }
     ];
 
-    const state = { pool: [], index: 0, correct: 0, attempted: 0, answered: new Map() };
+    const APP_VERSION = 1;
+    const STORAGE_KEY = 'grade4-icps-math-practice-state-v1';
+
+    const state = { pool: [], index: 0, questionState: {}, history: [] };
     const els = {
       topicFilter: document.getElementById('topicFilter'), difficultyFilter: document.getElementById('difficultyFilter'), mode: document.getElementById('mode'),
-      restartBtn: document.getElementById('restartBtn'), progress: document.getElementById('progress'), score: document.getElementById('score'), attempted: document.getElementById('attempted'), percent: document.getElementById('percent'),
+      restartBtn: document.getElementById('restartBtn'), exportBtn: document.getElementById('exportBtn'), importBtn: document.getElementById('importBtn'), clearStorageBtn: document.getElementById('clearStorageBtn'), importFile: document.getElementById('importFile'), backupStatus: document.getElementById('backupStatus'),
+      progress: document.getElementById('progress'), score: document.getElementById('score'), attempted: document.getElementById('attempted'), percent: document.getElementById('percent'),
       numberBadge: document.getElementById('numberBadge'), topicBadge: document.getElementById('topicBadge'), difficultyBadge: document.getElementById('difficultyBadge'),
       prompt: document.getElementById('prompt'), choices: document.getElementById('choices'), shortAnswer: document.getElementById('shortAnswer'), answerInput: document.getElementById('answerInput'), checkBtn: document.getElementById('checkBtn'),
       feedback: document.getElementById('feedback'), hint: document.getElementById('hint'), solution: document.getElementById('solution'), solutionBox: document.getElementById('solutionBox'),
       prevBtn: document.getElementById('prevBtn'), nextBtn: document.getElementById('nextBtn'), resultCard: document.getElementById('resultCard'), summaryText: document.getElementById('summaryText'), reviewList: document.getElementById('reviewList')
     };
 
-    function normalize(value) {
-      return String(value).trim().toLowerCase().replace(/\s+/g, ' ').replace(/×/g, 'x');
-    }
+    function normalize(value) { return String(value).trim().toLowerCase().replace(/\s+/g, ' ').replace(/×/g, 'x'); }
+    function nowIso() { return new Date().toISOString(); }
+    function setBackupStatus(message) { els.backupStatus.textContent = message; }
 
     function shuffle(items) {
       const copy = [...items];
@@ -406,95 +443,142 @@
       return copy;
     }
 
+    function getQuestionState(q) {
+      if (!state.questionState[q.id]) {
+        state.questionState[q.id] = { id: q.id, version: q.version, status: 'not-attempted', attempts: 0, correct: false, lastAnswer: '', updatedAt: null };
+      }
+      return state.questionState[q.id];
+    }
+
+    function buildBackupPayload() {
+      return {
+        app: 'grade4-icps-math-practice', appVersion: APP_VERSION, exportedAt: nowIso(),
+        ui: { topic: els.topicFilter.value, difficulty: els.difficultyFilter.value, mode: els.mode.value, index: state.index },
+        questions: questions.map(({ id, version, topic, difficulty, prompt }) => ({ id, version, topic, difficulty, prompt })),
+        questionState: state.questionState,
+        history: state.history
+      };
+    }
+
+    function saveState() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(buildBackupPayload()));
+      setBackupStatus(`Autosaved ${new Date().toLocaleTimeString()}.`);
+    }
+
+    function loadSavedState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return;
+        const saved = JSON.parse(raw);
+        if (saved.questionState && typeof saved.questionState === 'object') state.questionState = saved.questionState;
+        if (Array.isArray(saved.history)) state.history = saved.history;
+        if (saved.ui) {
+          if (saved.ui.topic) els.topicFilter.value = saved.ui.topic;
+          if (saved.ui.difficulty) els.difficultyFilter.value = saved.ui.difficulty;
+          if (saved.ui.mode) els.mode.value = saved.ui.mode;
+          if (Number.isInteger(saved.ui.index)) state.index = saved.ui.index;
+        }
+        setBackupStatus('Saved progress loaded.');
+      } catch (err) { console.warn(err); setBackupStatus('Saved progress could not be loaded.'); }
+    }
+
+    function downloadJson() {
+      const blob = new Blob([JSON.stringify(buildBackupPayload(), null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `math-practice-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+      setBackupStatus('JSON backup exported.');
+    }
+
+    function importBackup(file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const data = JSON.parse(reader.result);
+          if (!data || typeof data !== 'object') throw new Error('Invalid JSON');
+          if (data.questionState && typeof data.questionState === 'object') state.questionState = data.questionState;
+          if (Array.isArray(data.history)) state.history = data.history;
+          if (data.ui) {
+            if (data.ui.topic) els.topicFilter.value = data.ui.topic;
+            if (data.ui.difficulty) els.difficultyFilter.value = data.ui.difficulty;
+            if (data.ui.mode) els.mode.value = data.ui.mode;
+            if (Number.isInteger(data.ui.index)) state.index = data.ui.index;
+          }
+          buildPool({ keepIndex: true, save: false }); saveState(); setBackupStatus('JSON backup imported.');
+        } catch (err) { console.error(err); setBackupStatus('Import failed: invalid backup JSON.'); }
+        finally { els.importFile.value = ''; }
+      };
+      reader.readAsText(file);
+    }
+
+    function clearSavedProgress() {
+      if (!confirm('Clear all saved answers and history on this device?')) return;
+      state.questionState = {}; state.history = [];
+      localStorage.removeItem(STORAGE_KEY);
+      buildPool({ keepIndex: false, save: false });
+      setBackupStatus('Saved progress cleared.');
+    }
+
+    function resetCurrentProgress() {
+      state.questionState = {}; state.history = [];
+      buildPool({ keepIndex: false, save: true });
+      setBackupStatus('Practice restarted and progress reset.');
+    }
+
     function loadTopics() {
       const topics = [...new Set(questions.map(q => q.topic))].sort();
       topics.forEach(topic => {
         const option = document.createElement('option');
-        option.value = topic;
-        option.textContent = topic;
-        els.topicFilter.appendChild(option);
+        option.value = topic; option.textContent = topic; els.topicFilter.appendChild(option);
       });
     }
 
-    function buildPool() {
+    function buildPool(options = {}) {
+      const { keepIndex = false, save = true } = options;
       const topic = els.topicFilter.value;
       const difficulty = els.difficultyFilter.value;
       let pool = questions.filter(q => (topic === 'all' || q.topic === topic) && (difficulty === 'all' || String(q.difficulty) === difficulty));
       if (els.mode.value === 'random') pool = shuffle(pool);
       state.pool = pool;
-      state.index = 0;
-      state.correct = 0;
-      state.attempted = 0;
-      state.answered = new Map();
-      els.resultCard.classList.remove('show');
-      render();
+      state.index = keepIndex ? Math.min(state.index, Math.max(pool.length - 1, 0)) : 0;
+      els.resultCard.classList.remove('show'); render(); if (save) saveState();
     }
 
     function render() {
-      const q = state.pool[state.index];
-      updateStats();
-      els.feedback.className = 'feedback';
-      els.feedback.textContent = '';
-      els.solutionBox.open = false;
-      els.choices.innerHTML = '';
-      els.answerInput.value = '';
-
+      const q = state.pool[state.index]; updateStats();
+      els.feedback.className = 'feedback'; els.feedback.textContent = ''; els.solutionBox.open = false; els.choices.innerHTML = ''; els.answerInput.value = '';
       if (!q) {
         els.prompt.textContent = 'No questions match this filter. Try another topic or level.';
-        els.shortAnswer.style.display = 'none';
-        els.prevBtn.disabled = true;
-        els.nextBtn.disabled = true;
-        return;
+        els.shortAnswer.style.display = 'none'; els.prevBtn.disabled = true; els.nextBtn.disabled = true; return;
       }
-
+      const qs = getQuestionState(q);
       els.shortAnswer.style.display = q.type === 'text' ? 'flex' : 'none';
-      els.numberBadge.textContent = `Question ${state.index + 1}`;
-      els.topicBadge.textContent = q.topic;
-      els.difficultyBadge.textContent = `Level ${q.difficulty}`;
-      els.difficultyBadge.className = `badge diff-${q.difficulty}`;
-      els.prompt.textContent = q.prompt;
-      els.hint.textContent = q.hint;
-      els.solution.textContent = q.solution;
-      els.progress.textContent = `${state.index + 1} / ${state.pool.length}`;
-      els.prevBtn.disabled = state.index === 0;
-      els.nextBtn.textContent = state.index === state.pool.length - 1 ? 'Finish' : 'Next';
-
+      els.numberBadge.textContent = `Question ${state.index + 1}`; els.topicBadge.textContent = q.topic; els.difficultyBadge.textContent = `Level ${q.difficulty}`; els.difficultyBadge.className = `badge diff-${q.difficulty}`;
+      els.prompt.textContent = q.prompt; els.hint.textContent = q.hint; els.solution.textContent = q.solution; els.progress.textContent = `${state.index + 1} / ${state.pool.length}`;
+      els.prevBtn.disabled = state.index === 0; els.nextBtn.textContent = state.index === state.pool.length - 1 ? 'Finish' : 'Next';
       if (q.type === 'choice') {
         q.choices.forEach(choice => {
-          const label = document.createElement('label');
-          label.className = 'choice';
+          const label = document.createElement('label'); label.className = 'choice';
           label.innerHTML = `<input type="radio" name="choice" value="${choice.replace(/"/g, '&quot;')}"><span>${choice}</span>`;
-          label.addEventListener('click', () => setTimeout(() => checkAnswer(choice), 0));
-          els.choices.appendChild(label);
+          if (normalize(choice) === normalize(qs.lastAnswer)) label.querySelector('input').checked = true;
+          label.addEventListener('click', () => setTimeout(() => checkAnswer(choice), 0)); els.choices.appendChild(label);
         });
-      }
-
-      const saved = state.answered.get(q.prompt);
-      if (saved) showFeedback(saved.ok, saved.answer, false);
+      } else { els.answerInput.value = qs.lastAnswer || ''; }
+      if (qs.status !== 'not-attempted') showFeedback(qs.correct, qs.lastAnswer, false);
     }
 
-    function isCorrect(q, answer) {
-      const normalized = normalize(answer);
-      return q.answers.some(a => normalize(a) === normalized);
-    }
+    function isCorrect(q, answer) { const normalized = normalize(answer); return q.answers.some(a => normalize(a) === normalized); }
 
     function checkAnswer(value) {
-      const q = state.pool[state.index];
-      if (!q) return;
+      const q = state.pool[state.index]; if (!q) return;
       const answer = value ?? els.answerInput.value;
-      if (!String(answer).trim()) {
-        els.feedback.className = 'feedback info';
-        els.feedback.textContent = 'Type an answer first.';
-        return;
-      }
-      const ok = isCorrect(q, answer);
-      if (!state.answered.has(q.prompt)) {
-        state.attempted += 1;
-        if (ok) state.correct += 1;
-      }
-      state.answered.set(q.prompt, { ok, answer });
-      showFeedback(ok, answer, true);
-      updateStats();
+      if (!String(answer).trim()) { els.feedback.className = 'feedback info'; els.feedback.textContent = 'Type an answer first.'; return; }
+      const ok = isCorrect(q, answer); const qs = getQuestionState(q);
+      qs.attempts += 1; qs.correct = ok; qs.status = ok ? 'correct' : 'review'; qs.lastAnswer = String(answer).trim(); qs.version = q.version; qs.updatedAt = nowIso();
+      state.history.push({ id: q.id, version: q.version, answer: qs.lastAnswer, ok, at: qs.updatedAt, topic: q.topic, prompt: q.prompt });
+      showFeedback(ok, answer, true); updateStats(); saveState();
     }
 
     function showFeedback(ok, answer, includeSolution) {
@@ -503,40 +587,45 @@
       if (includeSolution && ok) els.solutionBox.open = true;
     }
 
+    function currentStats() {
+      const states = state.pool.map(q => state.questionState[q.id]).filter(Boolean);
+      return { attempted: states.filter(s => s.status && s.status !== 'not-attempted').length, correct: states.filter(s => s.correct).length };
+    }
+
     function updateStats() {
-      els.score.textContent = state.correct;
-      els.attempted.textContent = state.attempted;
-      els.percent.textContent = state.attempted ? `${Math.round((state.correct / state.attempted) * 100)}%` : '0%';
-      els.progress.textContent = state.pool.length ? `${state.index + 1} / ${state.pool.length}` : '0 / 0';
+      const stats = currentStats();
+      els.score.textContent = stats.correct; els.attempted.textContent = stats.attempted; els.percent.textContent = stats.attempted ? `${Math.round((stats.correct / stats.attempted) * 100)}%` : '0%'; els.progress.textContent = state.pool.length ? `${state.index + 1} / ${state.pool.length}` : '0 / 0';
     }
 
     function finish() {
+      const stats = currentStats();
       els.resultCard.classList.add('show');
-      els.summaryText.textContent = `You answered ${state.correct} out of ${state.attempted} attempted questions correctly.`;
+      els.summaryText.textContent = `You answered ${stats.correct} out of ${stats.attempted} attempted questions correctly. Total recorded attempts: ${state.history.length}.`;
       els.reviewList.innerHTML = '';
       state.pool.forEach((q, i) => {
-        const saved = state.answered.get(q.prompt);
-        const li = document.createElement('li');
-        li.textContent = `${i + 1}. ${q.topic}: ${saved ? (saved.ok ? 'Correct' : 'Review') : 'Not attempted'} — ${q.solution}`;
+        const saved = state.questionState[q.id]; const li = document.createElement('li');
+        li.textContent = `${i + 1}. ${q.topic} (${q.id} v${q.version}): ${saved ? (saved.correct ? 'Correct' : 'Review') : 'Not attempted'} — ${q.solution}`;
         els.reviewList.appendChild(li);
       });
-      els.resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      saveState(); els.resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     els.checkBtn.addEventListener('click', () => checkAnswer());
     els.answerInput.addEventListener('keydown', e => { if (e.key === 'Enter') checkAnswer(); });
-    els.prevBtn.addEventListener('click', () => { if (state.index > 0) { state.index--; render(); } });
-    els.nextBtn.addEventListener('click', () => {
-      if (state.index < state.pool.length - 1) { state.index++; render(); }
-      else finish();
-    });
-    els.restartBtn.addEventListener('click', buildPool);
-    els.topicFilter.addEventListener('change', buildPool);
-    els.difficultyFilter.addEventListener('change', buildPool);
-    els.mode.addEventListener('change', buildPool);
+    els.prevBtn.addEventListener('click', () => { if (state.index > 0) { state.index--; render(); saveState(); } });
+    els.nextBtn.addEventListener('click', () => { if (state.index < state.pool.length - 1) { state.index++; render(); saveState(); } else finish(); });
+    els.restartBtn.addEventListener('click', resetCurrentProgress);
+    els.exportBtn.addEventListener('click', downloadJson);
+    els.importBtn.addEventListener('click', () => els.importFile.click());
+    els.importFile.addEventListener('change', e => { if (e.target.files[0]) importBackup(e.target.files[0]); });
+    els.clearStorageBtn.addEventListener('click', clearSavedProgress);
+    els.topicFilter.addEventListener('change', () => buildPool({ keepIndex: false }));
+    els.difficultyFilter.addEventListener('change', () => buildPool({ keepIndex: false }));
+    els.mode.addEventListener('change', () => buildPool({ keepIndex: false }));
 
     loadTopics();
-    buildPool();
+    loadSavedState();
+    buildPool({ keepIndex: true, save: false });
   </script>
 </body>
 </html>
