@@ -419,8 +419,9 @@
 
     const APP_VERSION = 1;
     const STORAGE_KEY = 'grade4-icps-math-practice-state-v1';
+    const REVIEW_CORRECT_TO_REMOVE = 1;
 
-    const state = { pool: [], index: 0, questionState: {}, history: [] };
+    const state = { pool: [], index: 0, questionState: {}, history: [], pendingReviewRemoval: null };
     const els = {
       topicFilter: document.getElementById('topicFilter'), difficultyFilter: document.getElementById('difficultyFilter'), mode: document.getElementById('mode'),
       restartBtn: document.getElementById('restartBtn'), exportBtn: document.getElementById('exportBtn'), importBtn: document.getElementById('importBtn'), clearStorageBtn: document.getElementById('clearStorageBtn'), importFile: document.getElementById('importFile'), backupStatus: document.getElementById('backupStatus'),
@@ -446,7 +447,7 @@
 
     function getQuestionState(q) {
       if (!state.questionState[q.id]) {
-        state.questionState[q.id] = { id: q.id, version: q.version, status: 'not-attempted', attempts: 0, correct: false, lastAnswer: '', updatedAt: null };
+        state.questionState[q.id] = { id: q.id, version: q.version, status: 'not-attempted', attempts: 0, correct: false, reviewCorrectStreak: 0, lastAnswer: '', updatedAt: null };
       }
       return state.questionState[q.id];
     }
@@ -578,9 +579,16 @@
       const answer = value ?? els.answerInput.value;
       if (!String(answer).trim()) { els.feedback.className = 'feedback info'; els.feedback.textContent = 'Type an answer first.'; return; }
       const ok = isCorrect(q, answer); const qs = getQuestionState(q);
-      qs.attempts += 1; qs.correct = ok; qs.status = ok ? 'correct' : 'review'; qs.lastAnswer = String(answer).trim(); qs.version = q.version; qs.updatedAt = nowIso();
+      qs.attempts += 1;
+      qs.correct = ok;
+      qs.reviewCorrectStreak = ok ? (qs.reviewCorrectStreak || 0) + 1 : 0;
+      qs.status = ok && qs.reviewCorrectStreak >= REVIEW_CORRECT_TO_REMOVE ? 'correct' : 'review';
+      qs.lastAnswer = String(answer).trim(); qs.version = q.version; qs.updatedAt = nowIso();
+      if (ok && els.mode.value === 'review') state.pendingReviewRemoval = q.id;
       state.history.push({ id: q.id, version: q.version, answer: qs.lastAnswer, ok, at: qs.updatedAt, topic: q.topic, prompt: q.prompt });
-      showFeedback(ok, answer, true); updateStats(); saveState();
+      showFeedback(ok, answer, true);
+      if (ok && els.mode.value === 'review') els.feedback.textContent = 'Correct! This question has been removed from Review mode.';
+      updateStats(); saveState();
     }
 
     function showFeedback(ok, answer, includeSolution) {
@@ -615,7 +623,15 @@
     els.checkBtn.addEventListener('click', () => checkAnswer());
     els.answerInput.addEventListener('keydown', e => { if (e.key === 'Enter') checkAnswer(); });
     els.prevBtn.addEventListener('click', () => { if (state.index > 0) { state.index--; render(); saveState(); } });
-    els.nextBtn.addEventListener('click', () => { if (state.index < state.pool.length - 1) { state.index++; render(); saveState(); } else finish(); });
+    els.nextBtn.addEventListener('click', () => {
+      if (state.pendingReviewRemoval && els.mode.value === 'review') {
+        state.pendingReviewRemoval = null;
+        buildPool({ keepIndex: true, save: true });
+        return;
+      }
+      if (state.index < state.pool.length - 1) { state.index++; render(); saveState(); }
+      else finish();
+    });
     els.restartBtn.addEventListener('click', resetCurrentProgress);
     els.exportBtn.addEventListener('click', downloadJson);
     els.importBtn.addEventListener('click', () => els.importFile.click());

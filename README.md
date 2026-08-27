@@ -12,7 +12,7 @@ math/    → 數學（ICPS 資優準備、MOEMS 類型非標準題與邏輯推�
 
 | 檔案 | 分類 | 說明 |
 |------|------|------|
-| `index.html` | 數學 | 四年級 ICPS 英文互動練習網頁（可篩選題型、難度、即時檢查答案；LocalStorage 自動儲存、JSON 匯出/匯入備份、錯題 Review mode、固定題目 id/version、作答 history） |
+| `index.html` | 數學 | 四年級 ICPS 英文互動練習網頁（可篩選題型、難度、即時檢查答案；LocalStorage 自動儲存、JSON 匯出/匯入備份、錯題 Review mode（答對 1 次後移除）、固定題目 id/version、作答 history） |
 | `math/icps-prep-week01.md` | 數學 | ICPS 準備・第 1 週練習卷（升四年級，一天一題，含家長版答案與觀察記錄表） |
 | `math/grade4-math-practice.txt` | 數學 | 四年級 ICPS 英文數學練習題與答案 |
 
