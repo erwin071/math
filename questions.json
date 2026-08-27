@@ -765,7 +765,7 @@
       "topic" : "Factors and Multiples",
       "difficulty" : 4,
       "version" : 1,
-      "solution" : "36 = 2×2×3×3 and 48 = 2×2×2×2×3. The common factors give 2×2×3 = 12.",
+      "solution" : "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Factors of 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The greatest factor in both lists is 12.",
       "id" : "g4-icps-052"
    },
    {
@@ -798,6 +798,7 @@
       "answers" : [
          "54",
          "54 cm2",
+         "54cm2",
          "54 cm²",
          "54 square cm"
       ],
@@ -821,13 +822,14 @@
       "topic" : "Word Problems",
       "difficulty" : 4,
       "version" : 1,
-      "solution" : "45 minutes is 3/4 hour, so the speed is 90 ÷ 3/4 = 120 km per hour. In 2 hours it travels 240 km.",
+      "solution" : "In 45 minutes (three 15-minute blocks) the train goes 90 km, so each block is 30 km. An hour has 4 of these blocks: 30×4 = 120 km per hour. In 2 hours: 120×2 = 240 km.",
       "id" : "g4-icps-056"
    },
    {
       "answers" : [
          "64",
          "64 cm2",
+         "64cm2",
          "64 cm²",
          "64 square cm"
       ],
