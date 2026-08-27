@@ -715,5 +715,275 @@
       "version" : 1,
       "solution" : "8 × 8 = 64, so each side is 8 cm.",
       "id" : "g4-icps-048"
+   },
+   {
+      "answers" : [
+         "720"
+      ],
+      "prompt" : "Find the next number:\n1, 2, 6, 24, 120, ____",
+      "type" : "text",
+      "hint" : "Each number is the previous one multiplied by a pattern: 1×2, 2×3, 3×4, ...",
+      "topic" : "Patterns",
+      "difficulty" : 4,
+      "version" : 1,
+      "solution" : "1×2=2, 2×3=6, 6×4=24, 24×5=120, then 120×6=720.",
+      "id" : "g4-icps-049"
+   },
+   {
+      "answers" : [
+         "990"
+      ],
+      "prompt" : "What is the largest 3-digit number that is divisible by both 3 and 5?",
+      "type" : "text",
+      "hint" : "It must end in 0 or 5, and its digits must add to a multiple of 3.",
+      "topic" : "Number Sense",
+      "difficulty" : 4,
+      "version" : 1,
+      "solution" : "990 ends in 0 and 9+9+0=18 is a multiple of 3. No larger 3-digit number works.",
+      "id" : "g4-icps-050"
+   },
+   {
+      "answers" : [
+         "600"
+      ],
+      "prompt" : "Calculate:  25 × 24 = ?  (Hint: 25 × 4 = 100)",
+      "type" : "text",
+      "hint" : "Split 24 into 4 × 6 and multiply step by step.",
+      "topic" : "Operations",
+      "difficulty" : 4,
+      "version" : 1,
+      "solution" : "25×24 = 25×4×6 = 100×6 = 600.",
+      "id" : "g4-icps-051"
+   },
+   {
+      "answers" : [
+         "12"
+      ],
+      "prompt" : "What is the greatest common factor (GCF) of 36 and 48?",
+      "type" : "text",
+      "hint" : "Factor each number and compare the common factors.",
+      "topic" : "Factors and Multiples",
+      "difficulty" : 4,
+      "version" : 1,
+      "solution" : "36 = 2×2×3×3 and 48 = 2×2×2×2×3. The common factors give 2×2×3 = 12.",
+      "id" : "g4-icps-052"
+   },
+   {
+      "answers" : [
+         "8"
+      ],
+      "prompt" : "At a party, every person shakes hands with every other person exactly once. There were 28 handshakes in all. How many people are at the party?",
+      "type" : "text",
+      "hint" : "Try groups: 5 people give 10 handshakes, 6 give 15, 7 give 21. Keep going.",
+      "topic" : "Combinatorics",
+      "difficulty" : 4,
+      "version" : 1,
+      "solution" : "If there are n people, the handshakes are (n−1)+(n−2)+...+1. For 8 people: 7+6+5+4+3+2+1=28.",
+      "id" : "g4-icps-053"
+   },
+   {
+      "answers" : [
+         "4/5"
+      ],
+      "prompt" : "Which fraction is greater, 4/5 or 7/9?",
+      "type" : "text",
+      "hint" : "Cross multiply to compare: 4×9 versus 7×5.",
+      "topic" : "Fractions",
+      "difficulty" : 4,
+      "version" : 1,
+      "solution" : "4×9=36 and 7×5=35, so 4/5 is greater than 7/9.",
+      "id" : "g4-icps-054"
+   },
+   {
+      "answers" : [
+         "54",
+         "54 cm2",
+         "54 cm²",
+         "54 square cm"
+      ],
+      "prompt" : "A rectangle has a perimeter of 30 cm and a length of 9 cm. What is its area?",
+      "type" : "text",
+      "hint" : "Use the perimeter to find the width first.",
+      "topic" : "Geometry",
+      "difficulty" : 4,
+      "version" : 1,
+      "solution" : "Perimeter = 2×(length+width), so 9+width=15 and width=6. Area = 9×6 = 54 cm².",
+      "id" : "g4-icps-055"
+   },
+   {
+      "answers" : [
+         "240",
+         "240 km"
+      ],
+      "prompt" : "A train travels 90 km in 45 minutes. At the same speed, how far does it travel in 2 hours?",
+      "type" : "text",
+      "hint" : "First find the speed per hour.",
+      "topic" : "Word Problems",
+      "difficulty" : 4,
+      "version" : 1,
+      "solution" : "45 minutes is 3/4 hour, so the speed is 90 ÷ 3/4 = 120 km per hour. In 2 hours it travels 240 km.",
+      "id" : "g4-icps-056"
+   },
+   {
+      "answers" : [
+         "64",
+         "64 cm2",
+         "64 cm²",
+         "64 square cm"
+      ],
+      "prompt" : "A square has the same perimeter as a rectangle that is 10 cm by 6 cm. What is the area of the square?",
+      "type" : "text",
+      "hint" : "Find the rectangle's perimeter, then the square's side.",
+      "topic" : "Area",
+      "difficulty" : 4,
+      "version" : 1,
+      "solution" : "The rectangle's perimeter is 2×(10+6)=32 cm. The square's side is 32÷4=8 cm, so the area is 8×8=64 cm².",
+      "id" : "g4-icps-057"
+   },
+   {
+      "answers" : [
+         "10",
+         "10 years"
+      ],
+      "prompt" : "A grandfather is 70 years old and his granddaughter is 10. In how many years will the grandfather be 4 times as old as the granddaughter?",
+      "type" : "text",
+      "hint" : "In x years their ages will be 70 + x and 10 + x.",
+      "topic" : "Age Problems",
+      "difficulty" : 4,
+      "version" : 1,
+      "solution" : "70+x = 4(10+x) gives 70+x=40+4x, so 3x=30 and x=10. In 10 years: 80 = 4×20.",
+      "id" : "g4-icps-058"
+   },
+   {
+      "answers" : [
+         "14"
+      ],
+      "prompt" : "How many squares of any size can you see in a 3-by-3 grid?",
+      "type" : "text",
+      "hint" : "Count 1×1 squares, then 2×2 squares, then the 3×3 square.",
+      "topic" : "Challenge",
+      "difficulty" : 5,
+      "version" : 1,
+      "solution" : "There are 9 squares of size 1×1, 4 of size 2×2, and 1 of size 3×3. Total: 9+4+1=14.",
+      "id" : "g4-icps-059"
+   },
+   {
+      "answers" : [
+         "5050"
+      ],
+      "prompt" : "What is the sum of all whole numbers from 1 to 100?",
+      "type" : "text",
+      "hint" : "Pair the numbers: 1+100, 2+99, 3+98, ... Each pair sums to 101.",
+      "topic" : "Number Sense",
+      "difficulty" : 5,
+      "version" : 1,
+      "solution" : "There are 50 pairs of 101, so the sum is 50×101 = 5050.",
+      "id" : "g4-icps-060"
+   },
+   {
+      "answers" : [
+         "14"
+      ],
+      "prompt" : "On a farm there are only chickens and rabbits. Together they have 30 heads and 88 legs. How many rabbits are there?",
+      "type" : "text",
+      "hint" : "Each animal has one head. Let c be chickens and r be rabbits: c + r = 30.",
+      "topic" : "Logic",
+      "difficulty" : 5,
+      "version" : 1,
+      "solution" : "If all were chickens there would be 60 legs. Each rabbit adds 2 more legs, so (88−60)÷2 = 14 rabbits.",
+      "id" : "g4-icps-061"
+   },
+   {
+      "answers" : [
+         "7.5",
+         "7.5 degrees",
+         "7.5°"
+      ],
+      "prompt" : "At 3:15, what is the smaller angle between the hour hand and the minute hand of a clock? (Give your answer in degrees.)",
+      "type" : "text",
+      "hint" : "The minute hand is at 90°. The hour hand moves 0.5° each minute.",
+      "topic" : "Geometry",
+      "difficulty" : 5,
+      "version" : 1,
+      "solution" : "The hour hand is at 3×30 + 15×0.5 = 97.5°. The minute hand is at 90°. The angle is 97.5−90 = 7.5°.",
+      "id" : "g4-icps-062"
+   },
+   {
+      "answers" : [
+         "19"
+      ],
+      "prompt" : "How many numbers between 100 and 200 have the digit 5 in them?",
+      "type" : "text",
+      "hint" : "Count those with a 5 in the tens place, then those with a 5 in the ones place.",
+      "topic" : "Challenge",
+      "difficulty" : 5,
+      "version" : 1,
+      "solution" : "Tens=5: 150–159 (10 numbers). Ones=5: 105,115,...,195 (10 numbers). 155 is counted twice, so 10+10−1=19.",
+      "id" : "g4-icps-063"
+   },
+   {
+      "answers" : [
+         "12"
+      ],
+      "prompt" : "A cube is painted on all 6 faces and then cut into 27 equal smaller cubes. How many of the smaller cubes have exactly 2 painted faces?",
+      "type" : "text",
+      "hint" : "Exactly 2 painted faces happen on the edges, but not at the corners.",
+      "topic" : "Geometry",
+      "difficulty" : 5,
+      "version" : 1,
+      "solution" : "Each of the 12 edges has one middle cube with exactly 2 painted faces (the corners have 3). Total: 12.",
+      "id" : "g4-icps-064"
+   },
+   {
+      "answers" : [
+         "13331"
+      ],
+      "prompt" : "A palindrome reads the same forwards and backwards. What is the next palindrome after 13231?",
+      "type" : "text",
+      "hint" : "Check the middle digit; try 13232 up to 13331.",
+      "topic" : "Challenge",
+      "difficulty" : 5,
+      "version" : 1,
+      "solution" : "Numbers from 13232 to 13330 are not palindromes. 13331 reads the same both ways.",
+      "id" : "g4-icps-065"
+   },
+   {
+      "answers" : [
+         "720"
+      ],
+      "prompt" : "In how many different orders can 6 students line up in a row?",
+      "type" : "text",
+      "hint" : "Multiply 6×5×4×3×2×1.",
+      "topic" : "Combinatorics",
+      "difficulty" : 5,
+      "version" : 1,
+      "solution" : "The first place has 6 choices, the second 5, and so on: 6×5×4×3×2×1 = 720.",
+      "id" : "g4-icps-066"
+   },
+   {
+      "answers" : [
+         "9"
+      ],
+      "prompt" : "Two whole numbers have a product of 36 and a sum of 15. What is the difference between the two numbers?",
+      "type" : "text",
+      "hint" : "Find the factor pairs of 36 that add to 15.",
+      "topic" : "Challenge",
+      "difficulty" : 5,
+      "version" : 1,
+      "solution" : "The factor pairs of 36 are 1×36, 2×18, 3×12, 4×9, 6×6. The pair 3 and 12 adds to 15, and 12−3=9.",
+      "id" : "g4-icps-067"
+   },
+   {
+      "answers" : [
+         "56"
+      ],
+      "prompt" : "The digits of a two-digit number add to 11. When the digits are reversed, the new number is 9 more than the original. What is the original number?",
+      "type" : "text",
+      "hint" : "Try pairs of digits that add to 11: 2+9, 3+8, 4+7, 5+6, ...",
+      "topic" : "Challenge",
+      "difficulty" : 5,
+      "version" : 1,
+      "solution" : "The digit pairs are (2,9),(3,8),(4,7),(5,6). Reversing 56 gives 65, and 65−56=9. The number is 56.",
+      "id" : "g4-icps-068"
    }
 ]
