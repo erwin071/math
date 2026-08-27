@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grade 4 ICPS Math Practice</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --good: #15803d;
+      --bad: #b91c1c;
+      --warn: #b45309;
+      --border: #e5e7eb;
+      --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #eef2ff 0%, var(--bg) 45%, #ecfeff 100%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 32px 16px 18px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      max-width: 780px;
+      margin: 0 auto;
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 1.05rem;
+    }
+
+    main {
+      width: min(1020px, calc(100% - 28px));
+      margin: 0 auto 42px;
+    }
+
+    .toolbar, .card, .result-card {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(229, 231, 235, 0.9);
+      box-shadow: var(--shadow);
+      border-radius: 22px;
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr auto;
+      gap: 12px;
+      padding: 14px;
+      margin-bottom: 16px;
+      align-items: end;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      font-size: 0.86rem;
+      color: #374151;
+      margin-bottom: 6px;
+    }
+
+    select, button, input[type="text"] {
+      font: inherit;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 11px 12px;
+      width: 100%;
+      background: #fff;
+    }
+
+    button {
+      cursor: pointer;
+      border: 0;
+      background: var(--primary);
+      color: white;
+      font-weight: 800;
+      transition: 0.16s ease;
+      white-space: nowrap;
+    }
+    button:hover { background: var(--primary-dark); transform: translateY(-1px); }
+    button.secondary { background: #334155; }
+    button.secondary:hover { background: #1e293b; }
+    button.ghost { background: #e0e7ff; color: #1e3a8a; }
+    button.ghost:hover { background: #c7d2fe; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .stat {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+    }
+    .stat .value { font-size: 1.45rem; font-weight: 900; }
+    .stat .label { color: var(--muted); font-size: 0.84rem; margin-top: 2px; }
+
+    .card { padding: 22px; margin-bottom: 16px; }
+    .question-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .badges { display: flex; gap: 8px; flex-wrap: wrap; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.8rem;
+      background: #eef2ff;
+      color: #3730a3;
+    }
+    .badge.topic { background: #ecfeff; color: #155e75; }
+    .badge.diff-1 { background: #dcfce7; color: #166534; }
+    .badge.diff-2 { background: #fef3c7; color: #92400e; }
+    .badge.diff-3 { background: #fee2e2; color: #991b1b; }
+
+    .prompt {
+      font-size: 1.18rem;
+      line-height: 1.6;
+      margin: 14px 0 16px;
+      white-space: pre-line;
+    }
+
+    .choices {
+      display: grid;
+      gap: 10px;
+      margin: 12px 0;
+    }
+    .choice {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fff;
+      cursor: pointer;
+    }
+    .choice:hover { border-color: #93c5fd; background: #eff6ff; }
+    .choice input { margin-top: 4px; }
+
+    .answer-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .answer-row input { flex: 1; }
+    .answer-row button { width: auto; }
+
+    .feedback {
+      margin-top: 14px;
+      padding: 13px 14px;
+      border-radius: 14px;
+      display: none;
+      line-height: 1.5;
+    }
+    .feedback.good { display: block; background: #dcfce7; color: var(--good); border: 1px solid #86efac; }
+    .feedback.bad { display: block; background: #fee2e2; color: var(--bad); border: 1px solid #fca5a5; }
+    .feedback.info { display: block; background: #fef3c7; color: var(--warn); border: 1px solid #fcd34d; }
+
+    details {
+      margin-top: 12px;
+      border: 1px dashed #cbd5e1;
+      border-radius: 14px;
+      padding: 10px 12px;
+      background: #f8fafc;
+    }
+    summary { cursor: pointer; font-weight: 800; }
+    details p { margin: 8px 0 0; color: #475569; line-height: 1.5; }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .nav button { width: auto; min-width: 130px; }
+
+    .result-card { display: none; padding: 22px; margin-top: 16px; }
+    .result-card.show { display: block; }
+    .review-list { margin: 12px 0 0; padding-left: 20px; line-height: 1.7; }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 0 16px 28px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 780px) {
+      .toolbar { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .answer-row, .nav { flex-direction: column; }
+      .answer-row button, .nav button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Grade 4 ICPS Math Practice</h1>
+    <p class="subtitle">English practice problems for number sense, patterns, geometry, logic, and word problems. Try to explain your thinking before checking the answer.</p>
+  </header>
+
+  <main>
+    <section class="toolbar" aria-label="Practice controls">
+      <div>
+        <label for="topicFilter">Topic</label>
+        <select id="topicFilter">
+          <option value="all">All topics</option>
+        </select>
+      </div>
+      <div>
+        <label for="difficultyFilter">Difficulty</label>
+        <select id="difficultyFilter">
+          <option value="all">All levels</option>
+          <option value="1">Level 1</option>
+          <option value="2">Level 2</option>
+          <option value="3">Level 3</option>
+        </select>
+      </div>
+      <div>
+        <label for="mode">Mode</label>
+        <select id="mode">
+          <option value="ordered">Ordered practice</option>
+          <option value="random">Random practice</option>
+        </select>
+      </div>
+      <button id="restartBtn" class="secondary">Restart</button>
+    </section>
+
+    <section class="stats" aria-label="Progress">
+      <div class="stat"><div id="progress" class="value">1 / 1</div><div class="label">Question</div></div>
+      <div class="stat"><div id="score" class="value">0</div><div class="label">Correct</div></div>
+      <div class="stat"><div id="attempted" class="value">0</div><div class="label">Attempted</div></div>
+      <div class="stat"><div id="percent" class="value">0%</div><div class="label">Accuracy</div></div>
+    </section>
+
+    <section class="card" id="questionCard">
+      <div class="question-head">
+        <div class="badges">
+          <span id="numberBadge" class="badge">Question 1</span>
+          <span id="topicBadge" class="badge topic">Topic</span>
+          <span id="difficultyBadge" class="badge diff-1">Level 1</span>
+        </div>
+      </div>
+      <div id="prompt" class="prompt"></div>
+      <div id="choices" class="choices"></div>
+      <div id="shortAnswer" class="answer-row">
+        <input id="answerInput" type="text" autocomplete="off" placeholder="Type your answer here" />
+        <button id="checkBtn">Check</button>
+      </div>
+      <div id="feedback" class="feedback"></div>
+      <details>
+        <summary>Need a hint?</summary>
+        <p id="hint"></p>
+      </details>
+      <details id="solutionBox">
+        <summary>Show solution</summary>
+        <p id="solution"></p>
+      </details>
+      <div class="nav">
+        <button id="prevBtn" class="ghost">Previous</button>
+        <button id="nextBtn">Next</button>
+      </div>
+    </section>
+
+    <section id="resultCard" class="result-card">
+      <h2>Practice Summary</h2>
+      <p id="summaryText"></p>
+      <ol id="reviewList" class="review-list"></ol>
+    </section>
+  </main>
+
+  <footer>Tip: For ICPS-style preparation, focus on explaining the method, not only getting the final answer.</footer>
+
+  <script>
+    const questions = [
+      {
+        topic: "Patterns", difficulty: 1, type: "text",
+        prompt: "Find the next number:\n4, 9, 14, 19, 24, ____",
+        answers: ["29"], hint: "Look at how much the numbers increase each time.",
+        solution: "Each number increases by 5. 24 + 5 = 29."
+      },
+      {
+        topic: "Number Sense", difficulty: 1, type: "choice",
+        prompt: "Which number is divisible by both 3 and 4?",
+        choices: ["18", "20", "24", "30"], answers: ["24"],
+        hint: "A number divisible by both 3 and 4 is divisible by 12.",
+        solution: "24 is a multiple of 12, so it is divisible by both 3 and 4."
+      },
+      {
+        topic: "Operations", difficulty: 1, type: "text",
+        prompt: "Calculate:  348 + 275 - 126 = ?",
+        answers: ["497"], hint: "Add first, then subtract carefully.",
+        solution: "348 + 275 = 623. Then 623 - 126 = 497."
+      },
+      {
+        topic: "Factors and Multiples", difficulty: 2, type: "text",
+        prompt: "List the common factors of 18 and 24. How many common factors are there?",
+        answers: ["1,2,3,6", "1, 2, 3, 6", "4"],
+        hint: "List all factors of each number, then find the ones that appear in both lists.",
+        solution: "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Common factors: 1, 2, 3, 6. There are 4."
+      },
+      {
+        topic: "Logic", difficulty: 2, type: "choice",
+        prompt: "Three friends have different pets: a cat, a dog, and a rabbit.\nAva does not have the dog. Ben has the rabbit. Chloe does not have the cat.\nWhich pet does Ava have?",
+        choices: ["cat", "dog", "rabbit"], answers: ["cat"],
+        hint: "Start with Ben. Then use the pets that are left.",
+        solution: "Ben has the rabbit. Ava and Chloe have the cat and dog. Ava does not have the dog, so Ava has the cat."
+      },
+      {
+        topic: "Fractions", difficulty: 2, type: "choice",
+        prompt: "Which fraction is equivalent to 3/4?",
+        choices: ["6/12", "9/12", "10/12", "12/18"], answers: ["9/12"],
+        hint: "Multiply the numerator and denominator by the same number.",
+        solution: "3/4 × 3/3 = 9/12."
+      },
+      {
+        topic: "Geometry", difficulty: 2, type: "text",
+        prompt: "A rectangle is 9 cm long and 5 cm wide. What is its perimeter?",
+        answers: ["28", "28 cm"], hint: "Perimeter means the distance around the shape.",
+        solution: "Perimeter = 2 × (9 + 5) = 28 cm."
+      },
+      {
+        topic: "Word Problems", difficulty: 2, type: "text",
+        prompt: "Mia reads 12 pages on Monday. Each day after that, she reads 4 more pages than the day before. How many pages does she read on Friday?",
+        answers: ["28", "28 pages"], hint: "Count Monday, Tuesday, Wednesday, Thursday, Friday.",
+        solution: "Monday 12, Tuesday 16, Wednesday 20, Thursday 24, Friday 28."
+      },
+      {
+        topic: "Combinatorics", difficulty: 3, type: "text",
+        prompt: "Six students each shake hands with every other student exactly once. How many handshakes are there in all?",
+        answers: ["15"], hint: "The first student has 5 handshakes, the next new ones are 4, then 3, then 2, then 1.",
+        solution: "5 + 4 + 3 + 2 + 1 = 15 handshakes."
+      },
+      {
+        topic: "Age Problems", difficulty: 3, type: "text",
+        prompt: "A father is 40 years old. His son is 10 years old. In how many years will the father be 3 times as old as his son?",
+        answers: ["5", "5 years"], hint: "Try a table. In x years, their ages are 40 + x and 10 + x.",
+        solution: "In 5 years, the father will be 45 and the son will be 15. 45 is 3 × 15."
+      },
+      {
+        topic: "Area", difficulty: 3, type: "text",
+        prompt: "Using 12 unit squares, you can make rectangles with whole-number side lengths. Which rectangle has the smallest perimeter?",
+        answers: ["3x4", "4x3", "3 x 4", "4 x 3", "3 by 4", "4 by 3"],
+        hint: "List factor pairs of 12: 1×12, 2×6, 3×4.",
+        solution: "Perimeters: 1×12 gives 26, 2×6 gives 16, and 3×4 gives 14. The 3×4 rectangle has the smallest perimeter."
+      },
+      {
+        topic: "Challenge", difficulty: 3, type: "text",
+        prompt: "A two-digit number has a tens digit that is 2 less than its ones digit. The sum of the digits is 10. What is the number?",
+        answers: ["46"], hint: "Find two digits that add to 10 and differ by 2.",
+        solution: "The digits 4 and 6 add to 10, and the tens digit 4 is 2 less than the ones digit 6. The number is 46."
+      }
+    ];
+
+    const state = { pool: [], index: 0, correct: 0, attempted: 0, answered: new Map() };
+    const els = {
+      topicFilter: document.getElementById('topicFilter'), difficultyFilter: document.getElementById('difficultyFilter'), mode: document.getElementById('mode'),
+      restartBtn: document.getElementById('restartBtn'), progress: document.getElementById('progress'), score: document.getElementById('score'), attempted: document.getElementById('attempted'), percent: document.getElementById('percent'),
+      numberBadge: document.getElementById('numberBadge'), topicBadge: document.getElementById('topicBadge'), difficultyBadge: document.getElementById('difficultyBadge'),
+      prompt: document.getElementById('prompt'), choices: document.getElementById('choices'), shortAnswer: document.getElementById('shortAnswer'), answerInput: document.getElementById('answerInput'), checkBtn: document.getElementById('checkBtn'),
+      feedback: document.getElementById('feedback'), hint: document.getElementById('hint'), solution: document.getElementById('solution'), solutionBox: document.getElementById('solutionBox'),
+      prevBtn: document.getElementById('prevBtn'), nextBtn: document.getElementById('nextBtn'), resultCard: document.getElementById('resultCard'), summaryText: document.getElementById('summaryText'), reviewList: document.getElementById('reviewList')
+    };
+
+    function normalize(value) {
+      return String(value).trim().toLowerCase().replace(/\s+/g, ' ').replace(/×/g, 'x');
+    }
+
+    function shuffle(items) {
+      const copy = [...items];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    function loadTopics() {
+      const topics = [...new Set(questions.map(q => q.topic))].sort();
+      topics.forEach(topic => {
+        const option = document.createElement('option');
+        option.value = topic;
+        option.textContent = topic;
+        els.topicFilter.appendChild(option);
+      });
+    }
+
+    function buildPool() {
+      const topic = els.topicFilter.value;
+      const difficulty = els.difficultyFilter.value;
+      let pool = questions.filter(q => (topic === 'all' || q.topic === topic) && (difficulty === 'all' || String(q.difficulty) === difficulty));
+      if (els.mode.value === 'random') pool = shuffle(pool);
+      state.pool = pool;
+      state.index = 0;
+      state.correct = 0;
+      state.attempted = 0;
+      state.answered = new Map();
+      els.resultCard.classList.remove('show');
+      render();
+    }
+
+    function render() {
+      const q = state.pool[state.index];
+      updateStats();
+      els.feedback.className = 'feedback';
+      els.feedback.textContent = '';
+      els.solutionBox.open = false;
+      els.choices.innerHTML = '';
+      els.answerInput.value = '';
+
+      if (!q) {
+        els.prompt.textContent = 'No questions match this filter. Try another topic or level.';
+        els.shortAnswer.style.display = 'none';
+        els.prevBtn.disabled = true;
+        els.nextBtn.disabled = true;
+        return;
+      }
+
+      els.shortAnswer.style.display = q.type === 'text' ? 'flex' : 'none';
+      els.numberBadge.textContent = `Question ${state.index + 1}`;
+      els.topicBadge.textContent = q.topic;
+      els.difficultyBadge.textContent = `Level ${q.difficulty}`;
+      els.difficultyBadge.className = `badge diff-${q.difficulty}`;
+      els.prompt.textContent = q.prompt;
+      els.hint.textContent = q.hint;
+      els.solution.textContent = q.solution;
+      els.progress.textContent = `${state.index + 1} / ${state.pool.length}`;
+      els.prevBtn.disabled = state.index === 0;
+      els.nextBtn.textContent = state.index === state.pool.length - 1 ? 'Finish' : 'Next';
+
+      if (q.type === 'choice') {
+        q.choices.forEach(choice => {
+          const label = document.createElement('label');
+          label.className = 'choice';
+          label.innerHTML = `<input type="radio" name="choice" value="${choice.replace(/"/g, '&quot;')}"><span>${choice}</span>`;
+          label.addEventListener('click', () => setTimeout(() => checkAnswer(choice), 0));
+          els.choices.appendChild(label);
+        });
+      }
+
+      const saved = state.answered.get(q.prompt);
+      if (saved) showFeedback(saved.ok, saved.answer, false);
+    }
+
+    function isCorrect(q, answer) {
+      const normalized = normalize(answer);
+      return q.answers.some(a => normalize(a) === normalized);
+    }
+
+    function checkAnswer(value) {
+      const q = state.pool[state.index];
+      if (!q) return;
+      const answer = value ?? els.answerInput.value;
+      if (!String(answer).trim()) {
+        els.feedback.className = 'feedback info';
+        els.feedback.textContent = 'Type an answer first.';
+        return;
+      }
+      const ok = isCorrect(q, answer);
+      if (!state.answered.has(q.prompt)) {
+        state.attempted += 1;
+        if (ok) state.correct += 1;
+      }
+      state.answered.set(q.prompt, { ok, answer });
+      showFeedback(ok, answer, true);
+      updateStats();
+    }
+
+    function showFeedback(ok, answer, includeSolution) {
+      els.feedback.className = `feedback ${ok ? 'good' : 'bad'}`;
+      els.feedback.textContent = ok ? 'Correct! Great job explaining your thinking.' : `Not quite. Your answer: ${answer}. Try the hint or check the solution.`;
+      if (includeSolution && ok) els.solutionBox.open = true;
+    }
+
+    function updateStats() {
+      els.score.textContent = state.correct;
+      els.attempted.textContent = state.attempted;
+      els.percent.textContent = state.attempted ? `${Math.round((state.correct / state.attempted) * 100)}%` : '0%';
+      els.progress.textContent = state.pool.length ? `${state.index + 1} / ${state.pool.length}` : '0 / 0';
+    }
+
+    function finish() {
+      els.resultCard.classList.add('show');
+      els.summaryText.textContent = `You answered ${state.correct} out of ${state.attempted} attempted questions correctly.`;
+      els.reviewList.innerHTML = '';
+      state.pool.forEach((q, i) => {
+        const saved = state.answered.get(q.prompt);
+        const li = document.createElement('li');
+        li.textContent = `${i + 1}. ${q.topic}: ${saved ? (saved.ok ? 'Correct' : 'Review') : 'Not attempted'} — ${q.solution}`;
+        els.reviewList.appendChild(li);
+      });
+      els.resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    els.checkBtn.addEventListener('click', () => checkAnswer());
+    els.answerInput.addEventListener('keydown', e => { if (e.key === 'Enter') checkAnswer(); });
+    els.prevBtn.addEventListener('click', () => { if (state.index > 0) { state.index--; render(); } });
+    els.nextBtn.addEventListener('click', () => {
+      if (state.index < state.pool.length - 1) { state.index++; render(); }
+      else finish();
+    });
+    els.restartBtn.addEventListener('click', buildPool);
+    els.topicFilter.addEventListener('change', buildPool);
+    els.difficultyFilter.addEventListener('change', buildPool);
+    els.mode.addEventListener('change', buildPool);
+
+    loadTopics();
+    buildPool();
+  </script>
+</body>
+</html>
