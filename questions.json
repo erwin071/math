@@ -453,5 +453,267 @@
       ],
       "prompt" : "A number leaves a remainder of 2 when divided by 5 and a remainder of 1 when divided by 3. What is the smallest positive number that works?",
       "type" : "text"
+   },
+   {
+      "answers" : [
+         "36"
+      ],
+      "prompt" : "Find the next number:\n1, 4, 9, 16, 25, ____",
+      "type" : "text",
+      "hint" : "These are square numbers. Look at how each step grows by odd numbers.",
+      "topic" : "Patterns",
+      "difficulty" : 1,
+      "version" : 1,
+      "solution" : "The differences are 3, 5, 7, 9, so the next difference is 11. 25 + 11 = 36, and 36 = 6 × 6.",
+      "id" : "g4-icps-031"
+   },
+   {
+      "answers" : [
+         "42"
+      ],
+      "prompt" : "Find the next number:\n2, 6, 12, 20, 30, ____",
+      "type" : "text",
+      "hint" : "Look at the difference between each pair of numbers.",
+      "topic" : "Patterns",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "The differences are 4, 6, 8, 10, so the next difference is 12. 30 + 12 = 42.",
+      "id" : "g4-icps-032"
+   },
+   {
+      "answers" : [
+         "4700",
+         "4,700"
+      ],
+      "prompt" : "Round 4,738 to the nearest hundred.",
+      "type" : "text",
+      "hint" : "Look at the tens digit. It is less than 5, so round down.",
+      "topic" : "Number Sense",
+      "difficulty" : 1,
+      "version" : 1,
+      "solution" : "The tens digit is 3, which is less than 5, so 4,738 rounds down to 4,700.",
+      "id" : "g4-icps-033"
+   },
+   {
+      "answers" : [
+         "16"
+      ],
+      "prompt" : "How many integers from 1 to 100 are divisible by 6?",
+      "type" : "text",
+      "hint" : "Count the multiples of 6: 6, 12, 18, ...",
+      "topic" : "Number Sense",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "100 ÷ 6 = 16 with remainder 4, so the multiples are 6×1 up to 6×16. There are 16.",
+      "id" : "g4-icps-034"
+   },
+   {
+      "answers" : [
+         "24"
+      ],
+      "prompt" : "Calculate:  64 ÷ 8 × 3 = ?",
+      "type" : "text",
+      "hint" : "Do the division first, then multiply.",
+      "topic" : "Operations",
+      "difficulty" : 1,
+      "version" : 1,
+      "solution" : "64 ÷ 8 = 8, then 8 × 3 = 24.",
+      "id" : "g4-icps-035"
+   },
+   {
+      "choices" : [
+         "27",
+         "39",
+         "40",
+         "21"
+      ],
+      "answers" : [
+         "27"
+      ],
+      "prompt" : "What is 6 + 7 × 3?",
+      "type" : "choice",
+      "hint" : "Remember the order of operations: multiply before you add.",
+      "topic" : "Operations",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "7 × 3 = 21, then 6 + 21 = 27.",
+      "id" : "g4-icps-036"
+   },
+   {
+      "answers" : [
+         "12"
+      ],
+      "prompt" : "Find the least common multiple (LCM) of 4 and 6.",
+      "type" : "text",
+      "hint" : "List the multiples of each number and find the smallest one they share.",
+      "topic" : "Factors and Multiples",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "Multiples of 4: 4, 8, 12, ...  Multiples of 6: 6, 12, ...  The LCM is 12.",
+      "id" : "g4-icps-037"
+   },
+   {
+      "choices" : [
+         "red",
+         "blue",
+         "green"
+      ],
+      "answers" : [
+         "red"
+      ],
+      "prompt" : "Emma, Leo, and Mia each have a different color bicycle: red, blue, or green.\nEmma's bike is green. Mia's bike is not red.\nWhat color is Leo's bike?",
+      "type" : "choice",
+      "hint" : "Emma has green, so that leaves red and blue for Mia and Leo.",
+      "topic" : "Logic",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "Emma has green. Mia's bike is not red, so Mia has blue and Leo has red.",
+      "id" : "g4-icps-038"
+   },
+   {
+      "answers" : [
+         "red"
+      ],
+      "prompt" : "Ava, Ben, and Chloe each hold one balloon: red, yellow, or blue. No two friends have the same color.\nAva is not holding the red balloon. Ben's balloon is neither red nor yellow. Chloe is not holding the blue balloon.\nWhat color balloon does Chloe have?",
+      "type" : "text",
+      "hint" : "Figure out Ben's color first.",
+      "topic" : "Logic",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "Ben's balloon is not red or yellow, so Ben has blue. Ava is not red, so Ava has yellow. Chloe must have red.",
+      "id" : "g4-icps-039"
+   },
+   {
+      "answers" : [
+         "5/8"
+      ],
+      "prompt" : "You eat 3/8 of a pizza. What fraction of the pizza is left?",
+      "type" : "text",
+      "hint" : "A whole pizza is 8/8.",
+      "topic" : "Fractions",
+      "difficulty" : 1,
+      "version" : 1,
+      "solution" : "8/8 − 3/8 = 5/8.",
+      "id" : "g4-icps-040"
+   },
+   {
+      "choices" : [
+         "3/8",
+         "2/3",
+         "5/12",
+         "1/2"
+      ],
+      "answers" : [
+         "2/3"
+      ],
+      "prompt" : "Which fraction is the largest?",
+      "type" : "choice",
+      "hint" : "Compare each fraction to 1/2.",
+      "topic" : "Fractions",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "2/3 is more than 1/2, while 3/8, 5/12, and 1/2 are less than or equal to 1/2.",
+      "id" : "g4-icps-041"
+   },
+   {
+      "answers" : [
+         "24",
+         "24 cm"
+      ],
+      "prompt" : "A square has sides of 6 cm. What is its perimeter?",
+      "type" : "text",
+      "hint" : "A square has 4 equal sides.",
+      "topic" : "Geometry",
+      "difficulty" : 1,
+      "version" : 1,
+      "solution" : "Each side is 6 cm, so the perimeter is 6 × 4 = 24 cm.",
+      "id" : "g4-icps-042"
+   },
+   {
+      "answers" : [
+         "45",
+         "45 degrees",
+         "45 degree",
+         "45°"
+      ],
+      "prompt" : "A triangle has angles of 90° and 45°. What is the measure of the third angle?",
+      "type" : "text",
+      "hint" : "The three angles of a triangle add up to 180°.",
+      "topic" : "Geometry",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "180 − 90 − 45 = 45 degrees.",
+      "id" : "g4-icps-043"
+   },
+   {
+      "answers" : [
+         "6",
+         "6 bags"
+      ],
+      "prompt" : "A baker bakes 24 muffins and puts 4 muffins in each bag. How many bags does she use?",
+      "type" : "text",
+      "hint" : "How many groups of 4 are in 24?",
+      "topic" : "Word Problems",
+      "difficulty" : 1,
+      "version" : 1,
+      "solution" : "24 ÷ 4 = 6 bags.",
+      "id" : "g4-icps-044"
+   },
+   {
+      "answers" : [
+         "14",
+         "$14",
+         "14 dollars"
+      ],
+      "prompt" : "Tom has $50. He buys 3 books that each cost $12. How much money does he have left?",
+      "type" : "text",
+      "hint" : "First find how much the 3 books cost in all.",
+      "topic" : "Word Problems",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "3 × $12 = $36, so $50 − $36 = $14.",
+      "id" : "g4-icps-045"
+   },
+   {
+      "answers" : [
+         "6",
+         "6 outfits"
+      ],
+      "prompt" : "Mia has 3 T-shirts (red, blue, white) and 2 pairs of shorts (black, grey). How many different outfits can she make with one shirt and one pair of shorts?",
+      "type" : "text",
+      "hint" : "For each T-shirt, she can choose either pair of shorts.",
+      "topic" : "Combinatorics",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "3 × 2 = 6 different outfits.",
+      "id" : "g4-icps-046"
+   },
+   {
+      "answers" : [
+         "18",
+         "18 years"
+      ],
+      "prompt" : "A mother is 30 years old and her daughter is 6 years old. In how many years will the mother be 2 times as old as the daughter?",
+      "type" : "text",
+      "hint" : "Try a table. In x years, their ages will be 30 + x and 6 + x.",
+      "topic" : "Age Problems",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "In 18 years the mother will be 48 and the daughter 24. Since 48 = 2 × 24, the answer is 18 years.",
+      "id" : "g4-icps-047"
+   },
+   {
+      "answers" : [
+         "8",
+         "8 cm"
+      ],
+      "prompt" : "A square has an area of 64 square cm. How long is each side?",
+      "type" : "text",
+      "hint" : "Which number times itself equals 64?",
+      "topic" : "Area",
+      "difficulty" : 1,
+      "version" : 1,
+      "solution" : "8 × 8 = 64, so each side is 8 cm.",
+      "id" : "g4-icps-048"
    }
 ]
