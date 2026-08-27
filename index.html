@@ -328,12 +328,13 @@
   <script>
     let questions = [];
 
-    const APP_VERSION = 1;
+    const APP_VERSION = 2;
     const STORAGE_KEY = 'grade4-icps-math-practice-state-v1';
     const REVIEW_CORRECT_TO_REMOVE = 1;
     const ADAPTIVE_WINDOW = 3;
+    const SESSION_SIZE = 10;
 
-    const state = { pool: [], index: 0, questionState: {}, history: [], pendingReviewRemoval: null };
+    const state = { pool: [], index: 0, questionState: {}, history: [], sessionCursor: 0, pendingReviewRemoval: null };
     const els = {
       topicFilter: document.getElementById('topicFilter'), difficultyFilter: document.getElementById('difficultyFilter'), mode: document.getElementById('mode'),
       restartBtn: document.getElementById('restartBtn'), exportBtn: document.getElementById('exportBtn'), importBtn: document.getElementById('importBtn'), clearStorageBtn: document.getElementById('clearStorageBtn'), importFile: document.getElementById('importFile'), backupStatus: document.getElementById('backupStatus'),
@@ -367,7 +368,7 @@
     function buildBackupPayload() {
       return {
         app: 'grade4-icps-math-practice', appVersion: APP_VERSION, exportedAt: nowIso(),
-        ui: { topic: els.topicFilter.value, difficulty: els.difficultyFilter.value, mode: els.mode.value, index: state.index },
+        ui: { topic: els.topicFilter.value, difficulty: els.difficultyFilter.value, mode: els.mode.value, index: state.index, sessionCursor: state.sessionCursor },
         questions: questions.map(({ id, version, topic, difficulty, prompt }) => ({ id, version, topic, difficulty, prompt })),
         questionState: state.questionState,
         history: state.history
@@ -391,6 +392,7 @@
           if (saved.ui.difficulty) els.difficultyFilter.value = saved.ui.difficulty;
           if (saved.ui.mode) els.mode.value = saved.ui.mode;
           if (Number.isInteger(saved.ui.index)) state.index = saved.ui.index;
+          if (Number.isInteger(saved.ui.sessionCursor)) state.sessionCursor = saved.ui.sessionCursor;
         }
         setBackupStatus('Saved progress loaded.');
       } catch (err) { console.warn(err); setBackupStatus('Saved progress could not be loaded.'); }
@@ -419,6 +421,7 @@
             if (data.ui.difficulty) els.difficultyFilter.value = data.ui.difficulty;
             if (data.ui.mode) els.mode.value = data.ui.mode;
             if (Number.isInteger(data.ui.index)) state.index = data.ui.index;
+            if (Number.isInteger(data.ui.sessionCursor)) state.sessionCursor = data.ui.sessionCursor;
           }
           buildPool({ keepIndex: true, save: false }); saveState(); setBackupStatus('JSON backup imported.');
         } catch (err) { console.error(err); setBackupStatus('Import failed: invalid backup JSON.'); }
@@ -430,6 +433,7 @@
     function clearSavedProgress() {
       if (!confirm('Clear all saved answers and history on this device?')) return;
       state.questionState = {}; state.history = [];
+      state.sessionCursor = 0;
       localStorage.removeItem(STORAGE_KEY);
       buildPool({ keepIndex: false, save: false });
       setBackupStatus('Saved progress cleared.');
@@ -437,8 +441,9 @@
 
     function resetCurrentProgress() {
       state.questionState = {}; state.history = [];
+      state.sessionCursor += 1;
       buildPool({ keepIndex: false, save: true });
-      setBackupStatus('Practice restarted and progress reset.');
+      setBackupStatus('Practice restarted with a new set of 10 questions.');
     }
 
     async function loadExternalQuestions() {
@@ -480,6 +485,15 @@
       return shuffle(candidates);
     }
 
+    function takeSession(pool, ordered) {
+      if (pool.length <= SESSION_SIZE) return pool;
+      if (!ordered) return pool.slice(0, SESSION_SIZE);
+      const start = (state.sessionCursor * SESSION_SIZE) % pool.length;
+      const chunk = [];
+      for (let i = 0; i < SESSION_SIZE; i++) chunk.push(pool[(start + i) % pool.length]);
+      return chunk;
+    }
+
     function buildPool(options = {}) {
       const { keepIndex = false, save = true } = options;
       const topic = els.topicFilter.value;
@@ -488,7 +502,7 @@
       if (els.mode.value === 'review') pool = pool.filter(q => state.questionState[q.id]?.status === 'review');
       if (els.mode.value === 'adaptive') pool = buildAdaptivePool(pool);
       if (els.mode.value === 'random') pool = shuffle(pool);
-      state.pool = pool;
+      state.pool = takeSession(pool, els.mode.value === 'ordered');
       state.index = keepIndex ? Math.min(state.index, Math.max(pool.length - 1, 0)) : 0;
       els.resultCard.classList.remove('show'); render(); if (save) saveState();
     }
