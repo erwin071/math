@@ -1,137 +1,457 @@
 [
-  {
-    "id": "g4-icps-001",
-    "version": 1,
-    "topic": "Patterns",
-    "difficulty": 1,
-    "type": "text",
-    "prompt": "Find the next number:\n4, 9, 14, 19, 24, ____",
-    "answers": ["29"],
-    "hint": "Look at how much the numbers increase each time.",
-    "solution": "Each number increases by 5. 24 + 5 = 29."
-  },
-  {
-    "id": "g4-icps-002",
-    "version": 1,
-    "topic": "Number Sense",
-    "difficulty": 1,
-    "type": "choice",
-    "prompt": "Which number is divisible by both 3 and 4?",
-    "choices": ["18", "20", "24", "30"],
-    "answers": ["24"],
-    "hint": "A number divisible by both 3 and 4 is divisible by 12.",
-    "solution": "24 is a multiple of 12, so it is divisible by both 3 and 4."
-  },
-  {
-    "id": "g4-icps-003",
-    "version": 1,
-    "topic": "Operations",
-    "difficulty": 1,
-    "type": "text",
-    "prompt": "Calculate:  348 + 275 - 126 = ?",
-    "answers": ["497"],
-    "hint": "Add first, then subtract carefully.",
-    "solution": "348 + 275 = 623. Then 623 - 126 = 497."
-  },
-  {
-    "id": "g4-icps-004",
-    "version": 1,
-    "topic": "Factors and Multiples",
-    "difficulty": 2,
-    "type": "text",
-    "prompt": "List the common factors of 18 and 24. How many common factors are there?",
-    "answers": ["1,2,3,6", "1, 2, 3, 6", "4"],
-    "hint": "List all factors of each number, then find the ones that appear in both lists.",
-    "solution": "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Common factors: 1, 2, 3, 6. There are 4."
-  },
-  {
-    "id": "g4-icps-005",
-    "version": 1,
-    "topic": "Logic",
-    "difficulty": 2,
-    "type": "choice",
-    "prompt": "Three friends have different pets: a cat, a dog, and a rabbit.\nAva does not have the dog. Ben has the rabbit. Chloe does not have the cat.\nWhich pet does Ava have?",
-    "choices": ["cat", "dog", "rabbit"],
-    "answers": ["cat"],
-    "hint": "Start with Ben. Then use the pets that are left.",
-    "solution": "Ben has the rabbit. Ava and Chloe have the cat and dog. Ava does not have the dog, so Ava has the cat."
-  },
-  {
-    "id": "g4-icps-006",
-    "version": 1,
-    "topic": "Fractions",
-    "difficulty": 2,
-    "type": "choice",
-    "prompt": "Which fraction is equivalent to 3/4?",
-    "choices": ["6/12", "9/12", "10/12", "12/18"],
-    "answers": ["9/12"],
-    "hint": "Multiply the numerator and denominator by the same number.",
-    "solution": "3/4 × 3/3 = 9/12."
-  },
-  {
-    "id": "g4-icps-007",
-    "version": 1,
-    "topic": "Geometry",
-    "difficulty": 2,
-    "type": "text",
-    "prompt": "A rectangle is 9 cm long and 5 cm wide. What is its perimeter?",
-    "answers": ["28", "28 cm"],
-    "hint": "Perimeter means the distance around the shape.",
-    "solution": "Perimeter = 2 × (9 + 5) = 28 cm."
-  },
-  {
-    "id": "g4-icps-008",
-    "version": 1,
-    "topic": "Word Problems",
-    "difficulty": 2,
-    "type": "text",
-    "prompt": "Mia reads 12 pages on Monday. Each day after that, she reads 4 more pages than the day before. How many pages does she read on Friday?",
-    "answers": ["28", "28 pages"],
-    "hint": "Count Monday, Tuesday, Wednesday, Thursday, Friday.",
-    "solution": "Monday 12, Tuesday 16, Wednesday 20, Thursday 24, Friday 28."
-  },
-  {
-    "id": "g4-icps-009",
-    "version": 1,
-    "topic": "Combinatorics",
-    "difficulty": 3,
-    "type": "text",
-    "prompt": "Six students each shake hands with every other student exactly once. How many handshakes are there in all?",
-    "answers": ["15"],
-    "hint": "The first student has 5 handshakes, the next new ones are 4, then 3, then 2, then 1.",
-    "solution": "5 + 4 + 3 + 2 + 1 = 15 handshakes."
-  },
-  {
-    "id": "g4-icps-010",
-    "version": 1,
-    "topic": "Age Problems",
-    "difficulty": 3,
-    "type": "text",
-    "prompt": "A father is 40 years old. His son is 10 years old. In how many years will the father be 3 times as old as his son?",
-    "answers": ["5", "5 years"],
-    "hint": "Try a table. In x years, their ages are 40 + x and 10 + x.",
-    "solution": "In 5 years, the father will be 45 and the son will be 15. 45 is 3 × 15."
-  },
-  {
-    "id": "g4-icps-011",
-    "version": 1,
-    "topic": "Area",
-    "difficulty": 3,
-    "type": "text",
-    "prompt": "Using 12 unit squares, you can make rectangles with whole-number side lengths. Which rectangle has the smallest perimeter?",
-    "answers": ["3x4", "4x3", "3 x 4", "4 x 3", "3 by 4", "4 by 3"],
-    "hint": "List factor pairs of 12: 1×12, 2×6, 3×4.",
-    "solution": "Perimeters: 1×12 gives 26, 2×6 gives 16, and 3×4 gives 14. The 3×4 rectangle has the smallest perimeter."
-  },
-  {
-    "id": "g4-icps-012",
-    "version": 1,
-    "topic": "Challenge",
-    "difficulty": 3,
-    "type": "text",
-    "prompt": "A two-digit number has a tens digit that is 2 less than its ones digit. The sum of the digits is 10. What is the number?",
-    "answers": ["46"],
-    "hint": "Find two digits that add to 10 and differ by 2.",
-    "solution": "The digits 4 and 6 add to 10, and the tens digit 4 is 2 less than the ones digit 6. The number is 46."
-  }
+   {
+      "answers" : [
+         "29"
+      ],
+      "prompt" : "Find the next number:\n4, 9, 14, 19, 24, ____",
+      "type" : "text",
+      "hint" : "Look at how much the numbers increase each time.",
+      "topic" : "Patterns",
+      "difficulty" : 1,
+      "version" : 1,
+      "solution" : "Each number increases by 5. 24 + 5 = 29.",
+      "id" : "g4-icps-001"
+   },
+   {
+      "version" : 1,
+      "solution" : "24 is a multiple of 12, so it is divisible by both 3 and 4.",
+      "id" : "g4-icps-002",
+      "prompt" : "Which number is divisible by both 3 and 4?",
+      "type" : "choice",
+      "answers" : [
+         "24"
+      ],
+      "difficulty" : 1,
+      "hint" : "A number divisible by both 3 and 4 is divisible by 12.",
+      "choices" : [
+         "18",
+         "20",
+         "24",
+         "30"
+      ],
+      "topic" : "Number Sense"
+   },
+   {
+      "answers" : [
+         "497"
+      ],
+      "prompt" : "Calculate:  348 + 275 - 126 = ?",
+      "type" : "text",
+      "hint" : "Add first, then subtract carefully.",
+      "topic" : "Operations",
+      "difficulty" : 1,
+      "version" : 1,
+      "solution" : "348 + 275 = 623. Then 623 - 126 = 497.",
+      "id" : "g4-icps-003"
+   },
+   {
+      "version" : 1,
+      "solution" : "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Common factors: 1, 2, 3, 6. There are 4.",
+      "id" : "g4-icps-004",
+      "type" : "text",
+      "prompt" : "List the common factors of 18 and 24. How many common factors are there?",
+      "answers" : [
+         "1,2,3,6",
+         "1, 2, 3, 6",
+         "4"
+      ],
+      "difficulty" : 2,
+      "topic" : "Factors and Multiples",
+      "hint" : "List all factors of each number, then find the ones that appear in both lists."
+   },
+   {
+      "version" : 1,
+      "solution" : "Ben has the rabbit. Ava and Chloe have the cat and dog. Ava does not have the dog, so Ava has the cat.",
+      "id" : "g4-icps-005",
+      "answers" : [
+         "cat"
+      ],
+      "prompt" : "Three friends have different pets: a cat, a dog, and a rabbit.\nAva does not have the dog. Ben has the rabbit. Chloe does not have the cat.\nWhich pet does Ava have?",
+      "type" : "choice",
+      "hint" : "Start with Ben. Then use the pets that are left.",
+      "choices" : [
+         "cat",
+         "dog",
+         "rabbit"
+      ],
+      "topic" : "Logic",
+      "difficulty" : 2
+   },
+   {
+      "topic" : "Fractions",
+      "hint" : "Multiply the numerator and denominator by the same number.",
+      "choices" : [
+         "6/12",
+         "9/12",
+         "10/12",
+         "12/18"
+      ],
+      "difficulty" : 2,
+      "answers" : [
+         "9/12"
+      ],
+      "type" : "choice",
+      "prompt" : "Which fraction is equivalent to 3/4?",
+      "solution" : "3/4 x 3/3 = 9/12.",
+      "id" : "g4-icps-006",
+      "version" : 1
+   },
+   {
+      "version" : 1,
+      "id" : "g4-icps-007",
+      "solution" : "Perimeter = 2 x (9 + 5) = 28 cm.",
+      "prompt" : "A rectangle is 9 cm long and 5 cm wide. What is its perimeter?",
+      "type" : "text",
+      "answers" : [
+         "28",
+         "28 cm"
+      ],
+      "difficulty" : 2,
+      "hint" : "Perimeter means the distance around the shape.",
+      "topic" : "Geometry"
+   },
+   {
+      "solution" : "Monday 12, Tuesday 16, Wednesday 20, Thursday 24, Friday 28.",
+      "id" : "g4-icps-008",
+      "version" : 1,
+      "difficulty" : 2,
+      "hint" : "Count Monday, Tuesday, Wednesday, Thursday, Friday.",
+      "topic" : "Word Problems",
+      "prompt" : "Mia reads 12 pages on Monday. Each day after that, she reads 4 more pages than the day before. How many pages does she read on Friday?",
+      "type" : "text",
+      "answers" : [
+         "28",
+         "28 pages"
+      ]
+   },
+   {
+      "type" : "text",
+      "prompt" : "Six students each shake hands with every other student exactly once. How many handshakes are there in all?",
+      "answers" : [
+         "15"
+      ],
+      "difficulty" : 3,
+      "topic" : "Combinatorics",
+      "hint" : "The first student has 5 handshakes, the next new ones are 4, then 3, then 2, then 1.",
+      "version" : 1,
+      "solution" : "5 + 4 + 3 + 2 + 1 = 15 handshakes.",
+      "id" : "g4-icps-009"
+   },
+   {
+      "solution" : "In 5 years, the father will be 45 and the son will be 15. 45 is 3 x 15.",
+      "id" : "g4-icps-010",
+      "version" : 1,
+      "hint" : "Try a table. In x years, their ages are 40 + x and 10 + x.",
+      "topic" : "Age Problems",
+      "difficulty" : 3,
+      "answers" : [
+         "5",
+         "5 years"
+      ],
+      "prompt" : "A father is 40 years old. His son is 10 years old. In how many years will the father be 3 times as old as his son?",
+      "type" : "text"
+   },
+   {
+      "type" : "text",
+      "prompt" : "Using 12 unit squares, you can make rectangles with whole-number side lengths. Which rectangle has the smallest perimeter?",
+      "answers" : [
+         "3x4",
+         "4x3",
+         "3 x 4",
+         "4 x 3",
+         "3 by 4",
+         "4 by 3"
+      ],
+      "difficulty" : 3,
+      "topic" : "Area",
+      "hint" : "List factor pairs of 12: 1x12, 2x6, 3x4.",
+      "version" : 1,
+      "id" : "g4-icps-011",
+      "solution" : "Perimeters: 1x12 gives 26, 2x6 gives 16, and 3x4 gives 14. The 3x4 rectangle has the smallest perimeter."
+   },
+   {
+      "difficulty" : 3,
+      "hint" : "Find two digits that add to 10 and differ by 2.",
+      "topic" : "Challenge",
+      "prompt" : "A two-digit number has a tens digit that is 2 less than its ones digit. The sum of the digits is 10. What is the number?",
+      "type" : "text",
+      "answers" : [
+         "46"
+      ],
+      "solution" : "The digits 4 and 6 add to 10, and the tens digit 4 is 2 less than the ones digit 6. The number is 46.",
+      "id" : "g4-icps-012",
+      "version" : 1
+   },
+   {
+      "prompt" : "Calculate: 456 x 7 - 389 = ?",
+      "type" : "text",
+      "answers" : [
+         "2803",
+         "2,803"
+      ],
+      "difficulty" : 1,
+      "hint" : "Multiply first, then subtract.",
+      "topic" : "Operations",
+      "version" : 1,
+      "solution" : "456 x 7 = 3,192. Then 3,192 - 389 = 2,803.",
+      "id" : "g4-icps-013"
+   },
+   {
+      "difficulty" : 2,
+      "topic" : "Patterns",
+      "hint" : "Each number is made from the previous number in the same way.",
+      "type" : "text",
+      "prompt" : "Find the missing number: 3, 7, 15, 31, ____, 127",
+      "answers" : [
+         "63"
+      ],
+      "id" : "g4-icps-014",
+      "solution" : "Each term is previous x 2 + 1. 31 x 2 + 1 = 63.",
+      "version" : 1
+   },
+   {
+      "difficulty" : 1,
+      "topic" : "Number Sense",
+      "hint" : "A number divisible by both 3 and 4 must be divisible by 12.",
+      "type" : "text",
+      "prompt" : "How many integers from 1 to 50 are divisible by both 3 and 4?",
+      "answers" : [
+         "4",
+         "4 numbers"
+      ],
+      "solution" : "Multiples of 12 from 1 to 50 are 12, 24, 36, and 48. There are 4 numbers.",
+      "id" : "g4-icps-015",
+      "version" : 1
+   },
+   {
+      "difficulty" : 2,
+      "hint" : "Pair factors that multiply to 36.",
+      "topic" : "Factors and Multiples",
+      "prompt" : "List all the factors of 36. How many factors does 36 have?",
+      "type" : "text",
+      "answers" : [
+         "9",
+         "9 factors",
+         "1,2,3,4,6,9,12,18,36",
+         "1, 2, 3, 4, 6, 9, 12, 18, 36"
+      ],
+      "id" : "g4-icps-016",
+      "solution" : "The factors are 1, 2, 3, 4, 6, 9, 12, 18, and 36. There are 9 factors.",
+      "version" : 1
+   },
+   {
+      "answers" : [
+         "36",
+         "36 candies"
+      ],
+      "prompt" : "Marcus wants a number of candies that can be shared equally among 4 friends, 6 friends, or 9 friends. What is the least possible number of candies?",
+      "type" : "text",
+      "hint" : "Find the least common multiple of 4, 6, and 9.",
+      "topic" : "Factors and Multiples",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "LCM(4, 6, 9) = 36, so the least possible number is 36 candies.",
+      "id" : "g4-icps-017"
+   },
+   {
+      "difficulty" : 3,
+      "hint" : "Use 12 as a common denominator.",
+      "topic" : "Fractions",
+      "prompt" : "Calculate: 3/4 + 5/6. Write your answer as a simplified fraction.",
+      "type" : "text",
+      "answers" : [
+         "19/12",
+         "1 7/12",
+         "1 and 7/12"
+      ],
+      "solution" : "3/4 = 9/12 and 5/6 = 10/12. The sum is 19/12, or 1 and 7/12.",
+      "id" : "g4-icps-018",
+      "version" : 1
+   },
+   {
+      "version" : 1,
+      "id" : "g4-icps-019",
+      "solution" : "3/8 of 2.4 is 0.9. The remaining length is 2.4 - 0.9 = 1.5 meters.",
+      "type" : "text",
+      "prompt" : "A rope is 2.4 meters long. After cutting off 3/8 of it, how many meters are left?",
+      "answers" : [
+         "1.5",
+         "1.5 meters",
+         "1.5 m"
+      ],
+      "difficulty" : 3,
+      "topic" : "Fractions",
+      "hint" : "Find the part cut off first, then subtract from 2.4."
+   },
+   {
+      "version" : 1,
+      "solution" : "180 - 90 - 35 = 55, so the third angle is 55 degrees.",
+      "id" : "g4-icps-020",
+      "prompt" : "A right triangle has one angle of 90 degrees and another angle of 35 degrees. What is the third angle?",
+      "type" : "text",
+      "answers" : [
+         "55",
+         "55 degrees",
+         "55 degrees"
+      ],
+      "difficulty" : 1,
+      "hint" : "The angles in a triangle add to 180 degrees.",
+      "topic" : "Geometry"
+   },
+   {
+      "version" : 1,
+      "solution" : "b + 2b + (2b + 5) = 45, so 5b + 5 = 45. Then b = 8.",
+      "id" : "g4-icps-021",
+      "type" : "text",
+      "prompt" : "There are red, yellow, and blue balls. Red balls are 5 more than yellow balls. Yellow balls are twice as many as blue balls. There are 45 balls total. How many blue balls are there?",
+      "answers" : [
+         "8",
+         "8 blue balls"
+      ],
+      "difficulty" : 2,
+      "topic" : "Word Problems",
+      "hint" : "Let blue be b. Then yellow is 2b and red is 2b + 5."
+   },
+   {
+      "prompt" : "Emma runs 200 meters on Day 1. Each day she runs 50 meters more than the day before. How far does she run on Day 7?",
+      "type" : "text",
+      "answers" : [
+         "500",
+         "500 meters",
+         "500 m"
+      ],
+      "difficulty" : 2,
+      "hint" : "Day 7 is 6 increases after Day 1.",
+      "topic" : "Patterns",
+      "version" : 1,
+      "id" : "g4-icps-022",
+      "solution" : "There are 6 increases of 50 meters: 200 + 6 x 50 = 500 meters."
+   },
+   {
+      "version" : 1,
+      "solution" : "The digits 3 and 6 work: 3 x 6 = 18, and 2 x (3 + 6) = 18. The number is 36.",
+      "id" : "g4-icps-023",
+      "type" : "text",
+      "prompt" : "A two-digit number has a ones digit that is 3 more than its tens digit. The product of the digits equals twice the sum of the digits. What is the number?",
+      "answers" : [
+         "36"
+      ],
+      "difficulty" : 3,
+      "topic" : "Challenge",
+      "hint" : "Try tens digit 1, 2, 3, and so on. The ones digit is 3 more."
+   },
+   {
+      "id" : "g4-icps-024",
+      "solution" : "3 x 4 = 12 different outfits.",
+      "version" : 1,
+      "topic" : "Combinatorics",
+      "choices" : [
+         "7",
+         "10",
+         "12",
+         "24"
+      ],
+      "hint" : "For each shirt, Lily can choose any of 4 pairs of shorts.",
+      "difficulty" : 2,
+      "answers" : [
+         "12"
+      ],
+      "type" : "choice",
+      "prompt" : "How many different outfits can Lily make with 3 shirts and 4 pairs of shorts?"
+   },
+   {
+      "version" : 1,
+      "id" : "g4-icps-025",
+      "solution" : "6 hundreds is 600, 14 tens is 140, and 8 ones is 8. Total: 748.",
+      "type" : "choice",
+      "prompt" : "Which number has the same value as 6 hundreds + 14 tens + 8 ones?",
+      "answers" : [
+         "748"
+      ],
+      "difficulty" : 1,
+      "topic" : "Number Sense",
+      "choices" : [
+         "648",
+         "708",
+         "748",
+         "6148"
+      ],
+      "hint" : "14 tens is 140."
+   },
+   {
+      "version" : 1,
+      "id" : "g4-icps-026",
+      "solution" : "It must be after B, so it is C or D. It is not immediately after B, so it is not C. The prize is in D.",
+      "type" : "choice",
+      "prompt" : "Four boxes are labeled A, B, C, and D. The prize is not in A. It is not in the box immediately after B. It is in a box with a letter after B. Where is the prize?",
+      "answers" : [
+         "D"
+      ],
+      "difficulty" : 2,
+      "topic" : "Logic",
+      "choices" : [
+         "A",
+         "B",
+         "C",
+         "D"
+      ],
+      "hint" : "The boxes after B are C and D. Immediately after B is C."
+   },
+   {
+      "answers" : [
+         "28",
+         "28 cm"
+      ],
+      "prompt" : "A rectangle has area 48 square cm. Its length is 8 cm. What is its perimeter?",
+      "type" : "text",
+      "hint" : "Find the width first.",
+      "topic" : "Area",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "Width = 48 divided by 8 = 6 cm. Perimeter = 2 x (8 + 6) = 28 cm.",
+      "id" : "g4-icps-027"
+   },
+   {
+      "topic" : "Money",
+      "hint" : "Find the notebook cost and pencil cost separately, then add.",
+      "difficulty" : 1,
+      "answers" : [
+         "6.95",
+         "$6.95"
+      ],
+      "type" : "text",
+      "prompt" : "A notebook costs $2.35 and a pencil costs $0.75. How much do 2 notebooks and 3 pencils cost?",
+      "id" : "g4-icps-028",
+      "solution" : "2 notebooks cost $4.70. 3 pencils cost $2.25. Total: $6.95.",
+      "version" : 1
+   },
+   {
+      "answers" : [
+         "95 minutes",
+         "95",
+         "1 hour 35 minutes",
+         "1 hr 35 min"
+      ],
+      "type" : "text",
+      "prompt" : "A movie starts at 2:45 p.m. and ends at 4:20 p.m. How long is the movie?",
+      "topic" : "Measurement",
+      "hint" : "Count from 2:45 to 3:45, then from 3:45 to 4:20.",
+      "difficulty" : 2,
+      "version" : 1,
+      "id" : "g4-icps-029",
+      "solution" : "2:45 to 3:45 is 1 hour. 3:45 to 4:20 is 35 minutes. Total: 1 hour 35 minutes, or 95 minutes."
+   },
+   {
+      "id" : "g4-icps-030",
+      "solution" : "Numbers with remainder 2 when divided by 5 are 2, 7, 12, 17, ... The smallest one that has remainder 1 when divided by 3 is 7.",
+      "version" : 1,
+      "hint" : "List numbers that are 2 more than a multiple of 5: 2, 7, 12, 17, ...",
+      "topic" : "Challenge",
+      "difficulty" : 3,
+      "answers" : [
+         "7"
+      ],
+      "prompt" : "A number leaves a remainder of 2 when divided by 5 and a remainder of 1 when divided by 3. What is the smallest positive number that works?",
+      "type" : "text"
+   }
 ]
