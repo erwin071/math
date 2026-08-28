@@ -16,5 +16,6 @@ math/    → 數學（ICPS 資優準備、MOEMS 類型非標準題與邏輯推�
 | `questions.json` | 數學 | 互動練習網站題庫（標準 JSON 格式，目前 30 題） |
 | `math/icps-prep-week01.md` | 數學 | ICPS 準備・第 1 週練習卷（升四年級，一天一題，含家長版答案與觀察記錄表） |
 | `math/grade4-math-practice.txt` | 數學 | 四年級 ICPS 英文數學練習題與答案 |
+| `math/us-grade4-scope-and-level-map.md` | 數學 | 美國四年級（Common Core）範圍與練習題庫各 Level 涵蓋對照（備查文件） |
 
 之後每週新的練習卷會放進 `math/` 資料夾，例如 `math/icps-prep-week02.md`。

@@ -987,5 +987,239 @@
       "version" : 1,
       "solution" : "The digit pairs are (2,9),(3,8),(4,7),(5,6). Reversing 56 gives 65, and 65−56=9. The number is 56.",
       "id" : "g4-icps-068"
+   },
+   {
+      "answers" : [
+         "0.6"
+      ],
+      "prompt" : "Which number is larger, 0.6 or 0.45?",
+      "type" : "text",
+      "hint" : "Write both with the same number of decimal places: 0.60 and 0.45.",
+      "topic" : "Decimals",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "0.60 is greater than 0.45, so the answer is 0.6.",
+      "id" : "g4-icps-069"
+   },
+   {
+      "answers" : [
+         "0.73"
+      ],
+      "prompt" : "Write '7 tenths and 3 hundredths' as a decimal.",
+      "type" : "text",
+      "hint" : "7 tenths is 0.7 and 3 hundredths is 0.03.",
+      "topic" : "Decimals",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "0.7 + 0.03 = 0.73.",
+      "id" : "g4-icps-070"
+   },
+   {
+      "answers" : [
+         "0.35"
+      ],
+      "prompt" : "What is 3/10 + 5/100 written as a decimal?",
+      "type" : "text",
+      "hint" : "Write both fractions with hundredths: 3/10 = 30/100.",
+      "topic" : "Decimals",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "30/100 + 5/100 = 35/100 = 0.35.",
+      "id" : "g4-icps-071"
+   },
+   {
+      "choices" : [
+         "0.5",
+         "0.055",
+         "0.55",
+         "0.05"
+      ],
+      "answers" : [
+         "0.05"
+      ],
+      "prompt" : "Which decimal is the smallest?",
+      "type" : "choice",
+      "hint" : "Compare tenths first, then hundredths, then thousandths.",
+      "topic" : "Decimals",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "0.05 has zero tenths and 5 hundredths, which is less than 0.055, 0.5, and 0.55.",
+      "id" : "g4-icps-072"
+   },
+   {
+      "answers" : [
+         "300",
+         "300 cm",
+         "300cm"
+      ],
+      "prompt" : "How many centimeters are in 3 meters?",
+      "type" : "text",
+      "hint" : "1 meter equals 100 centimeters.",
+      "topic" : "Measurement",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "3 × 100 = 300 cm.",
+      "id" : "g4-icps-073"
+   },
+   {
+      "answers" : [
+         "180",
+         "180 minutes",
+         "180 minutes "
+      ],
+      "prompt" : "How many minutes are in 3 hours?",
+      "type" : "text",
+      "hint" : "1 hour equals 60 minutes.",
+      "topic" : "Measurement",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "3 × 60 = 180 minutes.",
+      "id" : "g4-icps-074"
+   },
+   {
+      "answers" : [
+         "2000",
+         "2000 g",
+         "2000g",
+         "2000 grams"
+      ],
+      "prompt" : "A bag of rice weighs 2 kilograms. How many grams is that?",
+      "type" : "text",
+      "hint" : "1 kilogram equals 1000 grams.",
+      "topic" : "Measurement",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "2 × 1000 = 2000 grams.",
+      "id" : "g4-icps-075"
+   },
+   {
+      "answers" : [
+         "3000",
+         "3000 ml",
+         "3000ml",
+         "3000 mL"
+      ],
+      "prompt" : "A jug holds 3 liters of juice. How many milliliters is that?",
+      "type" : "text",
+      "hint" : "1 liter equals 1000 milliliters.",
+      "topic" : "Measurement",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "3 × 1000 = 3000 milliliters.",
+      "id" : "g4-icps-076"
+   },
+   {
+      "answers" : [
+         "95",
+         "95 minutes"
+      ],
+      "prompt" : "A movie starts at 2:45 and ends at 4:20. How many minutes does it last?",
+      "type" : "text",
+      "hint" : "Count from 2:45 to 3:45 (1 hour), then from 3:45 to 4:20.",
+      "topic" : "Measurement",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "2:45 to 4:20 is 1 hour and 35 minutes: 60 + 35 = 95 minutes.",
+      "id" : "g4-icps-077"
+   },
+   {
+      "answers" : [
+         "4"
+      ],
+      "prompt" : "How many lines of symmetry does a square have?",
+      "type" : "text",
+      "hint" : "Lines of symmetry are fold lines where the two halves match exactly.",
+      "topic" : "Geometry",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "A square has 4 lines of symmetry: 2 through opposite corners and 2 through the middle of opposite sides.",
+      "id" : "g4-icps-078"
+   },
+   {
+      "choices" : [
+         "square",
+         "rectangle",
+         "isosceles triangle",
+         "parallelogram"
+      ],
+      "answers" : [
+         "isosceles triangle"
+      ],
+      "prompt" : "Which shape has exactly ONE line of symmetry?",
+      "type" : "choice",
+      "hint" : "Count the fold lines for each shape.",
+      "topic" : "Geometry",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "A square has 4, a rectangle has 2, a parallelogram has 0, and an isosceles triangle has 1.",
+      "id" : "g4-icps-079"
+   },
+   {
+      "answers" : [
+         "parallel",
+         "parallel lines"
+      ],
+      "prompt" : "Two lines that stay the same distance apart and never meet are called ____ lines.",
+      "type" : "text",
+      "hint" : "Railroad tracks are a good example.",
+      "topic" : "Geometry",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "Lines that never meet and keep the same distance apart are parallel lines.",
+      "id" : "g4-icps-080"
+   },
+   {
+      "answers" : [
+         "trapezoid"
+      ],
+      "prompt" : "A quadrilateral with exactly one pair of parallel sides is called a ____.",
+      "type" : "text",
+      "hint" : "Think of the shape of a tent roof or a bucket seen from the side.",
+      "topic" : "Geometry",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "A trapezoid is a 4-sided shape with exactly one pair of parallel sides.",
+      "id" : "g4-icps-081"
+   },
+   {
+      "answers" : [
+         "acute",
+         "acute angle"
+      ],
+      "prompt" : "An angle that is less than 90 degrees is called an ____ angle.",
+      "type" : "text",
+      "hint" : "90 degrees is a right angle; smaller than that is acute.",
+      "topic" : "Geometry",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "An angle smaller than a right angle (90°) is an acute angle.",
+      "id" : "g4-icps-082"
+   },
+   {
+      "answers" : [
+         "12"
+      ],
+      "prompt" : "What is 2/3 of 18?",
+      "type" : "text",
+      "hint" : "First find 1/3 of 18 by dividing by 3.",
+      "topic" : "Fractions",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "1/3 of 18 is 6, so 2/3 of 18 is 2 × 6 = 12.",
+      "id" : "g4-icps-083"
+   },
+   {
+      "answers" : [
+         "2",
+         "2 pizzas"
+      ],
+      "prompt" : "Four friends each eat 1/2 of a pizza. How many whole pizzas do they eat altogether?",
+      "type" : "text",
+      "hint" : "Four halves make how many wholes?",
+      "topic" : "Fractions",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "4 × 1/2 = 2 whole pizzas.",
+      "id" : "g4-icps-084"
    }
 ]
