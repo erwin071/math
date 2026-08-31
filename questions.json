@@ -1476,5 +1476,86 @@
       "version" : 1,
       "solution" : "$5.00 − $1.75 = $3.25.",
       "id" : "g4-icps-102"
+   },
+   {
+      "answers" : [
+         "45",
+         "45°",
+         "45 degrees"
+      ],
+      "image" : "images/angle-103.svg",
+      "prompt" : "What is the measure of the angle shown on the protractor?",
+      "type" : "text",
+      "hint" : "Read the number on the protractor where the blue ray points.",
+      "topic" : "Geometry",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "The blue ray points to 45°.",
+      "id" : "g4-icps-103"
+   },
+   {
+      "answers" : [
+         "120",
+         "120°",
+         "120 degrees"
+      ],
+      "image" : "images/angle-104.svg",
+      "prompt" : "What is the measure of the angle shown on the protractor?",
+      "type" : "text",
+      "hint" : "Read the number on the protractor where the blue ray points.",
+      "topic" : "Geometry",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "The blue ray points to 120°.",
+      "id" : "g4-icps-104"
+   },
+   {
+      "answers" : [
+         "35",
+         "35°",
+         "35 degrees",
+         "about 35",
+         "about 35°",
+         "approximately 35"
+      ],
+      "image" : "images/angle-105.svg",
+      "prompt" : "The angle on the protractor is between 30° and 40°. What is the best estimate?",
+      "type" : "text",
+      "hint" : "The blue ray is between the 30° and 40° marks.",
+      "topic" : "Geometry",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "The ray is between 30° and 40°, about 35°.",
+      "id" : "g4-icps-105"
+   },
+   {
+      "answers" : [
+         "3",
+         "3 students"
+      ],
+      "image" : "images/lineplot-106.svg",
+      "prompt" : "How many students read exactly 3 books?",
+      "type" : "text",
+      "hint" : "Count the number of dots above the number 3.",
+      "topic" : "Data",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "There are 3 dots above the number 3, so 3 students read 3 books.",
+      "id" : "g4-icps-106"
+   },
+   {
+      "answers" : [
+         "7",
+         "7 pencils"
+      ],
+      "image" : "images/lineplot-107.svg",
+      "prompt" : "How many pencils are 12 cm or longer?",
+      "type" : "text",
+      "hint" : "Add up the dots above 12, 13, and 14.",
+      "topic" : "Data",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "12 cm has 4 dots, 13 cm has 1 dot, 14 cm has 2 dots. 4 + 1 + 2 = 7 pencils.",
+      "id" : "g4-icps-107"
    }
 ]

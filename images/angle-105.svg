@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 130">
+  <!-- Protractor base line -->
+  <line x1="5" y1="115" x2="195" y2="115" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Protractor arc -->
+  <path d="M 5,115 A 95,95 0 0,1 195,115" fill="none" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Tick marks and labels: every 30° -->
+  <!-- 0° -->
+  <line x1="195" y1="115" x2="185" y2="115" stroke="#333" stroke-width="1"/>
+  <text x="198" y="119" font-size="8" fill="#333" text-anchor="middle">0</text>
+  <!-- 30° -->
+  <line x1="182.3" y1="67.5" x2="173.8" y2="72.5" stroke="#333" stroke-width="1"/>
+  <text x="185" y="62" font-size="8" fill="#333" text-anchor="middle">30</text>
+  <!-- 60° -->
+  <line x1="147.5" y1="32.7" x2="143.3" y2="41.7" stroke="#333" stroke-width="1"/>
+  <text x="147.5" y="27" font-size="8" fill="#333" text-anchor="middle">60</text>
+  <!-- 90° -->
+  <line x1="100" y1="20" x2="100" y2="30" stroke="#333" stroke-width="1"/>
+  <text x="100" y="15" font-size="8" fill="#333" text-anchor="middle">90</text>
+  <!-- 120° -->
+  <line x1="52.5" y1="32.7" x2="56.7" y2="41.7" stroke="#333" stroke-width="1"/>
+  <text x="52.5" y="27" font-size="8" fill="#333" text-anchor="middle">120</text>
+  <!-- 150° -->
+  <line x1="17.7" y1="67.5" x2="26.2" y2="72.5" stroke="#333" stroke-width="1"/>
+  <text x="15" y="62" font-size="8" fill="#333" text-anchor="middle">150</text>
+  <!-- 180° -->
+  <line x1="5" y1="115" x2="15" y2="115" stroke="#333" stroke-width="1"/>
+  <text x="2" y="119" font-size="8" fill="#333" text-anchor="middle">180</text>
+
+  <!-- 35° angle ray -->
+  <line x1="100" y1="115" x2="178" y2="61" stroke="#2563eb" stroke-width="2"/>
+
+  <!-- Small arc indicator (r=30) -->
+  <path d="M 130,115 A 30,30 0 0,1 125,98" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+
+  <!-- Angle label -->
+  <text x="140" y="105" font-size="9" fill="#2563eb">35°</text>
+</svg>
