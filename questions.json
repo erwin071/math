@@ -1221,5 +1221,260 @@
       "version" : 1,
       "solution" : "4 × 1/2 = 2 whole pizzas.",
       "id" : "g4-icps-084"
+   },
+   {
+      "answers" : [
+         "35",
+         "35 degrees",
+         "35°"
+      ],
+      "prompt" : "A right angle is split into two angles. One angle is 55°. What is the other angle in degrees?",
+      "type" : "text",
+      "hint" : "A right angle measures exactly 90°.",
+      "topic" : "Geometry",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "90 − 55 = 35°.",
+      "id" : "g4-icps-085"
+   },
+   {
+      "answers" : [
+         "50",
+         "50 degrees",
+         "50°"
+      ],
+      "prompt" : "A straight line is split into two angles. One angle is 130°. What is the other angle in degrees?",
+      "type" : "text",
+      "hint" : "A straight line measures exactly 180°.",
+      "topic" : "Geometry",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "180 − 130 = 50°.",
+      "id" : "g4-icps-086"
+   },
+   {
+      "answers" : [
+         "70",
+         "70 degrees",
+         "70°"
+      ],
+      "prompt" : "A quadrilateral has angles of 90°, 90°, and 110°. What is the fourth angle in degrees?",
+      "type" : "text",
+      "hint" : "The four angles of a quadrilateral add up to 360°.",
+      "topic" : "Geometry",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "360 − 90 − 90 − 110 = 70°.",
+      "id" : "g4-icps-087"
+   },
+   {
+      "answers" : [
+         "90",
+         "90 degrees",
+         "90°"
+      ],
+      "prompt" : "At 3:00, how many degrees are in the angle between the hour hand and the minute hand?",
+      "type" : "text",
+      "hint" : "The clock face is a circle; 3:00 makes a right angle.",
+      "topic" : "Geometry",
+      "difficulty" : 1,
+      "version" : 1,
+      "solution" : "At 3:00 the hands form a quarter turn, which is 90°.",
+      "id" : "g4-icps-088"
+   },
+   {
+      "answers" : [
+         "4"
+      ],
+      "prompt" : "Nina asked her friends how many pets they have: 1, 2, 1, 0, 2, 1, 3, 2. How many friends have at least 2 pets?",
+      "type" : "text",
+      "hint" : "Count only the numbers 2 and 3.",
+      "topic" : "Data",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "The numbers 2, 2, 2, and 3 are at least 2, so 4 friends.",
+      "id" : "g4-icps-089"
+   },
+   {
+      "answers" : [
+         "17",
+         "17 cm",
+         "17cm"
+      ],
+      "prompt" : "A plant starts at 5 cm tall and grows 3 cm every week. How tall is it after 4 weeks?",
+      "type" : "text",
+      "hint" : "It grows 3 cm for each of the 4 weeks.",
+      "topic" : "Word Problems",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "Growth is 3×4 = 12 cm, so 5 + 12 = 17 cm.",
+      "id" : "g4-icps-090"
+   },
+   {
+      "answers" : [
+         "2712"
+      ],
+      "prompt" : "Calculate:  452 × 6 = ?",
+      "type" : "text",
+      "hint" : "Multiply step by step: 6×2, 6×5, 6×4.",
+      "topic" : "Operations",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "452×6 = 2712.",
+      "id" : "g4-icps-091"
+   },
+   {
+      "answers" : [
+         "121"
+      ],
+      "prompt" : "Calculate:  847 ÷ 7 = ?",
+      "type" : "text",
+      "hint" : "Try 7×100, then split what is left.",
+      "topic" : "Operations",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "847 ÷ 7 = 121 (because 7×121 = 847).",
+      "id" : "g4-icps-092"
+   },
+   {
+      "answers" : [
+         "1035"
+      ],
+      "prompt" : "Calculate:  23 × 45 = ?",
+      "type" : "text",
+      "hint" : "Split 23 into 20 and 3, then multiply each by 45.",
+      "topic" : "Operations",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "20×45 = 900 and 3×45 = 135, so 900 + 135 = 1035.",
+      "id" : "g4-icps-093"
+   },
+   {
+      "answers" : [
+         "36",
+         "36 stickers"
+      ],
+      "prompt" : "Tom has 9 stickers. Leo has 4 times as many stickers as Tom. How many stickers does Leo have?",
+      "type" : "text",
+      "hint" : "'4 times as many' means multiply by 4.",
+      "topic" : "Word Problems",
+      "difficulty" : 1,
+      "version" : 1,
+      "solution" : "9 × 4 = 36 stickers.",
+      "id" : "g4-icps-094"
+   },
+   {
+      "answers" : [
+         "144",
+         "144 cm",
+         "144cm"
+      ],
+      "prompt" : "A giraffe is 12 times as tall as a mouse that is 12 cm tall. How tall is the giraffe in centimeters?",
+      "type" : "text",
+      "hint" : "Multiply the mouse's height by 12.",
+      "topic" : "Word Problems",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "12 × 12 = 144 cm.",
+      "id" : "g4-icps-095"
+   },
+   {
+      "answers" : [
+         "0.75"
+      ],
+      "prompt" : "What is 0.5 + 0.25 = ?",
+      "type" : "text",
+      "hint" : "Think of 0.5 as 0.50.",
+      "topic" : "Decimals",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "0.50 + 0.25 = 0.75.",
+      "id" : "g4-icps-096"
+   },
+   {
+      "answers" : [
+         "0.85"
+      ],
+      "prompt" : "What is 1.2 − 0.35 = ?",
+      "type" : "text",
+      "hint" : "Line up the decimals: 1.20 − 0.35.",
+      "topic" : "Decimals",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "1.20 − 0.35 = 0.85.",
+      "id" : "g4-icps-097"
+   },
+   {
+      "answers" : [
+         "2/5"
+      ],
+      "prompt" : "Write 0.40 as a fraction in simplest form.",
+      "type" : "text",
+      "hint" : "0.40 = 40/100. Can you reduce it?",
+      "topic" : "Decimals",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "0.40 = 40/100 = 2/5 when reduced.",
+      "id" : "g4-icps-098"
+   },
+   {
+      "answers" : [
+         "6/5"
+      ],
+      "prompt" : "What is 3 × 2/5? Write your answer as an improper fraction.",
+      "type" : "text",
+      "hint" : "3 × 2/5 means 2/5 + 2/5 + 2/5.",
+      "topic" : "Fractions",
+      "difficulty" : 3,
+      "version" : 1,
+      "solution" : "3 × 2 = 6, so the answer is 6/5.",
+      "id" : "g4-icps-099"
+   },
+   {
+      "answers" : [
+         "240",
+         "240 seconds",
+         "240s",
+         "240 s"
+      ],
+      "prompt" : "How many seconds are in 4 minutes?",
+      "type" : "text",
+      "hint" : "1 minute equals 60 seconds.",
+      "topic" : "Measurement",
+      "difficulty" : 1,
+      "version" : 1,
+      "solution" : "4 × 60 = 240 seconds.",
+      "id" : "g4-icps-100"
+   },
+   {
+      "answers" : [
+         "2.5",
+         "2.5 km",
+         "2.5km",
+         "2.5 kilometers"
+      ],
+      "prompt" : "A rope is 2,500 meters long. How many kilometers is that?",
+      "type" : "text",
+      "hint" : "1 kilometer equals 1000 meters.",
+      "topic" : "Measurement",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "2500 ÷ 1000 = 2.5 km.",
+      "id" : "g4-icps-101"
+   },
+   {
+      "answers" : [
+         "3.25",
+         "$3.25",
+         "3 dollars and 25 cents"
+      ],
+      "prompt" : "You have $5. A toy costs $1.75. How much change do you get?",
+      "type" : "text",
+      "hint" : "Subtract the cost from $5.00.",
+      "topic" : "Money",
+      "difficulty" : 2,
+      "version" : 1,
+      "solution" : "$5.00 − $1.75 = $3.25.",
+      "id" : "g4-icps-102"
    }
 ]
