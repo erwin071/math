@@ -233,6 +233,13 @@
     .result-card.show { display: block; }
     .review-list { margin: 12px 0 0; padding-left: 20px; line-height: 1.7; }
 
+    .send-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border); }
+    .send-row input { flex: 1 1 200px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 12px; font-size: 0.95rem; }
+    .email-status { font-size: 0.85rem; color: var(--muted); }
+    .email-status.ok { color: var(--good); }
+    .email-status.err { color: var(--bad); }
+    button:disabled { opacity: 0.55; cursor: not-allowed; }
+
     footer {
       text-align: center;
       color: var(--muted);
@@ -333,6 +340,11 @@
       <h2>Practice Summary</h2>
       <p id="summaryText"></p>
       <ol id="reviewList" class="review-list"></ol>
+      <div class="send-row">
+        <input id="studentName" type="text" autocomplete="off" placeholder="Student name (optional)" aria-label="Student name" />
+        <button id="emailBtn" type="button">Email me this summary</button>
+        <span id="emailStatus" class="email-status"></span>
+      </div>
     </section>
   </main>
 
@@ -349,6 +361,15 @@
     const MIN_LEVEL = 1;
     const MAX_LEVEL = 5;
 
+    const EMAIL_CONFIG = {
+      enabled: false,
+      serviceId: '',
+      templateId: '',
+      publicKey: '',
+      toEmail: ''
+    };
+    const EMAIL_KEY = 'grade4-icps-math-email-v1';
+
     const state = { pool: [], index: 0, questionState: {}, history: [], sessionCursor: 0, adaptiveLevel: 2, pendingReviewRemoval: null };
     const els = {
       topicFilter: document.getElementById('topicFilter'), difficultyFilter: document.getElementById('difficultyFilter'), mode: document.getElementById('mode'),
@@ -357,7 +378,8 @@
       numberBadge: document.getElementById('numberBadge'), topicBadge: document.getElementById('topicBadge'), difficultyBadge: document.getElementById('difficultyBadge'),
       prompt: document.getElementById('prompt'), choices: document.getElementById('choices'), shortAnswer: document.getElementById('shortAnswer'), answerInput: document.getElementById('answerInput'), checkBtn: document.getElementById('checkBtn'), card: document.getElementById('questionCard'),
       feedback: document.getElementById('feedback'), hint: document.getElementById('hint'), solution: document.getElementById('solution'), solutionBox: document.getElementById('solutionBox'),
-      prevBtn: document.getElementById('prevBtn'), nextBtn: document.getElementById('nextBtn'), resultCard: document.getElementById('resultCard'), summaryText: document.getElementById('summaryText'), reviewList: document.getElementById('reviewList')
+      prevBtn: document.getElementById('prevBtn'), nextBtn: document.getElementById('nextBtn'), resultCard: document.getElementById('resultCard'), summaryText: document.getElementById('summaryText'), reviewList: document.getElementById('reviewList'),
+      emailBtn: document.getElementById('emailBtn'), emailStatus: document.getElementById('emailStatus'), studentName: document.getElementById('studentName')
     };
 
     function normalize(value) { return String(value).trim().toLowerCase().replace(/\s+/g, ' ').replace(/×/g, 'x'); }
@@ -535,6 +557,7 @@
         els.shortAnswer.style.display = 'none'; els.prevBtn.disabled = true; els.nextBtn.disabled = true; return;
       }
       const qs = getQuestionState(q);
+      const locked = qs.status !== 'not-attempted';
       els.shortAnswer.style.display = q.type === 'text' ? 'flex' : 'none';
       els.numberBadge.textContent = `Question ${state.index + 1}`; els.topicBadge.textContent = q.topic; els.difficultyBadge.textContent = `Level ${q.difficulty}`; els.difficultyBadge.className = `badge diff-${q.difficulty}`;
       els.prompt.textContent = q.prompt; els.hint.textContent = q.hint; els.solution.textContent = q.solution; els.progress.textContent = `${state.index + 1} / ${state.pool.length}`;
@@ -544,21 +567,25 @@
       if (q.type === 'choice') {
         q.choices.forEach(choice => {
           const label = document.createElement('label'); label.className = 'choice';
-          label.innerHTML = `<input type="radio" name="choice" value="${choice.replace(/"/g, '&quot;')}"><span>${choice}</span>`;
+          label.innerHTML = `<input type="radio" name="choice" value="${choice.replace(/"/g, '&quot;')}" ${locked ? 'disabled' : ''}><span>${choice}</span>`;
           if (normalize(choice) === normalize(qs.lastAnswer)) label.querySelector('input').checked = true;
           label.addEventListener('click', () => setTimeout(() => checkAnswer(choice), 0)); els.choices.appendChild(label);
         });
       } else { els.answerInput.value = qs.lastAnswer || ''; }
-      if (qs.status !== 'not-attempted') showFeedback(qs.correct, qs.lastAnswer, false);
+      els.checkBtn.disabled = locked; els.answerInput.disabled = locked; els.answerInput.readOnly = locked;
+      els.checkBtn.textContent = locked ? 'Locked ✓' : 'Check';
+      if (locked) showFeedback(qs.correct, qs.lastAnswer, false);
     }
 
     function isCorrect(q, answer) { const normalized = normalize(answer); return q.answers.some(a => normalize(a) === normalized); }
 
     function checkAnswer(value) {
       const q = state.pool[state.index]; if (!q) return;
+      const qs = getQuestionState(q);
+      if (qs.status !== 'not-attempted') { els.feedback.className = 'feedback info'; els.feedback.textContent = 'This answer is already recorded and locked. Use Next to move on.'; return; }
       const answer = value ?? els.answerInput.value;
       if (!String(answer).trim()) { els.feedback.className = 'feedback info'; els.feedback.textContent = 'Type an answer first.'; return; }
-      const ok = isCorrect(q, answer); const qs = getQuestionState(q);
+      const ok = isCorrect(q, answer);
       qs.attempts += 1;
       qs.correct = ok;
       qs.reviewCorrectStreak = ok ? (qs.reviewCorrectStreak || 0) + 1 : 0;
@@ -574,8 +601,9 @@
 
     function showFeedback(ok, answer, includeSolution) {
       els.feedback.className = `feedback ${ok ? 'good' : 'bad'}`;
-      els.feedback.textContent = ok ? 'Correct! Great job explaining your thinking.' : `Not quite. Your answer: ${answer}. Try the hint or check the solution.`;
+      els.feedback.textContent = ok ? 'Correct! Great job explaining your thinking.' : `Checked: ${answer} was not right. The correct answer is shown below.`;
       if (includeSolution && ok) els.solutionBox.open = true;
+      if (!ok) els.solutionBox.open = true;
     }
 
     function currentStats() {
@@ -586,6 +614,49 @@
     function updateStats() {
       const stats = currentStats();
       els.score.textContent = stats.correct; els.attempted.textContent = stats.attempted; els.percent.textContent = stats.attempted ? `${Math.round((stats.correct / stats.attempted) * 100)}%` : '0%'; els.progress.textContent = state.pool.length ? `${state.index + 1} / ${state.pool.length}` : '0 / 0';
+    }
+
+    function buildSummaryText() {
+      const stats = currentStats();
+      const lines = [];
+      lines.push('Grade 4 ICPS Math Practice — ' + new Date().toLocaleString());
+      lines.push('='.repeat(46));
+      lines.push('Student: ' + ((els.studentName && els.studentName.value.trim()) || 'Student'));
+      lines.push('Correct: ' + stats.correct + ' / ' + stats.attempted + ' attempted (' + (stats.attempted ? Math.round((stats.correct / stats.attempted) * 100) + '%' : '0%') + ')');
+      lines.push('Total recorded answers: ' + state.history.length);
+      lines.push('');
+      lines.push('Per-question record (first checked answer, locked):');
+      state.pool.forEach((q, i) => {
+        const s = state.questionState[q.id];
+        const status = (!s || s.status === 'not-attempted') ? 'Not attempted' : (s.correct ? 'Correct' : 'Wrong');
+        lines.push((i + 1) + '. [' + status + '] ' + q.topic + ' (' + q.id + ')');
+        lines.push('   Q: ' + q.prompt);
+        if (s && s.lastAnswer) lines.push('   Their answer: ' + s.lastAnswer);
+        lines.push('   Expected: ' + (Array.isArray(q.answers) ? q.answers[0] : q.answers));
+      });
+      return lines.join('\n');
+    }
+
+    function sendSummary() {
+      let to = (EMAIL_CONFIG.toEmail || '').trim();
+      if (!to) to = (localStorage.getItem(EMAIL_KEY) || '').trim();
+      if (!to) {
+        to = (prompt('Enter the email address to send this practice summary to:') || '').trim();
+        if (!to) { els.emailStatus.className = 'email-status err'; els.emailStatus.textContent = 'No recipient entered.'; return; }
+        try { localStorage.setItem(EMAIL_KEY, to); } catch (e) {}
+      }
+      const subject = 'Grade 4 Math Practice Summary';
+      const body = buildSummaryText();
+      if (EMAIL_CONFIG.enabled && typeof emailjs !== 'undefined' && EMAIL_CONFIG.serviceId && EMAIL_CONFIG.templateId) {
+        emailjs.init({ publicKey: EMAIL_CONFIG.publicKey });
+        emailjs.send(EMAIL_CONFIG.serviceId, EMAIL_CONFIG.templateId, {
+          to_email: to, subject: subject, message: body
+        }).then(() => { els.emailStatus.className = 'email-status ok'; els.emailStatus.textContent = 'Email sent!'; })
+          .catch(err => { els.emailStatus.className = 'email-status err'; els.emailStatus.textContent = 'Send failed: ' + (err && err.text ? err.text : 'unknown'); });
+      } else {
+        const mailto = 'mailto:' + encodeURIComponent(to) + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        window.location.href = mailto;
+      }
     }
 
     function finish() {
@@ -622,6 +693,7 @@
     els.importBtn.addEventListener('click', () => els.importFile.click());
     els.importFile.addEventListener('change', e => { if (e.target.files[0]) importBackup(e.target.files[0]); });
     els.clearStorageBtn.addEventListener('click', clearSavedProgress);
+    els.emailBtn.addEventListener('click', sendSummary);
     els.topicFilter.addEventListener('change', () => buildPool({ keepIndex: false }));
     els.difficultyFilter.addEventListener('change', () => buildPool({ keepIndex: false }));
     els.mode.addEventListener('change', () => buildPool({ keepIndex: false }));
@@ -633,5 +705,6 @@
       buildPool({ keepIndex: true, save: false });
     })();
   </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </body>
 </html>
