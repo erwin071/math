@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Grade 4 ICPS Math Practice</title>
+  <title>Grade 4 Math Practice</title>
   <style>
     :root {
       --bg: #f6f7fb;
@@ -257,7 +257,7 @@
 </head>
 <body>
   <header>
-    <h1>Grade 4 ICPS Math Practice</h1>
+    <h1>Grade 4 Math Practice</h1>
     <p class="subtitle">English practice problems for number sense, patterns, geometry, logic, and word problems. Try to explain your thinking before checking the answer.</p>
   </header>
 
@@ -348,13 +348,13 @@
     </section>
   </main>
 
-  <footer>Tip: For ICPS-style preparation, focus on explaining the method, not only getting the final answer.</footer>
+  <footer>Tip: For practice, focus on explaining the method, not only getting the final answer.</footer>
 
   <script>
     let questions = [];
 
     const APP_VERSION = 2;
-    const STORAGE_KEY = 'grade4-icps-math-practice-state-v1';
+    const STORAGE_KEY = 'grade4-math-practice-state-v1';
     const REVIEW_CORRECT_TO_REMOVE = 1;
     const ADAPTIVE_WINDOW = 3;
     const SESSION_SIZE = 10;
@@ -369,7 +369,7 @@
       publicKey: '',
       toEmail: ''
     };
-    const EMAIL_KEY = 'grade4-icps-math-email-v1';
+    const EMAIL_KEY = 'grade4-math-email-v1';
 
     const state = { pool: [], index: 0, questionState: {}, history: [], sessionCursor: 0, adaptiveLevel: 2, pendingReviewRemoval: null };
     const els = {
@@ -405,7 +405,7 @@
 
     function buildBackupPayload() {
       return {
-        app: 'grade4-icps-math-practice', appVersion: APP_VERSION, exportedAt: nowIso(),
+        app: 'grade4-math-practice', appVersion: APP_VERSION, exportedAt: nowIso(),
         ui: { topic: els.topicFilter.value, difficulty: els.difficultyFilter.value, mode: els.mode.value, index: state.index, sessionCursor: state.sessionCursor },
         questions: questions.map(({ id, version, topic, difficulty, prompt }) => ({ id, version, topic, difficulty, prompt })),
         questionState: state.questionState,
@@ -625,7 +625,7 @@
     function buildSummaryText() {
       const stats = currentStats();
       const lines = [];
-      lines.push('Grade 4 ICPS Math Practice — ' + new Date().toLocaleString());
+      lines.push('Grade 4 Math Practice — ' + new Date().toLocaleString());
       lines.push('='.repeat(46));
       lines.push('Student: ' + ((els.studentName && els.studentName.value.trim()) || 'Student'));
       lines.push('Correct: ' + stats.correct + ' / ' + stats.attempted + ' attempted (' + (stats.attempted ? Math.round((stats.correct / stats.attempted) * 100) + '%' : '0%') + ')');

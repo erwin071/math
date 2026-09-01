@@ -10,12 +10,12 @@
       "difficulty" : 1,
       "version" : 1,
       "solution" : "Each number increases by 5. 24 + 5 = 29.",
-      "id" : "g4-icps-001"
+      "id" : "g4-math-001"
    },
    {
       "version" : 1,
       "solution" : "24 is a multiple of 12, so it is divisible by both 3 and 4.",
-      "id" : "g4-icps-002",
+      "id" : "g4-math-002",
       "prompt" : "Which number is divisible by both 3 and 4?",
       "type" : "choice",
       "answers" : [
@@ -42,12 +42,12 @@
       "difficulty" : 1,
       "version" : 1,
       "solution" : "348 + 275 = 623. Then 623 - 126 = 497.",
-      "id" : "g4-icps-003"
+      "id" : "g4-math-003"
    },
    {
       "version" : 1,
       "solution" : "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Common factors: 1, 2, 3, 6. There are 4.",
-      "id" : "g4-icps-004",
+      "id" : "g4-math-004",
       "type" : "text",
       "prompt" : "List the common factors of 18 and 24. How many common factors are there?",
       "answers" : [
@@ -62,7 +62,7 @@
    {
       "version" : 1,
       "solution" : "Ben has the rabbit. Ava and Chloe have the cat and dog. Ava does not have the dog, so Ava has the cat.",
-      "id" : "g4-icps-005",
+      "id" : "g4-math-005",
       "answers" : [
          "cat"
       ],
@@ -93,12 +93,12 @@
       "type" : "choice",
       "prompt" : "Which fraction is equivalent to 3/4?",
       "solution" : "3/4 x 3/3 = 9/12.",
-      "id" : "g4-icps-006",
+      "id" : "g4-math-006",
       "version" : 1
    },
    {
       "version" : 1,
-      "id" : "g4-icps-007",
+      "id" : "g4-math-007",
       "solution" : "Perimeter = 2 x (9 + 5) = 28 cm.",
       "prompt" : "A rectangle is 9 cm long and 5 cm wide. What is its perimeter?",
       "type" : "text",
@@ -112,7 +112,7 @@
    },
    {
       "solution" : "Monday 12, Tuesday 16, Wednesday 20, Thursday 24, Friday 28.",
-      "id" : "g4-icps-008",
+      "id" : "g4-math-008",
       "version" : 1,
       "difficulty" : 2,
       "hint" : "Count Monday, Tuesday, Wednesday, Thursday, Friday.",
@@ -135,11 +135,11 @@
       "hint" : "The first student has 5 handshakes, the next new ones are 4, then 3, then 2, then 1.",
       "version" : 1,
       "solution" : "5 + 4 + 3 + 2 + 1 = 15 handshakes.",
-      "id" : "g4-icps-009"
+      "id" : "g4-math-009"
    },
    {
       "solution" : "In 5 years, the father will be 45 and the son will be 15. 45 is 3 x 15.",
-      "id" : "g4-icps-010",
+      "id" : "g4-math-010",
       "version" : 1,
       "hint" : "Try a table. In x years, their ages are 40 + x and 10 + x.",
       "topic" : "Age Problems",
@@ -166,7 +166,7 @@
       "topic" : "Area",
       "hint" : "List factor pairs of 12: 1x12, 2x6, 3x4.",
       "version" : 1,
-      "id" : "g4-icps-011",
+      "id" : "g4-math-011",
       "solution" : "Perimeters: 1x12 gives 26, 2x6 gives 16, and 3x4 gives 14. The 3x4 rectangle has the smallest perimeter."
    },
    {
@@ -179,7 +179,7 @@
          "46"
       ],
       "solution" : "The digits 4 and 6 add to 10, and the tens digit 4 is 2 less than the ones digit 6. The number is 46.",
-      "id" : "g4-icps-012",
+      "id" : "g4-math-012",
       "version" : 1
    },
    {
@@ -194,7 +194,7 @@
       "topic" : "Operations",
       "version" : 1,
       "solution" : "456 x 7 = 3,192. Then 3,192 - 389 = 2,803.",
-      "id" : "g4-icps-013"
+      "id" : "g4-math-013"
    },
    {
       "difficulty" : 2,
@@ -205,7 +205,7 @@
       "answers" : [
          "63"
       ],
-      "id" : "g4-icps-014",
+      "id" : "g4-math-014",
       "solution" : "Each term is previous x 2 + 1. 31 x 2 + 1 = 63.",
       "version" : 1
    },
@@ -220,7 +220,7 @@
          "4 numbers"
       ],
       "solution" : "Multiples of 12 from 1 to 50 are 12, 24, 36, and 48. There are 4 numbers.",
-      "id" : "g4-icps-015",
+      "id" : "g4-math-015",
       "version" : 1
    },
    {
@@ -235,7 +235,7 @@
          "1,2,3,4,6,9,12,18,36",
          "1, 2, 3, 4, 6, 9, 12, 18, 36"
       ],
-      "id" : "g4-icps-016",
+      "id" : "g4-math-016",
       "solution" : "The factors are 1, 2, 3, 4, 6, 9, 12, 18, and 36. There are 9 factors.",
       "version" : 1
    },
@@ -251,7 +251,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "LCM(4, 6, 9) = 36, so the least possible number is 36 candies.",
-      "id" : "g4-icps-017"
+      "id" : "g4-math-017"
    },
    {
       "difficulty" : 3,
@@ -265,12 +265,12 @@
          "1 and 7/12"
       ],
       "solution" : "3/4 = 9/12 and 5/6 = 10/12. The sum is 19/12, or 1 and 7/12.",
-      "id" : "g4-icps-018",
+      "id" : "g4-math-018",
       "version" : 1
    },
    {
       "version" : 1,
-      "id" : "g4-icps-019",
+      "id" : "g4-math-019",
       "solution" : "3/8 of 2.4 is 0.9. The remaining length is 2.4 - 0.9 = 1.5 meters.",
       "type" : "text",
       "prompt" : "A rope is 2.4 meters long. After cutting off 3/8 of it, how many meters are left?",
@@ -286,7 +286,7 @@
    {
       "version" : 1,
       "solution" : "180 - 90 - 35 = 55, so the third angle is 55 degrees.",
-      "id" : "g4-icps-020",
+      "id" : "g4-math-020",
       "prompt" : "A right triangle has one angle of 90 degrees and another angle of 35 degrees. What is the third angle?",
       "type" : "text",
       "answers" : [
@@ -301,7 +301,7 @@
    {
       "version" : 1,
       "solution" : "b + 2b + (2b + 5) = 45, so 5b + 5 = 45. Then b = 8.",
-      "id" : "g4-icps-021",
+      "id" : "g4-math-021",
       "type" : "text",
       "prompt" : "There are red, yellow, and blue balls. Red balls are 5 more than yellow balls. Yellow balls are twice as many as blue balls. There are 45 balls total. How many blue balls are there?",
       "answers" : [
@@ -324,13 +324,13 @@
       "hint" : "Day 7 is 6 increases after Day 1.",
       "topic" : "Patterns",
       "version" : 1,
-      "id" : "g4-icps-022",
+      "id" : "g4-math-022",
       "solution" : "There are 6 increases of 50 meters: 200 + 6 x 50 = 500 meters."
    },
    {
       "version" : 1,
       "solution" : "The digits 3 and 6 work: 3 x 6 = 18, and 2 x (3 + 6) = 18. The number is 36.",
-      "id" : "g4-icps-023",
+      "id" : "g4-math-023",
       "type" : "text",
       "prompt" : "A two-digit number has a ones digit that is 3 more than its tens digit. The product of the digits equals twice the sum of the digits. What is the number?",
       "answers" : [
@@ -341,7 +341,7 @@
       "hint" : "Try tens digit 1, 2, 3, and so on. The ones digit is 3 more."
    },
    {
-      "id" : "g4-icps-024",
+      "id" : "g4-math-024",
       "solution" : "3 x 4 = 12 different outfits.",
       "version" : 1,
       "topic" : "Combinatorics",
@@ -361,7 +361,7 @@
    },
    {
       "version" : 1,
-      "id" : "g4-icps-025",
+      "id" : "g4-math-025",
       "solution" : "6 hundreds is 600, 14 tens is 140, and 8 ones is 8. Total: 748.",
       "type" : "choice",
       "prompt" : "Which number has the same value as 6 hundreds + 14 tens + 8 ones?",
@@ -380,7 +380,7 @@
    },
    {
       "version" : 1,
-      "id" : "g4-icps-026",
+      "id" : "g4-math-026",
       "solution" : "It must be after B, so it is C or D. It is not immediately after B, so it is not C. The prize is in D.",
       "type" : "choice",
       "prompt" : "Four boxes are labeled A, B, C, and D. The prize is not in A. It is not in the box immediately after B. It is in a box with a letter after B. Where is the prize?",
@@ -409,7 +409,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "Width = 48 divided by 8 = 6 cm. Perimeter = 2 x (8 + 6) = 28 cm.",
-      "id" : "g4-icps-027"
+      "id" : "g4-math-027"
    },
    {
       "topic" : "Money",
@@ -421,7 +421,7 @@
       ],
       "type" : "text",
       "prompt" : "A notebook costs $2.35 and a pencil costs $0.75. How much do 2 notebooks and 3 pencils cost?",
-      "id" : "g4-icps-028",
+      "id" : "g4-math-028",
       "solution" : "2 notebooks cost $4.70. 3 pencils cost $2.25. Total: $6.95.",
       "version" : 1
    },
@@ -438,11 +438,11 @@
       "hint" : "Count from 2:45 to 3:45, then from 3:45 to 4:20.",
       "difficulty" : 2,
       "version" : 1,
-      "id" : "g4-icps-029",
+      "id" : "g4-math-029",
       "solution" : "2:45 to 3:45 is 1 hour. 3:45 to 4:20 is 35 minutes. Total: 1 hour 35 minutes, or 95 minutes."
    },
    {
-      "id" : "g4-icps-030",
+      "id" : "g4-math-030",
       "solution" : "Numbers with remainder 2 when divided by 5 are 2, 7, 12, 17, ... The smallest one that has remainder 1 when divided by 3 is 7.",
       "version" : 1,
       "hint" : "List numbers that are 2 more than a multiple of 5: 2, 7, 12, 17, ...",
@@ -465,7 +465,7 @@
       "difficulty" : 1,
       "version" : 1,
       "solution" : "The differences are 3, 5, 7, 9, so the next difference is 11. 25 + 11 = 36, and 36 = 6 × 6.",
-      "id" : "g4-icps-031"
+      "id" : "g4-math-031"
    },
    {
       "answers" : [
@@ -478,7 +478,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "The differences are 4, 6, 8, 10, so the next difference is 12. 30 + 12 = 42.",
-      "id" : "g4-icps-032"
+      "id" : "g4-math-032"
    },
    {
       "answers" : [
@@ -492,7 +492,7 @@
       "difficulty" : 1,
       "version" : 1,
       "solution" : "The tens digit is 3, which is less than 5, so 4,738 rounds down to 4,700.",
-      "id" : "g4-icps-033"
+      "id" : "g4-math-033"
    },
    {
       "answers" : [
@@ -505,7 +505,7 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "100 ÷ 6 = 16 with remainder 4, so the multiples are 6×1 up to 6×16. There are 16.",
-      "id" : "g4-icps-034"
+      "id" : "g4-math-034"
    },
    {
       "answers" : [
@@ -518,7 +518,7 @@
       "difficulty" : 1,
       "version" : 1,
       "solution" : "64 ÷ 8 = 8, then 8 × 3 = 24.",
-      "id" : "g4-icps-035"
+      "id" : "g4-math-035"
    },
    {
       "choices" : [
@@ -537,7 +537,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "7 × 3 = 21, then 6 + 21 = 27.",
-      "id" : "g4-icps-036"
+      "id" : "g4-math-036"
    },
    {
       "answers" : [
@@ -550,7 +550,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "Multiples of 4: 4, 8, 12, ...  Multiples of 6: 6, 12, ...  The LCM is 12.",
-      "id" : "g4-icps-037"
+      "id" : "g4-math-037"
    },
    {
       "choices" : [
@@ -568,7 +568,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "Emma has green. Mia's bike is not red, so Mia has blue and Leo has red.",
-      "id" : "g4-icps-038"
+      "id" : "g4-math-038"
    },
    {
       "answers" : [
@@ -581,7 +581,7 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "Ben's balloon is not red or yellow, so Ben has blue. Ava is not red, so Ava has yellow. Chloe must have red.",
-      "id" : "g4-icps-039"
+      "id" : "g4-math-039"
    },
    {
       "answers" : [
@@ -594,7 +594,7 @@
       "difficulty" : 1,
       "version" : 1,
       "solution" : "8/8 − 3/8 = 5/8.",
-      "id" : "g4-icps-040"
+      "id" : "g4-math-040"
    },
    {
       "choices" : [
@@ -613,7 +613,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "2/3 is more than 1/2, while 3/8, 5/12, and 1/2 are less than or equal to 1/2.",
-      "id" : "g4-icps-041"
+      "id" : "g4-math-041"
    },
    {
       "answers" : [
@@ -627,7 +627,7 @@
       "difficulty" : 1,
       "version" : 1,
       "solution" : "Each side is 6 cm, so the perimeter is 6 × 4 = 24 cm.",
-      "id" : "g4-icps-042"
+      "id" : "g4-math-042"
    },
    {
       "answers" : [
@@ -643,7 +643,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "180 − 90 − 45 = 45 degrees.",
-      "id" : "g4-icps-043"
+      "id" : "g4-math-043"
    },
    {
       "answers" : [
@@ -657,7 +657,7 @@
       "difficulty" : 1,
       "version" : 1,
       "solution" : "24 ÷ 4 = 6 bags.",
-      "id" : "g4-icps-044"
+      "id" : "g4-math-044"
    },
    {
       "answers" : [
@@ -672,7 +672,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "3 × $12 = $36, so $50 − $36 = $14.",
-      "id" : "g4-icps-045"
+      "id" : "g4-math-045"
    },
    {
       "answers" : [
@@ -686,7 +686,7 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "3 × 2 = 6 different outfits.",
-      "id" : "g4-icps-046"
+      "id" : "g4-math-046"
    },
    {
       "answers" : [
@@ -700,7 +700,7 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "In 18 years the mother will be 48 and the daughter 24. Since 48 = 2 × 24, the answer is 18 years.",
-      "id" : "g4-icps-047"
+      "id" : "g4-math-047"
    },
    {
       "answers" : [
@@ -714,7 +714,7 @@
       "difficulty" : 1,
       "version" : 1,
       "solution" : "8 × 8 = 64, so each side is 8 cm.",
-      "id" : "g4-icps-048"
+      "id" : "g4-math-048"
    },
    {
       "answers" : [
@@ -727,7 +727,7 @@
       "difficulty" : 4,
       "version" : 1,
       "solution" : "1×2=2, 2×3=6, 6×4=24, 24×5=120, then 120×6=720.",
-      "id" : "g4-icps-049"
+      "id" : "g4-math-049"
    },
    {
       "answers" : [
@@ -740,7 +740,7 @@
       "difficulty" : 4,
       "version" : 1,
       "solution" : "990 ends in 0 and 9+9+0=18 is a multiple of 3. No larger 3-digit number works.",
-      "id" : "g4-icps-050"
+      "id" : "g4-math-050"
    },
    {
       "answers" : [
@@ -753,7 +753,7 @@
       "difficulty" : 4,
       "version" : 1,
       "solution" : "25×24 = 25×4×6 = 100×6 = 600.",
-      "id" : "g4-icps-051"
+      "id" : "g4-math-051"
    },
    {
       "answers" : [
@@ -766,7 +766,7 @@
       "difficulty" : 4,
       "version" : 1,
       "solution" : "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Factors of 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The greatest factor in both lists is 12.",
-      "id" : "g4-icps-052"
+      "id" : "g4-math-052"
    },
    {
       "answers" : [
@@ -779,7 +779,7 @@
       "difficulty" : 4,
       "version" : 1,
       "solution" : "If there are n people, the handshakes are (n−1)+(n−2)+...+1. For 8 people: 7+6+5+4+3+2+1=28.",
-      "id" : "g4-icps-053"
+      "id" : "g4-math-053"
    },
    {
       "answers" : [
@@ -792,7 +792,7 @@
       "difficulty" : 4,
       "version" : 1,
       "solution" : "4×9=36 and 7×5=35, so 4/5 is greater than 7/9.",
-      "id" : "g4-icps-054"
+      "id" : "g4-math-054"
    },
    {
       "answers" : [
@@ -809,7 +809,7 @@
       "difficulty" : 4,
       "version" : 1,
       "solution" : "Perimeter = 2×(length+width), so 9+width=15 and width=6. Area = 9×6 = 54 cm².",
-      "id" : "g4-icps-055"
+      "id" : "g4-math-055"
    },
    {
       "answers" : [
@@ -823,7 +823,7 @@
       "difficulty" : 4,
       "version" : 1,
       "solution" : "In 45 minutes (three 15-minute blocks) the train goes 90 km, so each block is 30 km. An hour has 4 of these blocks: 30×4 = 120 km per hour. In 2 hours: 120×2 = 240 km.",
-      "id" : "g4-icps-056"
+      "id" : "g4-math-056"
    },
    {
       "answers" : [
@@ -840,7 +840,7 @@
       "difficulty" : 4,
       "version" : 1,
       "solution" : "The rectangle's perimeter is 2×(10+6)=32 cm. The square's side is 32÷4=8 cm, so the area is 8×8=64 cm².",
-      "id" : "g4-icps-057"
+      "id" : "g4-math-057"
    },
    {
       "answers" : [
@@ -854,7 +854,7 @@
       "difficulty" : 4,
       "version" : 1,
       "solution" : "70+x = 4(10+x) gives 70+x=40+4x, so 3x=30 and x=10. In 10 years: 80 = 4×20.",
-      "id" : "g4-icps-058"
+      "id" : "g4-math-058"
    },
    {
       "answers" : [
@@ -867,7 +867,7 @@
       "difficulty" : 5,
       "version" : 1,
       "solution" : "There are 9 squares of size 1×1, 4 of size 2×2, and 1 of size 3×3. Total: 9+4+1=14.",
-      "id" : "g4-icps-059"
+      "id" : "g4-math-059"
    },
    {
       "answers" : [
@@ -880,7 +880,7 @@
       "difficulty" : 5,
       "version" : 1,
       "solution" : "There are 50 pairs of 101, so the sum is 50×101 = 5050.",
-      "id" : "g4-icps-060"
+      "id" : "g4-math-060"
    },
    {
       "answers" : [
@@ -893,7 +893,7 @@
       "difficulty" : 5,
       "version" : 1,
       "solution" : "If all were chickens there would be 60 legs. Each rabbit adds 2 more legs, so (88−60)÷2 = 14 rabbits.",
-      "id" : "g4-icps-061"
+      "id" : "g4-math-061"
    },
    {
       "answers" : [
@@ -908,7 +908,7 @@
       "difficulty" : 5,
       "version" : 1,
       "solution" : "The hour hand is at 3×30 + 15×0.5 = 97.5°. The minute hand is at 90°. The angle is 97.5−90 = 7.5°.",
-      "id" : "g4-icps-062"
+      "id" : "g4-math-062"
    },
    {
       "answers" : [
@@ -921,7 +921,7 @@
       "difficulty" : 5,
       "version" : 1,
       "solution" : "Tens=5: 150–159 (10 numbers). Ones=5: 105,115,...,195 (10 numbers). 155 is counted twice, so 10+10−1=19.",
-      "id" : "g4-icps-063"
+      "id" : "g4-math-063"
    },
    {
       "answers" : [
@@ -934,7 +934,7 @@
       "difficulty" : 5,
       "version" : 1,
       "solution" : "Each of the 12 edges has one middle cube with exactly 2 painted faces (the corners have 3). Total: 12.",
-      "id" : "g4-icps-064"
+      "id" : "g4-math-064"
    },
    {
       "answers" : [
@@ -947,7 +947,7 @@
       "difficulty" : 5,
       "version" : 1,
       "solution" : "Numbers from 13232 to 13330 are not palindromes. 13331 reads the same both ways.",
-      "id" : "g4-icps-065"
+      "id" : "g4-math-065"
    },
    {
       "answers" : [
@@ -960,7 +960,7 @@
       "difficulty" : 5,
       "version" : 1,
       "solution" : "The first place has 6 choices, the second 5, and so on: 6×5×4×3×2×1 = 720.",
-      "id" : "g4-icps-066"
+      "id" : "g4-math-066"
    },
    {
       "answers" : [
@@ -973,7 +973,7 @@
       "difficulty" : 5,
       "version" : 1,
       "solution" : "The factor pairs of 36 are 1×36, 2×18, 3×12, 4×9, 6×6. The pair 3 and 12 adds to 15, and 12−3=9.",
-      "id" : "g4-icps-067"
+      "id" : "g4-math-067"
    },
    {
       "answers" : [
@@ -986,7 +986,7 @@
       "difficulty" : 5,
       "version" : 1,
       "solution" : "The digit pairs are (2,9),(3,8),(4,7),(5,6). Reversing 56 gives 65, and 65−56=9. The number is 56.",
-      "id" : "g4-icps-068"
+      "id" : "g4-math-068"
    },
    {
       "answers" : [
@@ -999,7 +999,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "0.60 is greater than 0.45, so the answer is 0.6.",
-      "id" : "g4-icps-069"
+      "id" : "g4-math-069"
    },
    {
       "answers" : [
@@ -1012,7 +1012,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "0.7 + 0.03 = 0.73.",
-      "id" : "g4-icps-070"
+      "id" : "g4-math-070"
    },
    {
       "answers" : [
@@ -1025,7 +1025,7 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "30/100 + 5/100 = 35/100 = 0.35.",
-      "id" : "g4-icps-071"
+      "id" : "g4-math-071"
    },
    {
       "choices" : [
@@ -1044,7 +1044,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "0.05 has zero tenths and 5 hundredths, which is less than 0.055, 0.5, and 0.55.",
-      "id" : "g4-icps-072"
+      "id" : "g4-math-072"
    },
    {
       "answers" : [
@@ -1059,7 +1059,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "3 × 100 = 300 cm.",
-      "id" : "g4-icps-073"
+      "id" : "g4-math-073"
    },
    {
       "answers" : [
@@ -1074,7 +1074,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "3 × 60 = 180 minutes.",
-      "id" : "g4-icps-074"
+      "id" : "g4-math-074"
    },
    {
       "answers" : [
@@ -1090,7 +1090,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "2 × 1000 = 2000 grams.",
-      "id" : "g4-icps-075"
+      "id" : "g4-math-075"
    },
    {
       "answers" : [
@@ -1106,7 +1106,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "3 × 1000 = 3000 milliliters.",
-      "id" : "g4-icps-076"
+      "id" : "g4-math-076"
    },
    {
       "answers" : [
@@ -1120,7 +1120,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "2:45 to 4:20 is 1 hour and 35 minutes: 60 + 35 = 95 minutes.",
-      "id" : "g4-icps-077"
+      "id" : "g4-math-077"
    },
    {
       "answers" : [
@@ -1133,7 +1133,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "A square has 4 lines of symmetry: 2 through opposite corners and 2 through the middle of opposite sides.",
-      "id" : "g4-icps-078"
+      "id" : "g4-math-078"
    },
    {
       "choices" : [
@@ -1152,7 +1152,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "A square has 4, a rectangle has 2, a parallelogram has 0, and an isosceles triangle has 1.",
-      "id" : "g4-icps-079"
+      "id" : "g4-math-079"
    },
    {
       "answers" : [
@@ -1166,7 +1166,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "Lines that never meet and keep the same distance apart are parallel lines.",
-      "id" : "g4-icps-080"
+      "id" : "g4-math-080"
    },
    {
       "answers" : [
@@ -1179,7 +1179,7 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "A trapezoid is a 4-sided shape with exactly one pair of parallel sides.",
-      "id" : "g4-icps-081"
+      "id" : "g4-math-081"
    },
    {
       "answers" : [
@@ -1193,7 +1193,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "An angle smaller than a right angle (90°) is an acute angle.",
-      "id" : "g4-icps-082"
+      "id" : "g4-math-082"
    },
    {
       "answers" : [
@@ -1206,7 +1206,7 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "1/3 of 18 is 6, so 2/3 of 18 is 2 × 6 = 12.",
-      "id" : "g4-icps-083"
+      "id" : "g4-math-083"
    },
    {
       "answers" : [
@@ -1220,7 +1220,7 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "4 × 1/2 = 2 whole pizzas.",
-      "id" : "g4-icps-084"
+      "id" : "g4-math-084"
    },
    {
       "answers" : [
@@ -1235,7 +1235,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "90 − 55 = 35°.",
-      "id" : "g4-icps-085"
+      "id" : "g4-math-085"
    },
    {
       "answers" : [
@@ -1250,7 +1250,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "180 − 130 = 50°.",
-      "id" : "g4-icps-086"
+      "id" : "g4-math-086"
    },
    {
       "answers" : [
@@ -1265,7 +1265,7 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "360 − 90 − 90 − 110 = 70°.",
-      "id" : "g4-icps-087"
+      "id" : "g4-math-087"
    },
    {
       "answers" : [
@@ -1280,7 +1280,7 @@
       "difficulty" : 1,
       "version" : 1,
       "solution" : "At 3:00 the hands form a quarter turn, which is 90°.",
-      "id" : "g4-icps-088"
+      "id" : "g4-math-088"
    },
    {
       "answers" : [
@@ -1293,7 +1293,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "The numbers 2, 2, 2, and 3 are at least 2, so 4 friends.",
-      "id" : "g4-icps-089"
+      "id" : "g4-math-089"
    },
    {
       "answers" : [
@@ -1308,7 +1308,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "Growth is 3×4 = 12 cm, so 5 + 12 = 17 cm.",
-      "id" : "g4-icps-090"
+      "id" : "g4-math-090"
    },
    {
       "answers" : [
@@ -1321,7 +1321,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "452×6 = 2712.",
-      "id" : "g4-icps-091"
+      "id" : "g4-math-091"
    },
    {
       "answers" : [
@@ -1334,7 +1334,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "847 ÷ 7 = 121 (because 7×121 = 847).",
-      "id" : "g4-icps-092"
+      "id" : "g4-math-092"
    },
    {
       "answers" : [
@@ -1347,7 +1347,7 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "20×45 = 900 and 3×45 = 135, so 900 + 135 = 1035.",
-      "id" : "g4-icps-093"
+      "id" : "g4-math-093"
    },
    {
       "answers" : [
@@ -1361,7 +1361,7 @@
       "difficulty" : 1,
       "version" : 1,
       "solution" : "9 × 4 = 36 stickers.",
-      "id" : "g4-icps-094"
+      "id" : "g4-math-094"
    },
    {
       "answers" : [
@@ -1376,7 +1376,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "12 × 12 = 144 cm.",
-      "id" : "g4-icps-095"
+      "id" : "g4-math-095"
    },
    {
       "answers" : [
@@ -1389,7 +1389,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "0.50 + 0.25 = 0.75.",
-      "id" : "g4-icps-096"
+      "id" : "g4-math-096"
    },
    {
       "answers" : [
@@ -1402,7 +1402,7 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "1.20 − 0.35 = 0.85.",
-      "id" : "g4-icps-097"
+      "id" : "g4-math-097"
    },
    {
       "answers" : [
@@ -1415,7 +1415,7 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "0.40 = 40/100 = 2/5 when reduced.",
-      "id" : "g4-icps-098"
+      "id" : "g4-math-098"
    },
    {
       "answers" : [
@@ -1428,7 +1428,7 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "3 × 2 = 6, so the answer is 6/5.",
-      "id" : "g4-icps-099"
+      "id" : "g4-math-099"
    },
    {
       "answers" : [
@@ -1444,7 +1444,7 @@
       "difficulty" : 1,
       "version" : 1,
       "solution" : "4 × 60 = 240 seconds.",
-      "id" : "g4-icps-100"
+      "id" : "g4-math-100"
    },
    {
       "answers" : [
@@ -1460,7 +1460,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "2500 ÷ 1000 = 2.5 km.",
-      "id" : "g4-icps-101"
+      "id" : "g4-math-101"
    },
    {
       "answers" : [
@@ -1475,7 +1475,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "$5.00 − $1.75 = $3.25.",
-      "id" : "g4-icps-102"
+      "id" : "g4-math-102"
    },
    {
       "answers" : [
@@ -1491,7 +1491,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "The blue ray points to 45°.",
-      "id" : "g4-icps-103"
+      "id" : "g4-math-103"
    },
    {
       "answers" : [
@@ -1507,7 +1507,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "The blue ray points to 120°.",
-      "id" : "g4-icps-104"
+      "id" : "g4-math-104"
    },
    {
       "answers" : [
@@ -1526,7 +1526,7 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "The ray is between 30° and 40°, about 35°.",
-      "id" : "g4-icps-105"
+      "id" : "g4-math-105"
    },
    {
       "answers" : [
@@ -1541,7 +1541,7 @@
       "difficulty" : 2,
       "version" : 1,
       "solution" : "There are 3 dots above the number 3, so 3 students read 3 books.",
-      "id" : "g4-icps-106"
+      "id" : "g4-math-106"
    },
    {
       "answers" : [
@@ -1556,6 +1556,6 @@
       "difficulty" : 3,
       "version" : 1,
       "solution" : "12 cm has 4 dots, 13 cm has 1 dot, 14 cm has 2 dots. 4 + 1 + 2 = 7 pencils.",
-      "id" : "g4-icps-107"
+      "id" : "g4-math-107"
    }
 ]
