@@ -360,6 +360,7 @@
     const SESSION_SIZE = 10;
     const MIN_LEVEL = 1;
     const MAX_LEVEL = 5;
+    const MAX_ATTEMPTS = 2;
 
     const EMAIL_CONFIG = {
       enabled: false,
@@ -557,7 +558,7 @@
         els.shortAnswer.style.display = 'none'; els.prevBtn.disabled = true; els.nextBtn.disabled = true; return;
       }
       const qs = getQuestionState(q);
-      const locked = qs.status !== 'not-attempted';
+      const locked = qs.attempts >= MAX_ATTEMPTS;
       els.shortAnswer.style.display = q.type === 'text' ? 'flex' : 'none';
       els.numberBadge.textContent = `Question ${state.index + 1}`; els.topicBadge.textContent = q.topic; els.difficultyBadge.textContent = `Level ${q.difficulty}`; els.difficultyBadge.className = `badge diff-${q.difficulty}`;
       els.prompt.textContent = q.prompt; els.hint.textContent = q.hint; els.solution.textContent = q.solution; els.progress.textContent = `${state.index + 1} / ${state.pool.length}`;
@@ -574,7 +575,7 @@
       } else { els.answerInput.value = qs.lastAnswer || ''; }
       els.checkBtn.disabled = locked; els.answerInput.disabled = locked; els.answerInput.readOnly = locked;
       els.checkBtn.textContent = locked ? 'Locked ✓' : 'Check';
-      if (locked) showFeedback(qs.correct, qs.lastAnswer, false);
+      if (locked) showFeedback(qs.correct, qs.lastAnswer, true);
     }
 
     function isCorrect(q, answer) { const normalized = normalize(answer); return q.answers.some(a => normalize(a) === normalized); }
@@ -582,7 +583,7 @@
     function checkAnswer(value) {
       const q = state.pool[state.index]; if (!q) return;
       const qs = getQuestionState(q);
-      if (qs.status !== 'not-attempted') { els.feedback.className = 'feedback info'; els.feedback.textContent = 'This answer is already recorded and locked. Use Next to move on.'; return; }
+      if (qs.attempts >= MAX_ATTEMPTS) { els.feedback.className = 'feedback info'; els.feedback.textContent = 'This question is locked after ' + MAX_ATTEMPTS + ' tries. Use Next to move on.'; return; }
       const answer = value ?? els.answerInput.value;
       if (!String(answer).trim()) { els.feedback.className = 'feedback info'; els.feedback.textContent = 'Type an answer first.'; return; }
       const ok = isCorrect(q, answer);
@@ -593,20 +594,22 @@
       qs.lastAnswer = String(answer).trim(); qs.version = q.version; qs.updatedAt = nowIso();
       if (ok && els.mode.value === 'review') state.pendingReviewRemoval = q.id;
       state.history.push({ id: q.id, version: q.version, answer: qs.lastAnswer, ok, at: qs.updatedAt, topic: q.topic, prompt: q.prompt });
-      showFeedback(ok, answer, true);
+      showFeedback(ok, answer, qs.attempts >= MAX_ATTEMPTS);
       if (ok && els.mode.value === 'review') els.feedback.textContent = 'Correct! This question has been removed from Review mode.';
       if (els.mode.value === 'adaptive') els.feedback.textContent += ' Adaptive target is now Level ' + adaptiveLevel() + '.';
-      els.checkBtn.disabled = true; els.answerInput.disabled = true; els.answerInput.readOnly = true;
-      els.checkBtn.textContent = 'Locked ✓';
-      els.choices.querySelectorAll('input').forEach(r => r.disabled = true);
+      if (qs.attempts >= MAX_ATTEMPTS) {
+        els.checkBtn.disabled = true; els.answerInput.disabled = true; els.answerInput.readOnly = true;
+        els.checkBtn.textContent = 'Locked ✓';
+        els.choices.querySelectorAll('input').forEach(r => r.disabled = true);
+      }
       updateStats(); saveState();
     }
 
-    function showFeedback(ok, answer, includeSolution) {
+    function showFeedback(ok, answer, revealSolution) {
       els.feedback.className = `feedback ${ok ? 'good' : 'bad'}`;
-      els.feedback.textContent = ok ? 'Correct! Great job explaining your thinking.' : `Checked: ${answer} was not right. The correct answer is shown below.`;
-      if (includeSolution && ok) els.solutionBox.open = true;
-      if (!ok) els.solutionBox.open = true;
+      els.feedback.textContent = ok ? 'Correct! Great job explaining your thinking.' : (revealSolution ? `Checked: ${answer} was not right. The correct answer is shown below.` : `Not quite yet. You have 1 more try.`);
+      if (ok && revealSolution) els.solutionBox.open = true;
+      if (!ok && revealSolution) els.solutionBox.open = true;
     }
 
     function currentStats() {
