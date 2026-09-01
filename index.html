@@ -596,6 +596,9 @@
       showFeedback(ok, answer, true);
       if (ok && els.mode.value === 'review') els.feedback.textContent = 'Correct! This question has been removed from Review mode.';
       if (els.mode.value === 'adaptive') els.feedback.textContent += ' Adaptive target is now Level ' + adaptiveLevel() + '.';
+      els.checkBtn.disabled = true; els.answerInput.disabled = true; els.answerInput.readOnly = true;
+      els.checkBtn.textContent = 'Locked ✓';
+      els.choices.querySelectorAll('input').forEach(r => r.disabled = true);
       updateStats(); saveState();
     }
 
