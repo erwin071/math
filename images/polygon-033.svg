@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120">
+  <text x="45" y="20" font-size="18" font-weight="bold" text-anchor="middle">A</text><polygon points="20,95 45,35 75,95" fill="#f0fdf4" stroke="#15803d" stroke-width="3"/>
+  <text x="135" y="20" font-size="18" font-weight="bold" text-anchor="middle">B</text><rect x="105" y="40" width="60" height="55" fill="#eff6ff" stroke="#1d4ed8" stroke-width="3"/>
+  <text x="225" y="20" font-size="18" font-weight="bold" text-anchor="middle">C</text><path d="M200,95 L200,45 Q225,20 250,45 L250,95 Z" fill="#fff7ed" stroke="#c2410c" stroke-width="3"/>
+  <text x="315" y="20" font-size="18" font-weight="bold" text-anchor="middle">D</text><polygon points="285,95 300,40 340,48 350,92 318,105" fill="#fdf2f8" stroke="#be185d" stroke-width="3"/>
+</svg>

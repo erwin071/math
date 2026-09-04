@@ -166,11 +166,14 @@
     }
 
     .question-image {
-      display: block;
-      max-width: 100%;
-      max-height: 260px;
-      margin: 10px auto 4px;
-      border-radius: 12px;
+      display: none;
+      width: min(100%, 420px);
+      max-height: 220px;
+      object-fit: contain;
+      margin: 8px auto 16px;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
       background: #fff;
     }
 
@@ -316,6 +319,7 @@
         </div>
       </div>
       <div id="prompt" class="prompt"></div>
+      <img id="questionImage" class="question-image" alt="Question diagram" />
       <div id="choices" class="choices"></div>
       <div id="shortAnswer" class="answer-row">
         <input id="answerInput" type="text" autocomplete="off" placeholder="Type your answer here" />
@@ -377,7 +381,7 @@
       restartBtn: document.getElementById('restartBtn'), exportBtn: document.getElementById('exportBtn'), importBtn: document.getElementById('importBtn'), clearStorageBtn: document.getElementById('clearStorageBtn'), importFile: document.getElementById('importFile'), backupStatus: document.getElementById('backupStatus'),
       progress: document.getElementById('progress'), score: document.getElementById('score'), attempted: document.getElementById('attempted'), percent: document.getElementById('percent'),
       numberBadge: document.getElementById('numberBadge'), topicBadge: document.getElementById('topicBadge'), difficultyBadge: document.getElementById('difficultyBadge'),
-      prompt: document.getElementById('prompt'), choices: document.getElementById('choices'), shortAnswer: document.getElementById('shortAnswer'), answerInput: document.getElementById('answerInput'), checkBtn: document.getElementById('checkBtn'), card: document.getElementById('questionCard'),
+      prompt: document.getElementById('prompt'), questionImage: document.getElementById('questionImage'), choices: document.getElementById('choices'), shortAnswer: document.getElementById('shortAnswer'), answerInput: document.getElementById('answerInput'), checkBtn: document.getElementById('checkBtn'), card: document.getElementById('questionCard'),
       feedback: document.getElementById('feedback'), hint: document.getElementById('hint'), solution: document.getElementById('solution'), solutionBox: document.getElementById('solutionBox'),
       prevBtn: document.getElementById('prevBtn'), nextBtn: document.getElementById('nextBtn'), resultCard: document.getElementById('resultCard'), summaryText: document.getElementById('summaryText'), reviewList: document.getElementById('reviewList'),
       emailBtn: document.getElementById('emailBtn'), emailStatus: document.getElementById('emailStatus'), studentName: document.getElementById('studentName')
@@ -555,6 +559,7 @@
       els.feedback.className = 'feedback'; els.feedback.textContent = ''; els.solutionBox.open = false; els.choices.innerHTML = ''; els.answerInput.value = '';
       if (!q) {
         els.prompt.textContent = 'No questions match this filter. If Review mode is selected, there are no wrong answers to review yet. If Adaptive mode is selected, check that questions.json loaded.';
+        els.questionImage.style.display = 'none';
         els.shortAnswer.style.display = 'none'; els.prevBtn.disabled = true; els.nextBtn.disabled = true; return;
       }
       const qs = getQuestionState(q);
@@ -562,8 +567,8 @@
       els.shortAnswer.style.display = q.type === 'text' ? 'flex' : 'none';
       els.numberBadge.textContent = `Question ${state.index + 1}`; els.topicBadge.textContent = q.topic; els.difficultyBadge.textContent = `Level ${q.difficulty}`; els.difficultyBadge.className = `badge diff-${q.difficulty}`;
       els.prompt.textContent = q.prompt; els.hint.textContent = q.hint; els.solution.textContent = q.solution; els.progress.textContent = `${state.index + 1} / ${state.pool.length}`;
-      const prevImg = els.card && els.card.querySelector('.question-image'); if (prevImg) prevImg.remove();
-      if (q.image) { const img = document.createElement('img'); img.className = 'question-image'; img.src = q.image; img.alt = 'question diagram'; if (els.card) els.card.insertBefore(img, els.prompt); }
+      if (q.image) { els.questionImage.src = q.image; els.questionImage.alt = q.imageAlt || 'Question diagram'; els.questionImage.style.display = 'block'; }
+      else { els.questionImage.removeAttribute('src'); els.questionImage.style.display = 'none'; }
       els.prevBtn.disabled = state.index === 0; els.nextBtn.textContent = state.index === state.pool.length - 1 ? 'Finish' : 'Next';
       if (q.type === 'choice') {
         q.choices.forEach(choice => {
