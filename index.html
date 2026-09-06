@@ -526,8 +526,12 @@
 
     function buildAdaptivePool(pool) {
       const targetLevel = adaptiveLevel();
-      let candidates = pool.filter(q => q.difficulty === targetLevel && state.questionState[q.id]?.status !== 'correct');
-      if (!candidates.length) candidates = pool.filter(q => q.difficulty === targetLevel);
+      let candidates = pool.filter(q => {
+        const saved = state.questionState[q.id];
+        return q.difficulty === targetLevel && saved?.status !== 'correct' && (saved?.attempts || 0) < MAX_ATTEMPTS;
+      });
+      if (!candidates.length) candidates = pool.filter(q => q.difficulty === targetLevel && (state.questionState[q.id]?.attempts || 0) < MAX_ATTEMPTS);
+      if (!candidates.length) candidates = pool.filter(q => (state.questionState[q.id]?.attempts || 0) < MAX_ATTEMPTS);
       if (!candidates.length) candidates = pool;
       return shuffle(candidates);
     }
@@ -695,7 +699,9 @@
         return;
       }
       if (els.mode.value === 'adaptive') {
-        buildPool({ keepIndex: false, save: true });
+        state.index = Math.min(state.index + 1, state.pool.length);
+        if (state.index >= state.pool.length) finish();
+        else { render(); saveState(); }
         return;
       }
       if (state.index < state.pool.length - 1) { state.index++; render(); saveState(); }
