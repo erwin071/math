@@ -587,6 +587,7 @@
 
     function checkAnswer(value) {
       const q = state.pool[state.index]; if (!q) return;
+      els.nextBtn.disabled = false;
       const qs = getQuestionState(q);
       if (qs.attempts >= MAX_ATTEMPTS) { els.feedback.className = 'feedback info'; els.feedback.textContent = 'This question is locked after ' + MAX_ATTEMPTS + ' tries. Use Next to move on.'; return; }
       const answer = value ?? els.answerInput.value;
@@ -605,6 +606,7 @@
       if (qs.attempts >= MAX_ATTEMPTS) {
         els.checkBtn.disabled = true; els.answerInput.disabled = true; els.answerInput.readOnly = true;
         els.checkBtn.textContent = 'Locked ✓';
+        els.nextBtn.disabled = false;
         els.choices.querySelectorAll('input').forEach(r => r.disabled = true);
       }
       updateStats(); saveState();
