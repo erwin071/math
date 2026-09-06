@@ -550,7 +550,7 @@
       if (els.mode.value === 'adaptive') pool = buildAdaptivePool(pool);
       if (els.mode.value === 'random') pool = shuffle(pool);
       state.pool = takeSession(pool, els.mode.value === 'ordered');
-      state.index = keepIndex ? Math.min(state.index, Math.max(pool.length - 1, 0)) : 0;
+      state.index = keepIndex ? Math.min(state.index, Math.max(state.pool.length - 1, 0)) : 0;
       els.resultCard.classList.remove('show'); render(); if (save) saveState();
     }
 
@@ -569,7 +569,7 @@
       els.prompt.textContent = q.prompt; els.hint.textContent = q.hint; els.solution.textContent = q.solution; els.progress.textContent = `${state.index + 1} / ${state.pool.length}`;
       if (q.image) { els.questionImage.src = q.image; els.questionImage.alt = q.imageAlt || 'Question diagram'; els.questionImage.style.display = 'block'; }
       else { els.questionImage.removeAttribute('src'); els.questionImage.style.display = 'none'; }
-      els.prevBtn.disabled = state.index === 0; els.nextBtn.textContent = state.index === state.pool.length - 1 ? 'Finish' : 'Next';
+      els.prevBtn.disabled = state.index === 0; els.nextBtn.disabled = false; els.nextBtn.textContent = state.index === state.pool.length - 1 ? 'Finish' : 'Next';
       if (q.type === 'choice') {
         q.choices.forEach(choice => {
           const label = document.createElement('label'); label.className = 'choice';
