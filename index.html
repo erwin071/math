@@ -578,8 +578,9 @@
         q.choices.forEach(choice => {
           const label = document.createElement('label'); label.className = 'choice';
           label.innerHTML = `<input type="radio" name="choice" value="${choice.replace(/"/g, '&quot;')}" ${locked ? 'disabled' : ''}><span>${choice}</span>`;
-          if (normalize(choice) === normalize(qs.lastAnswer)) label.querySelector('input').checked = true;
-          label.addEventListener('click', () => setTimeout(() => checkAnswer(choice), 0)); els.choices.appendChild(label);
+          const input = label.querySelector('input');
+          if (normalize(choice) === normalize(qs.lastAnswer)) input.checked = true;
+          input.addEventListener('change', () => checkAnswer(choice)); els.choices.appendChild(label);
         });
       } else { els.answerInput.value = qs.lastAnswer || ''; }
       els.checkBtn.disabled = locked; els.answerInput.disabled = locked; els.answerInput.readOnly = locked;
