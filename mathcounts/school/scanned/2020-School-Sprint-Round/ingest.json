@@ -1,0 +1,209 @@
+{
+  "ok": true,
+  "input": "2020-School-Sprint-Round.pdf",
+  "outputDir": null,
+  "maxPages": 10,
+  "tools": {
+    "python": "Python 3.12.14",
+    "tesseract": "tesseract 5.3.0",
+    "pdftotext": "pdftotext version 22.12.0",
+    "pdftoppm": "pdftoppm version 22.12.0",
+    "gs": "10.00.0",
+    "pymupdf": "1.24.14"
+  },
+  "pdf": {
+    "filename": "2020-School-Sprint-Round.pdf",
+    "pageCount": 7,
+    "metadata": {
+      "format": "PDF 1.6",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "Adobe InDesign 14.0 (Windows)",
+      "producer": "Adobe PDF Library 15.0",
+      "creationDate": "D:20200305094434-05'00'",
+      "modDate": "D:20200305094502-05'00'",
+      "trapped": "",
+      "encryption": null
+    }
+  },
+  "textPages": [
+    {
+      "page": 1,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2019.  All rights reserved.\nName \nDO  NOT  BEGIN  UNTIL  YOU  ARE INSTRUCTED  TO  \nDO  SO.\nThis section of the competition consists of 30 problems.  You will have 40 minutes \nto complete all the problems.  You are not allowed to use calculators, books or \nother aids during this round.  Calculations may be done on scratch paper.  All \nanswers must be complete, legible and simplified to lowest terms.  Record only \nfinal answers in the blanks in the left-hand column of the competition booklet.  \nIf you complete the problems before time is called, use the remaining time to \ncheck your answers.  \nIn each written round of the competition, the required unit for the answer is \nincluded in the answer blank.  The plural form of the unit is always used, even if \nthe answer appears to require the singular form of the unit.  The unit provided \nin the answer blank is the only form of the answer that will be accepted.\nTotal Correct\nScorer’s Initials\nFounding Sponsors: National Society of Professional Engineers, National Council of Teachers of Mathematics and CNA Insurance\n2020\nSchool Competition\nSprint Round\nProblems 1−30\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n2020 MATHCOUNTS\nNational Competition Sponsor\nTitle Sponsors\nRaytheon Company\nNational Sponsors\nNorthrop Grumman Foundation\nU.S. Department of Defense STEM\nNational Society of Professional Engineers\n3Mgives \nTexas Instruments Incorporated\nCNA Insurance\nArt of Problem Solving\nNextThought"
+    },
+    {
+      "page": 2,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2019.  All rights reserved.  2020 School Sprint Round\n1.\t _____________\n2.\t _____________\n3.\t _____________\n4.\t _____________\n5.\t _____________\nAccording to the ruler, how many centimeters long is the piece of washi tape \nshown here? \nWhat is the tens digit of this sum?\nDora drinks a 12-ounce can of cola. Erika drinks half of a 20-ounce bottle of \ncola. How many more ounces of cola does Dora drink than Erika?\nWhat is the result when one hundred twenty-eight thousand is subtracted from \none million?\nWhat is the side length of a rectangle that has width 7 inches and area 105 in2 ?\n0\n1\n2\n3\n4\n5\n24\n25\n6\n7\n8\n9\n10\n26\n27\n28\n29\n30\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\ncm\ncm\n12,345\n56,789\n+\nounces\ninches"
+    },
+    {
+      "page": 3,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2019.  All rights reserved.  2020 School Sprint Round\n6.\t _____________\n7.\t _____________\n8.\t _____________\n9.\t _____________\n10.\t_____________\nWhat integer is closest to −7π?\nOn Monday at 8 p.m., the temperature measured −17 degrees. Between \n8 p.m. on Monday and 6 a.m. on Tuesday, the temperature increased \n23 degrees. On Tuesday, between 6 a.m. and 3 p.m., the temperature \ndecreased 5 degrees. What was the temperature on Tuesday at 3 p.m.?\nThis table shows all five lunch options on Friday \nat a middle school and the number of students \nthat ordered each. Based on this, what percent of \nthe lunch orders on Friday were for spaghetti?\nWhat is the 40th positive odd integer?\nWhat is the value of the expression 1 + \n2\n1\n2\n3\n−\n, in simplest form?\n  \ndegrees\nPIZZA\nSPAGHETTI\nBURGER\n132\nLUNCH\nORDERS\n112\n88\n44\n24\nNUGGETS\nSALAD\nSTUDENT LUNCH DATA\n%"
+    },
+    {
+      "page": 4,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2019.  All rights reserved.  2020 School Sprint Round\n11.\t_____________\n12.\t_____________\n13.\t_____________\n14.\t_____________\n15.\t_____________\nIf (x 2y 3) 2 = x ay b, what is the value of a + b? \nFor each rock-paper-scissors match, paper beats rock, rock beats scissors, \nscissors beat paper and two identical items result in a tie. Based on this table, \nwhich summarizes the results of Kalyani and Mark’s last 200 matches, how \nmany matches did Kalyani win?\nGiven that a mile equals 5280 feet, how many inches are in one-sixth of a mile?\nMaria was born on January 1, 2000. Her mother was born on January 1, 1975 \nand her father was born on January 1, 1970. In what year was the sum of their \nages 100?\nA bicycle that originally cost $200 is on sale for $140. By what percent was the \nprice reduced?\nmatches\ninches\nSALE\n%"
+    },
+    {
+      "page": 5,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2019.  All rights reserved.  2020 School Sprint Round\n16.\t_____________\n17.\t_____________\n18.\t_____________\n19.\t_____________\n20.\t_____________\nJay’s dog outgrew his rectangular pen that measured 10 feet by 14 feet. To make \nit larger, he increased each side length by the same amount, which increased the \npen’s area by 81 square feet. What is the greater side length of the larger pen?\nParker has three sons: Alfred, Beto and Dell. When Alfred turned 11 years old, \nBeto was 9 years old and Dell was 4 years old. What was the average of their \nages when Alfred turned 37?\nTriangle ABC has an area of 40 units2. Point D is on side AC, and AD:DC = 3:1. \nWhat is the area of triangle BDC?\nKendra surveyed 100 people who own a dog or a cat, or both. Of those \nsurveyed, 15 own both a dog and a cat, and the number of people who own \na dog is four times the number of people who own a cat. How many people \nsurveyed own a cat?\nWhat is the area of the region in the first quadrant that \nlies between the lines x + 3y = 12 and x + 3y = 18?\nfeet\nyears\nunits2\npeople\nx\ny\nunits2"
+    },
+    {
+      "page": 6,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2019.  All rights reserved.  2020 School Sprint Round\n21.\t_____________\n22.\t_____________\n23.\t_____________\n24.\t_____________\n25.\t_____________\nWhat is the absolute difference between the mean and median of the first 100 \npositive integers?\nThe square labeled A has area 81 units2. The square labeled B has area 16 units2. \nThe square labeled C has area 36 units2. These three squares along with the \nshaded, non-overlapping rectangles labeled D, E and F are arranged to form a \nlarge square as shown. What is the area of rectangle D?\nIf a fair coin is tossed four times, what is the probability of it landing \nheads up at least three times? Express your answer as a common fraction.\nIf n is an integer for which the greatest common factor of n and 18 is 6 and the \nleast common multiple of n and 9 is 126, what is the value of n?\nThe lines given by the equations y = 9 − 1\n3 x and y = mx + b are perpendicular \nand intersect at a point on the x-axis. What is the value of b?\nunits2\nD\nE\nF\nA\nB\nC"
+    },
+    {
+      "page": 7,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2019.  All rights reserved.  2020 School Sprint Round\n26.\t_____________\n27.\t_____________\n28.\t_____________\n29.\t_____________\n30.\t_____________\nIf two standard, fair 6-sided dice are rolled, what is the probability that the product \nof the two numbers rolled is a perfect square? Express your answer as a common \nfraction. \nGracie has made 2 gallons of punch that contains 50% juice. After Gracie pours \nout some of her mixture and replaces it with an equal amount of pure 100% juice, \nshe has 2 gallons of punch that contains 65% juice. How many gallons of the \noriginal mixture did Gracie pour out? Express your answer as a common fraction.\nUrsula’s starting location (\n)  is on the shore of a river that measures 8 km \nacross. Her destination (\n) is 27 km downshore on the opposite side of the \nriver. Ursula rows a boat in a straight line, at a speed of 5 km/h, to a point that is \n6 km downshore on the opposite side, and then runs the remaining distance, at a \nspeed of 14 km/h. How many hours will it take Ursula to reach her destination? \nExpress your answer as a mixed number.\nA cylinder whose height is 3 times its radius is inscribed in a cone whose height \nis 6 times its radius. What fraction of the cone’s volume lies inside the cylinder? \nExpress your answer as a common fraction.\nWhat value of x yields the minimum value of  the sum \n| x − 20 | + | x − 21 | + | x − 22 | + | x − 23 | + ⋯ + | x − 210 |?\ngallons\n8 km\n27 km\nhours"
+    }
+  ],
+  "renderedPages": [
+    {
+      "page": 1,
+      "image": "images/page-001.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    },
+    {
+      "page": 2,
+      "image": "images/page-002.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    },
+    {
+      "page": 3,
+      "image": "images/page-003.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    },
+    {
+      "page": 4,
+      "image": "images/page-004.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    },
+    {
+      "page": 5,
+      "image": "images/page-005.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    },
+    {
+      "page": 6,
+      "image": "images/page-006.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    },
+    {
+      "page": 7,
+      "image": "images/page-007.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    }
+  ],
+  "ocrPages": [
+    {
+      "page": 1,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "MATHCOUNTS*\n\n2020\n圖 “School Competition 圖\nSprint Round\nProblems 1-30\n\nName\n\nDO NOT BEGIN UNTIL YOU ARE INSTRUCTED TO\nDO SO.\n\nThis section of the competition consists of 30 problems. You will have 40 minutes\nto complete all the problems. You are not allowed to use calculators, books or\nother aids during this round. Calculations may be done on scratch paper. All\nanswers must be complete, legible and simplified to lowest terms. Record only\nfinal answers in the blanks in the left-hand column of the competition booklet.\nIf you complete the problems before time is called, use the remaining time to\ncheck your answers.\n\nIn each written round of the competition, the required unit for the answer is\nincluded in the answer blank. The plural form of the unit is always used, even if\nthe answer appears to require the singular form of the unit. The unit provided\nin the answer blank is the only form of the answer that will be accepted.\n\nTotal Correct Scorers Initials\n\nTite Sponsors\nRaytheon Company\n\nNationa SPoNsoRs\n\nNorthrop Grumman Foundation\n\nU.S. Department of Defense STEM\nNational Society of Professional Engineers\n\n3Mgives\na eon Texas Instruments Incorporated\n\nCNA Insurance\n2020 MATHCOUNTS Art of Problem Solving\nNational Competition Sponsor NextThought\n\nFounpinc Sponsors: National Society of Professional Engineers, National Council of Teachers of Mathematics and CNA Insurance\n\nCopyright MATHCOUNTS, Inc. 2019. All rights reserved.\n\nMD On od oO F&F wm DN"
+    },
+    {
+      "page": 2,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "cm According to the ruler, how many centimeters long is the piece of washi tape\n\nshown here?\n© © @ aa\n“O“62.0 o @\n\n12,345\n+56,784\n\nWhat is the tens digit of this sum?\n\nounces Dora drinks a 12-ounce can of cola. Erika drinks half of a 20-ounce bottle of\ncola. How many more ounces of cola does Dora drink than Erika?\n\n5\n\nWhat is the result when one hundred twenty-eight thousand is subtracted from\none million?\n\ninches What is the side length of a rectangle that has width 7 inches and area 105 in*?\n\nCopyright MATHCOUNTS, Inc. 2019. All rights reserved. 2020 School Sprint Round"
+    },
+    {
+      "page": 3,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "6. What integer is closest to —71?\n\n7. degrees On Monday at 8 p.m., the temperature measured —17 degrees. Between\n8 p.m. on Monday and 6 a.m. on Tuesday, the temperature increased\n23 degrees. On Tuesday, between 6 a.m. and 3 p.m., the temperature\ndecreased 5 degrees. What was the temperature on Tuesday at 3 p.m.?\n\nStupent Luncu Data\n\n8. % This table shows all five lunch options on Friday\n\n132 at a middle school and the number of students\n12 that ordered each. Based on this, what percent of\nthe lunch orders on Friday were for spaghetti?\n\n88\n\n9. What is the 40th positive odd integer?\n\n2\n10. What is the value of the expression 1 + 一 一 , in simplest form?\n\n—\n3\n\nCopyright MATHCOUNTS, Inc. 2019. All rights reserved. 2020 School Sprint Round"
+    },
+    {
+      "page": 4,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "ll.\n\n12.\n\n13.\n\n14.\n\n15.\n\nmatches\n\ninches\n\n%\n\nIf (x’y*)? = x*y’, what is the value of a + b?\n\nFor each rock-paper-scissors match, paper beats rock, rock beats scissors,\nscissors beat paper and two identical items result in a tie. Based on this table,\nwhich summarizes the results of Kalyani and Mark’s last 200 matches, how\nmany matches did Kalyani win?\n\nKALYANI\n\nRock\n\nPaper _| Scissors\n\nRock\n\nScissors | Paper\n\nGiven that a mile equals 5280 feet, how many inches are in one-sixth of a mile?\n\nMaria was born on January 1, 2000. Her mother was born on January 1, 1975\nand her father was born on January 1, 1970. In what year was the sum of their\nages 100?\n\nA bicycle that originally cost $200 is on sale for $140. By what percent was the\nprice reduced?\n\nCopyright MATHCOUNTS, Inc. 2019. All rights reserved. 2020 School Sprint Round"
+    },
+    {
+      "page": 5,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "16. feet\n\n17. years\n\n18. units?\n\n19. people\n\n20. units?\n\nJay’s dog outgrew his rectangular pen that measured 10 feet by 14 feet. To make\nit larger, he increased each side length by the same amount, which increased the\npen’s area by 81 square feet. What is the greater side length of the larger pen?\n\nParker has three sons: Alfred, Beto and Dell. When Alfred turned 11 years old,\nBeto was 9 years old and Dell was 4 years old. What was the average of their\nages when Alfred turned 37?\n\nTriangle ABC has an area of 40 units*. Point D is on side AC, and AD:DC = 3:1.\nWhat is the area of triangle BDC?\n\nKendra surveyed 100 people who own a dog or a cat, or both. Of those\nsurveyed, 15 own both a dog and a cat, and the number of people who own\na dog is four times the number of people who own a cat. How many people\nsurveyed own a cat?\n\ny\n\nWhat is the area of the region in the first quadrant that\nlies between the lines x + 3y = 12 and x + 3y = 18?\n\nCopyright MATHCOUNTS, Inc. 2019. All rights reserved. 2020 School Sprint Round"
+    },
+    {
+      "page": 6,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "21.\n\n22.\n\n23.\n\n24.\n\n25.\n\nunits*\n\nWhat is the absolute difference between the mean and median of the first 100\npositive integers?\n\nThe square labeled A has area 81 units. The square labeled B has area 16 units”.\nThe square labeled C has area 36 units. These three squares along with the\nshaded, non-overlapping rectangles labeled D, E and F are arranged to forma\nlarge square as shown. What is the area of rectangle D?\n\nAd If a fair coin is tossed four times, what is the probability of it landing\n\noo heads up at least three times? Express your answer as a common fraction.\n\nIf n is an integer for which the greatest common factor of n and 18 is 6 and the\nleast common multiple of n and 9 is 126, what is the value of n?\n\nThe lines given by the equations }\n\n1\n=9- 57 and y= mx + b are perpendicular\n\nand intersect at a point on the x-axis. What is the value of b?\n\nCopyright MATHCOUNTS, Inc. 2019. All rights reserved. 2020 School Sprint Round"
+    },
+    {
+      "page": 7,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "26.\n\n27. gallons\n\n28.\n\n29.\n\n30.\n\nhours\n\nIftwo standard, fair 6-sided dice are rolled, what is the probability that the product\nof the two numbers rolled is a perfect square? Express your answer as a common\nfraction.\n\nGracie has made 2 gallons of punch that contains 50% juice. After Gracie pours\nout some of her mixture and replaces it with an equal amount of pure 100% juice,\nshe has 2 gallons of punch that contains 65% juice. How many gallons of the\noriginal mixture did Gracie pour out? Express your answer as a common fraction.\n\nUrsula’s starting location (4) is on the shore of a river that measures 8 km\nacross. Her destination ($¢) is 27 km downshore on the opposite side of the\nriver. Ursula rows a boat in a straight line, at a speed of 5 km/h, to a point that is\n6 km downshore on the opposite side, and then runs the remaining distance, at a\nspeed of 14 km/h. How many hours will it take Ursula to reach her destination?\nExpress your answer as a mixed number.\n\n_\n\n| 27 km |\n\nAcylinder whose height is 3 times its radius is inscribed in a cone whose height\nis 6 times its radius. What fraction of the cone’s volume lies inside the cylinder?\nExpress your answer as a common fraction.\n\nWhat value of x yields the minimum value of the sum\n|x — 2°| + |x —2!| + |x — 2?| + |x 23) +0 + |x — 219/7\n\nCopyright MATHCOUNTS, Inc. 2019. All rights reserved. 2020 School Sprint Round"
+    }
+  ],
+  "imageCandidates": [],
+  "questionDrafts": [],
+  "notes": [
+    "This is a PDF ingest artifact, not final curated questions.json.",
+    "Use textPages + renderedPages to manually or programmatically split questions.",
+    "imageCandidates contains automatic embedded-image crops.",
+    "Candidates with confidence below 0.7 require a manually specified page or PDF-point bbox."
+  ],
+  "images": [
+    {
+      "page": 1,
+      "filename": "page-001.png",
+      "mimeType": "image/png"
+    },
+    {
+      "page": 2,
+      "filename": "page-002.png",
+      "mimeType": "image/png"
+    },
+    {
+      "page": 3,
+      "filename": "page-003.png",
+      "mimeType": "image/png"
+    },
+    {
+      "page": 4,
+      "filename": "page-004.png",
+      "mimeType": "image/png"
+    },
+    {
+      "page": 5,
+      "filename": "page-005.png",
+      "mimeType": "image/png"
+    },
+    {
+      "page": 6,
+      "filename": "page-006.png",
+      "mimeType": "image/png"
+    },
+    {
+      "page": 7,
+      "filename": "page-007.png",
+      "mimeType": "image/png"
+    }
+  ],
+  "figureImages": []
+}

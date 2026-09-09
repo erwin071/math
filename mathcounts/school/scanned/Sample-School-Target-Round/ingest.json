@@ -1,0 +1,189 @@
+{
+  "ok": true,
+  "input": "Sample-School-Target-Round.pdf",
+  "outputDir": null,
+  "maxPages": 10,
+  "tools": {
+    "python": "Python 3.12.14",
+    "tesseract": "tesseract 5.3.0",
+    "pdftotext": "pdftotext version 22.12.0",
+    "pdftoppm": "pdftoppm version 22.12.0",
+    "gs": "10.00.0",
+    "pymupdf": "1.24.14"
+  },
+  "pdf": {
+    "filename": "Sample-School-Target-Round.pdf",
+    "pageCount": 5,
+    "metadata": {
+      "format": "PDF 1.6",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "Adobe InDesign 14.0 (Windows)",
+      "producer": "Adobe PDF Library 15.0",
+      "creationDate": "D:20200305094542-05'00'",
+      "modDate": "D:20220411151526-04'00'",
+      "trapped": "",
+      "encryption": null
+    }
+  },
+  "textPages": [
+    {
+      "page": 1,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2021.  All rights reserved.\nName \nDO NOT BEGIN UNTIL YOU ARE INSTRUCTED TO DO SO.\nThis section of the competition consists of eight problems, which will be presented in pairs. \nWork on one pair of problems will be completed and answers will be collected before the \nnext pair is distributed. The time limit for each pair of problems is six minutes. The first \npair of problems is on the other side of this sheet. When told to do so, turn the page over \nand begin working. This round assumes the use of calculators, and calculations also may \nbe done on scratch paper, but no other aids are allowed. All answers must be complete, \nlegible and simplified to lowest terms. Record only final answers in the blanks in the left-\nhand column of the problem sheets. If you complete the problems before time is called, \nuse the time remaining to check your answers.\nFounding Sponsors: National Society of Professional Engineers, National Council of Teachers of Mathematics and CNA InsuranceC\nSAMPLE School competition\nTarget Round Problems 1−8tssLsNtss\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\nTotal Correct\nScorer’s Initials"
+    },
+    {
+      "page": 2,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2019.  All rights reserved.  Sample School Target Round\n1.\t\n________________\t\n2.\t\n________________\t\nCharles has opened a service, called Charlie’s Chores, that performs various \nhousehold chores for families in his neighborhood. The table shows the amount \nhe charges for each chore and how many times he was hired to complete that \nchore in January. How much money in dollars did Charlie’s Chores earn in the \nmonth of January? \n$\nChore\n1. clothes ironing\n2. dog walking\n3. kitchen cleaning\n4. snow shoveling\n$9.50\n$7.50\n$12.00\n$14.00\n10\n12\n7\n5\nAmount\nHires\nSunil draws a regular hexagon and a convex quadrilateral on a sheet of paper, so \nthat no side of the quadrilateral lies on the same line as a side of the hexagon. What \nis the maximum total number of points in which the sides of the quadrilateral can \nintersect the sides of the hexagon?\npoints"
+    },
+    {
+      "page": 3,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2019.  All rights reserved.  Sample School Target Round\n3.\t _____________\n4.\t _____________\nPenelope and George go trick-or-treating together. Penelope gets 152 pieces of \ncandy and George gets 124 pieces of candy. Penelope eats 5 pieces of candy \nevery day, and George eats 4 pieces of candy every day. After how many days \nwill George have the same amount of candy as Penelope? \ndays\nRosie grows 160 bushels of corn per acre in a right triangular field, as shown, \nwith perpendicular sides of lengths 660 feet and 1320 feet. Given that an acre \nequals 43,560 ft2, what is the total number of bushels of corn that Rosie grows?\nbushels\n660 feet\n1320 feet"
+    },
+    {
+      "page": 4,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2019.  All rights reserved.  Sample School Target Round\n5.\t _____________\n6.\t _____________\nA standard, six-sided die is rolled five times. What is the probability that the five \nrolls are either all the same or all different? Express your answer to the nearest \nhundredth of a percent. \n%\nIf (0, 0), (6, 2), (−2, 6) and (a, b) are the coordinates of the vertices of  a \nparallelogram, what is the least possible value for a + b?"
+    },
+    {
+      "page": 5,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2019.  All rights reserved.  Sample School Target Round\n7.\t _____________\n8.\t _____________\nAlan, Ben and Craig, who have three distinct ages, are among five children \nrunning a race. Assuming there are no ties, in how many different orders can the \nfive children finish the race with Alan, Ben and Craig in order from oldest to \nyoungest?\norders\nLet a trime be defined as a three-digit integer for which any two digits of the \ninteger, ordered as they appear in the original integer, form a two-digit prime \nnumber. For example, 137 is a trime because 13, 17 and 37 are all prime \nnumbers. However, 211 is not a trime because 21 is not prime. What is the \ngreatest trime?"
+    }
+  ],
+  "renderedPages": [
+    {
+      "page": 1,
+      "image": "images/page-001.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    },
+    {
+      "page": 2,
+      "image": "images/page-002.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    },
+    {
+      "page": 3,
+      "image": "images/page-003.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    },
+    {
+      "page": 4,
+      "image": "images/page-004.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    },
+    {
+      "page": 5,
+      "image": "images/page-005.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    }
+  ],
+  "ocrPages": [
+    {
+      "page": 1,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "MATHCOUNTS*\n\nSAMPLE SchooL CoMPETITION\nTarget Round Problems 1-8\n\nDO NOT BEGIN UNTIL YOU ARE INSTRUCTED TO DO SO.\n\nThis section of the competition consists of eight problems, which will be presented in pairs.\nWork on one pair of problems will be completed and answers will be collected before the\nnext pair is distributed. The time limit for each pair of problems is six minutes. The first\npair of problems is on the other side of this sheet. When told to do so, turn the page over\nand begin working. This round assumes the use of calculators, and calculations also may\nbe done on scratch paper, but no other aids are allowed. All answers must be complete,\nlegible and simplified to lowest terms. Record only final answers in the blanks in the left-\nhand column of the problem sheets. If you complete the problems before time is called,\nuse the time remaining to check your answers.\n\nTotal Correct Scorers Initials\n\nFounpine Sponsors: National Society of Professional Engineers, National Council of Teachers of Mathematics and CNA Insurance\n\nCopyright MATHCOUNTS, Inc. 2021. All rights reserved.\n\n小 mw 一 O\n\noan ou"
+    },
+    {
+      "page": 2,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "points\n\nCharles has opened a service, called Charlie’s Chores, that performs various\nhousehold chores for families in his neighborhood. The table shows the amount\nhe charges for each chore and how many times he was hired to complete that\nchore in January. How much money in dollars did Charlie’s Chores earn in the\nmonth of January?\n\nChore Amount Hires\n1. clothes ironing $9.50 10\n2. dog walking $7.50 12\n3. kitchen cleaning $12.00 7\n4. snow shoveling $14.00 5\n\nSunil draws a regular hexagon and a convex quadrilateral on a sheet of paper, so\nthat no side of the quadrilateral lies on the same line as a side of the hexagon. What\nis the maximum total number of points in which the sides of the quadrilateral can\nintersect the sides of the hexagon?\n\nCopyright MATHCOUNTS, Inc. 2019. All rights reserved. Sample School Target Round"
+    },
+    {
+      "page": 3,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "3. days Penelope and George go trick-or-treating together. Penelope gets 152 pieces of\ncandy and George gets 124 pieces of candy. Penelope eats 5 pieces of candy\nevery day, and George eats 4 pieces of candy every day. After how many days\nwill George have the same amount of candy as Penelope?\n\n4. bushels — Rosie grows 160 bushels of corn per acre in a right triangular field, as shown,\nwith perpendicular sides of lengths 660 feet and 1320 feet. Given that an acre\nequals 43,560 ft, what is the total number of bushels of corn that Rosie grows?\n\n660 feet\n\n1320 feet\n\nCopyright MATHCOUNTS, Inc. 2019. All rights reserved. Sample School Target Round"
+    },
+    {
+      "page": 4,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "% — A standard, six-sided die is rolled five times. What is the probability that the five\nrolls are either all the same or all different? Express your answer to the nearest\nhundredth of a percent.\n\nTf (0, 0), (6, 2), (—2, 6) and (a, b) are the coordinates of the vertices of a\nparallelogram, what is the least possible value for a + b?\n\nCopyright MATHCOUNTS, Inc. 2019. All rights reserved. Sample School Target Round"
+    },
+    {
+      "page": 5,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "orders Alan, Ben and Craig, who have three distinct ages, are among five children\nrunning a race. Assuming there are no ties, in how many different orders can the\nfive children finish the race with Alan, Ben and Craig in order from oldest to\nyoungest?\n\nLet a trime be defined as a three-digit integer for which any two digits of the\ninteger, ordered as they appear in the original integer, form a two-digit prime\nnumber. For example, 137 is a trime because 13, 17 and 37 are all prime\nnumbers. However, 211 is not a trime because 21 is not prime. What is the\ngreatest trime?\n\nCopyright MATHCOUNTS, Inc. 2019. All rights reserved. Sample School Target Round"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "page": 1,
+      "bbox": {
+        "x0": 168.34,
+        "y0": 646.96,
+        "x1": 199.1,
+        "y1": 712.41
+      },
+      "pixelBbox": {
+        "x0": 351,
+        "y0": 1348,
+        "x1": 415,
+        "y1": 1484
+      },
+      "type": "embedded-image",
+      "confidence": 0.98,
+      "image": "images/figures/page-001-figure-001.png",
+      "requiresManualRegion": false
+    }
+  ],
+  "questionDrafts": [],
+  "notes": [
+    "This is a PDF ingest artifact, not final curated questions.json.",
+    "Use textPages + renderedPages to manually or programmatically split questions.",
+    "imageCandidates contains automatic embedded-image crops.",
+    "Candidates with confidence below 0.7 require a manually specified page or PDF-point bbox."
+  ],
+  "images": [
+    {
+      "page": 1,
+      "filename": "page-001.png",
+      "mimeType": "image/png"
+    },
+    {
+      "page": 2,
+      "filename": "page-002.png",
+      "mimeType": "image/png"
+    },
+    {
+      "page": 3,
+      "filename": "page-003.png",
+      "mimeType": "image/png"
+    },
+    {
+      "page": 4,
+      "filename": "page-004.png",
+      "mimeType": "image/png"
+    },
+    {
+      "page": 5,
+      "filename": "page-005.png",
+      "mimeType": "image/png"
+    }
+  ],
+  "figureImages": [
+    {
+      "page": 1,
+      "filename": "images/figures/page-001-figure-001.png",
+      "mimeType": "image/png"
+    }
+  ]
+}

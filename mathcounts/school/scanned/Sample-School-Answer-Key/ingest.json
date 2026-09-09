@@ -1,0 +1,71 @@
+{
+  "ok": true,
+  "input": "Sample-School-Answer-Key.pdf",
+  "outputDir": null,
+  "maxPages": 10,
+  "tools": {
+    "python": "Python 3.12.14",
+    "tesseract": "tesseract 5.3.0",
+    "pdftotext": "pdftotext version 22.12.0",
+    "pdftoppm": "pdftoppm version 22.12.0",
+    "gs": "10.00.0",
+    "pymupdf": "1.24.14"
+  },
+  "pdf": {
+    "filename": "Sample-School-Answer-Key.pdf",
+    "pageCount": 1,
+    "metadata": {
+      "format": "PDF 1.6",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "Adobe InDesign 14.0 (Windows)",
+      "producer": "Adobe PDF Library 15.0",
+      "creationDate": "D:20200305094146-05'00'",
+      "modDate": "D:20220411151333-04'00'",
+      "trapped": "",
+      "encryption": null
+    }
+  },
+  "textPages": [
+    {
+      "page": 1,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2019. All rights reserved. Sample School Answer Key\nSprint Round Answers\nTarget Round Answers\nTeam Round Answers\n1.    \n2.     \n3.     \n4.     \n5.     \n6.     \n7.     \n8.     \n9.     \n10.    \n11.    \n12.    \n13.   \n14.   \n15.   \n16.   \n17.   \n18.   \n19.   \n20.\n21.  \n22.   \n23. \n24.   \n25.   \n26.   \n27. \n28.   \n29.   \n30. \n12 cm\n3\n2 ounces\n872,000\n15 inches\n−22\n1 degree\n11%\n79\n7\n10\n65 matches\n10,560 inches \n2015\n30%\n17 feet\n34 years\n10 units2\n23 people\n30 units2\n0\n66 units2\n5\n16\n42\n−81\n2\n9\n3\n5  gallon\n3 1\n2   hours\n4\n9\n32\n3.  \n4.   \n1.   \n2.   \n5.   \n6.   \n7.\n8. \n$339 or 339.00\n8 points\n28 days\n1600 bushels\n9.34% \n−4\n20 orders\n731 \n1.   \n2.   \n3. \n4.   \n5.   \n6.\n7.   \n8.   \n9.\n10.\n24.03%\n8 ways\n12\n67\n144\n91.3 minutes\n42 integers\n33.6 ft2\n52 units2\n396,040 integers\n13\n27"
+    }
+  ],
+  "renderedPages": [
+    {
+      "page": 1,
+      "image": "images/page-001.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    }
+  ],
+  "ocrPages": [
+    {
+      "page": 1,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "Sprint Round Answers\n\n2 ounces\n872,000\n15 inches\n22\n\n1 degree\n11%\n\n79\n\nTarget Round Answers\n\n1.\n\n2.\n\n$339 or 339.00 3.\n\n8 points 4.\n\nTeam Round Answers\n\n1.\n\n24.03%\n\n8 ways\n12\n67\n144\n\n91.3 minutes\n\n10\n。 65 matches\n10,560 inches\n。 2015\n。 30%\n17 feet\n» 34 years\n10 units\n. 23 people\n\n. 30 units?\n\n28 days . 7. 20 orders\n\n1600 bushels\n\n13\n\n27\n\n7. 42 integers\n8. 33.6 ft\n\n9. 52 units”\n\n10. 396,040 integers\n\nCopyright MATHCOUNTS, Inc. 2019. All rights reserved. Sample School Answer Key"
+    }
+  ],
+  "imageCandidates": [],
+  "questionDrafts": [],
+  "notes": [
+    "This is a PDF ingest artifact, not final curated questions.json.",
+    "Use textPages + renderedPages to manually or programmatically split questions.",
+    "imageCandidates contains automatic embedded-image crops.",
+    "Candidates with confidence below 0.7 require a manually specified page or PDF-point bbox."
+  ],
+  "images": [
+    {
+      "page": 1,
+      "filename": "page-001.png",
+      "mimeType": "image/png"
+    }
+  ],
+  "figureImages": []
+}

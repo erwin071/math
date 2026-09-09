@@ -1,0 +1,143 @@
+{
+  "ok": true,
+  "input": "Sample-School-Team-Round.pdf",
+  "outputDir": null,
+  "maxPages": 10,
+  "tools": {
+    "python": "Python 3.12.14",
+    "tesseract": "tesseract 5.3.0",
+    "pdftotext": "pdftotext version 22.12.0",
+    "pdftoppm": "pdftoppm version 22.12.0",
+    "gs": "10.00.0",
+    "pymupdf": "1.24.14"
+  },
+  "pdf": {
+    "filename": "Sample-School-Team-Round.pdf",
+    "pageCount": 3,
+    "metadata": {
+      "format": "PDF 1.6",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "Adobe InDesign 14.0 (Windows)",
+      "producer": "Adobe PDF Library 15.0",
+      "creationDate": "D:20200305094708-05'00'",
+      "modDate": "D:20220411151124-04'00'",
+      "trapped": "",
+      "encryption": null
+    }
+  },
+  "textPages": [
+    {
+      "page": 1,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2021.  All rights reserved.\nTeam\nMembers\n, Captain\nDO NOT BEGIN UNTIL YOU ARE INSTRUCTED TO DO SO.\nThis section of the competition consists of 10 problems which the team has 20 minutes \nto complete. Team members may work together in any way to solve the problems. Team \nmembers may talk to each other during this section of the competition. This round assumes \nthe use of calculators, and calculations also may be done on scratch paper, but no other \naids are allowed.  All answers must be complete, legible and simplified to lowest terms.  The \nteam captain must record the team’s official answers on his/her own competition booklet, \nwhich is the only booklet that will be scored. If the team completes the problems before \ntime is called, use the remaining time to check your answers.\nFounding Sponsors: National Society of Professional Engineers, National Council of Teachers of Mathematics and CNA InsuranceC\nSAMPLE School competition\nTeam Round Problems 1−10\nTotal Correct\nScorer’s InitialstssLsNtss\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0"
+    },
+    {
+      "page": 2,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2019. All rights reserved. Sample School Team Round\n1.\t _____________\n2.\t _____________\n3.\t _____________\n4.\t _____________\n5.\t _____________\nWilliam counted all the animals he saw at the \nzoo. This graph shows the data he collected. \nBased on this, what percentage of the animals \nthat William saw are mammals? Express your \nanswer to the nearest hundredth.\nHow many ways are there to arrange the four integers 1, 2, 3 and 4 in a row so \nthat no two adjacent numbers have a sum of 5?\nThere are 93 sixth graders and 108 seventh graders entering a raffle. In each \ngrade, the number of dog owners is twice the number of students who do not \nown a dog. What is the probability that a seventh grader who does not own a \ndog wins the raffle? Express your answer as a common fraction.\nIn the 5 × 5 grid shown, each row and each column is \nto contain the integers 1 through 5 exactly once with \none integer per cell. The sum of the two integers in each \noutlined pair of cells is 5. What is the product of the \nintegers in the four corner cells that are shaded?\nA satellite, located 400 km above Earth’s surface, travels \nat a speed of 28,000 km/h. For simplicity, assume \nthat Earth is a perfect sphere with circumference \n40,075 km. How many minutes does it take the \nsatellite to orbit Earth one time? Express your \nanswer as a decimal to the nearest tenth.\nZoo Animals\n150\n93\n62\n63\n127\n42\n125\n100\n75\n50\n25\n0\nMammals\nNumber of Animals\nAmphibians\nReptiles\nFish\nBirds\n%\nways\n1\n1\n2\n3\n400 km\nEarth\nminutes"
+    },
+    {
+      "page": 3,
+      "source": "pymupdf-text-layer",
+      "text": "Copyright MATHCOUNTS, Inc. 2019. All rights reserved. Sample School Team Round\n6.\t _____________\n7.\t _____________\n8.\t _____________\n9.\t _____________\n10.\t _____________\nThree children each live in one of three houses, equally spaced and arranged as \nshown. Each child is equally likely to live in any of the houses, and it is possible \nthat a house has no children living in it. All three children will play in the house \nthat minimizes the total distance they have to travel. What is the probability that \nthey will play in house B? Express your answer as a common fraction.\nHow many distinct positive integers n can be expressed as n = ab for integers \nsuch that 1 ≤ a ≤ 10 and 1 ≤ b ≤ 10?\nIn the figure, square ABCD has side length 6 feet, and E is a point \nin the exterior of the square such that triangle ADE is equilateral. \nHow many square feet are in the area of shaded triangle BEC? \nExpress your answer as a decimal to the nearest tenth. \nWhat is the area of the quadrilateral ABCD as \nshown? \nHow many of the first million positive integers share no common factors greater \nthan 1 with 2020?\nA\nB\nC\nintegers\nA\nB\nD\nE\nC\nft2\nx\ny\n2\n2\n0\n4\n4\n6 B(0, 6)\nC(7, 2)\nD(−2, −4)\nA(−3, 4)\n6\n−6\n−6\n−4\n−4\n−2\n−2\n2\n2\n0\n4\n6\n−2\n−2\nunits2\nintegers"
+    }
+  ],
+  "renderedPages": [
+    {
+      "page": 1,
+      "image": "images/page-001.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    },
+    {
+      "page": 2,
+      "image": "images/page-002.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    },
+    {
+      "page": 3,
+      "image": "images/page-003.png",
+      "width": 1275,
+      "height": 1650,
+      "dpi": 150
+    }
+  ],
+  "ocrPages": [
+    {
+      "page": 1,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "MATHCOUNTS*\n\nSAMPLE ScHooL Competition\nTeam Round Problems 1-10\n\nTeam\nMembers ,Captain\n\nDO NOT BEGIN UNTIL YOU ARE INSTRUCTED TO DO SO.\n\nThis section of the competition consists of 10 problems which the team has 20 minutes\nto complete. Team members may work together in any way to solve the problems. Team\nmembers may talk to each other during this section of the competition. This round assumes\nthe use of calculators, and calculations also may be done on scratch paper, but no other\naids are allowed. All answers must be complete, legible and simplified to lowest terms. The\nteam captain must record the team’s official answers on his/her own competition booklet,\nwhich is the only booklet that will be scored. If the team completes the problems before\ntime is called, use the remaining time to check your answers.\n\nTotal Correct Scorers Initials\n\nFounpine Sponsors: National Society of Professional Engineers, National Council of Teachers of Mathematics and CNA Insurance\n\nCopyright MATHCOUNTS, Inc. 2021. All rights reserved.\n\n小 mw 一 O\n\noan ou"
+    },
+    {
+      "page": 2,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "%\n\nways\n\nminutes\n\nZoo Animals William counted all the animals he saw at the\nzoo. This graph shows the data he collected.\nBased on this, what percentage of the animals\nthat William saw are mammals? Express your\nanswer to the nearest hundredth.\n\nNumber of Animals\n\nHow many ways are there to arrange the four integers 1, 2, 3 and 4 in a row so\nthat no two adjacent numbers have a sum of 5?\n\nThere are 93 sixth graders and 108 seventh graders entering a raffle. In each\ngrade, the number of dog owners is twice the number of students who do not\nown a dog. What is the probability that a seventh grader who does not own a\ndog wins the raffle? Express your answer as a common fraction.\n\nIn the 5 x 5 grid shown, each row and each column is\nto contain the integers | through 5 exactly once with\none integer per cell. The sum of the two integers in each\noutlined pair of cells is 5. What is the product of the\nintegers in the four corner cells that are shaded?\n\nA satellite, located 400 km above Earth’s surface, travels oe\nat a speed of 28,000 km/h. For simplicity, assume |\nthat Earth is a perfect sphere with circumference\n40,075 km. How many minutes does it take the\nsatellite to orbit Earth one time? Express your\nanswer as a decimal to the nearest tenth.\n\n400km\n\nCopyright MATHCOUNTS, Inc. 2019. All rights reserved. Sample School Team Round"
+    },
+    {
+      "page": 3,
+      "source": "tesseract",
+      "langs": "eng+chi_sim+chi_tra",
+      "text": "6.\n\n7. integers\n8. fe\n9. units?\n10. integers\n\nThree children each live in one of three houses, equally spaced and arranged as\nshown. Each child is equally likely to live in any of the houses, and it is possible\nthat a house has no children living in it. All three children will play in the house\nthat minimizes the total distance they have to travel. What is the probability that\nthey will play in house B? Express your answer as a common fraction.\n\nAe\n\nHow many distinct positive integers n can be expressed as n = ab for integers\nsuch that 1 <a<10and1<b<10?\n\nIn the figure, square ABCD has side length 6 feet, and E is a point\n\nA D inthe exterior of the square such that triangle ADE is equilateral.\n\nHow many square feet are in the area of shaded triangle BEC?\nExpress your answer as a decimal to the nearest tenth.\n\nWhat is the area of the quadrilateral ABCD as A(-3, 4)\n\nshown?\n\nHow many of the first million positive integers share no common factors greater\n\nthan 1 with 2020?\n\nCopyright MATHCOUNTS, Inc. 2019. All rights reserved. Sample School Team Round"
+    }
+  ],
+  "imageCandidates": [
+    {
+      "page": 1,
+      "bbox": {
+        "x0": 170.09,
+        "y0": 671.3,
+        "x1": 221.8,
+        "y1": 721.7
+      },
+      "pixelBbox": {
+        "x0": 354,
+        "y0": 1399,
+        "x1": 462,
+        "y1": 1504
+      },
+      "type": "embedded-image",
+      "confidence": 0.98,
+      "image": "images/figures/page-001-figure-001.png",
+      "requiresManualRegion": false
+    }
+  ],
+  "questionDrafts": [],
+  "notes": [
+    "This is a PDF ingest artifact, not final curated questions.json.",
+    "Use textPages + renderedPages to manually or programmatically split questions.",
+    "imageCandidates contains automatic embedded-image crops.",
+    "Candidates with confidence below 0.7 require a manually specified page or PDF-point bbox."
+  ],
+  "images": [
+    {
+      "page": 1,
+      "filename": "page-001.png",
+      "mimeType": "image/png"
+    },
+    {
+      "page": 2,
+      "filename": "page-002.png",
+      "mimeType": "image/png"
+    },
+    {
+      "page": 3,
+      "filename": "page-003.png",
+      "mimeType": "image/png"
+    }
+  ],
+  "figureImages": [
+    {
+      "page": 1,
+      "filename": "images/figures/page-001-figure-001.png",
+      "mimeType": "image/png"
+    }
+  ]
+}
