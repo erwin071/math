@@ -1,0 +1,1 @@
+If n is an integer for which the greatest common factor of n and 18 is 6 and the least common multiple of n and 9 is 126, what is the value of n ?

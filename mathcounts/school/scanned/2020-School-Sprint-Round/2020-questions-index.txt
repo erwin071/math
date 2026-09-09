@@ -1,0 +1,30 @@
+Q01: p2 | According to the ruler, how many centimeters long is the pie
+Q02: p2 | What is the tens digit of this sum? 12,345 56,789 +
+Q03: p2 | Dora drinks a 12-ounce can of cola. Erika drinks half of a 2
+Q04: p2 | What is the result when one hundred twenty-eight thousand is
+Q05: p2 | What is the side length of a rectangle that has width 7 inch
+Q06: p3 | What integer is closest to −7π?
+Q07: p3 | On Monday at 8 p.m. , the temperature measured −17 degrees. 
+Q08: p3 | This table shows all five lunch options on Friday at a middl
+Q09: p3 | What is the 40th positive odd integer?
+Q10: p3 | What is the value of the expression 1 + 2 1 2 3 − , in simpl
+Q11: p4 | If ( x 2 y 3 ) 2 = x a y b , what is the value of a + b ?
+Q12: p4 | For each rock-paper-scissors match, paper beats rock, rock b
+Q13: p4 | Given that a mile equals 5280 feet, how many inches are in o
+Q14: p4 | Maria was born on January 1, 2000. Her mother was born on Ja
+Q15: p4 | A bicycle that originally cost $200 is on sale for $140. By 
+Q16: p5 | Jay’s dog outgrew his rectangular pen that measured 10 feet 
+Q17: p5 | Parker has three sons: Alfred, Beto and Dell. When Alfred tu
+Q18: p5 | Triangle ABC has an area of 40 units 2 . Point D is on side 
+Q19: p5 | Kendra surveyed 100 people who own a dog or a cat, or both. 
+Q20: p5 | What is the area of the region in the first quadrant that li
+Q21: p6 | What is the absolute difference between the mean and median 
+Q22: p6 | The square labeled A has area 81 units 2 . The square labele
+Q23: p6 | If a fair coin is tossed four times, what is the probability
+Q24: p6 | If n is an integer for which the greatest common factor of n
+Q25: p6 | The lines given by the equations y = 9 − 1 3 x and y = mx + 
+Q26: p7 | If two standard, fair 6-sided dice are rolled, what is the p
+Q27: p7 | Gracie has made 2 gallons of punch that contains 50% juice. 
+Q28: p7 | Ursula’s starting location ( ) is on the shore of a river th
+Q29: p7 | A cylinder whose height is 3 times its radius is inscribed i
+Q30: p7 | What value of x yields the minimum value of the sum | x − 2 

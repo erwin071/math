@@ -1,0 +1,1 @@
+What is the absolute difference between the mean and median of the first 100 positive integers?

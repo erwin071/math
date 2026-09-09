@@ -1,0 +1,1 @@
+If two standard, fair 6-sided dice are rolled, what is the probability that the product of the two numbers rolled is a perfect square? Express your answer as a common fraction.

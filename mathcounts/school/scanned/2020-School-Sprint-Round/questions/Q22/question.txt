@@ -1,0 +1,1 @@
+The square labeled A has area 81 units 2 . The square labeled B has area 16 units 2 . The square labeled C has area 36 units 2 . These three squares along with the shaded, non-overlapping rectangles labeled D, E and F are arranged to form a large square as shown. What is the area of rectangle D? units 2 D E

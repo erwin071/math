@@ -1,0 +1,1 @@
+For each rock-paper-scissors match, paper beats rock, rock beats scissors, scissors beat paper and two identical items result in a tie. Based on this table, which summarizes the results of Kalyani and Mark’s last 200 matches, how many matches did Kalyani win? matches

@@ -1,0 +1,1 @@
+Triangle ABC has an area of 40 units 2 . Point D is on side AC, and AD:DC = 3:1. What is the area of triangle BDC? units 2

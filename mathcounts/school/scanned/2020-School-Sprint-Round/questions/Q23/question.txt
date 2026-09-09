@@ -1,0 +1,1 @@
+If a fair coin is tossed four times, what is the probability of it landing heads up at least three times? Express your answer as a common fraction. F A B C
