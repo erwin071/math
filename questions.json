@@ -717,144 +717,142 @@
       "id" : "g4-math-048"
    },
    {
-      "answers" : [
-         "720"
+      "answers": [
+         "47"
       ],
-      "prompt" : "Find the next number:\n1, 2, 6, 24, 120, ____",
-      "type" : "text",
-      "hint" : "Each number is the previous one multiplied by a pattern: 1×2, 2×3, 3×4, ...",
-      "topic" : "Patterns",
-      "difficulty" : 4,
-      "version" : 1,
-      "solution" : "1×2=2, 2×3=6, 6×4=24, 24×5=120, then 120×6=720.",
-      "id" : "g4-math-049"
+      "prompt": "A two-digit number has digits that add to 11. Reversing its digits makes the number 27 greater. What is the original number?",
+      "type": "text",
+      "hint": "Let the tens digit be a and the ones digit be b. The reversed number is 27 greater.",
+      "topic": "Number Sense",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "The digit sum gives a+b=11. Reversing adds 27, so 9(b-a)=27 and b-a=3. Solving gives a=4 and b=7, so the number is 47.",
+      "id": "g4-math-049"
    },
    {
-      "answers" : [
-         "990"
+      "answers": [
+         "72"
       ],
-      "prompt" : "What is the largest 3-digit number that is divisible by both 3 and 5?",
-      "type" : "text",
-      "hint" : "It must end in 0 or 5, and its digits must add to a multiple of 3.",
-      "topic" : "Number Sense",
-      "difficulty" : 4,
-      "version" : 1,
-      "solution" : "990 ends in 0 and 9+9+0=18 is a multiple of 3. No larger 3-digit number works.",
-      "id" : "g4-math-050"
+      "prompt": "What is the least positive integer that is divisible by 6, 8 and 9?",
+      "type": "text",
+      "hint": "Find the least common multiple of the three numbers.",
+      "topic": "Factors and Multiples",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "The prime factors are 6=2*3, 8=2*2*2 and 9=3*3. Taking the highest powers gives 2*2*2*3*3=72.",
+      "id": "g4-math-050"
    },
    {
-      "answers" : [
-         "600"
+      "answers": [
+         "180"
       ],
-      "prompt" : "Calculate:  25 × 24 = ?  (Hint: 25 × 4 = 100)",
-      "type" : "text",
-      "hint" : "Split 24 into 4 × 6 and multiply step by step.",
-      "topic" : "Operations",
-      "difficulty" : 4,
-      "version" : 1,
-      "solution" : "25×24 = 25×4×6 = 100×6 = 600.",
-      "id" : "g4-math-051"
+      "prompt": "A class collected 360 cans. It recycled 1/3 of them and then donated 1/4 of the remaining cans. How many cans were left?",
+      "type": "text",
+      "hint": "First remove 1/3 of 360, then calculate 1/4 of what remains.",
+      "topic": "Fractions",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "One-third of 360 is 120, leaving 240. One-fourth of 240 is 60, so 240-60=180 cans were left.",
+      "id": "g4-math-051"
    },
    {
-      "answers" : [
-         "12"
+      "answers": [
+         "60"
       ],
-      "prompt" : "What is the greatest common factor (GCF) of 36 and 48?",
-      "type" : "text",
-      "hint" : "Factor each number and compare the common factors.",
-      "topic" : "Factors and Multiples",
-      "difficulty" : 4,
-      "version" : 1,
-      "solution" : "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Factors of 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The greatest factor in both lists is 12.",
-      "id" : "g4-math-052"
+      "prompt": "A jar is 2/5 full of red marbles and the rest are blue. After 12 blue marbles are added, the red marbles make up 1/3 of the jar. How many marbles were originally in the jar?",
+      "type": "text",
+      "hint": "The number of red marbles does not change.",
+      "topic": "Fractions",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "Let the original total be n. The red marbles are 2n/5. After 12 blue marbles are added, 2n/5=(n+12)/3. Thus 6n=5n+60, so n=60.",
+      "id": "g4-math-052"
    },
    {
-      "answers" : [
-         "8"
+      "answers": [
+         "30"
       ],
-      "prompt" : "At a party, every person shakes hands with every other person exactly once. There were 28 handshakes in all. How many people are at the party?",
-      "type" : "text",
-      "hint" : "Try groups: 5 people give 10 handshakes, 6 give 15, 7 give 21. Keep going.",
-      "topic" : "Combinatorics",
-      "difficulty" : 4,
-      "version" : 1,
-      "solution" : "If there are n people, the handshakes are (n−1)+(n−2)+...+1. For 8 people: 7+6+5+4+3+2+1=28.",
-      "id" : "g4-math-053"
+      "prompt": "Four consecutive integers have a sum of 114. What is the largest integer?",
+      "type": "text",
+      "hint": "The average of four consecutive integers is halfway between the middle two.",
+      "topic": "Algebra",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "The average is 114/4=28.5, so the four consecutive integers are 27, 28, 29 and 30. The largest is 30.",
+      "id": "g4-math-053"
    },
    {
-      "answers" : [
-         "4/5"
+      "answers": [
+         "5/4",
+         "1 1/4",
+         "1.25",
+         "1 1/4 cups"
       ],
-      "prompt" : "Which fraction is greater, 4/5 or 7/9?",
-      "type" : "text",
-      "hint" : "Cross multiply to compare: 4×9 versus 7×5.",
-      "topic" : "Fractions",
-      "difficulty" : 4,
-      "version" : 1,
-      "solution" : "4×9=36 and 7×5=35, so 4/5 is greater than 7/9.",
-      "id" : "g4-math-054"
+      "prompt": "A recipe uses 3/4 cup of flour to make 12 muffins. How many cups of flour are needed to make 20 muffins?",
+      "type": "text",
+      "hint": "Find the amount for one muffin, then multiply by 20.",
+      "topic": "Ratios",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "For 20 muffins, multiply the flour by 20/12=5/3. Then (3/4)*(5/3)=5/4=1 1/4 cups.",
+      "id": "g4-math-054"
    },
    {
-      "answers" : [
-         "54",
-         "54 cm2",
-         "54cm2",
-         "54 cm²",
-         "54 square cm"
+      "answers": [
+         "176",
+         "176 cm2",
+         "176cm2",
+         "176 square cm"
       ],
-      "prompt" : "A rectangle has a perimeter of 30 cm and a length of 9 cm. What is its area?",
-      "type" : "text",
-      "hint" : "Use the perimeter to find the width first.",
-      "topic" : "Geometry",
-      "difficulty" : 4,
-      "version" : 1,
-      "solution" : "Perimeter = 2×(length+width), so 9+width=15 and width=6. Area = 9×6 = 54 cm².",
-      "id" : "g4-math-055"
+      "prompt": "A rectangle has a perimeter of 54 cm. Its length is 5 cm greater than its width. What is its area?",
+      "type": "text",
+      "hint": "Half of the perimeter is the sum of the length and width.",
+      "topic": "Geometry",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "The length plus width is 54/2=27. If the width is w, then w+(w+5)=27, so w=11 and the length is 16. The area is 11*16=176 cm2.",
+      "id": "g4-math-055"
    },
    {
-      "answers" : [
-         "240",
-         "240 km"
+      "answers": [
+         "80",
+         "80 L",
+         "80 liters"
       ],
-      "prompt" : "A train travels 90 km in 45 minutes. At the same speed, how far does it travel in 2 hours?",
-      "type" : "text",
-      "hint" : "First find the speed per hour.",
-      "topic" : "Word Problems",
-      "difficulty" : 4,
-      "version" : 1,
-      "solution" : "In 45 minutes (three 15-minute blocks) the train goes 90 km, so each block is 30 km. An hour has 4 of these blocks: 30×4 = 120 km per hour. In 2 hours: 120×2 = 240 km.",
-      "id" : "g4-math-056"
+      "prompt": "A water tank is 3/5 full. After 24 liters are added, it is 9/10 full. What is the tank capacity in liters?",
+      "type": "text",
+      "hint": "Find the fraction of the tank represented by the 24 added liters.",
+      "topic": "Fractions",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "The added amount changes the tank from 3/5 to 9/10, a difference of 3/10. If 3/10 is 24 liters, the full tank is 24*(10/3)=80 liters.",
+      "id": "g4-math-056"
    },
    {
-      "answers" : [
-         "64",
-         "64 cm2",
-         "64cm2",
-         "64 cm²",
-         "64 square cm"
+      "answers": [
+         "80"
       ],
-      "prompt" : "A square has the same perimeter as a rectangle that is 10 cm by 6 cm. What is the area of the square?",
-      "type" : "text",
-      "hint" : "Find the rectangle's perimeter, then the square's side.",
-      "topic" : "Area",
-      "difficulty" : 4,
-      "version" : 1,
-      "solution" : "The rectangle's perimeter is 2×(10+6)=32 cm. The square's side is 32÷4=8 cm, so the area is 8×8=64 cm².",
-      "id" : "g4-math-057"
+      "prompt": "When 3/8 of a number is added to 1/4 of the same number, the result is 50. What is the number?",
+      "type": "text",
+      "hint": "Add the fractions before finding the whole number.",
+      "topic": "Fractions",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "Three-eighths plus one-fourth is 3/8+2/8=5/8. So 5/8 of the number is 50. The whole number is 50*(8/5)=80.",
+      "id": "g4-math-057"
    },
    {
-      "answers" : [
-         "10",
-         "10 years"
+      "answers": [
+         "36"
       ],
-      "prompt" : "A grandfather is 70 years old and his granddaughter is 10. In how many years will the grandfather be 4 times as old as the granddaughter?",
-      "type" : "text",
-      "hint" : "In x years their ages will be 70 + x and 10 + x.",
-      "topic" : "Age Problems",
-      "difficulty" : 4,
-      "version" : 1,
-      "solution" : "70+x = 4(10+x) gives 70+x=40+4x, so 3x=30 and x=10. In 10 years: 80 = 4×20.",
-      "id" : "g4-math-058"
+      "prompt": "How many rectangles, including squares, are in a 3 by 3 grid of equal-sized squares?",
+      "type": "text",
+      "hint": "Choose any two of the 4 vertical grid lines and any two of the 4 horizontal grid lines.",
+      "topic": "Combinatorics",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "There are 4 vertical and 4 horizontal grid lines. A rectangle is determined by choosing 2 vertical lines and 2 horizontal lines: 6*6=36.",
+      "id": "g4-math-058"
    },
    {
       "answers" : [
