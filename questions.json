@@ -868,5 +868,265 @@
     "hint": "Add the sides: triangle sides + pentagon sides.",
     "solution": "A triangle has 3 sides and a pentagon has 5 sides. 3 + 5 = 8 sides in all."
   }
-
+,
+   {
+      "answers": [
+         "12"
+      ],
+      "prompt": "The positive integers from 1 through n have a sum of 78. What is n?",
+      "type": "text",
+      "hint": "Try adding consecutive integers, or use n(n+1)/2.",
+      "topic": "Number Sense",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "Since 12*13/2=78, n=12.",
+      "id": "g4-math-123"
+   },
+   {
+      "answers": [
+         "35"
+      ],
+      "prompt": "Five consecutive odd integers have a sum of 155. What is the largest integer?",
+      "type": "text",
+      "hint": "Find the average of the five numbers first.",
+      "topic": "Algebra",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "The average is 155/5=31. The integers are 27, 29, 31, 33 and 35, so the largest is 35.",
+      "id": "g4-math-124"
+   },
+   {
+      "answers": [
+         "90"
+      ],
+      "prompt": "After a 20% discount, a jacket costs $72. What was the original price?",
+      "type": "text",
+      "hint": "The sale price is 80% of the original price.",
+      "topic": "Percents",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "If 80% is 72, then 100% is 72/0.8=90.",
+      "id": "g4-math-125"
+   },
+   {
+      "answers": [
+         "36"
+      ],
+      "prompt": "In a class, 7/12 of the students are boys. If there are 21 boys, how many students are in the class?",
+      "type": "text",
+      "hint": "Find the value of 1/12 of the class.",
+      "topic": "Fractions",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "If 7/12 is 21, then 1/12 is 3. The whole class has 12*3=36 students.",
+      "id": "g4-math-126"
+   },
+   {
+      "answers": [
+         "40"
+      ],
+      "prompt": "A tank is 3/8 full after 15 minutes of filling at a constant rate. How many minutes will it take to fill the whole tank?",
+      "type": "text",
+      "hint": "Scale 15 minutes from 3/8 to 8/8.",
+      "topic": "Rates",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "One eighth takes 15/3=5 minutes. Eight eighths take 8*5=40 minutes.",
+      "id": "g4-math-127"
+   },
+   {
+      "answers": [
+         "54"
+      ],
+      "prompt": "A rectangle has area 180 square centimeters. Its length is 3 centimeters greater than its width. What is its perimeter in centimeters?",
+      "type": "text",
+      "hint": "Look for two factors of 180 that differ by 3.",
+      "topic": "Geometry",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "The dimensions are 12 and 15 because 12*15=180. The perimeter is 2*(12+15)=54.",
+      "id": "g4-math-128"
+   },
+   {
+      "answers": [
+         "80"
+      ],
+      "prompt": "The angles of a triangle are in the ratio 2:3:4. What is the measure, in degrees, of the largest angle?",
+      "type": "text",
+      "hint": "A triangle has 180 degrees in total.",
+      "topic": "Geometry",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "The ratio parts total 9, so one part is 180/9=20 degrees. The largest angle is 4*20=80 degrees.",
+      "id": "g4-math-129"
+   },
+   {
+      "answers": [
+         "98"
+      ],
+      "prompt": "The average of five test scores is 86. After a sixth test score is included, the average is 88. What was the sixth score?",
+      "type": "text",
+      "hint": "Compare the total score before and after the sixth test.",
+      "topic": "Averages",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "The first five total 5*86=430. The six scores total 6*88=528. The sixth score is 528-430=98.",
+      "id": "g4-math-130"
+   },
+   {
+      "answers": [
+         "19/66"
+      ],
+      "prompt": "A bag has 3 red, 4 blue and 5 green marbles. Two marbles are drawn without replacement. What is the probability that the two marbles have the same color?",
+      "type": "text",
+      "hint": "Count the same-color pairs, then divide by all possible pairs.",
+      "topic": "Probability",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "Same-color pairs: C(3,2)+C(4,2)+C(5,2)=3+6+10=19. All pairs: C(12,2)=66. The probability is 19/66.",
+      "id": "g4-math-131"
+   },
+   {
+      "answers": [
+         "12"
+      ],
+      "prompt": "A four-digit lock code uses the digits 1, 2, 3 and 4 exactly once. How many such codes have a first digit smaller than the last digit?",
+      "type": "text",
+      "hint": "Exactly half of all arrangements have the first digit smaller than the last.",
+      "topic": "Combinatorics",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "There are 4!=24 arrangements. Pair each code with its reverse; one in each pair has first digit smaller than last. Thus 24/2=12.",
+      "id": "g4-math-132"
+   },
+   {
+      "answers": [
+         "350"
+      ],
+      "prompt": "Twelve percent of a number is 42. What is the number?",
+      "type": "text",
+      "hint": "Write 12% as 0.12.",
+      "topic": "Percents",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "0.12n=42, so n=42/0.12=350.",
+      "id": "g4-math-133"
+   },
+   {
+      "answers": [
+         "63"
+      ],
+      "prompt": "A two-digit number has a tens digit that is twice its ones digit. The number plus the number with its digits reversed is 99. What is the number?",
+      "type": "text",
+      "hint": "Let the ones digit be x and write both two-digit numbers.",
+      "topic": "Number Sense",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "The number is 21x and its reverse is 12x. Their sum is 33x=99, so x=3. The number is 63.",
+      "id": "g4-math-134"
+   },
+   {
+      "answers": [
+         "20"
+      ],
+      "prompt": "How many diagonals does a regular octagon have?",
+      "type": "text",
+      "hint": "From each vertex, count segments that are not sides or the vertex itself.",
+      "topic": "Geometry",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "Each of 8 vertices connects by diagonals to 5 other vertices, giving 8*5=40 counts. Each diagonal is counted twice, so there are 20 diagonals.",
+      "id": "g4-math-135"
+   },
+   {
+      "answers": [
+         "72"
+      ],
+      "prompt": "A price is increased by 25% and becomes $90. What was the original price?",
+      "type": "text",
+      "hint": "The new price is 125% of the original price.",
+      "topic": "Percents",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "If 125% is 90, the original price is 90/1.25=72.",
+      "id": "g4-math-136"
+   },
+   {
+      "answers": [
+         "30"
+      ],
+      "prompt": "Three friends divide 100 coins in the ratio 2:3:5. How many coins does the middle share receive?",
+      "type": "text",
+      "hint": "First find the value of one ratio part.",
+      "topic": "Ratios",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "The ratio has 2+3+5=10 parts, so each part is 10 coins. The middle share is 3*10=30 coins.",
+      "id": "g4-math-137"
+   },
+   {
+      "answers": [
+         "50"
+      ],
+      "prompt": "How many squares of all sizes are in a 4 by 6 rectangular grid of unit squares?",
+      "type": "text",
+      "hint": "Count 1 by 1, 2 by 2, 3 by 3 and 4 by 4 squares separately.",
+      "topic": "Combinatorics",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "There are 24 one-unit squares, 15 two-unit squares, 8 three-unit squares and 3 four-unit squares. The total is 24+15+8+3=50.",
+      "id": "g4-math-138"
+   },
+   {
+      "answers": [
+         "360"
+      ],
+      "prompt": "A student has read 3/8 of a book. After reading 45 more pages, the student has read 1/2 of the book. How many pages are in the book?",
+      "type": "text",
+      "hint": "The extra 45 pages represent the difference between 1/2 and 3/8.",
+      "topic": "Fractions",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "The difference is 1/8 of the book. If 1/8 is 45 pages, the whole book has 8*45=360 pages.",
+      "id": "g4-math-139"
+   },
+   {
+      "answers": [
+         "13/18"
+      ],
+      "prompt": "A fraction has a denominator that is 5 greater than its numerator. When 2 is added to both numerator and denominator, the fraction becomes 3/4. What is the original fraction?",
+      "type": "text",
+      "hint": "Let the numerator be n and the denominator be n+5.",
+      "topic": "Fractions",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "(n+2)/(n+7)=3/4. Cross multiplying gives 4n+8=3n+21, so n=13 and the denominator is 18. The fraction is 13/18.",
+      "id": "g4-math-140"
+   },
+   {
+      "answers": [
+         "120"
+      ],
+      "prompt": "When 3/8 of a number is added to 5/24 of the same number, the result is 70. What is the number?",
+      "type": "text",
+      "hint": "Use a common denominator before adding the fractions.",
+      "topic": "Fractions",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "3/8=9/24, so the total fraction is 14/24=7/12. Thus 7/12 of the number is 70, and the number is 70*12/7=120.",
+      "id": "g4-math-141"
+   },
+   {
+      "answers": [
+         "29"
+      ],
+      "prompt": "The product of two consecutive positive integers is 210. What is the sum of the two integers?",
+      "type": "text",
+      "hint": "Look for consecutive factors of 210.",
+      "topic": "Algebra",
+      "difficulty": 4,
+      "version": 1,
+      "solution": "14*15=210, so the two integers are 14 and 15. Their sum is 29.",
+      "id": "g4-math-142"
+   }
 ]
