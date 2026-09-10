@@ -1,129 +1,12 @@
 [
-   {
-      "answers" : [
-         "29"
-      ],
-      "prompt" : "Find the next number:\n4, 9, 14, 19, 24, ____",
-      "type" : "text",
-      "hint" : "Look at how much the numbers increase each time.",
-      "topic" : "Patterns",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "Each number increases by 5. 24 + 5 = 29.",
-      "id" : "g4-math-001"
-   },
-   {
-      "version" : 1,
-      "solution" : "24 is a multiple of 12, so it is divisible by both 3 and 4.",
-      "id" : "g4-math-002",
-      "prompt" : "Which number is divisible by both 3 and 4?",
-      "type" : "choice",
-      "answers" : [
-         "24"
-      ],
-      "difficulty" : 1,
-      "hint" : "A number divisible by both 3 and 4 is divisible by 12.",
-      "choices" : [
-         "18",
-         "20",
-         "24",
-         "30"
-      ],
-      "topic" : "Number Sense"
-   },
-   {
-      "answers" : [
-         "497"
-      ],
-      "prompt" : "Calculate:  348 + 275 - 126 = ?",
-      "type" : "text",
-      "hint" : "Add first, then subtract carefully.",
-      "topic" : "Operations",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "348 + 275 = 623. Then 623 - 126 = 497.",
-      "id" : "g4-math-003"
-   },
-   {
-      "version" : 1,
-      "solution" : "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Common factors: 1, 2, 3, 6. There are 4.",
-      "id" : "g4-math-004",
-      "type" : "text",
-      "prompt" : "List the common factors of 18 and 24. How many common factors are there?",
-      "answers" : [
-         "1,2,3,6",
-         "1, 2, 3, 6",
-         "4"
-      ],
-      "difficulty" : 2,
-      "topic" : "Factors and Multiples",
-      "hint" : "List all factors of each number, then find the ones that appear in both lists."
-   },
-   {
-      "version" : 1,
-      "solution" : "Ben has the rabbit. Ava and Chloe have the cat and dog. Ava does not have the dog, so Ava has the cat.",
-      "id" : "g4-math-005",
-      "answers" : [
-         "cat"
-      ],
-      "prompt" : "Three friends have different pets: a cat, a dog, and a rabbit.\nAva does not have the dog. Ben has the rabbit. Chloe does not have the cat.\nWhich pet does Ava have?",
-      "type" : "choice",
-      "hint" : "Start with Ben. Then use the pets that are left.",
-      "choices" : [
-         "cat",
-         "dog",
-         "rabbit"
-      ],
-      "topic" : "Logic",
-      "difficulty" : 2
-   },
-   {
-      "topic" : "Fractions",
-      "hint" : "Multiply the numerator and denominator by the same number.",
-      "choices" : [
-         "6/12",
-         "9/12",
-         "10/12",
-         "12/18"
-      ],
-      "difficulty" : 2,
-      "answers" : [
-         "9/12"
-      ],
-      "type" : "choice",
-      "prompt" : "Which fraction is equivalent to 3/4?",
-      "solution" : "3/4 x 3/3 = 9/12.",
-      "id" : "g4-math-006",
-      "version" : 1
-   },
-   {
-      "version" : 1,
-      "id" : "g4-math-007",
-      "solution" : "Perimeter = 2 x (9 + 5) = 28 cm.",
-      "prompt" : "A rectangle is 9 cm long and 5 cm wide. What is its perimeter?",
-      "type" : "text",
-      "answers" : [
-         "28",
-         "28 cm"
-      ],
-      "difficulty" : 2,
-      "hint" : "Perimeter means the distance around the shape.",
-      "topic" : "Geometry"
-   },
-   {
-      "solution" : "Monday 12, Tuesday 16, Wednesday 20, Thursday 24, Friday 28.",
-      "id" : "g4-math-008",
-      "version" : 1,
-      "difficulty" : 2,
-      "hint" : "Count Monday, Tuesday, Wednesday, Thursday, Friday.",
-      "topic" : "Word Problems",
-      "prompt" : "Mia reads 12 pages on Monday. Each day after that, she reads 4 more pages than the day before. How many pages does she read on Friday?",
-      "type" : "text",
-      "answers" : [
-         "28",
-         "28 pages"
-      ]
-   },
+
+
+
+
+
+
+
+
    {
       "type" : "text",
       "prompt" : "Six students each shake hands with every other student exactly once. How many handshakes are there in all?",
@@ -182,77 +65,11 @@
       "id" : "g4-math-012",
       "version" : 1
    },
-   {
-      "prompt" : "Calculate: 456 x 7 - 389 = ?",
-      "type" : "text",
-      "answers" : [
-         "2803",
-         "2,803"
-      ],
-      "difficulty" : 1,
-      "hint" : "Multiply first, then subtract.",
-      "topic" : "Operations",
-      "version" : 1,
-      "solution" : "456 x 7 = 3,192. Then 3,192 - 389 = 2,803.",
-      "id" : "g4-math-013"
-   },
-   {
-      "difficulty" : 2,
-      "topic" : "Patterns",
-      "hint" : "Each number is made from the previous number in the same way.",
-      "type" : "text",
-      "prompt" : "Find the missing number: 3, 7, 15, 31, ____, 127",
-      "answers" : [
-         "63"
-      ],
-      "id" : "g4-math-014",
-      "solution" : "Each term is previous x 2 + 1. 31 x 2 + 1 = 63.",
-      "version" : 1
-   },
-   {
-      "difficulty" : 1,
-      "topic" : "Number Sense",
-      "hint" : "A number divisible by both 3 and 4 must be divisible by 12.",
-      "type" : "text",
-      "prompt" : "How many integers from 1 to 50 are divisible by both 3 and 4?",
-      "answers" : [
-         "4",
-         "4 numbers"
-      ],
-      "solution" : "Multiples of 12 from 1 to 50 are 12, 24, 36, and 48. There are 4 numbers.",
-      "id" : "g4-math-015",
-      "version" : 1
-   },
-   {
-      "difficulty" : 2,
-      "hint" : "Pair factors that multiply to 36.",
-      "topic" : "Factors and Multiples",
-      "prompt" : "List all the factors of 36. How many factors does 36 have?",
-      "type" : "text",
-      "answers" : [
-         "9",
-         "9 factors",
-         "1,2,3,4,6,9,12,18,36",
-         "1, 2, 3, 4, 6, 9, 12, 18, 36"
-      ],
-      "id" : "g4-math-016",
-      "solution" : "The factors are 1, 2, 3, 4, 6, 9, 12, 18, and 36. There are 9 factors.",
-      "version" : 1
-   },
-   {
-      "answers" : [
-         "36",
-         "36 candies"
-      ],
-      "prompt" : "Marcus wants a number of candies that can be shared equally among 4 friends, 6 friends, or 9 friends. What is the least possible number of candies?",
-      "type" : "text",
-      "hint" : "Find the least common multiple of 4, 6, and 9.",
-      "topic" : "Factors and Multiples",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "LCM(4, 6, 9) = 36, so the least possible number is 36 candies.",
-      "id" : "g4-math-017"
-   },
+
+
+
+
+
    {
       "difficulty" : 3,
       "hint" : "Use 12 as a common denominator.",
@@ -283,50 +100,9 @@
       "topic" : "Fractions",
       "hint" : "Find the part cut off first, then subtract from 2.4."
    },
-   {
-      "version" : 1,
-      "solution" : "180 - 90 - 35 = 55, so the third angle is 55 degrees.",
-      "id" : "g4-math-020",
-      "prompt" : "A right triangle has one angle of 90 degrees and another angle of 35 degrees. What is the third angle?",
-      "type" : "text",
-      "answers" : [
-         "55",
-         "55 degrees",
-         "55 degrees"
-      ],
-      "difficulty" : 1,
-      "hint" : "The angles in a triangle add to 180 degrees.",
-      "topic" : "Geometry"
-   },
-   {
-      "version" : 1,
-      "solution" : "b + 2b + (2b + 5) = 45, so 5b + 5 = 45. Then b = 8.",
-      "id" : "g4-math-021",
-      "type" : "text",
-      "prompt" : "There are red, yellow, and blue balls. Red balls are 5 more than yellow balls. Yellow balls are twice as many as blue balls. There are 45 balls total. How many blue balls are there?",
-      "answers" : [
-         "8",
-         "8 blue balls"
-      ],
-      "difficulty" : 2,
-      "topic" : "Word Problems",
-      "hint" : "Let blue be b. Then yellow is 2b and red is 2b + 5."
-   },
-   {
-      "prompt" : "Emma runs 200 meters on Day 1. Each day she runs 50 meters more than the day before. How far does she run on Day 7?",
-      "type" : "text",
-      "answers" : [
-         "500",
-         "500 meters",
-         "500 m"
-      ],
-      "difficulty" : 2,
-      "hint" : "Day 7 is 6 increases after Day 1.",
-      "topic" : "Patterns",
-      "version" : 1,
-      "id" : "g4-math-022",
-      "solution" : "There are 6 increases of 50 meters: 200 + 6 x 50 = 500 meters."
-   },
+
+
+
    {
       "version" : 1,
       "solution" : "The digits 3 and 6 work: 3 x 6 = 18, and 2 x (3 + 6) = 18. The number is 36.",
@@ -340,107 +116,12 @@
       "topic" : "Challenge",
       "hint" : "Try tens digit 1, 2, 3, and so on. The ones digit is 3 more."
    },
-   {
-      "id" : "g4-math-024",
-      "solution" : "3 x 4 = 12 different outfits.",
-      "version" : 1,
-      "topic" : "Combinatorics",
-      "choices" : [
-         "7",
-         "10",
-         "12",
-         "24"
-      ],
-      "hint" : "For each shirt, Lily can choose any of 4 pairs of shorts.",
-      "difficulty" : 2,
-      "answers" : [
-         "12"
-      ],
-      "type" : "choice",
-      "prompt" : "How many different outfits can Lily make with 3 shirts and 4 pairs of shorts?"
-   },
-   {
-      "version" : 1,
-      "id" : "g4-math-025",
-      "solution" : "6 hundreds is 600, 14 tens is 140, and 8 ones is 8. Total: 748.",
-      "type" : "choice",
-      "prompt" : "Which number has the same value as 6 hundreds + 14 tens + 8 ones?",
-      "answers" : [
-         "748"
-      ],
-      "difficulty" : 1,
-      "topic" : "Number Sense",
-      "choices" : [
-         "648",
-         "708",
-         "748",
-         "6148"
-      ],
-      "hint" : "14 tens is 140."
-   },
-   {
-      "version" : 1,
-      "id" : "g4-math-026",
-      "solution" : "It must be after B, so it is C or D. It is not immediately after B, so it is not C. The prize is in D.",
-      "type" : "choice",
-      "prompt" : "Four boxes are labeled A, B, C, and D. The prize is not in A. It is not in the box immediately after B. It is in a box with a letter after B. Where is the prize?",
-      "answers" : [
-         "D"
-      ],
-      "difficulty" : 2,
-      "topic" : "Logic",
-      "choices" : [
-         "A",
-         "B",
-         "C",
-         "D"
-      ],
-      "hint" : "The boxes after B are C and D. Immediately after B is C."
-   },
-   {
-      "answers" : [
-         "28",
-         "28 cm"
-      ],
-      "prompt" : "A rectangle has area 48 square cm. Its length is 8 cm. What is its perimeter?",
-      "type" : "text",
-      "hint" : "Find the width first.",
-      "topic" : "Area",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "Width = 48 divided by 8 = 6 cm. Perimeter = 2 x (8 + 6) = 28 cm.",
-      "id" : "g4-math-027"
-   },
-   {
-      "topic" : "Money",
-      "hint" : "Find the notebook cost and pencil cost separately, then add.",
-      "difficulty" : 1,
-      "answers" : [
-         "6.95",
-         "$6.95"
-      ],
-      "type" : "text",
-      "prompt" : "A notebook costs $2.35 and a pencil costs $0.75. How much do 2 notebooks and 3 pencils cost?",
-      "id" : "g4-math-028",
-      "solution" : "2 notebooks cost $4.70. 3 pencils cost $2.25. Total: $6.95.",
-      "version" : 1
-   },
-   {
-      "answers" : [
-         "95 minutes",
-         "95",
-         "1 hour 35 minutes",
-         "1 hr 35 min"
-      ],
-      "type" : "text",
-      "prompt" : "A movie starts at 2:45 p.m. and ends at 4:20 p.m. How long is the movie?",
-      "topic" : "Measurement",
-      "hint" : "Count from 2:45 to 3:45, then from 3:45 to 4:20.",
-      "difficulty" : 2,
-      "version" : 1,
-      "id" : "g4-math-029",
-      "solution" : "2:45 to 3:45 is 1 hour. 3:45 to 4:20 is 35 minutes. Total: 1 hour 35 minutes, or 95 minutes."
-   },
+
+
+
+
+
+
    {
       "id" : "g4-math-030",
       "solution" : "Numbers with remainder 2 when divided by 5 are 2, 7, 12, 17, ... The smallest one that has remainder 1 when divided by 3 is 7.",
@@ -454,46 +135,9 @@
       "prompt" : "A number leaves a remainder of 2 when divided by 5 and a remainder of 1 when divided by 3. What is the smallest positive number that works?",
       "type" : "text"
    },
-   {
-      "answers" : [
-         "36"
-      ],
-      "prompt" : "Find the next number:\n1, 4, 9, 16, 25, ____",
-      "type" : "text",
-      "hint" : "These are square numbers. Look at how each step grows by odd numbers.",
-      "topic" : "Patterns",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "The differences are 3, 5, 7, 9, so the next difference is 11. 25 + 11 = 36, and 36 = 6 × 6.",
-      "id" : "g4-math-031"
-   },
-   {
-      "answers" : [
-         "42"
-      ],
-      "prompt" : "Find the next number:\n2, 6, 12, 20, 30, ____",
-      "type" : "text",
-      "hint" : "Look at the difference between each pair of numbers.",
-      "topic" : "Patterns",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "The differences are 4, 6, 8, 10, so the next difference is 12. 30 + 12 = 42.",
-      "id" : "g4-math-032"
-   },
-   {
-      "answers" : [
-         "4700",
-         "4,700"
-      ],
-      "prompt" : "Round 4,738 to the nearest hundred.",
-      "type" : "text",
-      "hint" : "Look at the tens digit. It is less than 5, so round down.",
-      "topic" : "Number Sense",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "The tens digit is 3, which is less than 5, so 4,738 rounds down to 4,700.",
-      "id" : "g4-math-033"
-   },
+
+
+
    {
       "answers" : [
          "16"
@@ -507,69 +151,10 @@
       "solution" : "100 ÷ 6 = 16 with remainder 4, so the multiples are 6×1 up to 6×16. There are 16.",
       "id" : "g4-math-034"
    },
-   {
-      "answers" : [
-         "24"
-      ],
-      "prompt" : "Calculate:  64 ÷ 8 × 3 = ?",
-      "type" : "text",
-      "hint" : "Do the division first, then multiply.",
-      "topic" : "Operations",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "64 ÷ 8 = 8, then 8 × 3 = 24.",
-      "id" : "g4-math-035"
-   },
-   {
-      "choices" : [
-         "27",
-         "39",
-         "40",
-         "21"
-      ],
-      "answers" : [
-         "27"
-      ],
-      "prompt" : "What is 6 + 7 × 3?",
-      "type" : "choice",
-      "hint" : "Remember the order of operations: multiply before you add.",
-      "topic" : "Operations",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "7 × 3 = 21, then 6 + 21 = 27.",
-      "id" : "g4-math-036"
-   },
-   {
-      "answers" : [
-         "12"
-      ],
-      "prompt" : "Find the least common multiple (LCM) of 4 and 6.",
-      "type" : "text",
-      "hint" : "List the multiples of each number and find the smallest one they share.",
-      "topic" : "Factors and Multiples",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "Multiples of 4: 4, 8, 12, ...  Multiples of 6: 6, 12, ...  The LCM is 12.",
-      "id" : "g4-math-037"
-   },
-   {
-      "choices" : [
-         "red",
-         "blue",
-         "green"
-      ],
-      "answers" : [
-         "red"
-      ],
-      "prompt" : "Emma, Leo, and Mia each have a different color bicycle: red, blue, or green.\nEmma's bike is green. Mia's bike is not red.\nWhat color is Leo's bike?",
-      "type" : "choice",
-      "hint" : "Emma has green, so that leaves red and blue for Mia and Leo.",
-      "topic" : "Logic",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "Emma has green. Mia's bike is not red, so Mia has blue and Leo has red.",
-      "id" : "g4-math-038"
-   },
+
+
+
+
    {
       "answers" : [
          "red"
@@ -583,97 +168,12 @@
       "solution" : "Ben's balloon is not red or yellow, so Ben has blue. Ava is not red, so Ava has yellow. Chloe must have red.",
       "id" : "g4-math-039"
    },
-   {
-      "answers" : [
-         "5/8"
-      ],
-      "prompt" : "You eat 3/8 of a pizza. What fraction of the pizza is left?",
-      "type" : "text",
-      "hint" : "A whole pizza is 8/8.",
-      "topic" : "Fractions",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "8/8 − 3/8 = 5/8.",
-      "id" : "g4-math-040"
-   },
-   {
-      "choices" : [
-         "3/8",
-         "2/3",
-         "5/12",
-         "1/2"
-      ],
-      "answers" : [
-         "2/3"
-      ],
-      "prompt" : "Which fraction is the largest?",
-      "type" : "choice",
-      "hint" : "Compare each fraction to 1/2.",
-      "topic" : "Fractions",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "2/3 is more than 1/2, while 3/8, 5/12, and 1/2 are less than or equal to 1/2.",
-      "id" : "g4-math-041"
-   },
-   {
-      "answers" : [
-         "24",
-         "24 cm"
-      ],
-      "prompt" : "A square has sides of 6 cm. What is its perimeter?",
-      "type" : "text",
-      "hint" : "A square has 4 equal sides.",
-      "topic" : "Geometry",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "Each side is 6 cm, so the perimeter is 6 × 4 = 24 cm.",
-      "id" : "g4-math-042"
-   },
-   {
-      "answers" : [
-         "45",
-         "45 degrees",
-         "45 degree",
-         "45°"
-      ],
-      "prompt" : "A triangle has angles of 90° and 45°. What is the measure of the third angle?",
-      "type" : "text",
-      "hint" : "The three angles of a triangle add up to 180°.",
-      "topic" : "Geometry",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "180 − 90 − 45 = 45 degrees.",
-      "id" : "g4-math-043"
-   },
-   {
-      "answers" : [
-         "6",
-         "6 bags"
-      ],
-      "prompt" : "A baker bakes 24 muffins and puts 4 muffins in each bag. How many bags does she use?",
-      "type" : "text",
-      "hint" : "How many groups of 4 are in 24?",
-      "topic" : "Word Problems",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "24 ÷ 4 = 6 bags.",
-      "id" : "g4-math-044"
-   },
-   {
-      "answers" : [
-         "14",
-         "$14",
-         "14 dollars"
-      ],
-      "prompt" : "Tom has $50. He buys 3 books that each cost $12. How much money does he have left?",
-      "type" : "text",
-      "hint" : "First find how much the 3 books cost in all.",
-      "topic" : "Word Problems",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "3 × $12 = $36, so $50 − $36 = $14.",
-      "id" : "g4-math-045"
-   },
+
+
+
+
+
+
    {
       "answers" : [
          "6",
@@ -702,20 +202,7 @@
       "solution" : "In 18 years the mother will be 48 and the daughter 24. Since 48 = 2 × 24, the answer is 18 years.",
       "id" : "g4-math-047"
    },
-   {
-      "answers" : [
-         "8",
-         "8 cm"
-      ],
-      "prompt" : "A square has an area of 64 square cm. How long is each side?",
-      "type" : "text",
-      "hint" : "Which number times itself equals 64?",
-      "topic" : "Area",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "8 × 8 = 64, so each side is 8 cm.",
-      "id" : "g4-math-048"
-   },
+
    {
       "answers": [
          "47"
@@ -986,32 +473,8 @@
       "solution" : "The digit pairs are (2,9),(3,8),(4,7),(5,6). Reversing 56 gives 65, and 65−56=9. The number is 56.",
       "id" : "g4-math-068"
    },
-   {
-      "answers" : [
-         "0.6"
-      ],
-      "prompt" : "Which number is larger, 0.6 or 0.45?",
-      "type" : "text",
-      "hint" : "Write both with the same number of decimal places: 0.60 and 0.45.",
-      "topic" : "Decimals",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "0.60 is greater than 0.45, so the answer is 0.6.",
-      "id" : "g4-math-069"
-   },
-   {
-      "answers" : [
-         "0.73"
-      ],
-      "prompt" : "Write '7 tenths and 3 hundredths' as a decimal.",
-      "type" : "text",
-      "hint" : "7 tenths is 0.7 and 3 hundredths is 0.03.",
-      "topic" : "Decimals",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "0.7 + 0.03 = 0.73.",
-      "id" : "g4-math-070"
-   },
+
+
    {
       "answers" : [
          "0.35"
@@ -1025,147 +488,15 @@
       "solution" : "30/100 + 5/100 = 35/100 = 0.35.",
       "id" : "g4-math-071"
    },
-   {
-      "choices" : [
-         "0.5",
-         "0.055",
-         "0.55",
-         "0.05"
-      ],
-      "answers" : [
-         "0.05"
-      ],
-      "prompt" : "Which decimal is the smallest?",
-      "type" : "choice",
-      "hint" : "Compare tenths first, then hundredths, then thousandths.",
-      "topic" : "Decimals",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "0.05 has zero tenths and 5 hundredths, which is less than 0.055, 0.5, and 0.55.",
-      "id" : "g4-math-072"
-   },
-   {
-      "answers" : [
-         "300",
-         "300 cm",
-         "300cm"
-      ],
-      "prompt" : "How many centimeters are in 3 meters?",
-      "type" : "text",
-      "hint" : "1 meter equals 100 centimeters.",
-      "topic" : "Measurement",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "3 × 100 = 300 cm.",
-      "id" : "g4-math-073"
-   },
-   {
-      "answers" : [
-         "180",
-         "180 minutes",
-         "180 minutes "
-      ],
-      "prompt" : "How many minutes are in 3 hours?",
-      "type" : "text",
-      "hint" : "1 hour equals 60 minutes.",
-      "topic" : "Measurement",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "3 × 60 = 180 minutes.",
-      "id" : "g4-math-074"
-   },
-   {
-      "answers" : [
-         "2000",
-         "2000 g",
-         "2000g",
-         "2000 grams"
-      ],
-      "prompt" : "A bag of rice weighs 2 kilograms. How many grams is that?",
-      "type" : "text",
-      "hint" : "1 kilogram equals 1000 grams.",
-      "topic" : "Measurement",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "2 × 1000 = 2000 grams.",
-      "id" : "g4-math-075"
-   },
-   {
-      "answers" : [
-         "3000",
-         "3000 ml",
-         "3000ml",
-         "3000 mL"
-      ],
-      "prompt" : "A jug holds 3 liters of juice. How many milliliters is that?",
-      "type" : "text",
-      "hint" : "1 liter equals 1000 milliliters.",
-      "topic" : "Measurement",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "3 × 1000 = 3000 milliliters.",
-      "id" : "g4-math-076"
-   },
-   {
-      "answers" : [
-         "95",
-         "95 minutes"
-      ],
-      "prompt" : "A movie starts at 2:45 and ends at 4:20. How many minutes does it last?",
-      "type" : "text",
-      "hint" : "Count from 2:45 to 3:45 (1 hour), then from 3:45 to 4:20.",
-      "topic" : "Measurement",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "2:45 to 4:20 is 1 hour and 35 minutes: 60 + 35 = 95 minutes.",
-      "id" : "g4-math-077"
-   },
-   {
-      "answers" : [
-         "4"
-      ],
-      "prompt" : "How many lines of symmetry does a square have?",
-      "type" : "text",
-      "hint" : "Lines of symmetry are fold lines where the two halves match exactly.",
-      "topic" : "Geometry",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "A square has 4 lines of symmetry: 2 through opposite corners and 2 through the middle of opposite sides.",
-      "id" : "g4-math-078"
-   },
-   {
-      "choices" : [
-         "square",
-         "rectangle",
-         "isosceles triangle",
-         "parallelogram"
-      ],
-      "answers" : [
-         "isosceles triangle"
-      ],
-      "prompt" : "Which shape has exactly ONE line of symmetry?",
-      "type" : "choice",
-      "hint" : "Count the fold lines for each shape.",
-      "topic" : "Geometry",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "A square has 4, a rectangle has 2, a parallelogram has 0, and an isosceles triangle has 1.",
-      "id" : "g4-math-079"
-   },
-   {
-      "answers" : [
-         "parallel",
-         "parallel lines"
-      ],
-      "prompt" : "Two lines that stay the same distance apart and never meet are called ____ lines.",
-      "type" : "text",
-      "hint" : "Railroad tracks are a good example.",
-      "topic" : "Geometry",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "Lines that never meet and keep the same distance apart are parallel lines.",
-      "id" : "g4-math-080"
-   },
+
+
+
+
+
+
+
+
+
    {
       "answers" : [
          "trapezoid"
@@ -1179,20 +510,7 @@
       "solution" : "A trapezoid is a 4-sided shape with exactly one pair of parallel sides.",
       "id" : "g4-math-081"
    },
-   {
-      "answers" : [
-         "acute",
-         "acute angle"
-      ],
-      "prompt" : "An angle that is less than 90 degrees is called an ____ angle.",
-      "type" : "text",
-      "hint" : "90 degrees is a right angle; smaller than that is acute.",
-      "topic" : "Geometry",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "An angle smaller than a right angle (90°) is an acute angle.",
-      "id" : "g4-math-082"
-   },
+
    {
       "answers" : [
          "12"
@@ -1220,36 +538,8 @@
       "solution" : "4 × 1/2 = 2 whole pizzas.",
       "id" : "g4-math-084"
    },
-   {
-      "answers" : [
-         "35",
-         "35 degrees",
-         "35°"
-      ],
-      "prompt" : "A right angle is split into two angles. One angle is 55°. What is the other angle in degrees?",
-      "type" : "text",
-      "hint" : "A right angle measures exactly 90°.",
-      "topic" : "Geometry",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "90 − 55 = 35°.",
-      "id" : "g4-math-085"
-   },
-   {
-      "answers" : [
-         "50",
-         "50 degrees",
-         "50°"
-      ],
-      "prompt" : "A straight line is split into two angles. One angle is 130°. What is the other angle in degrees?",
-      "type" : "text",
-      "hint" : "A straight line measures exactly 180°.",
-      "topic" : "Geometry",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "180 − 130 = 50°.",
-      "id" : "g4-math-086"
-   },
+
+
    {
       "answers" : [
          "70",
@@ -1265,75 +555,11 @@
       "solution" : "360 − 90 − 90 − 110 = 70°.",
       "id" : "g4-math-087"
    },
-   {
-      "answers" : [
-         "90",
-         "90 degrees",
-         "90°"
-      ],
-      "prompt" : "At 3:00, how many degrees are in the angle between the hour hand and the minute hand?",
-      "type" : "text",
-      "hint" : "The clock face is a circle; 3:00 makes a right angle.",
-      "topic" : "Geometry",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "At 3:00 the hands form a quarter turn, which is 90°.",
-      "id" : "g4-math-088"
-   },
-   {
-      "answers" : [
-         "4"
-      ],
-      "prompt" : "Nina asked her friends how many pets they have: 1, 2, 1, 0, 2, 1, 3, 2. How many friends have at least 2 pets?",
-      "type" : "text",
-      "hint" : "Count only the numbers 2 and 3.",
-      "topic" : "Data",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "The numbers 2, 2, 2, and 3 are at least 2, so 4 friends.",
-      "id" : "g4-math-089"
-   },
-   {
-      "answers" : [
-         "17",
-         "17 cm",
-         "17cm"
-      ],
-      "prompt" : "A plant starts at 5 cm tall and grows 3 cm every week. How tall is it after 4 weeks?",
-      "type" : "text",
-      "hint" : "It grows 3 cm for each of the 4 weeks.",
-      "topic" : "Word Problems",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "Growth is 3×4 = 12 cm, so 5 + 12 = 17 cm.",
-      "id" : "g4-math-090"
-   },
-   {
-      "answers" : [
-         "2712"
-      ],
-      "prompt" : "Calculate:  452 × 6 = ?",
-      "type" : "text",
-      "hint" : "Multiply step by step: 6×2, 6×5, 6×4.",
-      "topic" : "Operations",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "452×6 = 2712.",
-      "id" : "g4-math-091"
-   },
-   {
-      "answers" : [
-         "121"
-      ],
-      "prompt" : "Calculate:  847 ÷ 7 = ?",
-      "type" : "text",
-      "hint" : "Try 7×100, then split what is left.",
-      "topic" : "Operations",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "847 ÷ 7 = 121 (because 7×121 = 847).",
-      "id" : "g4-math-092"
-   },
+
+
+
+
+
    {
       "answers" : [
          "1035"
@@ -1347,48 +573,9 @@
       "solution" : "20×45 = 900 and 3×45 = 135, so 900 + 135 = 1035.",
       "id" : "g4-math-093"
    },
-   {
-      "answers" : [
-         "36",
-         "36 stickers"
-      ],
-      "prompt" : "Tom has 9 stickers. Leo has 4 times as many stickers as Tom. How many stickers does Leo have?",
-      "type" : "text",
-      "hint" : "'4 times as many' means multiply by 4.",
-      "topic" : "Word Problems",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "9 × 4 = 36 stickers.",
-      "id" : "g4-math-094"
-   },
-   {
-      "answers" : [
-         "144",
-         "144 cm",
-         "144cm"
-      ],
-      "prompt" : "A giraffe is 12 times as tall as a mouse that is 12 cm tall. How tall is the giraffe in centimeters?",
-      "type" : "text",
-      "hint" : "Multiply the mouse's height by 12.",
-      "topic" : "Word Problems",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "12 × 12 = 144 cm.",
-      "id" : "g4-math-095"
-   },
-   {
-      "answers" : [
-         "0.75"
-      ],
-      "prompt" : "What is 0.5 + 0.25 = ?",
-      "type" : "text",
-      "hint" : "Think of 0.5 as 0.50.",
-      "topic" : "Decimals",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "0.50 + 0.25 = 0.75.",
-      "id" : "g4-math-096"
-   },
+
+
+
    {
       "answers" : [
          "0.85"
@@ -1428,53 +615,9 @@
       "solution" : "3 × 2 = 6, so the answer is 6/5.",
       "id" : "g4-math-099"
    },
-   {
-      "answers" : [
-         "240",
-         "240 seconds",
-         "240s",
-         "240 s"
-      ],
-      "prompt" : "How many seconds are in 4 minutes?",
-      "type" : "text",
-      "hint" : "1 minute equals 60 seconds.",
-      "topic" : "Measurement",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "4 × 60 = 240 seconds.",
-      "id" : "g4-math-100"
-   },
-   {
-      "answers" : [
-         "2.5",
-         "2.5 km",
-         "2.5km",
-         "2.5 kilometers"
-      ],
-      "prompt" : "A rope is 2,500 meters long. How many kilometers is that?",
-      "type" : "text",
-      "hint" : "1 kilometer equals 1000 meters.",
-      "topic" : "Measurement",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "2500 ÷ 1000 = 2.5 km.",
-      "id" : "g4-math-101"
-   },
-   {
-      "answers" : [
-         "3.25",
-         "$3.25",
-         "3 dollars and 25 cents"
-      ],
-      "prompt" : "You have $5. A toy costs $1.75. How much change do you get?",
-      "type" : "text",
-      "hint" : "Subtract the cost from $5.00.",
-      "topic" : "Money",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "$5.00 − $1.75 = $3.25.",
-      "id" : "g4-math-102"
-   },
+
+
+
    {
       "answers" : [
          "45",
@@ -1686,29 +829,8 @@
     "hint": "Count the two small triangles, then look for larger triangles made by combining them.",
     "solution": "There are 2 small triangles, 1 medium triangle on the left, and 1 large outside triangle. Total: 4 triangles."
   },
-  {
-    "id": "g4-math-118",
-    "version": 1,
-    "topic": "Geometry: Polygons",
-    "difficulty": 2,
-    "type": "choice",
-    "prompt": "A polygon has 7 sides. What is it called?",
-    "choices": ["hexagon", "heptagon", "octagon", "decagon"],
-    "answers": ["heptagon"],
-    "hint": "Hexagon = 6, heptagon = 7, octagon = 8.",
-    "solution": "A 7-sided polygon is called a heptagon."
-  },
-  {
-    "id": "g4-math-119",
-    "version": 1,
-    "topic": "Geometry: Polygons",
-    "difficulty": 2,
-    "type": "text",
-    "prompt": "A polygon has 8 vertices. How many sides does it have?",
-    "answers": ["8", "8 sides"],
-    "hint": "In any polygon, each side connects two vertices, and the counts match.",
-    "solution": "A polygon with 8 vertices has 8 sides."
-  },
+
+
   {
     "id": "g4-math-120",
     "version": 1,
