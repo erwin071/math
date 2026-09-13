@@ -21,6 +21,7 @@ moems/         → MOEMS 官方免費資源（ICPS 官方建議準備來源）
 ## 題庫整合原則
 
 - `questions.json` 保留為基礎核心題庫（core）。
+- `go-math-4th-grade.json` 為 Go Math! Grade 4 專用題庫，網站會自動載入並可用 Source 篩選器單獨練習。
 - 進階來源一律標記來源，例如 `source: "mathcounts"`、`source: "moems"`。
 - 題目再用 `track` 分流：
   - `core`：預設顯示
