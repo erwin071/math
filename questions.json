@@ -1,1132 +1,2107 @@
 [
-
-
-
-
-
-
-
-
-   {
-      "type" : "text",
-      "prompt" : "Six students each shake hands with every other student exactly once. How many handshakes are there in all?",
-      "answers" : [
-         "15"
-      ],
-      "difficulty" : 2,
-      "topic" : "Combinatorics",
-      "hint" : "The first student has 5 handshakes, the next new ones are 4, then 3, then 2, then 1.",
-      "version" : 1,
-      "solution" : "5 + 4 + 3 + 2 + 1 = 15 handshakes.",
-      "id" : "g4-math-009"
-   },
-   {
-      "solution" : "In 5 years, the father will be 45 and the son will be 15. 45 is 3 x 15.",
-      "id" : "g4-math-010",
-      "version" : 1,
-      "hint" : "Try a table. In x years, their ages are 40 + x and 10 + x.",
-      "topic" : "Age Problems",
-      "difficulty" : 2,
-      "answers" : [
-         "5",
-         "5 years"
-      ],
-      "prompt" : "A father is 40 years old. His son is 10 years old. In how many years will the father be 3 times as old as his son?",
-      "type" : "text"
-   },
-   {
-      "type" : "text",
-      "prompt" : "Using 12 unit squares, you can make rectangles with whole-number side lengths. Which rectangle has the smallest perimeter?",
-      "answers" : [
-         "3x4",
-         "4x3",
-         "3 x 4",
-         "4 x 3",
-         "3 by 4",
-         "4 by 3"
-      ],
-      "difficulty" : 2,
-      "topic" : "Area",
-      "hint" : "List factor pairs of 12: 1x12, 2x6, 3x4.",
-      "version" : 1,
-      "id" : "g4-math-011",
-      "solution" : "Perimeters: 1x12 gives 26, 2x6 gives 16, and 3x4 gives 14. The 3x4 rectangle has the smallest perimeter."
-   },
-   {
-      "difficulty" : 2,
-      "hint" : "Find two digits that add to 10 and differ by 2.",
-      "topic" : "Challenge",
-      "prompt" : "A two-digit number has a tens digit that is 2 less than its ones digit. The sum of the digits is 10. What is the number?",
-      "type" : "text",
-      "answers" : [
-         "46"
-      ],
-      "solution" : "The digits 4 and 6 add to 10, and the tens digit 4 is 2 less than the ones digit 6. The number is 46.",
-      "id" : "g4-math-012",
-      "version" : 1
-   },
-
-
-
-
-
-   {
-      "difficulty" : 2,
-      "hint" : "Use 12 as a common denominator.",
-      "topic" : "Fractions",
-      "prompt" : "Calculate: 3/4 + 5/6. Write your answer as a simplified fraction.",
-      "type" : "text",
-      "answers" : [
-         "19/12",
-         "1 7/12",
-         "1 and 7/12"
-      ],
-      "solution" : "3/4 = 9/12 and 5/6 = 10/12. The sum is 19/12, or 1 and 7/12.",
-      "id" : "g4-math-018",
-      "version" : 1
-   },
-   {
-      "version" : 1,
-      "id" : "g4-math-019",
-      "solution" : "3/8 of 2.4 is 0.9. The remaining length is 2.4 - 0.9 = 1.5 meters.",
-      "type" : "text",
-      "prompt" : "A rope is 2.4 meters long. After cutting off 3/8 of it, how many meters are left?",
-      "answers" : [
-         "1.5",
-         "1.5 meters",
-         "1.5 m"
-      ],
-      "difficulty" : 2,
-      "topic" : "Fractions",
-      "hint" : "Find the part cut off first, then subtract from 2.4."
-   },
-
-
-
-   {
-      "version" : 1,
-      "solution" : "The digits 3 and 6 work: 3 x 6 = 18, and 2 x (3 + 6) = 18. The number is 36.",
-      "id" : "g4-math-023",
-      "type" : "text",
-      "prompt" : "A two-digit number has a ones digit that is 3 more than its tens digit. The product of the digits equals twice the sum of the digits. What is the number?",
-      "answers" : [
-         "36"
-      ],
-      "difficulty" : 3,
-      "topic" : "Challenge",
-      "hint" : "Try tens digit 1, 2, 3, and so on. The ones digit is 3 more."
-   },
-
-
-
-
-
-
-   {
-      "id" : "g4-math-030",
-      "solution" : "Numbers with remainder 2 when divided by 5 are 2, 7, 12, 17, ... The smallest one that has remainder 1 when divided by 3 is 7.",
-      "version" : 1,
-      "hint" : "List numbers that are 2 more than a multiple of 5: 2, 7, 12, 17, ...",
-      "topic" : "Challenge",
-      "difficulty" : 2,
-      "answers" : [
-         "7"
-      ],
-      "prompt" : "A number leaves a remainder of 2 when divided by 5 and a remainder of 1 when divided by 3. What is the smallest positive number that works?",
-      "type" : "text"
-   },
-
-
-
-   {
-      "answers" : [
-         "16"
-      ],
-      "prompt" : "How many integers from 1 to 100 are divisible by 6?",
-      "type" : "text",
-      "hint" : "Count the multiples of 6: 6, 12, 18, ...",
-      "topic" : "Number Sense",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "100 ÷ 6 = 16 with remainder 4, so the multiples are 6×1 up to 6×16. There are 16.",
-      "id" : "g4-math-034"
-   },
-
-
-
-
-   {
-      "answers" : [
-         "red"
-      ],
-      "prompt" : "Ava, Ben, and Chloe each hold one balloon: red, yellow, or blue. No two friends have the same color.\nAva is not holding the red balloon. Ben's balloon is neither red nor yellow. Chloe is not holding the blue balloon.\nWhat color balloon does Chloe have?",
-      "type" : "text",
-      "hint" : "Figure out Ben's color first.",
-      "topic" : "Logic",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "Ben's balloon is not red or yellow, so Ben has blue. Ava is not red, so Ava has yellow. Chloe must have red.",
-      "id" : "g4-math-039"
-   },
-
-
-
-
-
-
-   {
-      "answers" : [
-         "6",
-         "6 outfits"
-      ],
-      "prompt" : "Mia has 3 T-shirts (red, blue, white) and 2 pairs of shorts (black, grey). How many different outfits can she make with one shirt and one pair of shorts?",
-      "type" : "text",
-      "hint" : "For each T-shirt, she can choose either pair of shorts.",
-      "topic" : "Combinatorics",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "3 × 2 = 6 different outfits.",
-      "id" : "g4-math-046"
-   },
-   {
-      "answers" : [
-         "18",
-         "18 years"
-      ],
-      "prompt" : "A mother is 30 years old and her daughter is 6 years old. In how many years will the mother be 2 times as old as the daughter?",
-      "type" : "text",
-      "hint" : "Try a table. In x years, their ages will be 30 + x and 6 + x.",
-      "topic" : "Age Problems",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "In 18 years the mother will be 48 and the daughter 24. Since 48 = 2 × 24, the answer is 18 years.",
-      "id" : "g4-math-047"
-   },
-
-   {
-      "answers": [
-         "47"
-      ],
-      "prompt": "A two-digit number has digits that add to 11. Reversing its digits makes the number 27 greater. What is the original number?",
-      "type": "text",
-      "hint": "Let the tens digit be a and the ones digit be b. The reversed number is 27 greater.",
-      "topic": "Number Sense",
-      "difficulty": 3,
-      "version": 1,
-      "solution": "The digit sum gives a+b=11. Reversing adds 27, so 9(b-a)=27 and b-a=3. Solving gives a=4 and b=7, so the number is 47.",
-      "id": "g4-math-049"
-   },
-   {
-      "answers": [
-         "72"
-      ],
-      "prompt": "What is the least positive integer that is divisible by 6, 8 and 9?",
-      "type": "text",
-      "hint": "Find the least common multiple of the three numbers.",
-      "topic": "Factors and Multiples",
-      "difficulty": 2,
-      "version": 1,
-      "solution": "The prime factors are 6=2*3, 8=2*2*2 and 9=3*3. Taking the highest powers gives 2*2*2*3*3=72.",
-      "id": "g4-math-050"
-   },
-   {
-      "answers": [
-         "180"
-      ],
-      "prompt": "A class collected 360 cans. It recycled 1/3 of them and then donated 1/4 of the remaining cans. How many cans were left?",
-      "type": "text",
-      "hint": "First remove 1/3 of 360, then calculate 1/4 of what remains.",
-      "topic": "Fractions",
-      "difficulty": 3,
-      "version": 1,
-      "solution": "One-third of 360 is 120, leaving 240. One-fourth of 240 is 60, so 240-60=180 cans were left.",
-      "id": "g4-math-051"
-   },
-   {
-      "answers": [
-         "60"
-      ],
-      "prompt": "A jar is 2/5 full of red marbles and the rest are blue. After 12 blue marbles are added, the red marbles make up 1/3 of the jar. How many marbles were originally in the jar?",
-      "type": "text",
-      "hint": "The number of red marbles does not change.",
-      "topic": "Fractions",
-      "difficulty": 4,
-      "version": 1,
-      "solution": "Let the original total be n. The red marbles are 2n/5. After 12 blue marbles are added, 2n/5=(n+12)/3. Thus 6n=5n+60, so n=60.",
-      "id": "g4-math-052"
-   },
-   {
-      "answers": [
-         "30"
-      ],
-      "prompt": "Four consecutive integers have a sum of 114. What is the largest integer?",
-      "type": "text",
-      "hint": "The average of four consecutive integers is halfway between the middle two.",
-      "topic": "Algebra",
-      "difficulty": 2,
-      "version": 1,
-      "solution": "The average is 114/4=28.5, so the four consecutive integers are 27, 28, 29 and 30. The largest is 30.",
-      "id": "g4-math-053"
-   },
-   {
-      "answers": [
-         "5/4",
-         "1 1/4",
-         "1.25",
-         "1 1/4 cups"
-      ],
-      "prompt": "A recipe uses 3/4 cup of flour to make 12 muffins. How many cups of flour are needed to make 20 muffins?",
-      "type": "text",
-      "hint": "Find the amount for one muffin, then multiply by 20.",
-      "topic": "Ratios",
-      "difficulty": 2,
-      "version": 1,
-      "solution": "For 20 muffins, multiply the flour by 20/12=5/3. Then (3/4)*(5/3)=5/4=1 1/4 cups.",
-      "id": "g4-math-054"
-   },
-   {
-      "answers": [
-         "176",
-         "176 cm2",
-         "176cm2",
-         "176 square cm"
-      ],
-      "prompt": "A rectangle has a perimeter of 54 cm. Its length is 5 cm greater than its width. What is its area?",
-      "type": "text",
-      "hint": "Half of the perimeter is the sum of the length and width.",
-      "topic": "Geometry",
-      "difficulty": 3,
-      "version": 1,
-      "solution": "The length plus width is 54/2=27. If the width is w, then w+(w+5)=27, so w=11 and the length is 16. The area is 11*16=176 cm2.",
-      "id": "g4-math-055"
-   },
-   {
-      "answers": [
-         "80",
-         "80 L",
-         "80 liters"
-      ],
-      "prompt": "A water tank is 3/5 full. After 24 liters are added, it is 9/10 full. What is the tank capacity in liters?",
-      "type": "text",
-      "hint": "Find the fraction of the tank represented by the 24 added liters.",
-      "topic": "Fractions",
-      "difficulty": 3,
-      "version": 1,
-      "solution": "The added amount changes the tank from 3/5 to 9/10, a difference of 3/10. If 3/10 is 24 liters, the full tank is 24*(10/3)=80 liters.",
-      "id": "g4-math-056"
-   },
-   {
-      "answers": [
-         "80"
-      ],
-      "prompt": "When 3/8 of a number is added to 1/4 of the same number, the result is 50. What is the number?",
-      "type": "text",
-      "hint": "Add the fractions before finding the whole number.",
-      "topic": "Fractions",
-      "difficulty": 3,
-      "version": 1,
-      "solution": "Three-eighths plus one-fourth is 3/8+2/8=5/8. So 5/8 of the number is 50. The whole number is 50*(8/5)=80.",
-      "id": "g4-math-057"
-   },
-   {
-      "answers": [
-         "36"
-      ],
-      "prompt": "How many rectangles, including squares, are in a 3 by 3 grid of equal-sized squares?",
-      "type": "text",
-      "hint": "Choose any two of the 4 vertical grid lines and any two of the 4 horizontal grid lines.",
-      "topic": "Combinatorics",
-      "difficulty": 2,
-      "version": 1,
-      "solution": "There are 4 vertical and 4 horizontal grid lines. A rectangle is determined by choosing 2 vertical lines and 2 horizontal lines: 6*6=36.",
-      "id": "g4-math-058"
-   },
-   {
-      "answers" : [
-         "14"
-      ],
-      "prompt" : "How many squares of any size can you see in a 3-by-3 grid?",
-      "type" : "text",
-      "hint" : "Count 1×1 squares, then 2×2 squares, then the 3×3 square.",
-      "topic" : "Challenge",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "There are 9 squares of size 1×1, 4 of size 2×2, and 1 of size 3×3. Total: 9+4+1=14.",
-      "id" : "g4-math-059"
-   },
-   {
-      "answers" : [
-         "5050"
-      ],
-      "prompt" : "What is the sum of all whole numbers from 1 to 100?",
-      "type" : "text",
-      "hint" : "Pair the numbers: 1+100, 2+99, 3+98, ... Each pair sums to 101.",
-      "topic" : "Number Sense",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "There are 50 pairs of 101, so the sum is 50×101 = 5050.",
-      "id" : "g4-math-060"
-   },
-   {
-      "answers" : [
-         "14"
-      ],
-      "prompt" : "On a farm there are only chickens and rabbits. Together they have 30 heads and 88 legs. How many rabbits are there?",
-      "type" : "text",
-      "hint" : "Each animal has one head. Let c be chickens and r be rabbits: c + r = 30.",
-      "topic" : "Logic",
-      "difficulty" : 3,
-      "version" : 1,
-      "solution" : "If all were chickens there would be 60 legs. Each rabbit adds 2 more legs, so (88−60)÷2 = 14 rabbits.",
-      "id" : "g4-math-061"
-   },
-   {
-      "answers" : [
-         "7.5",
-         "7.5 degrees",
-         "7.5°"
-      ],
-      "prompt" : "At 3:15, what is the smaller angle between the hour hand and the minute hand of a clock? (Give your answer in degrees.)",
-      "type" : "text",
-      "hint" : "The minute hand is at 90°. The hour hand moves 0.5° each minute.",
-      "topic" : "Geometry",
-      "difficulty" : 3,
-      "version" : 1,
-      "solution" : "The hour hand is at 3×30 + 15×0.5 = 97.5°. The minute hand is at 90°. The angle is 97.5−90 = 7.5°.",
-      "id" : "g4-math-062"
-   },
-   {
-      "answers" : [
-         "19"
-      ],
-      "prompt" : "How many numbers between 100 and 200 have the digit 5 in them?",
-      "type" : "text",
-      "hint" : "Count those with a 5 in the tens place, then those with a 5 in the ones place.",
-      "topic" : "Challenge",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "Tens=5: 150–159 (10 numbers). Ones=5: 105,115,...,195 (10 numbers). 155 is counted twice, so 10+10−1=19.",
-      "id" : "g4-math-063"
-   },
-   {
-      "answers" : [
-         "12"
-      ],
-      "prompt" : "A cube is painted on all 6 faces and then cut into 27 equal smaller cubes. How many of the smaller cubes have exactly 2 painted faces?",
-      "type" : "text",
-      "hint" : "Exactly 2 painted faces happen on the edges, but not at the corners.",
-      "topic" : "Geometry",
-      "difficulty" : 4,
-      "version" : 1,
-      "solution" : "Each of the 12 edges has one middle cube with exactly 2 painted faces (the corners have 3). Total: 12.",
-      "id" : "g4-math-064"
-   },
-   {
-      "answers" : [
-         "13331"
-      ],
-      "prompt" : "A palindrome reads the same forwards and backwards. What is the next palindrome after 13231?",
-      "type" : "text",
-      "hint" : "Check the middle digit; try 13232 up to 13331.",
-      "topic" : "Challenge",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "Numbers from 13232 to 13330 are not palindromes. 13331 reads the same both ways.",
-      "id" : "g4-math-065"
-   },
-   {
-      "answers" : [
-         "720"
-      ],
-      "prompt" : "In how many different orders can 6 students line up in a row?",
-      "type" : "text",
-      "hint" : "Multiply 6×5×4×3×2×1.",
-      "topic" : "Combinatorics",
-      "difficulty" : 4,
-      "version" : 1,
-      "solution" : "The first place has 6 choices, the second 5, and so on: 6×5×4×3×2×1 = 720.",
-      "id" : "g4-math-066"
-   },
-   {
-      "answers" : [
-         "9"
-      ],
-      "prompt" : "Two whole numbers have a product of 36 and a sum of 15. What is the difference between the two numbers?",
-      "type" : "text",
-      "hint" : "Find the factor pairs of 36 that add to 15.",
-      "topic" : "Challenge",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "The factor pairs of 36 are 1×36, 2×18, 3×12, 4×9, 6×6. The pair 3 and 12 adds to 15, and 12−3=9.",
-      "id" : "g4-math-067"
-   },
-   {
-      "answers" : [
-         "56"
-      ],
-      "prompt" : "The digits of a two-digit number add to 11. When the digits are reversed, the new number is 9 more than the original. What is the original number?",
-      "type" : "text",
-      "hint" : "Try pairs of digits that add to 11: 2+9, 3+8, 4+7, 5+6, ...",
-      "topic" : "Challenge",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "The digit pairs are (2,9),(3,8),(4,7),(5,6). Reversing 56 gives 65, and 65−56=9. The number is 56.",
-      "id" : "g4-math-068"
-   },
-
-
-   {
-      "answers" : [
-         "0.35"
-      ],
-      "prompt" : "What is 3/10 + 5/100 written as a decimal?",
-      "type" : "text",
-      "hint" : "Write both fractions with hundredths: 3/10 = 30/100.",
-      "topic" : "Decimals",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "30/100 + 5/100 = 35/100 = 0.35.",
-      "id" : "g4-math-071"
-   },
-
-
-
-
-
-
-
-
-
-   {
-      "answers" : [
-         "trapezoid"
-      ],
-      "prompt" : "A quadrilateral with exactly one pair of parallel sides is called a ____.",
-      "type" : "text",
-      "hint" : "Think of the shape of a tent roof or a bucket seen from the side.",
-      "topic" : "Geometry",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "A trapezoid is a 4-sided shape with exactly one pair of parallel sides.",
-      "id" : "g4-math-081"
-   },
-
-   {
-      "answers" : [
-         "12"
-      ],
-      "prompt" : "What is 2/3 of 18?",
-      "type" : "text",
-      "hint" : "First find 1/3 of 18 by dividing by 3.",
-      "topic" : "Fractions",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "1/3 of 18 is 6, so 2/3 of 18 is 2 × 6 = 12.",
-      "id" : "g4-math-083"
-   },
-   {
-      "answers" : [
-         "2",
-         "2 pizzas"
-      ],
-      "prompt" : "Four friends each eat 1/2 of a pizza. How many whole pizzas do they eat altogether?",
-      "type" : "text",
-      "hint" : "Four halves make how many wholes?",
-      "topic" : "Fractions",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "4 × 1/2 = 2 whole pizzas.",
-      "id" : "g4-math-084"
-   },
-
-
-   {
-      "answers" : [
-         "70",
-         "70 degrees",
-         "70°"
-      ],
-      "prompt" : "A quadrilateral has angles of 90°, 90°, and 110°. What is the fourth angle in degrees?",
-      "type" : "text",
-      "hint" : "The four angles of a quadrilateral add up to 360°.",
-      "topic" : "Geometry",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "360 − 90 − 90 − 110 = 70°.",
-      "id" : "g4-math-087"
-   },
-
-
-
-
-
-   {
-      "answers" : [
-         "1035"
-      ],
-      "prompt" : "Calculate:  23 × 45 = ?",
-      "type" : "text",
-      "hint" : "Split 23 into 20 and 3, then multiply each by 45.",
-      "topic" : "Operations",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "20×45 = 900 and 3×45 = 135, so 900 + 135 = 1035.",
-      "id" : "g4-math-093"
-   },
-
-
-
-   {
-      "answers" : [
-         "0.85"
-      ],
-      "prompt" : "What is 1.2 − 0.35 = ?",
-      "type" : "text",
-      "hint" : "Line up the decimals: 1.20 − 0.35.",
-      "topic" : "Decimals",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "1.20 − 0.35 = 0.85.",
-      "id" : "g4-math-097"
-   },
-   {
-      "answers" : [
-         "2/5"
-      ],
-      "prompt" : "Write 0.40 as a fraction in simplest form.",
-      "type" : "text",
-      "hint" : "0.40 = 40/100. Can you reduce it?",
-      "topic" : "Decimals",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "0.40 = 40/100 = 2/5 when reduced.",
-      "id" : "g4-math-098"
-   },
-   {
-      "answers" : [
-         "6/5"
-      ],
-      "prompt" : "What is 3 × 2/5? Write your answer as an improper fraction.",
-      "type" : "text",
-      "hint" : "3 × 2/5 means 2/5 + 2/5 + 2/5.",
-      "topic" : "Fractions",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "3 × 2 = 6, so the answer is 6/5.",
-      "id" : "g4-math-099"
-   },
-
-
-
-   {
-      "answers" : [
-         "45",
-         "45°",
-         "45 degrees"
-      ],
-      "image" : "images/angle-103.svg",
-      "prompt" : "What is the measure of the angle shown on the protractor?",
-      "type" : "text",
-      "hint" : "Read the number on the protractor where the blue ray points.",
-      "topic" : "Geometry",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "The blue ray points to 45°.",
-      "id" : "g4-math-103"
-   },
-   {
-      "answers" : [
-         "120",
-         "120°",
-         "120 degrees"
-      ],
-      "image" : "images/angle-104.svg",
-      "prompt" : "What is the measure of the angle shown on the protractor?",
-      "type" : "text",
-      "hint" : "Read the number on the protractor where the blue ray points.",
-      "topic" : "Geometry",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "The blue ray points to 120°.",
-      "id" : "g4-math-104"
-   },
-   {
-      "answers" : [
-         "35",
-         "35°",
-         "35 degrees",
-         "about 35",
-         "about 35°",
-         "approximately 35"
-      ],
-      "image" : "images/angle-105.svg",
-      "prompt" : "The angle on the protractor is between 30° and 40°. What is the best estimate?",
-      "type" : "text",
-      "hint" : "The blue ray is between the 30° and 40° marks.",
-      "topic" : "Geometry",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "The ray is between 30° and 40°, about 35°.",
-      "id" : "g4-math-105"
-   },
-   {
-      "answers" : [
-         "3",
-         "3 students"
-      ],
-      "image" : "images/lineplot-106.svg",
-      "prompt" : "How many students read exactly 3 books?",
-      "type" : "text",
-      "hint" : "Count the number of dots above the number 3.",
-      "topic" : "Data",
-      "difficulty" : 1,
-      "version" : 1,
-      "solution" : "There are 3 dots above the number 3, so 3 students read 3 books.",
-      "id" : "g4-math-106"
-   },
-   {
-      "answers" : [
-         "7",
-         "7 pencils"
-      ],
-      "image" : "images/lineplot-107.svg",
-      "prompt" : "How many pencils are 12 cm or longer?",
-      "type" : "text",
-      "hint" : "Add up the dots above 12, 13, and 14.",
-      "topic" : "Data",
-      "difficulty" : 2,
-      "version" : 1,
-      "solution" : "12 cm has 4 dots, 13 cm has 1 dot, 14 cm has 2 dots. 4 + 1 + 2 = 7 pencils.",
-      "id" : "g4-math-107"
-   },
   {
+    "source": "core",
+    "track": "core",
+    "difficulty": 1,
+    "type": "text",
+    "id": "g4-math-001",
+    "prompt": "Find the next number:\n4, 9, 14, 19, 24, ____",
+    "version": 1,
+    "solution": "Each number increases by 5. 24 + 5 = 29.",
+    "answers": [
+      "29"
+    ],
+    "hint": "Look at how much the numbers increase each time.",
+    "topic": "Patterns"
+  },
+  {
+    "type": "choice",
+    "topic": "Number Sense",
+    "difficulty": 1,
+    "id": "g4-math-002",
+    "prompt": "Which number is divisible by both 3 and 4?",
+    "version": 1,
+    "solution": "24 is a multiple of 12, so it is divisible by both 3 and 4.",
+    "answers": [
+      "24"
+    ],
+    "hint": "A number divisible by both 3 and 4 is divisible by 12.",
+    "choices": [
+      "18",
+      "20",
+      "24",
+      "30"
+    ],
+    "track": "core",
+    "source": "core"
+  },
+  {
+    "source": "core",
+    "track": "core",
+    "difficulty": 1,
+    "type": "text",
+    "id": "g4-math-003",
+    "prompt": "Calculate:  348 + 275 - 126 = ?",
+    "version": 1,
+    "answers": [
+      "497"
+    ],
+    "hint": "Add first, then subtract carefully.",
+    "solution": "348 + 275 = 623. Then 623 - 126 = 497.",
+    "topic": "Operations"
+  },
+  {
+    "topic": "Factors and Multiples",
+    "solution": "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Common factors: 1, 2, 3, 6. There are 4.",
+    "answers": [
+      "1,2,3,6",
+      "1, 2, 3, 6",
+      "4"
+    ],
+    "hint": "List all factors of each number, then find the ones that appear in both lists.",
+    "id": "g4-math-004",
+    "prompt": "List the common factors of 18 and 24. How many common factors are there?",
+    "version": 1,
+    "type": "text",
+    "difficulty": 2,
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "source": "core",
+    "track": "core",
+    "choices": [
+      "cat",
+      "dog",
+      "rabbit"
+    ],
+    "hint": "Start with Ben. Then use the pets that are left.",
+    "answers": [
+      "cat"
+    ],
+    "solution": "Ben has the rabbit. Ava and Chloe have the cat and dog. Ava does not have the dog, so Ava has the cat.",
+    "id": "g4-math-005",
+    "prompt": "Three friends have different pets: a cat, a dog, and a rabbit.\nAva does not have the dog. Ben has the rabbit. Chloe does not have the cat.\nWhich pet does Ava have?",
+    "version": 1,
+    "difficulty": 2,
+    "topic": "Logic",
+    "type": "choice"
+  },
+  {
+    "difficulty": 2,
+    "topic": "Fractions",
+    "type": "choice",
+    "track": "core",
+    "source": "core",
+    "choices": [
+      "6/12",
+      "9/12",
+      "10/12",
+      "12/18"
+    ],
+    "hint": "Multiply the numerator and denominator by the same number.",
+    "solution": "3/4 x 3/3 = 9/12.",
+    "answers": [
+      "9/12"
+    ],
+    "version": 1,
+    "id": "g4-math-006",
+    "prompt": "Which fraction is equivalent to 3/4?"
+  },
+  {
+    "answers": [
+      "28",
+      "28 cm"
+    ],
+    "solution": "Perimeter = 2 x (9 + 5) = 28 cm.",
+    "hint": "Perimeter means the distance around the shape.",
+    "topic": "Geometry",
+    "type": "text",
+    "id": "g4-math-007",
+    "prompt": "A rectangle is 9 cm long and 5 cm wide. What is its perimeter?",
+    "version": 1,
+    "source": "core",
+    "track": "core",
+    "difficulty": 2
+  },
+  {
+    "version": 1,
+    "prompt": "Mia reads 12 pages on Monday. Each day after that, she reads 4 more pages than the day before. How many pages does she read on Friday?",
+    "id": "g4-math-008",
+    "type": "text",
+    "topic": "Word Problems",
+    "solution": "Monday 12, Tuesday 16, Wednesday 20, Thursday 24, Friday 28.",
+    "answers": [
+      "28",
+      "28 pages"
+    ],
+    "hint": "Count Monday, Tuesday, Wednesday, Thursday, Friday.",
+    "difficulty": 2,
+    "track": "core",
+    "source": "core"
+  },
+  {
+    "difficulty": 3,
+    "source": "core",
+    "track": "core",
+    "topic": "Combinatorics",
+    "solution": "5 + 4 + 3 + 2 + 1 = 15 handshakes.",
+    "hint": "The first student has 5 handshakes, the next new ones are 4, then 3, then 2, then 1.",
+    "answers": [
+      "15"
+    ],
+    "prompt": "Six students each shake hands with every other student exactly once. How many handshakes are there in all?",
+    "id": "g4-math-009",
+    "version": 1,
+    "type": "text"
+  },
+  {
+    "prompt": "A father is 40 years old. His son is 10 years old. In how many years will the father be 3 times as old as his son?",
+    "id": "g4-math-010",
+    "version": 1,
+    "type": "text",
+    "topic": "Age Problems",
+    "solution": "In 5 years, the father will be 45 and the son will be 15. 45 is 3 x 15.",
+    "hint": "Try a table. In x years, their ages are 40 + x and 10 + x.",
+    "answers": [
+      "5",
+      "5 years"
+    ],
+    "difficulty": 3,
+    "track": "core",
+    "source": "core"
+  },
+  {
+    "prompt": "Using 12 unit squares, you can make rectangles with whole-number side lengths. Which rectangle has the smallest perimeter?",
+    "id": "g4-math-011",
+    "version": 1,
+    "solution": "Perimeters: 1x12 gives 26, 2x6 gives 16, and 3x4 gives 14. The 3x4 rectangle has the smallest perimeter.",
+    "answers": [
+      "3x4",
+      "4x3",
+      "3 x 4",
+      "4 x 3",
+      "3 by 4",
+      "4 by 3"
+    ],
+    "hint": "List factor pairs of 12: 1x12, 2x6, 3x4.",
+    "track": "core",
+    "source": "core",
+    "type": "text",
+    "topic": "Area",
+    "difficulty": 3
+  },
+  {
+    "type": "text",
+    "topic": "Challenge",
+    "difficulty": 3,
+    "prompt": "A two-digit number has a tens digit that is 2 less than its ones digit. The sum of the digits is 10. What is the number?",
+    "id": "g4-math-012",
+    "version": 1,
+    "answers": [
+      "46"
+    ],
+    "solution": "The digits 4 and 6 add to 10, and the tens digit 4 is 2 less than the ones digit 6. The number is 46.",
+    "hint": "Find two digits that add to 10 and differ by 2.",
+    "track": "core",
+    "source": "core"
+  },
+  {
+    "difficulty": 1,
+    "track": "core",
+    "source": "core",
+    "prompt": "Calculate: 456 x 7 - 389 = ?",
+    "id": "g4-math-013",
+    "version": 1,
+    "type": "text",
+    "topic": "Operations",
+    "answers": [
+      "2803",
+      "2,803"
+    ],
+    "solution": "456 x 7 = 3,192. Then 3,192 - 389 = 2,803.",
+    "hint": "Multiply first, then subtract."
+  },
+  {
+    "topic": "Patterns",
+    "type": "text",
+    "difficulty": 2,
+    "solution": "Each term is previous x 2 + 1. 31 x 2 + 1 = 63.",
+    "answers": [
+      "63"
+    ],
+    "hint": "Each number is made from the previous number in the same way.",
+    "version": 1,
+    "id": "g4-math-014",
+    "prompt": "Find the missing number: 3, 7, 15, 31, ____, 127",
+    "track": "core",
+    "source": "core"
+  },
+  {
+    "version": 1,
+    "prompt": "How many integers from 1 to 50 are divisible by both 3 and 4?",
+    "id": "g4-math-015",
+    "type": "text",
+    "topic": "Number Sense",
+    "solution": "Multiples of 12 from 1 to 50 are 12, 24, 36, and 48. There are 4 numbers.",
+    "answers": [
+      "4",
+      "4 numbers"
+    ],
+    "hint": "A number divisible by both 3 and 4 must be divisible by 12.",
+    "difficulty": 1,
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "track": "core",
+    "source": "core",
+    "difficulty": 2,
+    "type": "text",
+    "version": 1,
+    "prompt": "List all the factors of 36. How many factors does 36 have?",
+    "id": "g4-math-016",
+    "hint": "Pair factors that multiply to 36.",
+    "answers": [
+      "9",
+      "9 factors",
+      "1,2,3,4,6,9,12,18,36",
+      "1, 2, 3, 4, 6, 9, 12, 18, 36"
+    ],
+    "solution": "The factors are 1, 2, 3, 4, 6, 9, 12, 18, and 36. There are 9 factors.",
+    "topic": "Factors and Multiples"
+  },
+  {
+    "difficulty": 2,
+    "track": "core",
+    "source": "core",
+    "id": "g4-math-017",
+    "prompt": "Marcus wants a number of candies that can be shared equally among 4 friends, 6 friends, or 9 friends. What is the least possible number of candies?",
+    "version": 1,
+    "type": "text",
+    "topic": "Factors and Multiples",
+    "answers": [
+      "36",
+      "36 candies"
+    ],
+    "hint": "Find the least common multiple of 4, 6, and 9.",
+    "solution": "LCM(4, 6, 9) = 36, so the least possible number is 36 candies."
+  },
+  {
+    "type": "text",
+    "topic": "Fractions",
+    "difficulty": 3,
+    "prompt": "Calculate: 3/4 + 5/6. Write your answer as a simplified fraction.",
+    "id": "g4-math-018",
+    "version": 1,
+    "answers": [
+      "19/12",
+      "1 7/12",
+      "1 and 7/12"
+    ],
+    "solution": "3/4 = 9/12 and 5/6 = 10/12. The sum is 19/12, or 1 and 7/12.",
+    "hint": "Use 12 as a common denominator.",
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "difficulty": 3,
+    "source": "core",
+    "track": "core",
+    "topic": "Fractions",
+    "hint": "Find the part cut off first, then subtract from 2.4.",
+    "answers": [
+      "1.5",
+      "1.5 meters",
+      "1.5 m"
+    ],
+    "solution": "3/8 of 2.4 is 0.9. The remaining length is 2.4 - 0.9 = 1.5 meters.",
+    "version": 1,
+    "id": "g4-math-019",
+    "prompt": "A rope is 2.4 meters long. After cutting off 3/8 of it, how many meters are left?",
+    "type": "text"
+  },
+  {
+    "topic": "Geometry",
+    "answers": [
+      "55",
+      "55 degrees",
+      "55 degrees"
+    ],
+    "solution": "180 - 90 - 35 = 55, so the third angle is 55 degrees.",
+    "hint": "The angles in a triangle add to 180 degrees.",
+    "id": "g4-math-020",
+    "prompt": "A right triangle has one angle of 90 degrees and another angle of 35 degrees. What is the third angle?",
+    "version": 1,
+    "type": "text",
+    "difficulty": 1,
+    "track": "core",
+    "source": "core"
+  },
+  {
+    "track": "core",
+    "source": "core",
+    "difficulty": 2,
+    "type": "text",
+    "id": "g4-math-021",
+    "prompt": "There are red, yellow, and blue balls. Red balls are 5 more than yellow balls. Yellow balls are twice as many as blue balls. There are 45 balls total. How many blue balls are there?",
+    "version": 1,
+    "hint": "Let blue be b. Then yellow is 2b and red is 2b + 5.",
+    "solution": "b + 2b + (2b + 5) = 45, so 5b + 5 = 45. Then b = 8.",
+    "answers": [
+      "8",
+      "8 blue balls"
+    ],
+    "topic": "Word Problems"
+  },
+  {
+    "topic": "Patterns",
+    "answers": [
+      "500",
+      "500 meters",
+      "500 m"
+    ],
+    "hint": "Day 7 is 6 increases after Day 1.",
+    "solution": "There are 6 increases of 50 meters: 200 + 6 x 50 = 500 meters.",
+    "version": 1,
+    "prompt": "Emma runs 200 meters on Day 1. Each day she runs 50 meters more than the day before. How far does she run on Day 7?",
+    "id": "g4-math-022",
+    "type": "text",
+    "difficulty": 2,
+    "track": "core",
+    "source": "core"
+  },
+  {
+    "type": "text",
+    "version": 1,
+    "id": "g4-math-023",
+    "prompt": "A two-digit number has a ones digit that is 3 more than its tens digit. The product of the digits equals twice the sum of the digits. What is the number?",
+    "answers": [
+      "36"
+    ],
+    "solution": "The digits 3 and 6 work: 3 x 6 = 18, and 2 x (3 + 6) = 18. The number is 36.",
+    "hint": "Try tens digit 1, 2, 3, and so on. The ones digit is 3 more.",
+    "topic": "Challenge",
+    "source": "core",
+    "track": "core",
+    "difficulty": 3
+  },
+  {
+    "choices": [
+      "7",
+      "10",
+      "12",
+      "24"
+    ],
+    "source": "core",
+    "track": "core",
+    "prompt": "How many different outfits can Lily make with 3 shirts and 4 pairs of shorts?",
+    "id": "g4-math-024",
+    "version": 1,
+    "answers": [
+      "12"
+    ],
+    "solution": "3 x 4 = 12 different outfits.",
+    "hint": "For each shirt, Lily can choose any of 4 pairs of shorts.",
+    "difficulty": 2,
+    "type": "choice",
+    "topic": "Combinatorics"
+  },
+  {
+    "solution": "6 hundreds is 600, 14 tens is 140, and 8 ones is 8. Total: 748.",
+    "answers": [
+      "748"
+    ],
+    "hint": "14 tens is 140.",
+    "version": 1,
+    "prompt": "Which number has the same value as 6 hundreds + 14 tens + 8 ones?",
+    "id": "g4-math-025",
+    "track": "core",
+    "source": "core",
+    "choices": [
+      "648",
+      "708",
+      "748",
+      "6148"
+    ],
+    "topic": "Number Sense",
+    "type": "choice",
+    "difficulty": 1
+  },
+  {
+    "answers": [
+      "D"
+    ],
+    "solution": "It must be after B, so it is C or D. It is not immediately after B, so it is not C. The prize is in D.",
+    "hint": "The boxes after B are C and D. Immediately after B is C.",
+    "version": 1,
+    "id": "g4-math-026",
+    "prompt": "Four boxes are labeled A, B, C, and D. The prize is not in A. It is not in the box immediately after B. It is in a box with a letter after B. Where is the prize?",
+    "source": "core",
+    "track": "core",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "topic": "Logic",
+    "type": "choice",
+    "difficulty": 2
+  },
+  {
+    "difficulty": 2,
+    "source": "core",
+    "track": "core",
+    "id": "g4-math-027",
+    "prompt": "A rectangle has area 48 square cm. Its length is 8 cm. What is its perimeter?",
+    "version": 1,
+    "type": "text",
+    "topic": "Area",
+    "solution": "Width = 48 divided by 8 = 6 cm. Perimeter = 2 x (8 + 6) = 28 cm.",
+    "answers": [
+      "28",
+      "28 cm"
+    ],
+    "hint": "Find the width first."
+  },
+  {
+    "type": "text",
+    "version": 1,
+    "prompt": "A notebook costs $2.35 and a pencil costs $0.75. How much do 2 notebooks and 3 pencils cost?",
+    "id": "g4-math-028",
+    "answers": [
+      "6.95",
+      "$6.95"
+    ],
+    "solution": "2 notebooks cost $4.70. 3 pencils cost $2.25. Total: $6.95.",
+    "hint": "Find the notebook cost and pencil cost separately, then add.",
+    "topic": "Money",
+    "source": "core",
+    "track": "core",
+    "difficulty": 1
+  },
+  {
+    "difficulty": 2,
+    "topic": "Measurement",
+    "type": "text",
+    "track": "core",
+    "source": "core",
+    "answers": [
+      "95 minutes",
+      "95",
+      "1 hour 35 minutes",
+      "1 hr 35 min"
+    ],
+    "hint": "Count from 2:45 to 3:45, then from 3:45 to 4:20.",
+    "solution": "2:45 to 3:45 is 1 hour. 3:45 to 4:20 is 35 minutes. Total: 1 hour 35 minutes, or 95 minutes.",
+    "version": 1,
+    "prompt": "A movie starts at 2:45 p.m. and ends at 4:20 p.m. How long is the movie?",
+    "id": "g4-math-029"
+  },
+  {
+    "difficulty": 3,
+    "track": "core",
+    "source": "core",
+    "topic": "Challenge",
+    "answers": [
+      "7"
+    ],
+    "hint": "List numbers that are 2 more than a multiple of 5: 2, 7, 12, 17, ...",
+    "solution": "Numbers with remainder 2 when divided by 5 are 2, 7, 12, 17, ... The smallest one that has remainder 1 when divided by 3 is 7.",
+    "prompt": "A number leaves a remainder of 2 when divided by 5 and a remainder of 1 when divided by 3. What is the smallest positive number that works?",
+    "id": "g4-math-030",
+    "version": 1,
+    "type": "text"
+  },
+  {
+    "difficulty": 1,
+    "track": "core",
+    "source": "core",
+    "topic": "Patterns",
+    "answers": [
+      "36"
+    ],
+    "solution": "The differences are 3, 5, 7, 9, so the next difference is 11. 25 + 11 = 36, and 36 = 6 × 6.",
+    "hint": "These are square numbers. Look at how each step grows by odd numbers.",
+    "prompt": "Find the next number:\n1, 4, 9, 16, 25, ____",
+    "id": "g4-math-031",
+    "version": 1,
+    "type": "text"
+  },
+  {
+    "difficulty": 2,
+    "source": "core",
+    "track": "core",
+    "version": 1,
+    "prompt": "Find the next number:\n2, 6, 12, 20, 30, ____",
+    "id": "g4-math-032",
+    "type": "text",
+    "topic": "Patterns",
+    "answers": [
+      "42"
+    ],
+    "hint": "Look at the difference between each pair of numbers.",
+    "solution": "The differences are 4, 6, 8, 10, so the next difference is 12. 30 + 12 = 42."
+  },
+  {
+    "source": "core",
+    "track": "core",
+    "difficulty": 1,
+    "type": "text",
+    "version": 1,
+    "prompt": "Round 4,738 to the nearest hundred.",
+    "id": "g4-math-033",
+    "solution": "The tens digit is 3, which is less than 5, so 4,738 rounds down to 4,700.",
+    "hint": "Look at the tens digit. It is less than 5, so round down.",
+    "answers": [
+      "4700",
+      "4,700"
+    ],
+    "topic": "Number Sense"
+  },
+  {
+    "track": "core",
+    "source": "core",
+    "difficulty": 3,
+    "solution": "100 ÷ 6 = 16 with remainder 4, so the multiples are 6×1 up to 6×16. There are 16.",
+    "hint": "Count the multiples of 6: 6, 12, 18, ...",
+    "answers": [
+      "16"
+    ],
+    "topic": "Number Sense",
+    "type": "text",
+    "version": 1,
+    "id": "g4-math-034",
+    "prompt": "How many integers from 1 to 100 are divisible by 6?"
+  },
+  {
+    "hint": "Do the division first, then multiply.",
+    "solution": "64 ÷ 8 = 8, then 8 × 3 = 24.",
+    "answers": [
+      "24"
+    ],
+    "topic": "Operations",
+    "type": "text",
+    "version": 1,
+    "id": "g4-math-035",
+    "prompt": "Calculate:  64 ÷ 8 × 3 = ?",
+    "track": "core",
+    "source": "core",
+    "difficulty": 1
+  },
+  {
+    "answers": [
+      "27"
+    ],
+    "hint": "Remember the order of operations: multiply before you add.",
+    "solution": "7 × 3 = 21, then 6 + 21 = 27.",
+    "id": "g4-math-036",
+    "prompt": "What is 6 + 7 × 3?",
+    "version": 1,
+    "source": "core",
+    "track": "core",
+    "choices": [
+      "27",
+      "39",
+      "40",
+      "21"
+    ],
+    "topic": "Operations",
+    "type": "choice",
+    "difficulty": 2
+  },
+  {
+    "difficulty": 2,
+    "source": "core",
+    "track": "core",
+    "topic": "Factors and Multiples",
+    "solution": "Multiples of 4: 4, 8, 12, ...  Multiples of 6: 6, 12, ...  The LCM is 12.",
+    "answers": [
+      "12"
+    ],
+    "hint": "List the multiples of each number and find the smallest one they share.",
+    "id": "g4-math-037",
+    "prompt": "Find the least common multiple (LCM) of 4 and 6.",
+    "version": 1,
+    "type": "text"
+  },
+  {
+    "id": "g4-math-038",
+    "prompt": "Emma, Leo, and Mia each have a different color bicycle: red, blue, or green.\nEmma's bike is green. Mia's bike is not red.\nWhat color is Leo's bike?",
+    "version": 1,
+    "hint": "Emma has green, so that leaves red and blue for Mia and Leo.",
+    "answers": [
+      "red"
+    ],
+    "solution": "Emma has green. Mia's bike is not red, so Mia has blue and Leo has red.",
+    "choices": [
+      "red",
+      "blue",
+      "green"
+    ],
+    "source": "core",
+    "track": "core",
+    "type": "choice",
+    "topic": "Logic",
+    "difficulty": 2
+  },
+  {
+    "track": "core",
+    "source": "core",
+    "difficulty": 3,
+    "type": "text",
+    "version": 1,
+    "prompt": "Ava, Ben, and Chloe each hold one balloon: red, yellow, or blue. No two friends have the same color.\nAva is not holding the red balloon. Ben's balloon is neither red nor yellow. Chloe is not holding the blue balloon.\nWhat color balloon does Chloe have?",
+    "id": "g4-math-039",
+    "solution": "Ben's balloon is not red or yellow, so Ben has blue. Ava is not red, so Ava has yellow. Chloe must have red.",
+    "hint": "Figure out Ben's color first.",
+    "answers": [
+      "red"
+    ],
+    "topic": "Logic"
+  },
+  {
+    "difficulty": 1,
+    "source": "core",
+    "track": "core",
+    "prompt": "You eat 3/8 of a pizza. What fraction of the pizza is left?",
+    "id": "g4-math-040",
+    "version": 1,
+    "type": "text",
+    "topic": "Fractions",
+    "hint": "A whole pizza is 8/8.",
+    "answers": [
+      "5/8"
+    ],
+    "solution": "8/8 − 3/8 = 5/8."
+  },
+  {
+    "type": "choice",
+    "topic": "Fractions",
+    "difficulty": 2,
+    "version": 1,
+    "id": "g4-math-041",
+    "prompt": "Which fraction is the largest?",
+    "hint": "Compare each fraction to 1/2.",
+    "answers": [
+      "2/3"
+    ],
+    "solution": "2/3 is more than 1/2, while 3/8, 5/12, and 1/2 are less than or equal to 1/2.",
+    "choices": [
+      "3/8",
+      "2/3",
+      "5/12",
+      "1/2"
+    ],
+    "track": "core",
+    "source": "core"
+  },
+  {
+    "prompt": "A square has sides of 6 cm. What is its perimeter?",
+    "id": "g4-math-042",
+    "version": 1,
+    "type": "text",
+    "topic": "Geometry",
+    "answers": [
+      "24",
+      "24 cm"
+    ],
+    "hint": "A square has 4 equal sides.",
+    "solution": "Each side is 6 cm, so the perimeter is 6 × 4 = 24 cm.",
+    "difficulty": 1,
+    "track": "core",
+    "source": "core"
+  },
+  {
+    "version": 1,
+    "prompt": "A triangle has angles of 90° and 45°. What is the measure of the third angle?",
+    "id": "g4-math-043",
+    "type": "text",
+    "topic": "Geometry",
+    "hint": "The three angles of a triangle add up to 180°.",
+    "answers": [
+      "45",
+      "45 degrees",
+      "45 degree",
+      "45°"
+    ],
+    "solution": "180 − 90 − 45 = 45 degrees.",
+    "difficulty": 2,
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "source": "core",
+    "track": "core",
+    "difficulty": 1,
+    "type": "text",
+    "version": 1,
+    "id": "g4-math-044",
+    "prompt": "A baker bakes 24 muffins and puts 4 muffins in each bag. How many bags does she use?",
+    "hint": "How many groups of 4 are in 24?",
+    "answers": [
+      "6",
+      "6 bags"
+    ],
+    "solution": "24 ÷ 4 = 6 bags.",
+    "topic": "Word Problems"
+  },
+  {
+    "track": "core",
+    "source": "core",
+    "difficulty": 2,
+    "solution": "3 × $12 = $36, so $50 − $36 = $14.",
+    "answers": [
+      "14",
+      "$14",
+      "14 dollars"
+    ],
+    "hint": "First find how much the 3 books cost in all.",
+    "topic": "Word Problems",
+    "type": "text",
+    "prompt": "Tom has $50. He buys 3 books that each cost $12. How much money does he have left?",
+    "id": "g4-math-045",
+    "version": 1
+  },
+  {
+    "track": "core",
+    "source": "core",
+    "answers": [
+      "6",
+      "6 outfits"
+    ],
+    "hint": "For each T-shirt, she can choose either pair of shorts.",
+    "solution": "3 × 2 = 6 different outfits.",
+    "prompt": "Mia has 3 T-shirts (red, blue, white) and 2 pairs of shorts (black, grey). How many different outfits can she make with one shirt and one pair of shorts?",
+    "id": "g4-math-046",
+    "version": 1,
+    "difficulty": 3,
+    "topic": "Combinatorics",
+    "type": "text"
+  },
+  {
+    "difficulty": 3,
+    "topic": "Age Problems",
+    "type": "text",
+    "track": "core",
+    "source": "core",
+    "hint": "Try a table. In x years, their ages will be 30 + x and 6 + x.",
+    "solution": "In 18 years the mother will be 48 and the daughter 24. Since 48 = 2 × 24, the answer is 18 years.",
+    "answers": [
+      "18",
+      "18 years"
+    ],
+    "version": 1,
+    "id": "g4-math-047",
+    "prompt": "A mother is 30 years old and her daughter is 6 years old. In how many years will the mother be 2 times as old as the daughter?"
+  },
+  {
+    "difficulty": 1,
+    "track": "core",
+    "source": "core",
+    "topic": "Area",
+    "solution": "8 × 8 = 64, so each side is 8 cm.",
+    "answers": [
+      "8",
+      "8 cm"
+    ],
+    "hint": "Which number times itself equals 64?",
+    "version": 1,
+    "prompt": "A square has an area of 64 square cm. How long is each side?",
+    "id": "g4-math-048",
+    "type": "text"
+  },
+  {
+    "answers": [
+      "720"
+    ],
+    "hint": "Each number is the previous one multiplied by a pattern: 1×2, 2×3, 3×4, ...",
+    "solution": "1×2=2, 2×3=6, 6×4=24, 24×5=120, then 120×6=720.",
+    "topic": "Patterns",
+    "type": "text",
+    "prompt": "Find the next number:\n1, 2, 6, 24, 120, ____",
+    "id": "g4-math-049",
+    "version": 1,
+    "source": "core",
+    "track": "core",
+    "difficulty": 4
+  },
+  {
+    "difficulty": 4,
+    "track": "core",
+    "source": "core",
+    "topic": "Number Sense",
+    "solution": "990 ends in 0 and 9+9+0=18 is a multiple of 3. No larger 3-digit number works.",
+    "hint": "It must end in 0 or 5, and its digits must add to a multiple of 3.",
+    "answers": [
+      "990"
+    ],
+    "version": 1,
+    "id": "g4-math-050",
+    "prompt": "What is the largest 3-digit number that is divisible by both 3 and 5?",
+    "type": "text"
+  },
+  {
+    "track": "core",
+    "source": "core",
+    "difficulty": 4,
+    "answers": [
+      "600"
+    ],
+    "hint": "Split 24 into 4 × 6 and multiply step by step.",
+    "solution": "25×24 = 25×4×6 = 100×6 = 600.",
+    "topic": "Operations",
+    "type": "text",
+    "version": 1,
+    "prompt": "Calculate:  25 × 24 = ?  (Hint: 25 × 4 = 100)",
+    "id": "g4-math-051"
+  },
+  {
+    "id": "g4-math-052",
+    "prompt": "What is the greatest common factor (GCF) of 36 and 48?",
+    "version": 1,
+    "type": "text",
+    "topic": "Factors and Multiples",
+    "solution": "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Factors of 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The greatest factor in both lists is 12.",
+    "answers": [
+      "12"
+    ],
+    "hint": "Factor each number and compare the common factors.",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "type": "text",
+    "version": 1,
+    "id": "g4-math-053",
+    "prompt": "At a party, every person shakes hands with every other person exactly once. There were 28 handshakes in all. How many people are at the party?",
+    "hint": "Try groups: 5 people give 10 handshakes, 6 give 15, 7 give 21. Keep going.",
+    "answers": [
+      "8"
+    ],
+    "solution": "If there are n people, the handshakes are (n−1)+(n−2)+...+1. For 8 people: 7+6+5+4+3+2+1=28.",
+    "topic": "Combinatorics",
+    "track": "core",
+    "source": "core",
+    "difficulty": 4
+  },
+  {
+    "topic": "Fractions",
+    "solution": "4×9=36 and 7×5=35, so 4/5 is greater than 7/9.",
+    "hint": "Cross multiply to compare: 4×9 versus 7×5.",
+    "answers": [
+      "4/5"
+    ],
+    "id": "g4-math-054",
+    "prompt": "Which fraction is greater, 4/5 or 7/9?",
+    "version": 1,
+    "type": "text",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "difficulty": 4,
+    "track": "core",
+    "source": "core",
+    "topic": "Geometry",
+    "answers": [
+      "54",
+      "54 cm2",
+      "54cm2",
+      "54 cm²",
+      "54 square cm"
+    ],
+    "solution": "Perimeter = 2×(length+width), so 9+width=15 and width=6. Area = 9×6 = 54 cm².",
+    "hint": "Use the perimeter to find the width first.",
+    "version": 1,
+    "prompt": "A rectangle has a perimeter of 30 cm and a length of 9 cm. What is its area?",
+    "id": "g4-math-055",
+    "type": "text"
+  },
+  {
+    "hint": "First find the speed per hour.",
+    "answers": [
+      "240",
+      "240 km"
+    ],
+    "solution": "In 45 minutes (three 15-minute blocks) the train goes 90 km, so each block is 30 km. An hour has 4 of these blocks: 30×4 = 120 km per hour. In 2 hours: 120×2 = 240 km.",
+    "topic": "Word Problems",
+    "type": "text",
+    "id": "g4-math-056",
+    "prompt": "A train travels 90 km in 45 minutes. At the same speed, how far does it travel in 2 hours?",
+    "version": 1,
+    "source": "core",
+    "track": "core",
+    "difficulty": 4
+  },
+  {
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "64",
+      "64 cm2",
+      "64cm2",
+      "64 cm²",
+      "64 square cm"
+    ],
+    "solution": "The rectangle's perimeter is 2×(10+6)=32 cm. The square's side is 32÷4=8 cm, so the area is 8×8=64 cm².",
+    "hint": "Find the rectangle's perimeter, then the square's side.",
+    "version": 1,
+    "prompt": "A square has the same perimeter as a rectangle that is 10 cm by 6 cm. What is the area of the square?",
+    "id": "g4-math-057",
+    "difficulty": 4,
+    "topic": "Area",
+    "type": "text"
+  },
+  {
+    "difficulty": 4,
+    "topic": "Age Problems",
+    "type": "text",
+    "track": "core",
+    "source": "core",
+    "hint": "In x years their ages will be 70 + x and 10 + x.",
+    "solution": "70+x = 4(10+x) gives 70+x=40+4x, so 3x=30 and x=10. In 10 years: 80 = 4×20.",
+    "answers": [
+      "10",
+      "10 years"
+    ],
+    "id": "g4-math-058",
+    "prompt": "A grandfather is 70 years old and his granddaughter is 10. In how many years will the grandfather be 4 times as old as the granddaughter?",
+    "version": 1
+  },
+  {
+    "source": "core",
+    "track": "core",
+    "difficulty": 5,
+    "solution": "There are 9 squares of size 1×1, 4 of size 2×2, and 1 of size 3×3. Total: 9+4+1=14.",
+    "hint": "Count 1×1 squares, then 2×2 squares, then the 3×3 square.",
+    "answers": [
+      "14"
+    ],
+    "topic": "Challenge",
+    "type": "text",
+    "version": 1,
+    "prompt": "How many squares of any size can you see in a 3-by-3 grid?",
+    "id": "g4-math-059"
+  },
+  {
+    "difficulty": 5,
+    "topic": "Number Sense",
+    "type": "text",
+    "track": "core",
+    "source": "core",
+    "solution": "There are 50 pairs of 101, so the sum is 50×101 = 5050.",
+    "hint": "Pair the numbers: 1+100, 2+99, 3+98, ... Each pair sums to 101.",
+    "answers": [
+      "5050"
+    ],
+    "id": "g4-math-060",
+    "prompt": "What is the sum of all whole numbers from 1 to 100?",
+    "version": 1
+  },
+  {
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "topic": "Logic",
+    "hint": "Each animal has one head. Let c be chickens and r be rabbits: c + r = 30.",
+    "answers": [
+      "14"
+    ],
+    "solution": "If all were chickens there would be 60 legs. Each rabbit adds 2 more legs, so (88−60)÷2 = 14 rabbits.",
+    "version": 1,
+    "id": "g4-math-061",
+    "prompt": "On a farm there are only chickens and rabbits. Together they have 30 heads and 88 legs. How many rabbits are there?",
+    "type": "text"
+  },
+  {
+    "topic": "Geometry",
+    "solution": "The hour hand is at 3×30 + 15×0.5 = 97.5°. The minute hand is at 90°. The angle is 97.5−90 = 7.5°.",
+    "hint": "The minute hand is at 90°. The hour hand moves 0.5° each minute.",
+    "answers": [
+      "7.5",
+      "7.5 degrees",
+      "7.5°"
+    ],
+    "id": "g4-math-062",
+    "prompt": "At 3:15, what is the smaller angle between the hour hand and the minute hand of a clock? (Give your answer in degrees.)",
+    "version": 1,
+    "type": "text",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "prompt": "How many numbers between 100 and 200 have the digit 5 in them?",
+    "id": "g4-math-063",
+    "version": 1,
+    "type": "text",
+    "topic": "Challenge",
+    "answers": [
+      "19"
+    ],
+    "solution": "Tens=5: 150–159 (10 numbers). Ones=5: 105,115,...,195 (10 numbers). 155 is counted twice, so 10+10−1=19.",
+    "hint": "Count those with a 5 in the tens place, then those with a 5 in the ones place.",
+    "difficulty": 5,
+    "track": "core",
+    "source": "core"
+  },
+  {
+    "source": "core",
+    "track": "core",
+    "difficulty": 5,
+    "type": "text",
+    "id": "g4-math-064",
+    "prompt": "A cube is painted on all 6 faces and then cut into 27 equal smaller cubes. How many of the smaller cubes have exactly 2 painted faces?",
+    "version": 1,
+    "answers": [
+      "12"
+    ],
+    "hint": "Exactly 2 painted faces happen on the edges, but not at the corners.",
+    "solution": "Each of the 12 edges has one middle cube with exactly 2 painted faces (the corners have 3). Total: 12.",
+    "topic": "Geometry"
+  },
+  {
+    "hint": "Check the middle digit; try 13232 up to 13331.",
+    "solution": "Numbers from 13232 to 13330 are not palindromes. 13331 reads the same both ways.",
+    "answers": [
+      "13331"
+    ],
+    "topic": "Challenge",
+    "type": "text",
+    "id": "g4-math-065",
+    "prompt": "A palindrome reads the same forwards and backwards. What is the next palindrome after 13231?",
+    "version": 1,
+    "track": "core",
+    "source": "core",
+    "difficulty": 5
+  },
+  {
+    "track": "core",
+    "source": "core",
+    "difficulty": 5,
+    "type": "text",
+    "version": 1,
+    "id": "g4-math-066",
+    "prompt": "In how many different orders can 6 students line up in a row?",
+    "solution": "The first place has 6 choices, the second 5, and so on: 6×5×4×3×2×1 = 720.",
+    "hint": "Multiply 6×5×4×3×2×1.",
+    "answers": [
+      "720"
+    ],
+    "topic": "Combinatorics"
+  },
+  {
+    "type": "text",
+    "prompt": "Two whole numbers have a product of 36 and a sum of 15. What is the difference between the two numbers?",
+    "id": "g4-math-067",
+    "version": 1,
+    "hint": "Find the factor pairs of 36 that add to 15.",
+    "answers": [
+      "9"
+    ],
+    "solution": "The factor pairs of 36 are 1×36, 2×18, 3×12, 4×9, 6×6. The pair 3 and 12 adds to 15, and 12−3=9.",
+    "topic": "Challenge",
+    "source": "core",
+    "track": "core",
+    "difficulty": 5
+  },
+  {
+    "topic": "Challenge",
+    "hint": "Try pairs of digits that add to 11: 2+9, 3+8, 4+7, 5+6, ...",
+    "answers": [
+      "56"
+    ],
+    "solution": "The digit pairs are (2,9),(3,8),(4,7),(5,6). Reversing 56 gives 65, and 65−56=9. The number is 56.",
+    "version": 1,
+    "prompt": "The digits of a two-digit number add to 11. When the digits are reversed, the new number is 9 more than the original. What is the original number?",
+    "id": "g4-math-068",
+    "type": "text",
+    "difficulty": 5,
+    "track": "core",
+    "source": "core"
+  },
+  {
+    "source": "core",
+    "track": "core",
+    "difficulty": 2,
+    "type": "text",
+    "id": "g4-math-069",
+    "prompt": "Which number is larger, 0.6 or 0.45?",
+    "version": 1,
+    "answers": [
+      "0.6"
+    ],
+    "solution": "0.60 is greater than 0.45, so the answer is 0.6.",
+    "hint": "Write both with the same number of decimal places: 0.60 and 0.45.",
+    "topic": "Decimals"
+  },
+  {
+    "difficulty": 2,
+    "track": "core",
+    "source": "core",
+    "id": "g4-math-070",
+    "prompt": "Write '7 tenths and 3 hundredths' as a decimal.",
+    "version": 1,
+    "type": "text",
+    "topic": "Decimals",
+    "solution": "0.7 + 0.03 = 0.73.",
+    "hint": "7 tenths is 0.7 and 3 hundredths is 0.03.",
+    "answers": [
+      "0.73"
+    ]
+  },
+  {
+    "track": "core",
+    "source": "core",
+    "difficulty": 3,
+    "type": "text",
+    "version": 1,
+    "id": "g4-math-071",
+    "prompt": "What is 3/10 + 5/100 written as a decimal?",
+    "hint": "Write both fractions with hundredths: 3/10 = 30/100.",
+    "answers": [
+      "0.35"
+    ],
+    "solution": "30/100 + 5/100 = 35/100 = 0.35.",
+    "topic": "Decimals"
+  },
+  {
+    "difficulty": 2,
+    "type": "choice",
+    "topic": "Decimals",
+    "choices": [
+      "0.5",
+      "0.055",
+      "0.55",
+      "0.05"
+    ],
+    "source": "core",
+    "track": "core",
+    "prompt": "Which decimal is the smallest?",
+    "id": "g4-math-072",
+    "version": 1,
+    "answers": [
+      "0.05"
+    ],
+    "solution": "0.05 has zero tenths and 5 hundredths, which is less than 0.055, 0.5, and 0.55.",
+    "hint": "Compare tenths first, then hundredths, then thousandths."
+  },
+  {
+    "topic": "Measurement",
+    "hint": "1 meter equals 100 centimeters.",
+    "solution": "3 × 100 = 300 cm.",
+    "answers": [
+      "300",
+      "300 cm",
+      "300cm"
+    ],
+    "id": "g4-math-073",
+    "prompt": "How many centimeters are in 3 meters?",
+    "version": 1,
+    "type": "text",
+    "difficulty": 2,
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "difficulty": 2,
+    "source": "core",
+    "track": "core",
+    "version": 1,
+    "id": "g4-math-074",
+    "prompt": "How many minutes are in 3 hours?",
+    "type": "text",
+    "topic": "Measurement",
+    "hint": "1 hour equals 60 minutes.",
+    "answers": [
+      "180",
+      "180 minutes",
+      "180 minutes "
+    ],
+    "solution": "3 × 60 = 180 minutes."
+  },
+  {
+    "topic": "Measurement",
+    "hint": "1 kilogram equals 1000 grams.",
+    "answers": [
+      "2000",
+      "2000 g",
+      "2000g",
+      "2000 grams"
+    ],
+    "solution": "2 × 1000 = 2000 grams.",
+    "id": "g4-math-075",
+    "prompt": "A bag of rice weighs 2 kilograms. How many grams is that?",
+    "version": 1,
+    "type": "text",
+    "difficulty": 2,
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "topic": "Measurement",
+    "hint": "1 liter equals 1000 milliliters.",
+    "solution": "3 × 1000 = 3000 milliliters.",
+    "answers": [
+      "3000",
+      "3000 ml",
+      "3000ml",
+      "3000 mL"
+    ],
+    "id": "g4-math-076",
+    "prompt": "A jug holds 3 liters of juice. How many milliliters is that?",
+    "version": 1,
+    "type": "text",
+    "difficulty": 2,
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "type": "text",
+    "id": "g4-math-077",
+    "prompt": "A movie starts at 2:45 and ends at 4:20. How many minutes does it last?",
+    "version": 1,
+    "answers": [
+      "95",
+      "95 minutes"
+    ],
+    "solution": "2:45 to 4:20 is 1 hour and 35 minutes: 60 + 35 = 95 minutes.",
+    "hint": "Count from 2:45 to 3:45 (1 hour), then from 3:45 to 4:20.",
+    "topic": "Measurement",
+    "track": "core",
+    "source": "core",
+    "difficulty": 2
+  },
+  {
+    "topic": "Geometry",
+    "answers": [
+      "4"
+    ],
+    "solution": "A square has 4 lines of symmetry: 2 through opposite corners and 2 through the middle of opposite sides.",
+    "hint": "Lines of symmetry are fold lines where the two halves match exactly.",
+    "version": 1,
+    "prompt": "How many lines of symmetry does a square have?",
+    "id": "g4-math-078",
+    "type": "text",
+    "difficulty": 2,
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "type": "choice",
+    "topic": "Geometry",
+    "difficulty": 2,
+    "id": "g4-math-079",
+    "prompt": "Which shape has exactly ONE line of symmetry?",
+    "version": 1,
+    "solution": "A square has 4, a rectangle has 2, a parallelogram has 0, and an isosceles triangle has 1.",
+    "hint": "Count the fold lines for each shape.",
+    "answers": [
+      "isosceles triangle"
+    ],
+    "choices": [
+      "square",
+      "rectangle",
+      "isosceles triangle",
+      "parallelogram"
+    ],
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "track": "core",
+    "source": "core",
+    "difficulty": 2,
+    "type": "text",
+    "version": 1,
+    "prompt": "Two lines that stay the same distance apart and never meet are called ____ lines.",
+    "id": "g4-math-080",
+    "answers": [
+      "parallel",
+      "parallel lines"
+    ],
+    "solution": "Lines that never meet and keep the same distance apart are parallel lines.",
+    "hint": "Railroad tracks are a good example.",
+    "topic": "Geometry"
+  },
+  {
+    "type": "text",
+    "prompt": "A quadrilateral with exactly one pair of parallel sides is called a ____.",
+    "id": "g4-math-081",
+    "version": 1,
+    "solution": "A trapezoid is a 4-sided shape with exactly one pair of parallel sides.",
+    "hint": "Think of the shape of a tent roof or a bucket seen from the side.",
+    "answers": [
+      "trapezoid"
+    ],
+    "topic": "Geometry",
+    "source": "core",
+    "track": "core",
+    "difficulty": 3
+  },
+  {
+    "difficulty": 2,
+    "type": "text",
+    "topic": "Geometry",
+    "source": "core",
+    "track": "core",
+    "prompt": "An angle that is less than 90 degrees is called an ____ angle.",
+    "id": "g4-math-082",
+    "version": 1,
+    "answers": [
+      "acute",
+      "acute angle"
+    ],
+    "solution": "An angle smaller than a right angle (90°) is an acute angle.",
+    "hint": "90 degrees is a right angle; smaller than that is acute."
+  },
+  {
+    "hint": "First find 1/3 of 18 by dividing by 3.",
+    "solution": "1/3 of 18 is 6, so 2/3 of 18 is 2 × 6 = 12.",
+    "answers": [
+      "12"
+    ],
+    "topic": "Fractions",
+    "type": "text",
+    "version": 1,
+    "prompt": "What is 2/3 of 18?",
+    "id": "g4-math-083",
+    "source": "core",
+    "track": "core",
+    "difficulty": 3
+  },
+  {
+    "difficulty": 3,
+    "source": "core",
+    "track": "core",
+    "topic": "Fractions",
+    "answers": [
+      "2",
+      "2 pizzas"
+    ],
+    "hint": "Four halves make how many wholes?",
+    "solution": "4 × 1/2 = 2 whole pizzas.",
+    "prompt": "Four friends each eat 1/2 of a pizza. How many whole pizzas do they eat altogether?",
+    "id": "g4-math-084",
+    "version": 1,
+    "type": "text"
+  },
+  {
+    "type": "text",
+    "prompt": "A right angle is split into two angles. One angle is 55°. What is the other angle in degrees?",
+    "id": "g4-math-085",
+    "version": 1,
+    "answers": [
+      "35",
+      "35 degrees",
+      "35°"
+    ],
+    "hint": "A right angle measures exactly 90°.",
+    "solution": "90 − 55 = 35°.",
+    "topic": "Geometry",
+    "source": "core",
+    "track": "core",
+    "difficulty": 2
+  },
+  {
+    "track": "core",
+    "source": "core",
+    "difficulty": 2,
+    "answers": [
+      "50",
+      "50 degrees",
+      "50°"
+    ],
+    "hint": "A straight line measures exactly 180°.",
+    "solution": "180 − 130 = 50°.",
+    "topic": "Geometry",
+    "type": "text",
+    "id": "g4-math-086",
+    "prompt": "A straight line is split into two angles. One angle is 130°. What is the other angle in degrees?",
+    "version": 1
+  },
+  {
+    "track": "core",
+    "source": "core",
+    "difficulty": 3,
+    "answers": [
+      "70",
+      "70 degrees",
+      "70°"
+    ],
+    "solution": "360 − 90 − 90 − 110 = 70°.",
+    "hint": "The four angles of a quadrilateral add up to 360°.",
+    "topic": "Geometry",
+    "type": "text",
+    "prompt": "A quadrilateral has angles of 90°, 90°, and 110°. What is the fourth angle in degrees?",
+    "id": "g4-math-087",
+    "version": 1
+  },
+  {
+    "version": 1,
+    "prompt": "At 3:00, how many degrees are in the angle between the hour hand and the minute hand?",
+    "id": "g4-math-088",
+    "type": "text",
+    "topic": "Geometry",
+    "answers": [
+      "90",
+      "90 degrees",
+      "90°"
+    ],
+    "hint": "The clock face is a circle; 3:00 makes a right angle.",
+    "solution": "At 3:00 the hands form a quarter turn, which is 90°.",
+    "difficulty": 1,
+    "track": "core",
+    "source": "core"
+  },
+  {
+    "id": "g4-math-089",
+    "prompt": "Nina asked her friends how many pets they have: 1, 2, 1, 0, 2, 1, 3, 2. How many friends have at least 2 pets?",
+    "version": 1,
+    "hint": "Count only the numbers 2 and 3.",
+    "solution": "The numbers 2, 2, 2, and 3 are at least 2, so 4 friends.",
+    "answers": [
+      "4"
+    ],
+    "track": "core",
+    "source": "core",
+    "type": "text",
+    "topic": "Data",
+    "difficulty": 2
+  },
+  {
+    "difficulty": 2,
+    "type": "text",
+    "topic": "Word Problems",
+    "source": "core",
+    "track": "core",
+    "version": 1,
+    "prompt": "A plant starts at 5 cm tall and grows 3 cm every week. How tall is it after 4 weeks?",
+    "id": "g4-math-090",
+    "hint": "It grows 3 cm for each of the 4 weeks.",
+    "solution": "Growth is 3×4 = 12 cm, so 5 + 12 = 17 cm.",
+    "answers": [
+      "17",
+      "17 cm",
+      "17cm"
+    ]
+  },
+  {
+    "difficulty": 2,
+    "source": "core",
+    "track": "core",
+    "version": 1,
+    "prompt": "Calculate:  452 × 6 = ?",
+    "id": "g4-math-091",
+    "type": "text",
+    "topic": "Operations",
+    "solution": "452×6 = 2712.",
+    "hint": "Multiply step by step: 6×2, 6×5, 6×4.",
+    "answers": [
+      "2712"
+    ]
+  },
+  {
+    "id": "g4-math-092",
+    "prompt": "Calculate:  847 ÷ 7 = ?",
+    "version": 1,
+    "type": "text",
+    "topic": "Operations",
+    "solution": "847 ÷ 7 = 121 (because 7×121 = 847).",
+    "hint": "Try 7×100, then split what is left.",
+    "answers": [
+      "121"
+    ],
+    "difficulty": 2,
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "source": "core",
+    "track": "core",
+    "difficulty": 3,
+    "solution": "20×45 = 900 and 3×45 = 135, so 900 + 135 = 1035.",
+    "hint": "Split 23 into 20 and 3, then multiply each by 45.",
+    "answers": [
+      "1035"
+    ],
+    "topic": "Operations",
+    "type": "text",
+    "prompt": "Calculate:  23 × 45 = ?",
+    "id": "g4-math-093",
+    "version": 1
+  },
+  {
+    "difficulty": 1,
+    "track": "core",
+    "source": "core",
+    "prompt": "Tom has 9 stickers. Leo has 4 times as many stickers as Tom. How many stickers does Leo have?",
+    "id": "g4-math-094",
+    "version": 1,
+    "type": "text",
+    "topic": "Word Problems",
+    "answers": [
+      "36",
+      "36 stickers"
+    ],
+    "solution": "9 × 4 = 36 stickers.",
+    "hint": "'4 times as many' means multiply by 4."
+  },
+  {
+    "id": "g4-math-095",
+    "prompt": "A giraffe is 12 times as tall as a mouse that is 12 cm tall. How tall is the giraffe in centimeters?",
+    "version": 1,
+    "type": "text",
+    "topic": "Word Problems",
+    "hint": "Multiply the mouse's height by 12.",
+    "solution": "12 × 12 = 144 cm.",
+    "answers": [
+      "144",
+      "144 cm",
+      "144cm"
+    ],
+    "difficulty": 2,
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "source": "core",
+    "track": "core",
+    "solution": "0.50 + 0.25 = 0.75.",
+    "answers": [
+      "0.75"
+    ],
+    "hint": "Think of 0.5 as 0.50.",
+    "version": 1,
+    "prompt": "What is 0.5 + 0.25 = ?",
+    "id": "g4-math-096",
+    "difficulty": 2,
+    "topic": "Decimals",
+    "type": "text"
+  },
+  {
+    "solution": "1.20 − 0.35 = 0.85.",
+    "answers": [
+      "0.85"
+    ],
+    "hint": "Line up the decimals: 1.20 − 0.35.",
+    "topic": "Decimals",
+    "type": "text",
+    "prompt": "What is 1.2 − 0.35 = ?",
+    "id": "g4-math-097",
+    "version": 1,
+    "source": "core",
+    "track": "core",
+    "difficulty": 3
+  },
+  {
+    "hint": "0.40 = 40/100. Can you reduce it?",
+    "answers": [
+      "2/5"
+    ],
+    "solution": "0.40 = 40/100 = 2/5 when reduced.",
+    "topic": "Decimals",
+    "type": "text",
+    "prompt": "Write 0.40 as a fraction in simplest form.",
+    "id": "g4-math-098",
+    "version": 1,
+    "track": "core",
+    "source": "core",
+    "difficulty": 3
+  },
+  {
+    "difficulty": 3,
+    "source": "core",
+    "track": "core",
+    "id": "g4-math-099",
+    "prompt": "What is 3 × 2/5? Write your answer as an improper fraction.",
+    "version": 1,
+    "type": "text",
+    "topic": "Fractions",
+    "solution": "3 × 2 = 6, so the answer is 6/5.",
+    "answers": [
+      "6/5"
+    ],
+    "hint": "3 × 2/5 means 2/5 + 2/5 + 2/5."
+  },
+  {
+    "topic": "Measurement",
+    "answers": [
+      "240",
+      "240 seconds",
+      "240s",
+      "240 s"
+    ],
+    "hint": "1 minute equals 60 seconds.",
+    "solution": "4 × 60 = 240 seconds.",
+    "id": "g4-math-100",
+    "prompt": "How many seconds are in 4 minutes?",
+    "version": 1,
+    "type": "text",
+    "difficulty": 1,
+    "track": "core",
+    "source": "core"
+  },
+  {
+    "answers": [
+      "2.5",
+      "2.5 km",
+      "2.5km",
+      "2.5 kilometers"
+    ],
+    "hint": "1 kilometer equals 1000 meters.",
+    "solution": "2500 ÷ 1000 = 2.5 km.",
+    "topic": "Measurement",
+    "type": "text",
+    "version": 1,
+    "prompt": "A rope is 2,500 meters long. How many kilometers is that?",
+    "id": "g4-math-101",
+    "track": "core",
+    "source": "core",
+    "difficulty": 2
+  },
+  {
+    "track": "core",
+    "source": "core",
+    "difficulty": 2,
+    "hint": "Subtract the cost from $5.00.",
+    "answers": [
+      "3.25",
+      "$3.25",
+      "3 dollars and 25 cents"
+    ],
+    "solution": "$5.00 − $1.75 = $3.25.",
+    "topic": "Money",
+    "type": "text",
+    "version": 1,
+    "id": "g4-math-102",
+    "prompt": "You have $5. A toy costs $1.75. How much change do you get?"
+  },
+  {
+    "answers": [
+      "45",
+      "45°",
+      "45 degrees"
+    ],
+    "solution": "The blue ray points to 45°.",
+    "hint": "Read the number on the protractor where the blue ray points.",
+    "prompt": "What is the measure of the angle shown on the protractor?",
+    "id": "g4-math-103",
+    "version": 1,
+    "track": "core",
+    "source": "core",
+    "topic": "Geometry",
+    "type": "text",
+    "image": "images/angle-103.svg",
+    "difficulty": 2
+  },
+  {
+    "type": "text",
+    "topic": "Geometry",
+    "image": "images/angle-104.svg",
+    "difficulty": 2,
+    "version": 1,
+    "prompt": "What is the measure of the angle shown on the protractor?",
+    "id": "g4-math-104",
+    "solution": "The blue ray points to 120°.",
+    "hint": "Read the number on the protractor where the blue ray points.",
+    "answers": [
+      "120",
+      "120°",
+      "120 degrees"
+    ],
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "35",
+      "35°",
+      "35 degrees",
+      "about 35",
+      "about 35°",
+      "approximately 35"
+    ],
+    "solution": "The ray is between 30° and 40°, about 35°.",
+    "hint": "The blue ray is between the 30° and 40° marks.",
+    "id": "g4-math-105",
+    "prompt": "The angle on the protractor is between 30° and 40°. What is the best estimate?",
+    "version": 1,
+    "image": "images/angle-105.svg",
+    "difficulty": 3,
+    "topic": "Geometry",
+    "type": "text"
+  },
+  {
+    "answers": [
+      "3",
+      "3 students"
+    ],
+    "hint": "Count the number of dots above the number 3.",
+    "solution": "There are 3 dots above the number 3, so 3 students read 3 books.",
+    "version": 1,
+    "prompt": "How many students read exactly 3 books?",
+    "id": "g4-math-106",
+    "track": "core",
+    "source": "core",
+    "topic": "Data",
+    "type": "text",
+    "image": "images/lineplot-106.svg",
+    "difficulty": 2
+  },
+  {
+    "source": "core",
+    "track": "core",
+    "solution": "12 cm has 4 dots, 13 cm has 1 dot, 14 cm has 2 dots. 4 + 1 + 2 = 7 pencils.",
+    "hint": "Add up the dots above 12, 13, and 14.",
+    "answers": [
+      "7",
+      "7 pencils"
+    ],
+    "prompt": "How many pencils are 12 cm or longer?",
+    "id": "g4-math-107",
+    "version": 1,
+    "difficulty": 3,
+    "image": "images/lineplot-107.svg",
+    "topic": "Data",
+    "type": "text"
+  },
+  {
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "source": "core",
+    "track": "core",
+    "prompt": "Look at the shape. How many sides does it have?",
     "id": "g4-math-108",
     "version": 1,
-    "topic": "Geometry: Polygons",
-    "difficulty": 1,
-    "type": "choice",
-    "prompt": "Look at the shape. How many sides does it have?",
-    "image": "images/polygon-031.svg",
-    "choices": ["3", "4", "5", "6"],
-    "answers": ["5"],
+    "solution": "The outside has 5 straight sides, so the shape is a pentagon.",
+    "answers": [
+      "5"
+    ],
     "hint": "Count only the outside straight sides.",
-    "solution": "The outside has 5 straight sides, so the shape is a pentagon."
+    "difficulty": 1,
+    "image": "images/polygon-031.svg",
+    "type": "choice",
+    "topic": "Geometry: Polygons"
   },
   {
-    "id": "g4-math-109",
+    "difficulty": 1,
+    "image": "images/polygon-032.svg",
+    "type": "choice",
+    "topic": "Geometry: Polygons",
+    "choices": [
+      "triangle",
+      "quadrilateral",
+      "pentagon",
+      "hexagon"
+    ],
+    "source": "core",
+    "track": "core",
     "version": 1,
+    "id": "g4-math-109",
+    "prompt": "What is the name of this polygon?",
+    "solution": "This polygon has 6 sides, so it is a hexagon.",
+    "answers": [
+      "hexagon"
+    ],
+    "hint": "A hexagon has 6 sides."
+  },
+  {
+    "type": "choice",
     "topic": "Geometry: Polygons",
     "difficulty": 1,
-    "type": "choice",
-    "prompt": "What is the name of this polygon?",
-    "image": "images/polygon-032.svg",
-    "choices": ["triangle", "quadrilateral", "pentagon", "hexagon"],
-    "answers": ["hexagon"],
-    "hint": "A hexagon has 6 sides.",
-    "solution": "This polygon has 6 sides, so it is a hexagon."
-  },
-  {
+    "image": "images/polygon-033.svg",
+    "prompt": "Which choice is NOT a polygon?",
     "id": "g4-math-110",
     "version": 1,
-    "topic": "Geometry: Polygons",
-    "difficulty": 1,
-    "type": "choice",
-    "prompt": "Which choice is NOT a polygon?",
-    "image": "images/polygon-033.svg",
-    "choices": ["A", "B", "C", "D"],
-    "answers": ["C"],
     "hint": "A polygon must be closed and made only of straight line segments.",
-    "solution": "Shape C has a curved side, so it is not a polygon."
+    "answers": [
+      "C"
+    ],
+    "solution": "Shape C has a curved side, so it is not a polygon.",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "track": "core",
+    "source": "core"
   },
   {
-    "id": "g4-math-111",
-    "version": 1,
-    "topic": "Geometry: Polygons",
     "difficulty": 1,
-    "type": "choice",
-    "prompt": "How many vertices (corners) does the polygon have?",
     "image": "images/polygon-034.svg",
-    "choices": ["4", "5", "6", "7"],
-    "answers": ["6"],
+    "topic": "Geometry: Polygons",
+    "type": "choice",
+    "source": "core",
+    "track": "core",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answers": [
+      "6"
+    ],
+    "solution": "There are 6 corners. For a polygon, the number of sides and vertices is the same.",
     "hint": "Count the corners where two sides meet.",
-    "solution": "There are 6 corners. For a polygon, the number of sides and vertices is the same."
+    "id": "g4-math-111",
+    "prompt": "How many vertices (corners) does the polygon have?",
+    "version": 1
   },
   {
-    "id": "g4-math-112",
-    "version": 1,
-    "topic": "Geometry: Polygons",
-    "difficulty": 1,
-    "type": "choice",
-    "prompt": "This shape is a quadrilateral. Why?",
-    "image": "images/polygon-035.svg",
-    "choices": ["It has 3 sides.", "It has 4 straight sides.", "It has 5 corners.", "It has a curved side."],
-    "answers": ["It has 4 straight sides."],
+    "source": "core",
+    "track": "core",
+    "choices": [
+      "It has 3 sides.",
+      "It has 4 straight sides.",
+      "It has 5 corners.",
+      "It has a curved side."
+    ],
+    "solution": "A quadrilateral is any polygon with 4 straight sides. It does not need to look like a square.",
+    "answers": [
+      "It has 4 straight sides."
+    ],
     "hint": "Quad means four.",
-    "solution": "A quadrilateral is any polygon with 4 straight sides. It does not need to look like a square."
+    "id": "g4-math-112",
+    "prompt": "This shape is a quadrilateral. Why?",
+    "version": 1,
+    "image": "images/polygon-035.svg",
+    "difficulty": 1,
+    "topic": "Geometry: Polygons",
+    "type": "choice"
   },
   {
     "id": "g4-math-113",
+    "prompt": "Classify the shape by its number of sides.",
     "version": 1,
+    "hint": "The sides do not need to be the same length. Count the outside sides.",
+    "solution": "The shape is irregular, but it still has 5 sides. It is a pentagon.",
+    "answers": [
+      "pentagon"
+    ],
+    "choices": [
+      "triangle",
+      "quadrilateral",
+      "pentagon",
+      "hexagon"
+    ],
+    "track": "core",
+    "source": "core",
+    "type": "choice",
     "topic": "Geometry: Polygons",
     "difficulty": 2,
-    "type": "choice",
-    "prompt": "Classify the shape by its number of sides.",
-    "image": "images/polygon-036.svg",
-    "choices": ["triangle", "quadrilateral", "pentagon", "hexagon"],
-    "answers": ["pentagon"],
-    "hint": "The sides do not need to be the same length. Count the outside sides.",
-    "solution": "The shape is irregular, but it still has 5 sides. It is a pentagon."
+    "image": "images/polygon-036.svg"
   },
   {
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "track": "core",
+    "source": "core",
+    "prompt": "The diagonal line is inside the shape. How many sides does the outside polygon have?",
     "id": "g4-math-114",
     "version": 1,
-    "topic": "Geometry: Polygons",
+    "hint": "Do not count lines inside the shape as outside sides.",
+    "answers": [
+      "4"
+    ],
+    "solution": "The outside boundary has 4 sides. The inside diagonal does not change the number of sides.",
+    "image": "images/polygon-037.svg",
     "difficulty": 2,
     "type": "choice",
-    "prompt": "The diagonal line is inside the shape. How many sides does the outside polygon have?",
-    "image": "images/polygon-037.svg",
-    "choices": ["3", "4", "5", "6"],
-    "answers": ["4"],
-    "hint": "Do not count lines inside the shape as outside sides.",
-    "solution": "The outside boundary has 4 sides. The inside diagonal does not change the number of sides."
+    "topic": "Geometry: Polygons"
   },
   {
+    "answers": [
+      "B"
+    ],
+    "solution": "Shape B has a gap, so it is open and is not a polygon.",
+    "hint": "A polygon must be closed. There cannot be a gap.",
+    "prompt": "Which shape is an open figure, so it is NOT a polygon?",
     "id": "g4-math-115",
     "version": 1,
+    "track": "core",
+    "source": "core",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "topic": "Geometry: Polygons",
-    "difficulty": 1,
     "type": "choice",
-    "prompt": "Which shape is an open figure, so it is NOT a polygon?",
     "image": "images/polygon-038.svg",
-    "choices": ["A", "B", "C", "D"],
-    "answers": ["B"],
-    "hint": "A polygon must be closed. There cannot be a gap.",
-    "solution": "Shape B has a gap, so it is open and is not a polygon."
+    "difficulty": 2
   },
   {
-    "id": "g4-math-116",
-    "version": 1,
-    "topic": "Geometry: Polygons",
-    "difficulty": 1,
-    "type": "choice",
-    "prompt": "The pattern shows polygons with 3 sides, 4 sides, 5 sides, and then __ sides. What comes next?",
     "image": "images/polygon-039.svg",
-    "choices": ["4", "5", "6", "8"],
-    "answers": ["6"],
-    "hint": "The number of sides increases by 1 each time.",
-    "solution": "The pattern is 3, 4, 5, so the next polygon should have 6 sides."
-  },
-  {
-    "id": "g4-math-117",
-    "version": 1,
+    "difficulty": 2,
     "topic": "Geometry: Polygons",
-    "difficulty": 3,
     "type": "choice",
-    "prompt": "How many triangles can you see in the figure?",
-    "image": "images/polygon-040.svg",
-    "choices": ["2", "3", "4", "5"],
-    "answers": ["4"],
-    "hint": "Count the two small triangles, then look for larger triangles made by combining them.",
-    "solution": "There are 2 small triangles, 1 medium triangle on the left, and 1 large outside triangle. Total: 4 triangles."
+    "source": "core",
+    "track": "core",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "answers": [
+      "6"
+    ],
+    "hint": "The number of sides increases by 1 each time.",
+    "solution": "The pattern is 3, 4, 5, so the next polygon should have 6 sides.",
+    "prompt": "The pattern shows polygons with 3 sides, 4 sides, 5 sides, and then __ sides. What comes next?",
+    "id": "g4-math-116",
+    "version": 1
   },
-
-
   {
+    "difficulty": 2,
+    "image": "images/polygon-040.svg",
+    "type": "choice",
+    "topic": "Geometry: Polygons",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "source": "core",
+    "track": "core",
+    "version": 1,
+    "prompt": "How many triangles can you see in the figure?",
+    "id": "g4-math-117",
+    "solution": "There are 2 small triangles, 1 medium triangle on the left, and 1 large outside triangle. Total: 4 triangles.",
+    "hint": "Count the two small triangles, then look for larger triangles made by combining them.",
+    "answers": [
+      "4"
+    ]
+  },
+  {
+    "answers": [
+      "heptagon"
+    ],
+    "solution": "A 7-sided polygon is called a heptagon.",
+    "hint": "Hexagon = 6, heptagon = 7, octagon = 8.",
+    "version": 1,
+    "id": "g4-math-118",
+    "prompt": "A polygon has 7 sides. What is it called?",
+    "track": "core",
+    "source": "core",
+    "choices": [
+      "hexagon",
+      "heptagon",
+      "octagon",
+      "decagon"
+    ],
+    "topic": "Geometry: Polygons",
+    "type": "choice",
+    "difficulty": 2
+  },
+  {
+    "topic": "Geometry: Polygons",
+    "answers": [
+      "8",
+      "8 sides"
+    ],
+    "hint": "In any polygon, each side connects two vertices, and the counts match.",
+    "solution": "A polygon with 8 vertices has 8 sides.",
+    "id": "g4-math-119",
+    "prompt": "A polygon has 8 vertices. How many sides does it have?",
+    "version": 1,
+    "type": "text",
+    "difficulty": 2,
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "choices": [
+      "It is a regular pentagon.",
+      "It is an irregular pentagon.",
+      "It is not closed.",
+      "It has a curved side."
+    ],
+    "track": "core",
+    "source": "core",
+    "prompt": "Which statement is true about the shape?",
     "id": "g4-math-120",
     "version": 1,
-    "topic": "Geometry: Polygons",
-    "difficulty": 2,
-    "type": "choice",
-    "prompt": "Which statement is true about the shape?",
-    "image": "images/polygon-043.svg",
-    "choices": ["It is a regular pentagon.", "It is an irregular pentagon.", "It is not closed.", "It has a curved side."],
-    "answers": ["It is an irregular pentagon."],
     "hint": "Regular means all sides and angles are equal.",
-    "solution": "The shape is closed and has 5 straight sides, so it is a pentagon. The sides are not all equal, so it is irregular."
-  },
-  {
-    "id": "g4-math-121",
-    "version": 1,
-    "topic": "Geometry: Polygons",
+    "solution": "The shape is closed and has 5 straight sides, so it is a pentagon. The sides are not all equal, so it is irregular.",
+    "answers": [
+      "It is an irregular pentagon."
+    ],
+    "image": "images/polygon-043.svg",
     "difficulty": 3,
     "type": "choice",
-    "prompt": "How many quadrilaterals can you see?",
-    "image": "images/polygon-044.svg",
-    "choices": ["2", "3", "4", "5"],
-    "answers": ["3"],
-    "hint": "Count the left small rectangle, the right small rectangle, and the whole outside rectangle.",
-    "solution": "There are 2 small rectangles and 1 large rectangle made by combining them. Total: 3 quadrilaterals."
+    "topic": "Geometry: Polygons"
   },
   {
-    "id": "g4-math-122",
-    "version": 1,
     "topic": "Geometry: Polygons",
-    "difficulty": 1,
-    "type": "text",
-    "prompt": "A triangle and a pentagon are put side by side without overlapping. How many sides do the two polygons have in all?",
-    "answers": ["8", "8 sides"],
+    "type": "choice",
+    "image": "images/polygon-044.svg",
+    "difficulty": 3,
+    "answers": [
+      "3"
+    ],
+    "solution": "There are 2 small rectangles and 1 large rectangle made by combining them. Total: 3 quadrilaterals.",
+    "hint": "Count the left small rectangle, the right small rectangle, and the whole outside rectangle.",
+    "version": 1,
+    "prompt": "How many quadrilaterals can you see?",
+    "id": "g4-math-121",
+    "track": "core",
+    "source": "core",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "topic": "Geometry: Polygons",
     "hint": "Add the sides: triangle sides + pentagon sides.",
-    "solution": "A triangle has 3 sides and a pentagon has 5 sides. 3 + 5 = 8 sides in all."
+    "answers": [
+      "8",
+      "8 sides"
+    ],
+    "solution": "A triangle has 3 sides and a pentagon has 5 sides. 3 + 5 = 8 sides in all.",
+    "version": 1,
+    "prompt": "A triangle and a pentagon are put side by side without overlapping. How many sides do the two polygons have in all?",
+    "id": "g4-math-122",
+    "type": "text",
+    "difficulty": 3,
+    "source": "core",
+    "track": "core"
+  },
+  {
+    "id": "g4-math-123",
+    "version": 1,
+    "prompt": "How many positive integers less than 100 are divisible by 2 or 3, but not both?",
+    "type": "text",
+    "topic": "Number Sense",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "50"
+    ],
+    "hint": "Count multiples of 2 and multiples of 3, then remove the numbers counted in both groups twice.",
+    "solution": "There are 49 multiples of 2 and 33 multiples of 3 below 100. Their overlap is the 16 multiples of 6. Numbers divisible by exactly one are 49 + 33 - 2 × 16 = 50."
   }
-,
-   {
-      "answers": [
-         "12"
-      ],
-      "prompt": "The positive integers from 1 through n have a sum of 78. What is n?",
-      "type": "text",
-      "hint": "Try adding consecutive integers, or use n(n+1)/2.",
-      "topic": "Number Sense",
-      "difficulty": 2,
-      "version": 1,
-      "solution": "Since 12*13/2=78, n=12.",
-      "id": "g4-math-123"
-   },
-   {
-      "answers": [
-         "35"
-      ],
-      "prompt": "Five consecutive odd integers have a sum of 155. What is the largest integer?",
-      "type": "text",
-      "hint": "Find the average of the five numbers first.",
-      "topic": "Algebra",
-      "difficulty": 2,
-      "version": 1,
-      "solution": "The average is 155/5=31. The integers are 27, 29, 31, 33 and 35, so the largest is 35.",
-      "id": "g4-math-124"
-   },
-   {
-      "answers": [
-         "90"
-      ],
-      "prompt": "After a 20% discount, a jacket costs $72. What was the original price?",
-      "type": "text",
-      "hint": "The sale price is 80% of the original price.",
-      "topic": "Percents",
-      "difficulty": 3,
-      "version": 1,
-      "solution": "If 80% is 72, then 100% is 72/0.8=90.",
-      "id": "g4-math-125"
-   },
-   {
-      "answers": [
-         "36"
-      ],
-      "prompt": "In a class, 7/12 of the students are boys. If there are 21 boys, how many students are in the class?",
-      "type": "text",
-      "hint": "Find the value of 1/12 of the class.",
-      "topic": "Fractions",
-      "difficulty": 3,
-      "version": 1,
-      "solution": "If 7/12 is 21, then 1/12 is 3. The whole class has 12*3=36 students.",
-      "id": "g4-math-126"
-   },
-   {
-      "answers": [
-         "40"
-      ],
-      "prompt": "A tank is 3/8 full after 15 minutes of filling at a constant rate. How many minutes will it take to fill the whole tank?",
-      "type": "text",
-      "hint": "Scale 15 minutes from 3/8 to 8/8.",
-      "topic": "Rates",
-      "difficulty": 3,
-      "version": 1,
-      "solution": "One eighth takes 15/3=5 minutes. Eight eighths take 8*5=40 minutes.",
-      "id": "g4-math-127"
-   },
-   {
-      "answers": [
-         "54"
-      ],
-      "prompt": "A rectangle has area 180 square centimeters. Its length is 3 centimeters greater than its width. What is its perimeter in centimeters?",
-      "type": "text",
-      "hint": "Look for two factors of 180 that differ by 3.",
-      "topic": "Geometry",
-      "difficulty": 4,
-      "version": 1,
-      "solution": "The dimensions are 12 and 15 because 12*15=180. The perimeter is 2*(12+15)=54.",
-      "id": "g4-math-128"
-   },
-   {
-      "answers": [
-         "80"
-      ],
-      "prompt": "The angles of a triangle are in the ratio 2:3:4. What is the measure, in degrees, of the largest angle?",
-      "type": "text",
-      "hint": "A triangle has 180 degrees in total.",
-      "topic": "Geometry",
-      "difficulty": 2,
-      "version": 1,
-      "solution": "The ratio parts total 9, so one part is 180/9=20 degrees. The largest angle is 4*20=80 degrees.",
-      "id": "g4-math-129"
-   },
-   {
-      "answers": [
-         "98"
-      ],
-      "prompt": "The average of five test scores is 86. After a sixth test score is included, the average is 88. What was the sixth score?",
-      "type": "text",
-      "hint": "Compare the total score before and after the sixth test.",
-      "topic": "Averages",
-      "difficulty": 2,
-      "version": 1,
-      "solution": "The first five total 5*86=430. The six scores total 6*88=528. The sixth score is 528-430=98.",
-      "id": "g4-math-130"
-   },
-   {
-      "answers": [
-         "19/66"
-      ],
-      "prompt": "A bag has 3 red, 4 blue and 5 green marbles. Two marbles are drawn without replacement. What is the probability that the two marbles have the same color?",
-      "type": "text",
-      "hint": "Count the same-color pairs, then divide by all possible pairs.",
-      "topic": "Probability",
-      "difficulty": 5,
-      "version": 1,
-      "solution": "Same-color pairs: C(3,2)+C(4,2)+C(5,2)=3+6+10=19. All pairs: C(12,2)=66. The probability is 19/66.",
-      "id": "g4-math-131"
-   },
-   {
-      "answers": [
-         "12"
-      ],
-      "prompt": "A four-digit lock code uses the digits 1, 2, 3 and 4 exactly once. How many such codes have a first digit smaller than the last digit?",
-      "type": "text",
-      "hint": "Exactly half of all arrangements have the first digit smaller than the last.",
-      "topic": "Combinatorics",
-      "difficulty": 4,
-      "version": 1,
-      "solution": "There are 4!=24 arrangements. Pair each code with its reverse; one in each pair has first digit smaller than last. Thus 24/2=12.",
-      "id": "g4-math-132"
-   },
-   {
-      "answers": [
-         "350"
-      ],
-      "prompt": "Twelve percent of a number is 42. What is the number?",
-      "type": "text",
-      "hint": "Write 12% as 0.12.",
-      "topic": "Percents",
-      "difficulty": 2,
-      "version": 1,
-      "solution": "0.12n=42, so n=42/0.12=350.",
-      "id": "g4-math-133"
-   },
-   {
-      "answers": [
-         "63"
-      ],
-      "prompt": "A two-digit number has a tens digit that is twice its ones digit. The number plus the number with its digits reversed is 99. What is the number?",
-      "type": "text",
-      "hint": "Let the ones digit be x and write both two-digit numbers.",
-      "topic": "Number Sense",
-      "difficulty": 3,
-      "version": 1,
-      "solution": "The number is 21x and its reverse is 12x. Their sum is 33x=99, so x=3. The number is 63.",
-      "id": "g4-math-134"
-   },
-   {
-      "answers": [
-         "20"
-      ],
-      "prompt": "How many diagonals does a regular octagon have?",
-      "type": "text",
-      "hint": "From each vertex, count segments that are not sides or the vertex itself.",
-      "topic": "Geometry",
-      "difficulty": 3,
-      "version": 1,
-      "solution": "Each of 8 vertices connects by diagonals to 5 other vertices, giving 8*5=40 counts. Each diagonal is counted twice, so there are 20 diagonals.",
-      "id": "g4-math-135"
-   },
-   {
-      "answers": [
-         "72"
-      ],
-      "prompt": "A price is increased by 25% and becomes $90. What was the original price?",
-      "type": "text",
-      "hint": "The new price is 125% of the original price.",
-      "topic": "Percents",
-      "difficulty": 2,
-      "version": 1,
-      "solution": "If 125% is 90, the original price is 90/1.25=72.",
-      "id": "g4-math-136"
-   },
-   {
-      "answers": [
-         "30"
-      ],
-      "prompt": "Three friends divide 100 coins in the ratio 2:3:5. How many coins does the middle share receive?",
-      "type": "text",
-      "hint": "First find the value of one ratio part.",
-      "topic": "Ratios",
-      "difficulty": 2,
-      "version": 1,
-      "solution": "The ratio has 2+3+5=10 parts, so each part is 10 coins. The middle share is 3*10=30 coins.",
-      "id": "g4-math-137"
-   },
-   {
-      "answers": [
-         "50"
-      ],
-      "prompt": "How many squares of all sizes are in a 4 by 6 rectangular grid of unit squares?",
-      "type": "text",
-      "hint": "Count 1 by 1, 2 by 2, 3 by 3 and 4 by 4 squares separately.",
-      "topic": "Combinatorics",
-      "difficulty": 5,
-      "version": 1,
-      "solution": "There are 24 one-unit squares, 15 two-unit squares, 8 three-unit squares and 3 four-unit squares. The total is 24+15+8+3=50.",
-      "id": "g4-math-138"
-   },
-   {
-      "answers": [
-         "360"
-      ],
-      "prompt": "A student has read 3/8 of a book. After reading 45 more pages, the student has read 1/2 of the book. How many pages are in the book?",
-      "type": "text",
-      "hint": "The extra 45 pages represent the difference between 1/2 and 3/8.",
-      "topic": "Fractions",
-      "difficulty": 3,
-      "version": 1,
-      "solution": "The difference is 1/8 of the book. If 1/8 is 45 pages, the whole book has 8*45=360 pages.",
-      "id": "g4-math-139"
-   },
-   {
-      "answers": [
-         "13/18"
-      ],
-      "prompt": "A fraction has a denominator that is 5 greater than its numerator. When 2 is added to both numerator and denominator, the fraction becomes 3/4. What is the original fraction?",
-      "type": "text",
-      "hint": "Let the numerator be n and the denominator be n+5.",
-      "topic": "Fractions",
-      "difficulty": 4,
-      "version": 1,
-      "solution": "(n+2)/(n+7)=3/4. Cross multiplying gives 4n+8=3n+21, so n=13 and the denominator is 18. The fraction is 13/18.",
-      "id": "g4-math-140"
-   },
-   {
-      "answers": [
-         "120"
-      ],
-      "prompt": "When 3/8 of a number is added to 5/24 of the same number, the result is 70. What is the number?",
-      "type": "text",
-      "hint": "Use a common denominator before adding the fractions.",
-      "topic": "Fractions",
-      "difficulty": 3,
-      "version": 1,
-      "solution": "3/8=9/24, so the total fraction is 14/24=7/12. Thus 7/12 of the number is 70, and the number is 70*12/7=120.",
-      "id": "g4-math-141"
-   },
-   {
-      "answers": [
-         "29"
-      ],
-      "prompt": "The product of two consecutive positive integers is 210. What is the sum of the two integers?",
-      "type": "text",
-      "hint": "Look for consecutive factors of 210.",
-      "topic": "Algebra",
-      "difficulty": 3,
-      "version": 1,
-      "solution": "14*15=210, so the two integers are 14 and 15. Their sum is 29.",
-      "id": "g4-math-142"
-   }
 ]
