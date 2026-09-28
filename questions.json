@@ -813,166 +813,6 @@
     "type": "text"
   },
   {
-    "answers": [
-      "720"
-    ],
-    "hint": "Each number is the previous one multiplied by a pattern: 1×2, 2×3, 3×4, ...",
-    "solution": "1×2=2, 2×3=6, 6×4=24, 24×5=120, then 120×6=720.",
-    "topic": "Patterns",
-    "type": "text",
-    "prompt": "Find the next number:\n1, 2, 6, 24, 120, ____",
-    "id": "g4-math-049",
-    "version": 1,
-    "source": "core",
-    "track": "core",
-    "difficulty": 4
-  },
-  {
-    "difficulty": 4,
-    "track": "core",
-    "source": "core",
-    "topic": "Number Sense",
-    "solution": "990 ends in 0 and 9+9+0=18 is a multiple of 3. No larger 3-digit number works.",
-    "hint": "It must end in 0 or 5, and its digits must add to a multiple of 3.",
-    "answers": [
-      "990"
-    ],
-    "version": 1,
-    "id": "g4-math-050",
-    "prompt": "What is the largest 3-digit number that is divisible by both 3 and 5?",
-    "type": "text"
-  },
-  {
-    "track": "core",
-    "source": "core",
-    "difficulty": 4,
-    "answers": [
-      "600"
-    ],
-    "hint": "Split 24 into 4 × 6 and multiply step by step.",
-    "solution": "25×24 = 25×4×6 = 100×6 = 600.",
-    "topic": "Operations",
-    "type": "text",
-    "version": 1,
-    "prompt": "Calculate:  25 × 24 = ?  (Hint: 25 × 4 = 100)",
-    "id": "g4-math-051"
-  },
-  {
-    "id": "g4-math-052",
-    "prompt": "What is the greatest common factor (GCF) of 36 and 48?",
-    "version": 1,
-    "type": "text",
-    "topic": "Factors and Multiples",
-    "solution": "Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Factors of 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The greatest factor in both lists is 12.",
-    "answers": [
-      "12"
-    ],
-    "hint": "Factor each number and compare the common factors.",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core"
-  },
-  {
-    "type": "text",
-    "version": 1,
-    "id": "g4-math-053",
-    "prompt": "At a party, every person shakes hands with every other person exactly once. There were 28 handshakes in all. How many people are at the party?",
-    "hint": "Try groups: 5 people give 10 handshakes, 6 give 15, 7 give 21. Keep going.",
-    "answers": [
-      "8"
-    ],
-    "solution": "If there are n people, the handshakes are (n−1)+(n−2)+...+1. For 8 people: 7+6+5+4+3+2+1=28.",
-    "topic": "Combinatorics",
-    "track": "core",
-    "source": "core",
-    "difficulty": 4
-  },
-  {
-    "topic": "Fractions",
-    "solution": "4×9=36 and 7×5=35, so 4/5 is greater than 7/9.",
-    "hint": "Cross multiply to compare: 4×9 versus 7×5.",
-    "answers": [
-      "4/5"
-    ],
-    "id": "g4-math-054",
-    "prompt": "Which fraction is greater, 4/5 or 7/9?",
-    "version": 1,
-    "type": "text",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core"
-  },
-  {
-    "difficulty": 4,
-    "track": "core",
-    "source": "core",
-    "topic": "Geometry",
-    "answers": [
-      "54",
-      "54 cm2",
-      "54cm2",
-      "54 cm²",
-      "54 square cm"
-    ],
-    "solution": "Perimeter = 2×(length+width), so 9+width=15 and width=6. Area = 9×6 = 54 cm².",
-    "hint": "Use the perimeter to find the width first.",
-    "version": 1,
-    "prompt": "A rectangle has a perimeter of 30 cm and a length of 9 cm. What is its area?",
-    "id": "g4-math-055",
-    "type": "text"
-  },
-  {
-    "hint": "First find the speed per hour.",
-    "answers": [
-      "240",
-      "240 km"
-    ],
-    "solution": "In 45 minutes (three 15-minute blocks) the train goes 90 km, so each block is 30 km. An hour has 4 of these blocks: 30×4 = 120 km per hour. In 2 hours: 120×2 = 240 km.",
-    "topic": "Word Problems",
-    "type": "text",
-    "id": "g4-math-056",
-    "prompt": "A train travels 90 km in 45 minutes. At the same speed, how far does it travel in 2 hours?",
-    "version": 1,
-    "source": "core",
-    "track": "core",
-    "difficulty": 4
-  },
-  {
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "64",
-      "64 cm2",
-      "64cm2",
-      "64 cm²",
-      "64 square cm"
-    ],
-    "solution": "The rectangle's perimeter is 2×(10+6)=32 cm. The square's side is 32÷4=8 cm, so the area is 8×8=64 cm².",
-    "hint": "Find the rectangle's perimeter, then the square's side.",
-    "version": 1,
-    "prompt": "A square has the same perimeter as a rectangle that is 10 cm by 6 cm. What is the area of the square?",
-    "id": "g4-math-057",
-    "difficulty": 4,
-    "topic": "Area",
-    "type": "text"
-  },
-  {
-    "difficulty": 4,
-    "topic": "Age Problems",
-    "type": "text",
-    "track": "core",
-    "source": "core",
-    "hint": "In x years their ages will be 70 + x and 10 + x.",
-    "solution": "70+x = 4(10+x) gives 70+x=40+4x, so 3x=30 and x=10. In 10 years: 80 = 4×20.",
-    "answers": [
-      "10",
-      "10 years"
-    ],
-    "id": "g4-math-058",
-    "prompt": "A grandfather is 70 years old and his granddaughter is 10. In how many years will the grandfather be 4 times as old as the granddaughter?",
-    "version": 1
-  },
-  {
     "source": "core",
     "track": "core",
     "difficulty": 5,
@@ -2103,5 +1943,155 @@
     ],
     "hint": "Count multiples of 2 and multiples of 3, then remove the numbers counted in both groups twice.",
     "solution": "There are 49 multiples of 2 and 33 multiples of 3 below 100. Their overlap is the 16 multiples of 6. Numbers divisible by exactly one are 49 + 33 - 2 × 16 = 50."
+  },
+  {
+    "id": "g4-math-124",
+    "version": 1,
+    "prompt": "A two-digit number has digits that add to 11. Reversing its digits makes a number 27 greater. What is the original number?",
+    "type": "text",
+    "topic": "Number Sense",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "47"
+    ],
+    "hint": "The difference between a reversed two-digit number and the original is 9 times the difference between its digits.",
+    "solution": "The digits differ by 27 ÷ 9 = 3. The digits that add to 11 are 4 and 7. Since reversing makes the number 27 greater, the original is 47."
+  },
+  {
+    "id": "g4-math-125",
+    "version": 1,
+    "prompt": "A bag contains red, blue, and green socks. What is the fewest number of socks you must draw without looking to guarantee that two are the same color?",
+    "type": "text",
+    "topic": "Logic",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "4"
+    ],
+    "hint": "Consider the worst case when the first socks all have different colors.",
+    "solution": "You could draw one red, one blue, and one green sock first. The fourth sock must match one of those colors, so 4 socks guarantee a matching pair."
+  },
+  {
+    "id": "g4-math-126",
+    "version": 1,
+    "prompt": "How many squares of any size are in a 5-by-5 grid of unit squares?",
+    "type": "text",
+    "topic": "Geometry",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "55"
+    ],
+    "hint": "Count 1-by-1, 2-by-2, 3-by-3, 4-by-4, and 5-by-5 squares.",
+    "solution": "There are 25 + 16 + 9 + 4 + 1 = 55 squares."
+  },
+  {
+    "id": "g4-math-127",
+    "version": 1,
+    "prompt": "A rectangle has an area of 96 square centimeters. Its length is 4 cm more than its width. What is its perimeter?",
+    "type": "text",
+    "topic": "Area",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "40"
+    ],
+    "hint": "Find two factors of 96 that differ by 4.",
+    "solution": "The factor pair that differs by 4 is 8 and 12. The perimeter is 2 × (8 + 12) = 40 cm."
+  },
+  {
+    "id": "g4-math-128",
+    "version": 1,
+    "prompt": "Calculate: 5/6 - 1/4. Write your answer as a simplified fraction.",
+    "type": "text",
+    "topic": "Fractions",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "7/12"
+    ],
+    "hint": "Use 12 as the common denominator.",
+    "solution": "5/6 = 10/12 and 1/4 = 3/12, so the difference is 7/12."
+  },
+  {
+    "id": "g4-math-129",
+    "version": 1,
+    "prompt": "At 4:20, what is the smaller angle between the hour hand and the minute hand of a clock?",
+    "type": "text",
+    "topic": "Geometry",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "10"
+    ],
+    "hint": "The minute hand moves 6 degrees per minute, and the hour hand moves 0.5 degrees per minute.",
+    "solution": "The minute hand is at 120°. The hour hand is at 4 × 30 + 20 × 0.5 = 130°. The smaller angle is 10°."
+  },
+  {
+    "id": "g4-math-130",
+    "version": 1,
+    "prompt": "How many positive factors does 48 have?",
+    "type": "text",
+    "topic": "Factors and Multiples",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "10"
+    ],
+    "hint": "List factor pairs of 48, remembering the square factor pair.",
+    "solution": "The positive factors are 1, 2, 3, 4, 6, 8, 12, 16, 24, and 48. There are 10."
+  },
+  {
+    "id": "g4-math-131",
+    "version": 1,
+    "prompt": "In a class, the ratio of boys to girls is 3:5. If there are 32 students, how many are girls?",
+    "type": "text",
+    "topic": "Ratios",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "20"
+    ],
+    "hint": "There are 8 equal ratio parts in all.",
+    "solution": "The ratio has 3 + 5 = 8 parts. Each part is 32 ÷ 8 = 4, so there are 5 × 4 = 20 girls."
+  },
+  {
+    "id": "g4-math-132",
+    "version": 1,
+    "prompt": "Find the next number: 2, 5, 10, 17, 26, ____",
+    "type": "text",
+    "topic": "Patterns",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "37"
+    ],
+    "hint": "Look at the differences between consecutive terms.",
+    "solution": "The differences are 3, 5, 7, and 9. The next difference is 11, so 26 + 11 = 37."
+  },
+  {
+    "id": "g4-math-133",
+    "version": 1,
+    "prompt": "What is the greatest four-digit number less than 5000 that is divisible by both 5 and 9?",
+    "type": "text",
+    "topic": "Number Sense",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "4995"
+    ],
+    "hint": "It must end in 0 or 5, and its digits must add to a multiple of 9.",
+    "solution": "The greatest number below 5000 that ends in 5 is 4995. Its digits add to 27, a multiple of 9, so it is divisible by both 5 and 9."
   }
 ]
