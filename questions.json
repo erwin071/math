@@ -812,158 +812,16 @@
     "id": "g4-math-048",
     "type": "text"
   },
-  {
-    "source": "core",
-    "track": "core",
-    "difficulty": 5,
-    "solution": "There are 9 squares of size 1×1, 4 of size 2×2, and 1 of size 3×3. Total: 9+4+1=14.",
-    "hint": "Count 1×1 squares, then 2×2 squares, then the 3×3 square.",
-    "answers": [
-      "14"
-    ],
-    "topic": "Challenge",
-    "type": "text",
-    "version": 1,
-    "prompt": "How many squares of any size can you see in a 3-by-3 grid?",
-    "id": "g4-math-059"
-  },
-  {
-    "difficulty": 5,
-    "topic": "Number Sense",
-    "type": "text",
-    "track": "core",
-    "source": "core",
-    "solution": "There are 50 pairs of 101, so the sum is 50×101 = 5050.",
-    "hint": "Pair the numbers: 1+100, 2+99, 3+98, ... Each pair sums to 101.",
-    "answers": [
-      "5050"
-    ],
-    "id": "g4-math-060",
-    "prompt": "What is the sum of all whole numbers from 1 to 100?",
-    "version": 1
-  },
-  {
-    "difficulty": 5,
-    "source": "core",
-    "track": "core",
-    "topic": "Logic",
-    "hint": "Each animal has one head. Let c be chickens and r be rabbits: c + r = 30.",
-    "answers": [
-      "14"
-    ],
-    "solution": "If all were chickens there would be 60 legs. Each rabbit adds 2 more legs, so (88−60)÷2 = 14 rabbits.",
-    "version": 1,
-    "id": "g4-math-061",
-    "prompt": "On a farm there are only chickens and rabbits. Together they have 30 heads and 88 legs. How many rabbits are there?",
-    "type": "text"
-  },
-  {
-    "topic": "Geometry",
-    "solution": "The hour hand is at 3×30 + 15×0.5 = 97.5°. The minute hand is at 90°. The angle is 97.5−90 = 7.5°.",
-    "hint": "The minute hand is at 90°. The hour hand moves 0.5° each minute.",
-    "answers": [
-      "7.5",
-      "7.5 degrees",
-      "7.5°"
-    ],
-    "id": "g4-math-062",
-    "prompt": "At 3:15, what is the smaller angle between the hour hand and the minute hand of a clock? (Give your answer in degrees.)",
-    "version": 1,
-    "type": "text",
-    "difficulty": 5,
-    "source": "core",
-    "track": "core"
-  },
-  {
-    "prompt": "How many numbers between 100 and 200 have the digit 5 in them?",
-    "id": "g4-math-063",
-    "version": 1,
-    "type": "text",
-    "topic": "Challenge",
-    "answers": [
-      "19"
-    ],
-    "solution": "Tens=5: 150–159 (10 numbers). Ones=5: 105,115,...,195 (10 numbers). 155 is counted twice, so 10+10−1=19.",
-    "hint": "Count those with a 5 in the tens place, then those with a 5 in the ones place.",
-    "difficulty": 5,
-    "track": "core",
-    "source": "core"
-  },
-  {
-    "source": "core",
-    "track": "core",
-    "difficulty": 5,
-    "type": "text",
-    "id": "g4-math-064",
-    "prompt": "A cube is painted on all 6 faces and then cut into 27 equal smaller cubes. How many of the smaller cubes have exactly 2 painted faces?",
-    "version": 1,
-    "answers": [
-      "12"
-    ],
-    "hint": "Exactly 2 painted faces happen on the edges, but not at the corners.",
-    "solution": "Each of the 12 edges has one middle cube with exactly 2 painted faces (the corners have 3). Total: 12.",
-    "topic": "Geometry"
-  },
-  {
-    "hint": "Check the middle digit; try 13232 up to 13331.",
-    "solution": "Numbers from 13232 to 13330 are not palindromes. 13331 reads the same both ways.",
-    "answers": [
-      "13331"
-    ],
-    "topic": "Challenge",
-    "type": "text",
-    "id": "g4-math-065",
-    "prompt": "A palindrome reads the same forwards and backwards. What is the next palindrome after 13231?",
-    "version": 1,
-    "track": "core",
-    "source": "core",
-    "difficulty": 5
-  },
-  {
-    "track": "core",
-    "source": "core",
-    "difficulty": 5,
-    "type": "text",
-    "version": 1,
-    "id": "g4-math-066",
-    "prompt": "In how many different orders can 6 students line up in a row?",
-    "solution": "The first place has 6 choices, the second 5, and so on: 6×5×4×3×2×1 = 720.",
-    "hint": "Multiply 6×5×4×3×2×1.",
-    "answers": [
-      "720"
-    ],
-    "topic": "Combinatorics"
-  },
-  {
-    "type": "text",
-    "prompt": "Two whole numbers have a product of 36 and a sum of 15. What is the difference between the two numbers?",
-    "id": "g4-math-067",
-    "version": 1,
-    "hint": "Find the factor pairs of 36 that add to 15.",
-    "answers": [
-      "9"
-    ],
-    "solution": "The factor pairs of 36 are 1×36, 2×18, 3×12, 4×9, 6×6. The pair 3 and 12 adds to 15, and 12−3=9.",
-    "topic": "Challenge",
-    "source": "core",
-    "track": "core",
-    "difficulty": 5
-  },
-  {
-    "topic": "Challenge",
-    "hint": "Try pairs of digits that add to 11: 2+9, 3+8, 4+7, 5+6, ...",
-    "answers": [
-      "56"
-    ],
-    "solution": "The digit pairs are (2,9),(3,8),(4,7),(5,6). Reversing 56 gives 65, and 65−56=9. The number is 56.",
-    "version": 1,
-    "prompt": "The digits of a two-digit number add to 11. When the digits are reversed, the new number is 9 more than the original. What is the original number?",
-    "id": "g4-math-068",
-    "type": "text",
-    "difficulty": 5,
-    "track": "core",
-    "source": "core"
-  },
+  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-059","prompt":"A rectangle has a perimeter of 54 cm. Its length is 5 cm more than its width. What is its area in square centimeters?","version":1,"answers":["176"],"hint":"The length and width add to half the perimeter. Then try two numbers 5 apart.","solution":"Length + width = 54 ÷ 2 = 27. The two numbers 5 apart are 16 and 11, so the area is 16 × 11 = 176 square centimeters.","topic":"Geometry"},
+  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-060","prompt":"What is the smallest whole number greater than 1 that leaves a remainder of 1 when divided by 2, 3, 4, and 5?","version":1,"answers":["61"],"hint":"Find the least common multiple of 2, 3, 4, and 5, then add 1.","solution":"The least common multiple is 60. The smallest number that is 1 more than a multiple of 60 is 61.","topic":"Number Sense"},
+  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-061","prompt":"How many rectangles, including squares, are in a 2-by-3 grid of equal squares?","version":1,"answers":["18"],"hint":"Choose two of the 3 horizontal lines and two of the 4 vertical lines.","solution":"There are 3 choices of horizontal boundaries and 6 choices of vertical boundaries. Thus 3 × 6 = 18 rectangles.","topic":"Geometry"},
+  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-062","prompt":"A box contains red, blue, and green marbles. There are 4 more red than blue marbles and 3 more green than red marbles. If there are 29 marbles altogether, how many are blue?","version":1,"answers":["6"],"hint":"Let the number of blue marbles be b. Write the other two amounts in terms of b.","solution":"Blue = b, red = b + 4, and green = b + 7. Therefore 3b + 11 = 29, so b = 6.","topic":"Algebraic Thinking"},
+  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-063","prompt":"A machine makes 3 toys in 3 minutes. At the same rate, how many toys can 5 identical machines make in 5 minutes?","version":1,"answers":["25"],"hint":"First find how many toys one machine makes in one minute.","solution":"Each machine makes 1 toy per minute. Five machines working for five minutes make 5 × 5 = 25 toys.","topic":"Operations"},
+  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-064","prompt":"A two-digit number is divisible by 3. Its tens digit is 2 more than its ones digit. What is the greatest possible such number?","version":1,"answers":["75"],"hint":"List digit pairs with a difference of 2, then use the divisibility rule for 3.","solution":"The greatest valid pair is 7 and 5: 7 is 2 more than 5, and 7 + 5 = 12 is divisible by 3. The number is 75.","topic":"Number Sense"},
+  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-065","prompt":"A path from the bottom-left corner to the top-right corner of a 4-by-2 grid uses exactly 4 right moves and 2 up moves. How many different paths are possible?","version":1,"answers":["15"],"hint":"Choose which 2 of the 6 total moves are up moves.","solution":"There are 6 moves total. Choosing the 2 positions for the up moves gives 6 × 5 ÷ 2 = 15 paths.","topic":"Combinatorics"},
+  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-066","prompt":"The average of five numbers is 18. Four of the numbers are 12, 17, 20, and 25. What is the fifth number?","version":1,"answers":["16"],"hint":"Find the total of all five numbers first.","solution":"The total is 5 × 18 = 90. The four known numbers total 74, so the fifth number is 90 − 74 = 16.","topic":"Number Sense"},
+  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-067","prompt":"A square is divided into 4 equal smaller squares. Each smaller square has a perimeter of 18 cm. What is the perimeter of the original square?","version":1,"answers":["36","36 cm"],"hint":"Find the side length of a smaller square, then double it for the original side length.","solution":"Each smaller square has side length 18 ÷ 4 = 4.5 cm. The original side is 9 cm, so its perimeter is 4 × 9 = 36 cm.","topic":"Geometry"},
+  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-068","prompt":"A farmer counts 35 animals, all chickens or cows. Together they have 100 legs. How many cows are there?","version":1,"answers":["15"],"hint":"If all 35 animals were chickens, there would be 70 legs. Each cow adds 2 more legs.","solution":"All chickens would give 35 × 2 = 70 legs. The extra 30 legs come in pairs, so there are 30 ÷ 2 = 15 cows.","topic":"Logic"},
   {
     "source": "core",
     "track": "core",
