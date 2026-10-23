@@ -812,16 +812,208 @@
     "id": "g4-math-048",
     "type": "text"
   },
-  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-059","prompt":"A rectangle has a perimeter of 54 cm. Its length is 5 cm more than its width. What is its area in square centimeters?","version":1,"answers":["176"],"hint":"The length and width add to half the perimeter. Then try two numbers 5 apart.","solution":"Length + width = 54 ÷ 2 = 27. The two numbers 5 apart are 16 and 11, so the area is 16 × 11 = 176 square centimeters.","topic":"Geometry"},
-  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-060","prompt":"What is the smallest whole number greater than 1 that leaves a remainder of 1 when divided by 2, 3, 4, and 5?","version":1,"answers":["61"],"hint":"Find the least common multiple of 2, 3, 4, and 5, then add 1.","solution":"The least common multiple is 60. The smallest number that is 1 more than a multiple of 60 is 61.","topic":"Number Sense"},
-  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-061","prompt":"How many rectangles, including squares, are in a 2-by-3 grid of equal squares?","version":1,"answers":["18"],"hint":"Choose two of the 3 horizontal lines and two of the 4 vertical lines.","solution":"There are 3 choices of horizontal boundaries and 6 choices of vertical boundaries. Thus 3 × 6 = 18 rectangles.","topic":"Geometry"},
-  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-062","prompt":"A box contains red, blue, and green marbles. There are 4 more red than blue marbles and 3 more green than red marbles. If there are 29 marbles altogether, how many are blue?","version":1,"answers":["6"],"hint":"Let the number of blue marbles be b. Write the other two amounts in terms of b.","solution":"Blue = b, red = b + 4, and green = b + 7. Therefore 3b + 11 = 29, so b = 6.","topic":"Algebraic Thinking"},
-  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-063","prompt":"A machine makes 3 toys in 3 minutes. At the same rate, how many toys can 5 identical machines make in 5 minutes?","version":1,"answers":["25"],"hint":"First find how many toys one machine makes in one minute.","solution":"Each machine makes 1 toy per minute. Five machines working for five minutes make 5 × 5 = 25 toys.","topic":"Operations"},
-  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-064","prompt":"A two-digit number is divisible by 3. Its tens digit is 2 more than its ones digit. What is the greatest possible such number?","version":1,"answers":["75"],"hint":"List digit pairs with a difference of 2, then use the divisibility rule for 3.","solution":"The greatest valid pair is 7 and 5: 7 is 2 more than 5, and 7 + 5 = 12 is divisible by 3. The number is 75.","topic":"Number Sense"},
-  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-065","prompt":"A path from the bottom-left corner to the top-right corner of a 4-by-2 grid uses exactly 4 right moves and 2 up moves. How many different paths are possible?","version":1,"answers":["15"],"hint":"Choose which 2 of the 6 total moves are up moves.","solution":"There are 6 moves total. Choosing the 2 positions for the up moves gives 6 × 5 ÷ 2 = 15 paths.","topic":"Combinatorics"},
-  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-066","prompt":"The average of five numbers is 18. Four of the numbers are 12, 17, 20, and 25. What is the fifth number?","version":1,"answers":["16"],"hint":"Find the total of all five numbers first.","solution":"The total is 5 × 18 = 90. The four known numbers total 74, so the fifth number is 90 − 74 = 16.","topic":"Number Sense"},
-  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-067","prompt":"A square is divided into 4 equal smaller squares. Each smaller square has a perimeter of 18 cm. What is the perimeter of the original square?","version":1,"answers":["36","36 cm"],"hint":"Find the side length of a smaller square, then double it for the original side length.","solution":"Each smaller square has side length 18 ÷ 4 = 4.5 cm. The original side is 9 cm, so its perimeter is 4 × 9 = 36 cm.","topic":"Geometry"},
-  {"source":"core","track":"core","difficulty":5,"type":"text","id":"g4-math-068","prompt":"A farmer counts 35 animals, all chickens or cows. Together they have 100 legs. How many cows are there?","version":1,"answers":["15"],"hint":"If all 35 animals were chickens, there would be 70 legs. Each cow adds 2 more legs.","solution":"All chickens would give 35 × 2 = 70 legs. The extra 30 legs come in pairs, so there are 30 ÷ 2 = 15 cows.","topic":"Logic"},
+  {
+    "id": "g4-math-144",
+    "version": 1,
+    "prompt": "A fruit stand uses a balance equation: 1 apple and 1 orange weigh 10 units, while 3 apples and 2 oranges weigh 26 units. How much does one apple weigh?",
+    "type": "choice",
+    "choices": [
+      "4 units",
+      "6 units",
+      "8 units",
+      "10 units"
+    ],
+    "topic": "Algebraic Thinking",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "6 units"
+    ],
+    "hint": "Replace the orange weight using the first equation.",
+    "solution": "If apple + orange = 10, then 3 apples + 2 oranges = 3a + 2(10 − a) = 26. Thus a = 6 units."
+  },
+  {
+    "id": "g4-math-145",
+    "version": 1,
+    "prompt": "A large cube is painted on every face and then cut into 27 equal small cubes. How many small cubes have exactly two painted faces?",
+    "type": "text",
+    "topic": "Geometry",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "12"
+    ],
+    "hint": "Cubes with exactly two painted faces lie along the edges, but not at the corners.",
+    "solution": "A 3-by-3-by-3 cube has 12 edges. Each edge has one cube between its two corner cubes, so 12 small cubes have exactly two painted faces."
+  },
+  {
+    "id": "g4-math-146",
+    "version": 1,
+    "prompt": "A four-character code uses the letters A, B, C, and D. Letters may repeat, but the code must contain at least one A. How many codes are possible?",
+    "type": "choice",
+    "choices": [
+      "64",
+      "128",
+      "175",
+      "256"
+    ],
+    "topic": "Combinatorics",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "175"
+    ],
+    "hint": "Count all codes, then subtract codes with no A.",
+    "solution": "There are 4⁴ = 256 total codes. Codes without A use 3 letters, so there are 3⁴ = 81. The answer is 256 − 81 = 175."
+  },
+  {
+    "id": "g4-math-147",
+    "version": 1,
+    "prompt": "A 3-by-3 magic square uses the numbers 1 through 9 exactly once. Every row, column, and diagonal has the same sum. What number must be in the center?",
+    "type": "text",
+    "topic": "Logic",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "5"
+    ],
+    "hint": "The total of all nine numbers is shared equally by the three rows.",
+    "solution": "The total is 1 + 2 + … + 9 = 45, so each row sums to 15. The center of a 1–9 magic square is 5."
+  },
+  {
+    "id": "g4-math-148",
+    "version": 1,
+    "prompt": "Two buses leave a station together at 9:00. One returns every 12 minutes and the other every 18 minutes. At what time will they next return together?",
+    "type": "choice",
+    "choices": [
+      "9:24",
+      "9:30",
+      "9:36",
+      "9:54"
+    ],
+    "topic": "Time and Patterns",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "9:36"
+    ],
+    "hint": "Find the first positive time that is a multiple of both 12 and 18.",
+    "solution": "The least common multiple of 12 and 18 is 36 minutes. The buses next meet at 9:00 + 36 minutes = 9:36."
+  },
+  {
+    "id": "g4-math-149",
+    "version": 1,
+    "prompt": "A game score starts at 2. Each round doubles the score and then adds 1. What is the score after four rounds?",
+    "type": "text",
+    "topic": "Algebraic Thinking",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "47"
+    ],
+    "hint": "Apply the same rule four times: 2 → 5 → …",
+    "solution": "The scores are 2, 5, 11, 23, and 47 after four rounds. The answer is 47."
+  },
+  {
+    "id": "g4-math-150",
+    "version": 1,
+    "prompt": "How many four-digit lock codes can be made from digits 0 through 9 if the first digit cannot be 0 and no digit may repeat?",
+    "type": "choice",
+    "choices": [
+      "504",
+      "2520",
+      "4536",
+      "9000"
+    ],
+    "topic": "Combinatorics",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "4536"
+    ],
+    "hint": "There are 9 choices for the first digit, then 9, 8, and 7 choices.",
+    "solution": "The count is 9 × 9 × 8 × 7 = 4536 codes."
+  },
+  {
+    "id": "g4-math-151",
+    "version": 1,
+    "prompt": "A quadrilateral has three angles measuring 72°, 95°, and 108°. What is the fourth angle?",
+    "type": "text",
+    "topic": "Geometry",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "85",
+      "85°"
+    ],
+    "hint": "The four angles of a quadrilateral add to 360°.",
+    "solution": "The fourth angle is 360° − (72° + 95° + 108°) = 85°."
+  },
+  {
+    "id": "g4-math-152",
+    "version": 1,
+    "prompt": "One of three identical-looking coins is heavier. Using a balance scale only once, which action identifies the heavier coin?",
+    "type": "choice",
+    "choices": [
+      "Weigh coin A against coin B; if they balance, coin C is heavier.",
+      "Weigh coin A alone against the table.",
+      "Weigh all three coins together.",
+      "It is impossible with one weighing."
+    ],
+    "topic": "Logic",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "Weigh coin A against coin B; if they balance, coin C is heavier."
+    ],
+    "hint": "Compare two coins directly; an unequal result identifies the heavier one.",
+    "solution": "Weigh A against B. If one side is heavier, that coin is the answer. If they balance, C must be heavier."
+  },
+  {
+    "id": "g4-math-153",
+    "version": 1,
+    "prompt": "What is 3/4 of 2/3 of 8?",
+    "type": "text",
+    "topic": "Fractions",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "4"
+    ],
+    "hint": "Find 2/3 of 8 first, then take 3/4 of that result.",
+    "solution": "2/3 of 8 is 16/3. Multiplying by 3/4 gives (3/4) × (16/3) = 4."
+  },
+  {
+    "id": "g4-math-154",
+    "version": 1,
+    "prompt": "A number pattern begins 2, 5, 11, 23, 47. Which rule generates each next term?",
+    "type": "choice",
+    "choices": [
+      "Add 3 each time",
+      "Multiply by 2, then add 1",
+      "Multiply by 3, then subtract 1",
+      "Add consecutive odd numbers"
+    ],
+    "topic": "Patterns",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "Multiply by 2, then add 1"
+    ],
+    "hint": "Test the rule on 2 and then on 5.",
+    "solution": "2 × 2 + 1 = 5, 5 × 2 + 1 = 11, and the same rule continues."
+  },
   {
     "source": "core",
     "track": "core",
@@ -1786,21 +1978,6 @@
     "difficulty": 3,
     "source": "core",
     "track": "core"
-  },
-  {
-    "id": "g4-math-123",
-    "version": 1,
-    "prompt": "How many positive integers less than 100 are divisible by 2 or 3, but not both?",
-    "type": "text",
-    "topic": "Number Sense",
-    "difficulty": 5,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "50"
-    ],
-    "hint": "Count multiples of 2 and multiples of 3, then remove the numbers counted in both groups twice.",
-    "solution": "There are 49 multiples of 2 and 33 multiples of 3 below 100. Their overlap is the 16 multiples of 6. Numbers divisible by exactly one are 49 + 33 - 2 × 16 = 50."
   },
   {
     "id": "g4-math-134",
