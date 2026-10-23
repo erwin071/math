@@ -2164,5 +2164,191 @@
     ],
     "hint": "Convert 2.3 meters to 230 centimeters first.",
     "solution": "2.3 meters is 230 centimeters. Since 230 ÷ 25 = 9 remainder 5, there are 9 full pieces and 5 cm left."
+  },
+  {
+    "id": "g4-math-155",
+    "version": 1,
+    "prompt": "Which is the prime factorization of 84?",
+    "type": "choice",
+    "choices": [
+      "2 × 3 × 14",
+      "2² × 3 × 7",
+      "2 × 3² × 7",
+      "2² × 21"
+    ],
+    "topic": "Number Theory",
+    "difficulty": 6,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "2² × 3 × 7"
+    ],
+    "hint": "Divide 84 by 2 repeatedly, then factor what remains.",
+    "solution": "84 = 2 × 42 = 2 × 2 × 21 = 2² × 3 × 7."
+  },
+  {
+    "id": "g4-math-156",
+    "version": 1,
+    "prompt": "On a map, 1 inch represents 4 miles. Two towns are 3.5 inches apart on the map. How far apart are they in real life?",
+    "type": "text",
+    "topic": "Ratios and Scale",
+    "difficulty": 6,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "14",
+      "14 miles"
+    ],
+    "hint": "Multiply the map distance by the scale.",
+    "solution": "3.5 × 4 = 14, so the towns are 14 miles apart."
+  },
+  {
+    "id": "g4-math-157",
+    "version": 1,
+    "prompt": "A bag contains 3 red and 2 blue marbles. Two marbles are drawn without replacement. What is the probability that both are red?",
+    "type": "choice",
+    "choices": [
+      "1/5",
+      "3/10",
+      "1/2",
+      "3/5"
+    ],
+    "topic": "Probability",
+    "difficulty": 6,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "3/10"
+    ],
+    "hint": "Multiply the chance of red first by the chance of red second.",
+    "solution": "The probability is 3/5 × 2/4 = 6/20 = 3/10."
+  },
+  {
+    "id": "g4-math-158",
+    "version": 1,
+    "prompt": "Three boxes are labeled APPLES, ORANGES, and MIXED. Every label is wrong. You may take one fruit from one box without looking. Which box should you choose first to correctly label all three boxes?",
+    "type": "text",
+    "topic": "Logic",
+    "difficulty": 6,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "MIXED",
+      "the MIXED box",
+      "mixed box"
+    ],
+    "hint": "Because every label is wrong, the box labeled MIXED cannot actually be mixed.",
+    "solution": "Choose the box labeled MIXED. It must contain only apples or only oranges. That fruit identifies it, and the other two labels can then be corrected by elimination."
+  },
+  {
+    "id": "g4-math-159",
+    "version": 1,
+    "prompt": "If 3x + 5 = 20, what is x?",
+    "type": "choice",
+    "choices": [
+      "3",
+      "5",
+      "7",
+      "15"
+    ],
+    "topic": "Algebraic Thinking",
+    "difficulty": 6,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "5"
+    ],
+    "hint": "Subtract 5 first, then divide by 3.",
+    "solution": "3x = 20 − 5 = 15, so x = 15 ÷ 3 = 5."
+  },
+  {
+    "id": "g4-math-160",
+    "version": 1,
+    "prompt": "A rectangle has vertices at (2,1), (2,6), (9,6), and (9,1). What is its perimeter?",
+    "type": "text",
+    "topic": "Coordinate Geometry",
+    "difficulty": 6,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "24",
+      "24 units"
+    ],
+    "hint": "The side lengths are the differences in the x- and y-coordinates.",
+    "solution": "The width is 9 − 2 = 7 and the height is 6 − 1 = 5. The perimeter is 2(7 + 5) = 24 units."
+  },
+  {
+    "id": "g4-math-161",
+    "version": 1,
+    "prompt": "A sandwich shop offers 5 toppings. You may choose exactly 2 different toppings. How many choices are possible?",
+    "type": "choice",
+    "choices": [
+      "7",
+      "10",
+      "15",
+      "20"
+    ],
+    "topic": "Combinatorics",
+    "difficulty": 6,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "10"
+    ],
+    "hint": "Count pairs without caring about the order chosen.",
+    "solution": "The pairs are combinations of 5 items taken 2 at a time: 5 × 4 ÷ 2 = 10."
+  },
+  {
+    "id": "g4-math-162",
+    "version": 1,
+    "prompt": "A tank is 1/4 full. After 18 liters are added, it is 1/2 full. What is the tank’s total capacity?",
+    "type": "text",
+    "topic": "Fractions and Measurement",
+    "difficulty": 6,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "72",
+      "72 liters"
+    ],
+    "hint": "The added 18 liters represents the difference between 1/2 and 1/4.",
+    "solution": "The difference between 1/2 and 1/4 is 1/4 of the tank. If 1/4 is 18 liters, the full tank holds 18 × 4 = 72 liters."
+  },
+  {
+    "id": "g4-math-163",
+    "version": 1,
+    "prompt": "What is the next number in the pattern 1, 4, 10, 22, 46, ____?",
+    "type": "choice",
+    "choices": [
+      "70",
+      "82",
+      "94",
+      "96"
+    ],
+    "topic": "Patterns",
+    "difficulty": 6,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "94"
+    ],
+    "hint": "Each term is twice the previous term, then 2 is added.",
+    "solution": "46 × 2 + 2 = 94."
+  },
+  {
+    "id": "g4-math-164",
+    "version": 1,
+    "prompt": "A class has 24 students. Three-fourths bring lunch from home. Of those students, 2/3 bring fruit. How many students bring both lunch from home and fruit?",
+    "type": "text",
+    "topic": "Multi-Step Problems",
+    "difficulty": 6,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "12",
+      "12 students"
+    ],
+    "hint": "Find 3/4 of 24 first, then find 2/3 of that result.",
+    "solution": "3/4 of 24 is 18. Then 2/3 of 18 is 12, so 12 students bring both."
   }
 ]

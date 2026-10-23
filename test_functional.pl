@@ -15,7 +15,7 @@ my $REVIEW_CORRECT_TO_REMOVE = 1;
 my $ADAPTIVE_WINDOW = 3;
 my $SESSION_SIZE = 10;
 my $MIN_LEVEL = 1;
-my $MAX_LEVEL = 5;
+my $MAX_LEVEL = 6;
 my (%state, %ui);
 
 my $json = do { local $/; open my $fh, '<:raw', 'questions.json' or die $!; <$fh> };
@@ -64,7 +64,7 @@ for my $q (@$questions) {
   ok(!$ids{$q->{id}}++, "unique id $q->{id}");
   ok(defined $q->{version}, "version exists $q->{id}");
   ok(defined $q->{topic} && $q->{topic} ne '', "topic exists $q->{id}");
-  ok($q->{difficulty} >= 1 && $q->{difficulty} <= 5, "difficulty range $q->{id}");
+  ok($q->{difficulty} >= 1 && $q->{difficulty} <= 6, "difficulty range $q->{id}");
   ok($q->{type} eq 'text' || $q->{type} eq 'choice', "type valid $q->{id}");
   ok(defined $q->{prompt} && $q->{prompt} ne '', "prompt exists $q->{id}");
   ok(ref($q->{answers}) eq 'ARRAY' && @{$q->{answers}} >= 1, "answers exist $q->{id}");
