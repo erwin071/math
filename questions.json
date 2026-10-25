@@ -1981,374 +1981,185 @@
   },
   {
     "id": "g4-math-134",
-    "version": 1,
-    "prompt": "A rectangular box is made from unit cubes. It is 3 cubes long, 4 cubes wide, and 2 cubes high. How many unit cubes are needed?",
+    "version": 2,
+    "prompt": "Estimate 398 × 21 by rounding each factor to the nearest hundred or ten.",
     "type": "choice",
     "choices": [
-      "9",
-      "12",
-      "24",
-      "48"
+      "4,000",
+      "8,000",
+      "10,000",
+      "12,000"
     ],
-    "topic": "Measurement",
+    "topic": "Estimation",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "24"
+      "8,000"
     ],
-    "hint": "Multiply the three dimensions.",
-    "solution": "The number of unit cubes is 3 × 4 × 2 = 24."
+    "hint": "Round 398 to 400 and 21 to 20.",
+    "solution": "398 × 21 is about 400 × 20 = 8,000."
   },
   {
     "id": "g4-math-135",
-    "version": 1,
-    "prompt": "A recipe uses 3/4 cup of oats for 4 servings. How many cups of oats are needed for 12 servings?",
+    "version": 2,
+    "prompt": "A school buys 7 packs of 18 pencils. After giving away 95 pencils, how many pencils remain?",
     "type": "text",
+    "topic": "Multi-Step Problems",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "31",
+      "31 pencils"
+    ],
+    "hint": "Multiply first, then subtract the pencils given away.",
+    "solution": "The school buys 7 × 18 = 126 pencils. Then 126 − 95 = 31 pencils remain."
+  },
+  {
+    "id": "g4-math-136",
+    "version": 2,
+    "prompt": "Which digit makes 4_2 divisible by 9?",
+    "type": "choice",
+    "choices": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "topic": "Divisibility",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "3"
+    ],
+    "hint": "The digits of a number divisible by 9 add to a multiple of 9.",
+    "solution": "4 + 3 + 2 = 9, so the missing digit is 3."
+  },
+  {
+    "id": "g4-math-137",
+    "version": 2,
+    "prompt": "The sum of three consecutive odd numbers is 75. What is the middle number?",
+    "type": "text",
+    "topic": "Number Sense",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "25"
+    ],
+    "hint": "The middle number is the average of the three numbers.",
+    "solution": "The middle number is 75 ÷ 3 = 25. The three numbers are 23, 25, and 27."
+  },
+  {
+    "id": "g4-math-138",
+    "version": 2,
+    "prompt": "An angle measures 137°. What is the measure of its supplementary angle?",
+    "type": "choice",
+    "choices": [
+      "33°",
+      "43°",
+      "53°",
+      "63°"
+    ],
+    "topic": "Angles",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "43°"
+    ],
+    "hint": "Supplementary angles add to 180°.",
+    "solution": "180° − 137° = 43°."
+  },
+  {
+    "id": "g4-math-139",
+    "version": 2,
+    "prompt": "A bus leaves every 15 minutes. If the first bus leaves at 8:10, at what time does the sixth bus leave?",
+    "type": "text",
+    "topic": "Time and Patterns",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "9:25",
+      "9:25 a.m."
+    ],
+    "hint": "There are five 15-minute intervals from the first bus to the sixth.",
+    "solution": "Five intervals take 5 × 15 = 75 minutes. 8:10 + 75 minutes = 9:25."
+  },
+  {
+    "id": "g4-math-140",
+    "version": 2,
+    "prompt": "Which fraction is greater than 1/2 but less than 3/4?",
+    "type": "choice",
+    "choices": [
+      "1/3",
+      "2/5",
+      "2/3",
+      "4/5"
+    ],
     "topic": "Fractions",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "2 1/4",
-      "2.25",
-      "2 1/4 cups"
+      "2/3"
     ],
-    "hint": "Twelve servings is three times four servings.",
-    "solution": "Twelve servings is 3 times as many as 4 servings, so use 3 × 3/4 = 9/4 = 2 1/4 cups."
+    "hint": "Compare each choice with 1/2 and 3/4.",
+    "solution": "2/3 is about 0.67, which is between 0.5 and 0.75."
   },
   {
-    "id": "g4-math-136",
-    "version": 1,
-    "prompt": "A class recorded the number of books read in four weeks: Week 1: 18, Week 2: 25, Week 3: 21, Week 4: 16. In which week did students read the most books, and how many more than in Week 4?",
-    "type": "choice",
-    "choices": [
-      "Week 1; 2 more",
-      "Week 2; 9 more",
-      "Week 3; 5 more",
-      "Week 4; 9 more"
-    ],
-    "topic": "Data",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "Week 2; 9 more"
-    ],
-    "hint": "Find the largest weekly total, then subtract Week 4.",
-    "solution": "Week 2 has the largest number, 25. The difference from Week 4 is 25 − 16 = 9 books."
-  },
-  {
-    "id": "g4-math-137",
-    "version": 1,
-    "prompt": "A 12 m by 9 m garden has a 4 m by 3 m corner used for a shed. What area remains for planting?",
+    "id": "g4-math-141",
+    "version": 2,
+    "prompt": "A three-digit number has a hundreds digit twice its ones digit, and its tens digit is one less than its ones digit. Its digits add to 11. What is the number?",
     "type": "text",
-    "topic": "Area",
+    "topic": "Number Sense",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "96",
-      "96 square meters",
-      "96 m²"
+      "623"
     ],
-    "hint": "Find the garden area and subtract the shed area.",
-    "solution": "The garden has area 12 × 9 = 108 m². The shed uses 4 × 3 = 12 m², leaving 108 − 12 = 96 m²."
+    "hint": "Let the ones digit be n. Write the other digits in terms of n.",
+    "solution": "The digits are 2n, n − 1, and n. Their sum is 4n − 1 = 11, so n = 3. The number is 623."
   },
   {
-    "id": "g4-math-138",
-    "version": 1,
-    "prompt": "A bag contains 3 red, 2 blue, and 5 green marbles. If one marble is chosen without looking, what is the probability that it is blue?",
+    "id": "g4-math-142",
+    "version": 2,
+    "prompt": "How many diagonals does a pentagon have?",
     "type": "choice",
     "choices": [
-      "1/5",
-      "1/3",
-      "2/5",
-      "1/2"
-    ],
-    "topic": "Probability",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "1/5"
-    ],
-    "hint": "Count the blue marbles and all the marbles.",
-    "solution": "There are 2 blue marbles out of 10 total marbles, so the probability is 2/10 = 1/5."
-  },
-  {
-    "id": "g4-math-139",
-    "version": 1,
-    "prompt": "A number machine follows the rule “multiply the input by 3, then add 2.” What output does it give for an input of 10?",
-    "type": "text",
-    "topic": "Algebraic Thinking",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "32"
-    ],
-    "hint": "Apply the multiplication first, then add 2.",
-    "solution": "The output is 3 × 10 + 2 = 32."
-  },
-  {
-    "id": "g4-math-140",
-    "version": 1,
-    "prompt": "Which statement must be true about every rectangle?",
-    "type": "choice",
-    "choices": [
-      "All four sides have the same length.",
-      "Opposite sides have the same length.",
-      "All four angles are acute.",
-      "It has exactly one line of symmetry."
+      "3",
+      "5",
+      "7",
+      "10"
     ],
     "topic": "Geometry",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "Opposite sides have the same length."
+      "5"
     ],
-    "hint": "Recall the defining properties of a rectangle.",
-    "solution": "A rectangle has four right angles and two pairs of opposite sides with equal lengths."
-  },
-  {
-    "id": "g4-math-141",
-    "version": 1,
-    "prompt": "A tile pattern uses 4 tiles in Figure 1 and adds 3 tiles for each new figure. How many tiles are in Figure 12?",
-    "type": "text",
-    "topic": "Patterns",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "37"
-    ],
-    "hint": "There are 11 increases after Figure 1.",
-    "solution": "Figure 12 has 4 + 11 × 3 = 37 tiles."
-  },
-  {
-    "id": "g4-math-142",
-    "version": 1,
-    "prompt": "Four students line up from shortest to tallest. Mia is taller than Leo but shorter than Sam. Zoe is shorter than Leo. Who is the shortest?",
-    "type": "choice",
-    "choices": [
-      "Mia",
-      "Leo",
-      "Sam",
-      "Zoe"
-    ],
-    "topic": "Logic",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "Zoe"
-    ],
-    "hint": "Put the four names in order from shortest to tallest.",
-    "solution": "The order is Zoe, Leo, Mia, Sam, so Zoe is the shortest."
+    "hint": "From each vertex, count the vertices that are not adjacent, then avoid double-counting.",
+    "solution": "A pentagon has 5 diagonals: each vertex connects to two non-adjacent vertices, and each diagonal is counted twice."
   },
   {
     "id": "g4-math-143",
-    "version": 1,
-    "prompt": "A 2.3-meter ribbon is cut into pieces that are each 25 centimeters long. How many full pieces can be cut, and how much ribbon is left?",
+    "version": 2,
+    "prompt": "A theater has 10 rows. The first row has 8 seats, and each row after it has 2 more seats than the previous row. How many seats are there altogether?",
     "type": "text",
-    "topic": "Measurement",
+    "topic": "Patterns and Sums",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "9 pieces and 5 cm",
-      "9 and 5 cm",
-      "9 pieces, 5 cm"
+      "170",
+      "170 seats"
     ],
-    "hint": "Convert 2.3 meters to 230 centimeters first.",
-    "solution": "2.3 meters is 230 centimeters. Since 230 ÷ 25 = 9 remainder 5, there are 9 full pieces and 5 cm left."
-  },
-  {
-    "id": "g4-math-155",
-    "version": 1,
-    "prompt": "Which is the prime factorization of 84?",
-    "type": "choice",
-    "choices": [
-      "2 × 3 × 14",
-      "2² × 3 × 7",
-      "2 × 3² × 7",
-      "2² × 21"
-    ],
-    "topic": "Number Theory",
-    "difficulty": 6,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "2² × 3 × 7"
-    ],
-    "hint": "Divide 84 by 2 repeatedly, then factor what remains.",
-    "solution": "84 = 2 × 42 = 2 × 2 × 21 = 2² × 3 × 7."
-  },
-  {
-    "id": "g4-math-156",
-    "version": 1,
-    "prompt": "On a map, 1 inch represents 4 miles. Two towns are 3.5 inches apart on the map. How far apart are they in real life?",
-    "type": "text",
-    "topic": "Ratios and Scale",
-    "difficulty": 6,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "14",
-      "14 miles"
-    ],
-    "hint": "Multiply the map distance by the scale.",
-    "solution": "3.5 × 4 = 14, so the towns are 14 miles apart."
-  },
-  {
-    "id": "g4-math-157",
-    "version": 1,
-    "prompt": "A bag contains 3 red and 2 blue marbles. Two marbles are drawn without replacement. What is the probability that both are red?",
-    "type": "choice",
-    "choices": [
-      "1/5",
-      "3/10",
-      "1/2",
-      "3/5"
-    ],
-    "topic": "Probability",
-    "difficulty": 6,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "3/10"
-    ],
-    "hint": "Multiply the chance of red first by the chance of red second.",
-    "solution": "The probability is 3/5 × 2/4 = 6/20 = 3/10."
-  },
-  {
-    "id": "g4-math-158",
-    "version": 1,
-    "prompt": "Three boxes are labeled APPLES, ORANGES, and MIXED. Every label is wrong. You may take one fruit from one box without looking. Which box should you choose first to correctly label all three boxes?",
-    "type": "text",
-    "topic": "Logic",
-    "difficulty": 6,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "MIXED",
-      "the MIXED box",
-      "mixed box"
-    ],
-    "hint": "Because every label is wrong, the box labeled MIXED cannot actually be mixed.",
-    "solution": "Choose the box labeled MIXED. It must contain only apples or only oranges. That fruit identifies it, and the other two labels can then be corrected by elimination."
-  },
-  {
-    "id": "g4-math-159",
-    "version": 1,
-    "prompt": "If 3x + 5 = 20, what is x?",
-    "type": "choice",
-    "choices": [
-      "3",
-      "5",
-      "7",
-      "15"
-    ],
-    "topic": "Algebraic Thinking",
-    "difficulty": 6,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "5"
-    ],
-    "hint": "Subtract 5 first, then divide by 3.",
-    "solution": "3x = 20 − 5 = 15, so x = 15 ÷ 3 = 5."
-  },
-  {
-    "id": "g4-math-160",
-    "version": 1,
-    "prompt": "A rectangle has vertices at (2,1), (2,6), (9,6), and (9,1). What is its perimeter?",
-    "type": "text",
-    "topic": "Coordinate Geometry",
-    "difficulty": 6,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "24",
-      "24 units"
-    ],
-    "hint": "The side lengths are the differences in the x- and y-coordinates.",
-    "solution": "The width is 9 − 2 = 7 and the height is 6 − 1 = 5. The perimeter is 2(7 + 5) = 24 units."
-  },
-  {
-    "id": "g4-math-161",
-    "version": 1,
-    "prompt": "A sandwich shop offers 5 toppings. You may choose exactly 2 different toppings. How many choices are possible?",
-    "type": "choice",
-    "choices": [
-      "7",
-      "10",
-      "15",
-      "20"
-    ],
-    "topic": "Combinatorics",
-    "difficulty": 6,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "10"
-    ],
-    "hint": "Count pairs without caring about the order chosen.",
-    "solution": "The pairs are combinations of 5 items taken 2 at a time: 5 × 4 ÷ 2 = 10."
-  },
-  {
-    "id": "g4-math-162",
-    "version": 1,
-    "prompt": "A tank is 1/4 full. After 18 liters are added, it is 1/2 full. What is the tank’s total capacity?",
-    "type": "text",
-    "topic": "Fractions and Measurement",
-    "difficulty": 6,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "72",
-      "72 liters"
-    ],
-    "hint": "The added 18 liters represents the difference between 1/2 and 1/4.",
-    "solution": "The difference between 1/2 and 1/4 is 1/4 of the tank. If 1/4 is 18 liters, the full tank holds 18 × 4 = 72 liters."
-  },
-  {
-    "id": "g4-math-163",
-    "version": 1,
-    "prompt": "What is the next number in the pattern 1, 4, 10, 22, 46, ____?",
-    "type": "choice",
-    "choices": [
-      "70",
-      "82",
-      "94",
-      "96"
-    ],
-    "topic": "Patterns",
-    "difficulty": 6,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "94"
-    ],
-    "hint": "Each term is twice the previous term, then 2 is added.",
-    "solution": "46 × 2 + 2 = 94."
-  },
-  {
-    "id": "g4-math-164",
-    "version": 1,
-    "prompt": "A class has 24 students. Three-fourths bring lunch from home. Of those students, 2/3 bring fruit. How many students bring both lunch from home and fruit?",
-    "type": "text",
-    "topic": "Multi-Step Problems",
-    "difficulty": 6,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "12",
-      "12 students"
-    ],
-    "hint": "Find 3/4 of 24 first, then find 2/3 of that result.",
-    "solution": "3/4 of 24 is 18. Then 2/3 of 18 is 12, so 12 students bring both."
+    "hint": "The rows have 8, 10, 12, …, 26 seats. Pair the first and last rows.",
+    "solution": "There are 10 rows. The first and last rows total 8 + 26 = 34, and there are 5 such pairs. Thus 5 × 34 = 170 seats."
   }
 ]
