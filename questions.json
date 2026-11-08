@@ -912,10 +912,7 @@
     "source": "core",
     "track": "core",
     "answers": [
-      "3",
-      "8",
-      "48",
-      "576"
+      "63"
     ],
     "hint": "Apply the rule three times.",
     "solution": "2 becomes 3, 3 becomes 8, and 8 becomes 63. The fourth term is 63."
@@ -987,10 +984,9 @@
     "source": "core",
     "track": "core",
     "answers": [
-      "500",
-      "750",
+      "1500",
       "1,500",
-      "1,750"
+      "1500 mL"
     ],
     "hint": "Convert 2 liters to 2,000 milliliters first.",
     "solution": "3/4 of 2,000 mL is 1,500 mL."
@@ -2193,10 +2189,8 @@
     "source": "core",
     "track": "core",
     "answers": [
-      "36 km",
-      "42 km",
-      "48 km",
-      "54 km"
+      "48",
+      "48 km"
     ],
     "hint": "Two hours is 120 minutes; find the distance per minute.",
     "solution": "18 / 45 = 0.4 km per minute, and 0.4 x 120 = 48 km."
@@ -2253,10 +2247,7 @@
     "source": "core",
     "track": "core",
     "answers": [
-      "14",
-      "18",
-      "20",
-      "36"
+      "20"
     ],
     "hint": "The total must be 3 x 12.",
     "solution": "The total is 36, so x = 36 - 6 - 10 = 20."
@@ -2272,9 +2263,7 @@
     "track": "core",
     "answers": [
       "(3,-3)",
-      "(-7,11)",
-      "(3,11)",
-      "(-3,3)"
+      "(3, -3)"
     ],
     "hint": "Add to x for right and subtract from y for down.",
     "solution": "(-2 + 5, 4 - 7) = (3, -3)."
@@ -2289,10 +2278,7 @@
     "source": "core",
     "track": "core",
     "answers": [
-      "15",
-      "20",
-      "30",
-      "60"
+      "30"
     ],
     "hint": "Choose the adult and then choose 2 of the 5 children.",
     "solution": "3 x 10 = 30 committees."
@@ -2325,10 +2311,7 @@
     "source": "core",
     "track": "core",
     "answers": [
-      "31",
-      "63",
-      "127",
-      "255"
+      "63"
     ],
     "hint": "Continue from 15 two more times.",
     "solution": "The fifth term is 31 and the sixth is 63."
@@ -2343,10 +2326,8 @@
     "source": "core",
     "track": "core",
     "answers": [
-      "3",
       "4",
-      "6",
-      "12"
+      "4 square units"
     ],
     "hint": "Find the whole area, then divide by 3.",
     "solution": "The whole area is 12, and one third is 4 square units."
