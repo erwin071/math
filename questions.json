@@ -814,195 +814,196 @@
   },
   {
     "id": "g4-math-144",
-    "version": 1,
-    "prompt": "A fruit stand uses a balance equation: 1 apple and 1 orange weigh 10 units, while 3 apples and 2 oranges weigh 26 units. How much does one apple weigh?",
+    "version": 3,
+    "prompt": "A number is doubled, then 9 is subtracted. The result is 17. What is the number?",
     "type": "choice",
     "choices": [
-      "4 units",
-      "6 units",
-      "8 units",
-      "10 units"
+      "4",
+      "8",
+      "13",
+      "26"
     ],
     "topic": "Algebraic Thinking",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "6 units"
+      "13"
     ],
-    "hint": "Replace the orange weight using the first equation.",
-    "solution": "If apple + orange = 10, then 3 apples + 2 oranges = 3a + 2(10 − a) = 26. Thus a = 6 units."
+    "hint": "Add 9 first, then divide by 2.",
+    "solution": "2x − 9 = 17, so 2x = 26 and x = 13."
   },
   {
     "id": "g4-math-145",
-    "version": 1,
-    "prompt": "A large cube is painted on every face and then cut into 27 equal small cubes. How many small cubes have exactly two painted faces?",
+    "version": 3,
+    "prompt": "A rectangular prism is made from 4 layers. Each layer has 3 rows of 5 unit cubes. How many unit cubes are in the prism?",
     "type": "text",
     "topic": "Geometry",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "12"
+      "60"
     ],
-    "hint": "Cubes with exactly two painted faces lie along the edges, but not at the corners.",
-    "solution": "A 3-by-3-by-3 cube has 12 edges. Each edge has one cube between its two corner cubes, so 12 small cubes have exactly two painted faces."
+    "hint": "Multiply cubes in one layer by the number of layers.",
+    "solution": "One layer has 3 × 5 = 15 cubes. Four layers have 4 × 15 = 60 cubes."
   },
   {
     "id": "g4-math-146",
-    "version": 1,
-    "prompt": "A four-character code uses the letters A, B, C, and D. Letters may repeat, but the code must contain at least one A. How many codes are possible?",
+    "version": 3,
+    "prompt": "A lunch choice includes one sandwich, one fruit, and one drink. There are 3 sandwiches, 2 fruits, and 4 drinks. How many lunches are possible?",
     "type": "choice",
     "choices": [
-      "64",
-      "128",
-      "175",
-      "256"
+      "9",
+      "12",
+      "18",
+      "24"
     ],
     "topic": "Combinatorics",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "175"
+      "24"
     ],
-    "hint": "Count all codes, then subtract codes with no A.",
-    "solution": "There are 4⁴ = 256 total codes. Codes without A use 3 letters, so there are 3⁴ = 81. The answer is 256 − 81 = 175."
+    "hint": "Multiply the number of choices in each category.",
+    "solution": "3 × 2 × 4 = 24 possible lunches."
   },
   {
     "id": "g4-math-147",
-    "version": 1,
-    "prompt": "A 3-by-3 magic square uses the numbers 1 through 9 exactly once. Every row, column, and diagonal has the same sum. What number must be in the center?",
+    "version": 3,
+    "prompt": "Five cards are numbered 1 through 5. Two cards are chosen without replacement. What is the greatest possible product?",
     "type": "text",
     "topic": "Logic",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "5"
+      "20"
     ],
-    "hint": "The total of all nine numbers is shared equally by the three rows.",
-    "solution": "The total is 1 + 2 + … + 9 = 45, so each row sums to 15. The center of a 1–9 magic square is 5."
+    "hint": "The greatest product uses the two greatest numbers.",
+    "solution": "The two greatest cards are 4 and 5, and 4 × 5 = 20."
   },
   {
     "id": "g4-math-148",
-    "version": 1,
-    "prompt": "Two buses leave a station together at 9:00. One returns every 12 minutes and the other every 18 minutes. At what time will they next return together?",
+    "version": 3,
+    "prompt": "A red light flashes every 8 seconds and a blue light flashes every 12 seconds. If they flash together now, after how many seconds will they flash together again?",
     "type": "choice",
     "choices": [
-      "9:24",
-      "9:30",
-      "9:36",
-      "9:54"
+      "16",
+      "20",
+      "24",
+      "96"
     ],
     "topic": "Time and Patterns",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "9:36"
+      "24"
     ],
-    "hint": "Find the first positive time that is a multiple of both 12 and 18.",
-    "solution": "The least common multiple of 12 and 18 is 36 minutes. The buses next meet at 9:00 + 36 minutes = 9:36."
+    "hint": "Find the least common multiple of 8 and 12.",
+    "solution": "The least common multiple of 8 and 12 is 24, so they flash together again after 24 seconds."
   },
   {
     "id": "g4-math-149",
-    "version": 1,
-    "prompt": "A game score starts at 2. Each round doubles the score and then adds 1. What is the score after four rounds?",
+    "version": 3,
+    "prompt": "A number sequence starts at 3. Each new term is 3 times the previous term minus 1. What is the fourth term?",
     "type": "text",
     "topic": "Algebraic Thinking",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "47"
+      "68"
     ],
-    "hint": "Apply the same rule four times: 2 → 5 → …",
-    "solution": "The scores are 2, 5, 11, 23, and 47 after four rounds. The answer is 47."
+    "hint": "Apply the rule three times.",
+    "solution": "3 → 8 → 23 → 68, so the fourth term is 68."
   },
   {
     "id": "g4-math-150",
-    "version": 1,
-    "prompt": "How many four-digit lock codes can be made from digits 0 through 9 if the first digit cannot be 0 and no digit may repeat?",
+    "version": 3,
+    "prompt": "How many different two-digit numbers can be made using 1, 2, 3, and 4 if no digit repeats?",
     "type": "choice",
     "choices": [
-      "504",
-      "2520",
-      "4536",
-      "9000"
+      "4",
+      "8",
+      "12",
+      "16"
     ],
     "topic": "Combinatorics",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "4536"
+      "12"
     ],
-    "hint": "There are 9 choices for the first digit, then 9, 8, and 7 choices.",
-    "solution": "The count is 9 × 9 × 8 × 7 = 4536 codes."
+    "hint": "There are 4 choices for the first digit and 3 for the second.",
+    "solution": "4 × 3 = 12 two-digit numbers."
   },
   {
     "id": "g4-math-151",
-    "version": 1,
-    "prompt": "A quadrilateral has three angles measuring 72°, 95°, and 108°. What is the fourth angle?",
+    "version": 3,
+    "prompt": "A triangle has angles of 47° and 68°. What is the measure of the third angle?",
     "type": "text",
     "topic": "Geometry",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "85",
-      "85°"
+      "65",
+      "65°"
     ],
-    "hint": "The four angles of a quadrilateral add to 360°.",
-    "solution": "The fourth angle is 360° − (72° + 95° + 108°) = 85°."
+    "hint": "The angles in a triangle add to 180°.",
+    "solution": "180° − 47° − 68° = 65°."
   },
   {
     "id": "g4-math-152",
-    "version": 1,
-    "prompt": "One of three identical-looking coins is heavier. Using a balance scale only once, which action identifies the heavier coin?",
+    "version": 3,
+    "prompt": "Four bags contain one different shape each: circle, square, triangle, and star. Bag 1 is not the circle or star. Bag 2 is not the triangle. Bag 3 is the square. Which shape is in Bag 1?",
     "type": "choice",
     "choices": [
-      "Weigh coin A against coin B; if they balance, coin C is heavier.",
-      "Weigh coin A alone against the table.",
-      "Weigh all three coins together.",
-      "It is impossible with one weighing."
+      "Circle",
+      "Square",
+      "Triangle",
+      "Star"
     ],
     "topic": "Logic",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "Weigh coin A against coin B; if they balance, coin C is heavier."
+      "Triangle"
     ],
-    "hint": "Compare two coins directly; an unequal result identifies the heavier one.",
-    "solution": "Weigh A against B. If one side is heavier, that coin is the answer. If they balance, C must be heavier."
+    "hint": "Bag 3 already uses the square.",
+    "solution": "Bag 1 cannot be circle or star, and square is already in Bag 3, so Bag 1 contains the triangle."
   },
   {
     "id": "g4-math-153",
-    "version": 1,
-    "prompt": "What is 3/4 of 2/3 of 8?",
+    "version": 3,
+    "prompt": "A tank is 3/5 full. After 12 liters are added, it is 4/5 full. What is the tank’s total capacity?",
     "type": "text",
     "topic": "Fractions",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "4"
+      "60",
+      "60 liters"
     ],
-    "hint": "Find 2/3 of 8 first, then take 3/4 of that result.",
-    "solution": "2/3 of 8 is 16/3. Multiplying by 3/4 gives (3/4) × (16/3) = 4."
+    "hint": "The added 12 liters represent 1/5 of the capacity.",
+    "solution": "The difference from 3/5 to 4/5 is 1/5. If 1/5 is 12 liters, the full capacity is 5 × 12 = 60 liters."
   },
   {
     "id": "g4-math-154",
-    "version": 1,
-    "prompt": "A number pattern begins 2, 5, 11, 23, 47. Which rule generates each next term?",
+    "version": 3,
+    "prompt": "Which rule generates 4, 9, 19, 39, 79?",
     "type": "choice",
     "choices": [
-      "Add 3 each time",
+      "Add 5 each time",
       "Multiply by 2, then add 1",
-      "Multiply by 3, then subtract 1",
-      "Add consecutive odd numbers"
+      "Multiply by 2, then subtract 1",
+      "Add consecutive squares"
     ],
     "topic": "Patterns",
     "difficulty": 5,
@@ -1011,8 +1012,8 @@
     "answers": [
       "Multiply by 2, then add 1"
     ],
-    "hint": "Test the rule on 2 and then on 5.",
-    "solution": "2 × 2 + 1 = 5, 5 × 2 + 1 = 11, and the same rule continues."
+    "hint": "Check 4 to 9 and 9 to 19.",
+    "solution": "4 × 2 + 1 = 9, 9 × 2 + 1 = 19, and the same rule continues."
   },
   {
     "source": "core",
@@ -1981,66 +1982,66 @@
   },
   {
     "id": "g4-math-134",
-    "version": 2,
-    "prompt": "Estimate 398 × 21 by rounding each factor to the nearest hundred or ten.",
+    "version": 3,
+    "prompt": "A library has 48 shelves with about  nineteen books on each shelf. Which is the best estimate for the total number of books?",
     "type": "choice",
     "choices": [
-      "4,000",
-      "8,000",
-      "10,000",
-      "12,000"
+      "About 700",
+      "About 900",
+      "About 1,200",
+      "About 2,000"
     ],
     "topic": "Estimation",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "8,000"
+      "About 900"
     ],
-    "hint": "Round 398 to 400 and 21 to 20.",
-    "solution": "398 × 21 is about 400 × 20 = 8,000."
+    "hint": "Round 48 to 50 and 19 to 20.",
+    "solution": "50 × 20 = 1,000, so about 900 is the closest estimate to 48 × 19 = 912."
   },
   {
     "id": "g4-math-135",
-    "version": 2,
-    "prompt": "A school buys 7 packs of 18 pencils. After giving away 95 pencils, how many pencils remain?",
+    "version": 3,
+    "prompt": "A class collects 6 boxes of 24 cans. They recycle 34 cans and divide the rest equally among 5 bins. How many cans go in each bin?",
     "type": "text",
     "topic": "Multi-Step Problems",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "31",
-      "31 pencils"
+      "22",
+      "22 cans"
     ],
-    "hint": "Multiply first, then subtract the pencils given away.",
-    "solution": "The school buys 7 × 18 = 126 pencils. Then 126 − 95 = 31 pencils remain."
+    "hint": "Multiply, subtract, then divide.",
+    "solution": "6 × 24 = 144. After recycling, 144 − 34 = 110, and 110 ÷ 5 = 22 cans per bin"
   },
   {
     "id": "g4-math-136",
-    "version": 2,
-    "prompt": "Which digit makes 4_2 divisible by 9?",
+    "version": 3,
+    "prompt": "Which digit can replace the box in 7□4 so that the number is divisible by 6?",
     "type": "choice",
     "choices": [
       "1",
       "3",
-      "5",
-      "7"
+      "6",
+      "9"
     ],
     "topic": "Divisibility",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "3"
+      "1"
     ],
-    "hint": "The digits of a number divisible by 9 add to a multiple of 9.",
-    "solution": "4 + 3 + 2 = 9, so the missing digit is 3."
+    "hint": "A number divisible by 6 must be divisible by both 2 and 3.",
+    "solution": "The number is already even. Its digits must sum to a multiple of 3; 7 + 1 + 4 = 12, so 714 is divisible by 6."
   },
   {
     "id": "g4-math-137",
-    "version": 2,
-    "prompt": "The sum of three consecutive odd numbers is 75. What is the middle number?",
+    "version": 3,
+    "prompt": "The sum of four consecutive whole numbers is 94. What is the greatest of the four numbers?",
     "type": "text",
     "topic": "Number Sense",
     "difficulty": 4,
@@ -2049,253 +2050,304 @@
     "answers": [
       "25"
     ],
-    "hint": "The middle number is the average of the three numbers.",
-    "solution": "The middle number is 75 ÷ 3 = 25. The three numbers are 23, 25, and 27."
+    "hint": "The average is halfway between the two middle numbers.",
+    "solution": "The four numbers are 22, 23, 24, and 25. Their sum is 94, so the greatest is 25."
   },
   {
     "id": "g4-math-138",
-    "version": 2,
-    "prompt": "An angle measures 137°. What is the measure of its supplementary angle?",
+    "version": 3,
+    "prompt": "Two angles form a straight line. One angle is 68°. What is the other angle?",
     "type": "choice",
     "choices": [
-      "33°",
-      "43°",
-      "53°",
-      "63°"
+      "102°",
+      "112°",
+      "122°",
+      "248°"
     ],
     "topic": "Angles",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "43°"
+      "112°"
     ],
-    "hint": "Supplementary angles add to 180°.",
-    "solution": "180° − 137° = 43°."
+    "hint": "Angles on a straight line add to 180°.",
+    "solution": "180° − 68° = 112°."
   },
   {
     "id": "g4-math-139",
-    "version": 2,
-    "prompt": "A bus leaves every 15 minutes. If the first bus leaves at 8:10, at what time does the sixth bus leave?",
+    "version": 3,
+    "prompt": "A movie starts at 6:45 p.m. and lasts 1 hour  fifty-five minutes. What time does it end?",
     "type": "text",
     "topic": "Time and Patterns",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "9:25",
-      "9:25 a.m."
+      "8:40 p.m.",
+      "8:40"
     ],
-    "hint": "There are five 15-minute intervals from the first bus to the sixth.",
-    "solution": "Five intervals take 5 × 15 = 75 minutes. 8:10 + 75 minutes = 9:25."
+    "hint": "Add 1 hour, then add 55 minutes.",
+    "solution": "6:45 p.m. + 1 hour = 7:45 p.m.; adding 55 minutes gives 8:40 p.m."
   },
   {
     "id": "g4-math-140",
-    "version": 2,
-    "prompt": "Which fraction is greater than 1/2 but less than 3/4?",
+    "version": 3,
+    "prompt": "Which fraction is closest to 1?",
     "type": "choice",
     "choices": [
-      "1/3",
-      "2/5",
-      "2/3",
-      "4/5"
+      "5/8",
+      "7/8",
+      "9/10",
+      "11/12"
     ],
     "topic": "Fractions",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "2/3"
+      "11/12"
     ],
-    "hint": "Compare each choice with 1/2 and 3/4.",
-    "solution": "2/3 is about 0.67, which is between 0.5 and 0.75."
+    "hint": "Compare how far each fraction is from 1.",
+    "solution": "The distances from 1 are 3/8, 1/8, 1/10, and 1/12. Since 1/12 is smallest, 11/12 is closest."
   },
   {
     "id": "g4-math-141",
-    "version": 2,
-    "prompt": "A three-digit number has a hundreds digit twice its ones digit, and its tens digit is one less than its ones digit. Its digits add to 11. What is the number?",
+    "version": 3,
+    "prompt": "A two-digit number is 4 times the sum of its digits. The ones digit is 3 more than the tens digit. What is the number?",
     "type": "text",
     "topic": "Number Sense",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "623"
+      "48"
     ],
-    "hint": "Let the ones digit be n. Write the other digits in terms of n.",
-    "solution": "The digits are 2n, n − 1, and n. Their sum is 4n − 1 = 11, so n = 3. The number is 623."
+    "hint": "Test tens digit 1, 2, 3, and so on.",
+    "solution": "The digits 4 and 8 have sum 12, and 4 × 12 = 48. The ones digit is 3 more than the tens digit."
   },
   {
     "id": "g4-math-142",
-    "version": 2,
-    "prompt": "How many diagonals does a pentagon have?",
+    "version": 3,
+    "prompt": "A regular hexagon is divided by all of its diagonals from one vertex. Into how many triangles is it divided?",
     "type": "choice",
     "choices": [
       "3",
+      "4",
       "5",
-      "7",
-      "10"
+      "6"
     ],
     "topic": "Geometry",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "5"
+      "4"
     ],
-    "hint": "From each vertex, count the vertices that are not adjacent, then avoid double-counting.",
-    "solution": "A pentagon has 5 diagonals: each vertex connects to two non-adjacent vertices, and each diagonal is counted twice."
+    "hint": "From one vertex, draw diagonals to every non-neighboring vertex.",
+    "solution": "A polygon with 6 sides is divided from one vertex into 6 − 2 = 4 triangles."
   },
   {
     "id": "g4-math-143",
-    "version": 2,
-    "prompt": "A theater has 10 rows. The first row has 8 seats, and each row after it has 2 more seats than the previous row. How many seats are there altogether?",
+    "version": 3,
+    "prompt": "The first five terms of a pattern are 3, 7, 11, 15, and 19. What is the sum of the next three terms?",
     "type": "text",
     "topic": "Patterns and Sums",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "170",
-      "170 seats"
+      "81"
     ],
-    "hint": "The rows have 8, 10, 12, …, 26 seats. Pair the first and last rows.",
-    "solution": "There are 10 rows. The first and last rows total 8 + 26 = 34, and there are 5 such pairs. Thus 5 × 34 = 170 seats."
+    "hint": "The pattern increases by 4 each time.",
+    "solution": "The next three terms are 23, 27, and 31. Their sum is 23 + 27 + 31 = 81."
   },
   {
     "id": "g4-math-155",
-    "version": 1,
-    "prompt": "What is the prime factorization of 84?",
+    "version": 3,
+    "prompt": "What is the least common multiple of 12 and 18?",
     "type": "choice",
-    "choices": ["2 × 2 × 3 × 7", "2 × 3 × 14", "4 × 21", "6 × 14"],
+    "choices": [
+      "6",
+      "24",
+      "36",
+      "216"
+    ],
     "topic": "Number Theory",
     "difficulty": 6,
     "source": "core",
     "track": "core",
-    "answers": ["2 × 2 × 3 × 7"],
-    "hint": "Keep dividing by prime numbers: 84 = 2 × 42 = 2 × 2 × 21.",
-    "solution": "84 = 2 × 2 × 3 × 7, and all four factors are prime."
+    "answers": [
+      "36"
+    ],
+    "hint": "List multiples of each number until one matches.",
+    "solution": "Multiples of 12 include 12, 24, 36; multiples of 18 include 18, 36. The least common multiple is 36."
   },
   {
     "id": "g4-math-156",
-    "version": 1,
-    "prompt": "A map uses a scale of 1 cm for 4 km. Two towns are 7 cm apart on the map. How far apart are they in real life?",
+    "version": 3,
+    "prompt": "A drawing uses a scale of 1 inch for 6 feet. A wall is 4 inches long in the drawing. How long is the real wall?",
     "type": "text",
     "topic": "Scale and Measurement",
     "difficulty": 6,
     "source": "core",
     "track": "core",
-    "answers": ["28", "28 km", "28 kilometers"],
-    "hint": "Multiply the map distance by the number of kilometers represented by 1 cm.",
-    "solution": "7 cm × 4 km per cm = 28 km."
+    "answers": [
+      "24",
+      "24 feet"
+    ],
+    "hint": "Multiply the drawing length by 6 feet per inch.",
+    "solution": "4 × 6 = 24 feet."
   },
   {
     "id": "g4-math-157",
-    "version": 1,
-    "prompt": "A bag has 3 red marbles and 2 blue marbles. Two marbles are drawn without replacement. What is the probability that both are red?",
+    "version": 3,
+    "prompt": "A spinner has 4 equal sections: red, blue, green, and yellow. What is the probability of landing on red twice in a row?",
     "type": "choice",
-    "choices": ["1/5", "3/10", "1/2", "3/5"],
+    "choices": [
+      "1/4",
+      "1/8",
+      "1/12",
+      "1/16"
+    ],
     "topic": "Probability",
     "difficulty": 6,
     "source": "core",
     "track": "core",
-    "answers": ["3/10"],
-    "hint": "The first red probability is 3/5. After drawing a red, 2 red marbles remain out of 4.",
-    "solution": "The probability is (3/5) × (2/4) = 6/20 = 3/10."
+    "answers": [
+      "1/16"
+    ],
+    "hint": "Multiply the probability for the first spin by the probability for the second.",
+    "solution": "The probability is 1/4 × 1/4 = 1/16."
   },
   {
     "id": "g4-math-158",
-    "version": 1,
-    "prompt": "Three boxes are labeled APPLES, ORANGES, and MIXED. Every label is wrong. You may take one fruit from one box without looking. Which box should you choose first to identify all three boxes?",
-    "type": "choice",
-    "choices": ["APPLES", "ORANGES", "MIXED", "Any box works"],
+    "version": 3,
+    "prompt": "A, B, and C each have a different favorite sport: soccer, tennis, and swimming. A does not like soccer. B does not like swimming. C likes tennis. What sport does A like?",
+    "type": "text",
     "topic": "Logic",
     "difficulty": 6,
     "source": "core",
     "track": "core",
-    "answers": ["MIXED"],
-    "hint": "Because every label is wrong, the box labeled MIXED cannot actually be mixed.",
-    "solution": "Choose MIXED. It must contain only apples or only oranges; that fruit identifies it, and the two remaining wrongly labeled boxes can then be deduced."
+    "answers": [
+      "swimming"
+    ],
+    "hint": "C already has tennis; eliminate the choices for A and B.",
+    "solution": "C likes tennis. B cannot like swimming, so B likes soccer. Therefore A likes swimming."
   },
   {
     "id": "g4-math-159",
-    "version": 1,
-    "prompt": "A number multiplied by 4 and then increased by 7 equals 31. What is the number?",
-    "type": "text",
+    "version": 3,
+    "prompt": "Which value of x makes 5x − 3 = 22 true?",
+    "type": "choice",
     "topic": "Expressions and Equations",
     "difficulty": 6,
     "source": "core",
     "track": "core",
-    "answers": ["6"],
-    "hint": "Subtract 7 first, then divide by 4.",
-    "solution": "4x + 7 = 31, so 4x = 24 and x = 6."
+    "answers": [
+      "5"
+    ],
+    "hint": "Add 3 to both sides, then divide by 5.",
+    "solution": "5x = 25, so x = 5.",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ]
   },
   {
     "id": "g4-math-160",
-    "version": 1,
-    "prompt": "A rectangle has vertices (1, 2), (7, 2), (7, 5), and (1, 5). What is its perimeter?",
-    "type": "choice",
-    "choices": ["9 units", "18 units", "24 units", "36 units"],
+    "version": 3,
+    "prompt": "Point A is (2, 3) and point B is (2, 11). How many units apart are the points?",
+    "type": "text",
     "topic": "Coordinate Geometry",
     "difficulty": 6,
     "source": "core",
     "track": "core",
-    "answers": ["18 units"],
-    "hint": "The horizontal side is 6 units and the vertical side is 3 units.",
-    "solution": "The perimeter is 2 × (6 + 3) = 18 units."
+    "answers": [
+      "8",
+      "8 units"
+    ],
+    "hint": "Because the x-coordinates match, subtract the y-coordinates.",
+    "solution": "11 − 3 = 8 units."
   },
   {
     "id": "g4-math-161",
-    "version": 1,
-    "prompt": "A team of 2 students is chosen from 5 students. How many different teams are possible?",
+    "version": 3,
+    "prompt": "How many different 3-person committees can be chosen from 6 students?",
     "type": "choice",
-    "choices": ["5", "8", "10", "25"],
+    "choices": [
+      "12",
+      "18",
+      "20",
+      "36"
+    ],
     "topic": "Combinatorics",
     "difficulty": 6,
     "source": "core",
     "track": "core",
-    "answers": ["10"],
-    "hint": "Count 5 choices for the first student and 4 for the second, then divide by 2 because order does not matter.",
-    "solution": "There are (5 × 4) ÷ 2 = 10 different pairs."
+    "answers": [
+      "20"
+    ],
+    "hint": "Count ordered choices, then remember committee order does not matter.",
+    "solution": "There are (6 × 5 × 4) ÷ (3 × 2 × 1) = 20 committees."
   },
   {
     "id": "g4-math-162",
-    "version": 1,
-    "prompt": "A 3-liter container is 2/3 full. Then 1/2 liter is poured out. How many liters remain?",
+    "version": 3,
+    "prompt": "A pitcher holds 2 1/2 liters. How many liters are in 3/5 of the pitcher?",
     "type": "text",
     "topic": "Fractions and Volume",
     "difficulty": 6,
     "source": "core",
     "track": "core",
-    "answers": ["3/2", "1 1/2", "1.5", "1.5 liters", "1 1/2 liters"],
-    "hint": "Find 2/3 of 3 liters before subtracting 1/2 liter.",
-    "solution": "The container holds (2/3) × 3 = 2 liters. After pouring out 1/2 liter, 2 − 1/2 = 1 1/2 liters remain."
+    "answers": [
+      "3/2",
+      "1 1/2",
+      "1.5",
+      "1.5 liters"
+    ],
+    "hint": "Convert 2 1/2 to 5/2, then multiply by 3/5.",
+    "solution": "(3/5) × (5/2) = 3/2 = 1 1/2 liters."
   },
   {
     "id": "g4-math-163",
-    "version": 1,
-    "prompt": "A sequence begins 2, 5, 11, 23, 47. If the rule is multiply by 2 and add 1, what is the next term?",
-    "type": "text",
+    "version": 3,
+    "prompt": "A sequence begins 1, 4, 10, 22, 46. What is the next term if the rule is multiply by 2 and add 2?",
+    "type": "choice",
     "topic": "Patterns",
     "difficulty": 6,
     "source": "core",
     "track": "core",
-    "answers": ["95"],
-    "hint": "Apply the rule to 47.",
-    "solution": "47 × 2 + 1 = 95."
+    "answers": [
+      "94"
+    ],
+    "hint": "Apply the rule to 46.",
+    "solution": "46 × 2 + 2 = 94.",
+    "choices": [
+      "92",
+      "94",
+      "96",
+      "98"
+    ]
   },
   {
     "id": "g4-math-164",
-    "version": 1,
-    "prompt": "A recipe uses 3/4 cup of flour for one batch. Mia makes 2 1/2 batches. How many cups of flour does she need?",
+    "version": 3,
+    "prompt": "A baker uses 2/3 cup of sugar for each batch. How much sugar is needed for 3 1/2 batches?",
     "type": "text",
     "topic": "Fraction Operations",
     "difficulty": 6,
     "source": "core",
     "track": "core",
-    "answers": ["15/8", "1 7/8", "1.875", "1 7/8 cups"],
-    "hint": "Multiply 3/4 by 2 1/2 = 5/2.",
-    "solution": "(3/4) × (5/2) = 15/8 = 1 7/8 cups."
+    "answers": [
+      "7/3",
+      "2 1/3",
+      "2 1/3 cups",
+      "2.333"
+    ],
+    "hint": "Multiply 2/3 by 7/2.",
+    "solution": "(2/3) × (7/2) = 7/3 = 2 1/3 cups."
   }
-
 ]
