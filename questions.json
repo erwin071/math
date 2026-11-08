@@ -814,206 +814,204 @@
   },
   {
     "id": "g4-math-144",
-    "version": 3,
-    "prompt": "A number is doubled, then 9 is subtracted. The result is 17. What is the number?",
-    "type": "choice",
-    "choices": [
-      "4",
-      "8",
-      "13",
-      "26"
-    ],
-    "topic": "Algebraic Thinking",
+    "version": 4,
+    "prompt": "A number is increased by 5, then multiplied by 3 to get  thirty-six. What is the number?",
+    "type": "text",
+    "topic": "Inverse Operations",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "13"
+      "7",
+      "12",
+      "15",
+      "31"
     ],
-    "hint": "Add 9 first, then divide by 2.",
-    "solution": "2x − 9 = 17, so 2x = 26 and x = 13."
+    "hint": "Undo multiplication first, then subtraction.",
+    "solution": "36 / 3 = 12, and 12 - 5 = 7."
   },
   {
     "id": "g4-math-145",
-    "version": 3,
-    "prompt": "A rectangular prism is made from 4 layers. Each layer has 3 rows of 5 unit cubes. How many unit cubes are in the prism?",
+    "version": 4,
+    "prompt": "A 5 by 5 by 5 cube is built from unit cubes. How many unit cubes are completely inside and cannot be seen from outside?",
     "type": "text",
-    "topic": "Geometry",
+    "topic": "Spatial Counting",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "60"
+      "8",
+      "27",
+      "54",
+      "125"
     ],
-    "hint": "Multiply cubes in one layer by the number of layers.",
-    "solution": "One layer has 3 × 5 = 15 cubes. Four layers have 4 × 15 = 60 cubes."
+    "hint": "Remove the outside layer, leaving a 3 by 3 by 3 cube.",
+    "solution": "The hidden cubes form a 3 x 3 x 3 cube, so there are 27."
   },
   {
     "id": "g4-math-146",
-    "version": 3,
-    "prompt": "A lunch choice includes one sandwich, one fruit, and one drink. There are 3 sandwiches, 2 fruits, and 4 drinks. How many lunches are possible?",
-    "type": "choice",
-    "choices": [
-      "9",
-      "12",
-      "18",
-      "24"
-    ],
-    "topic": "Combinatorics",
-    "difficulty": 5,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "24"
-    ],
-    "hint": "Multiply the number of choices in each category.",
-    "solution": "3 × 2 × 4 = 24 possible lunches."
-  },
-  {
-    "id": "g4-math-147",
-    "version": 3,
-    "prompt": "Five cards are numbered 1 through 5. Two cards are chosen without replacement. What is the greatest possible product?",
+    "version": 4,
+    "prompt": "Four students line up for a photo. How many different orders are possible?",
     "type": "text",
-    "topic": "Logic",
+    "topic": "Permutations",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "20"
-    ],
-    "hint": "The greatest product uses the two greatest numbers.",
-    "solution": "The two greatest cards are 4 and 5, and 4 × 5 = 20."
-  },
-  {
-    "id": "g4-math-148",
-    "version": 3,
-    "prompt": "A red light flashes every 8 seconds and a blue light flashes every 12 seconds. If they flash together now, after how many seconds will they flash together again?",
-    "type": "choice",
-    "choices": [
-      "16",
-      "20",
-      "24",
-      "96"
-    ],
-    "topic": "Time and Patterns",
-    "difficulty": 5,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "24"
-    ],
-    "hint": "Find the least common multiple of 8 and 12.",
-    "solution": "The least common multiple of 8 and 12 is 24, so they flash together again after 24 seconds."
-  },
-  {
-    "id": "g4-math-149",
-    "version": 3,
-    "prompt": "A number sequence starts at 3. Each new term is 3 times the previous term minus 1. What is the fourth term?",
-    "type": "text",
-    "topic": "Algebraic Thinking",
-    "difficulty": 5,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "68"
-    ],
-    "hint": "Apply the rule three times.",
-    "solution": "3 → 8 → 23 → 68, so the fourth term is 68."
-  },
-  {
-    "id": "g4-math-150",
-    "version": 3,
-    "prompt": "How many different two-digit numbers can be made using 1, 2, 3, and 4 if no digit repeats?",
-    "type": "choice",
-    "choices": [
       "4",
       "8",
       "12",
-      "16"
+      "24"
     ],
-    "topic": "Combinatorics",
+    "hint": "There are 4 choices for first place, then 3, then 2, then 1.",
+    "solution": "4 x 3 x 2 x 1 = 24 orders."
+  },
+  {
+    "id": "g4-math-147",
+    "version": 4,
+    "prompt": "A rectangular garden is 10 m by 6 m. A path 1 m wide runs inside every edge. What is the area inside the path?",
+    "type": "text",
+    "topic": "Composite Areas",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "12"
+      "24",
+      "32",
+      "40",
+      "48"
     ],
-    "hint": "There are 4 choices for the first digit and 3 for the second.",
-    "solution": "4 × 3 = 12 two-digit numbers."
+    "hint": "The inner rectangle is 8 m by 4 m.",
+    "solution": "The area inside the path is 8 x 4 = 32 square meters."
+  },
+  {
+    "id": "g4-math-148",
+    "version": 4,
+    "prompt": "A train leaves every 20 minutes and a bus every 30 minutes. They leave together at 7:10. When do they next leave together?",
+    "type": "text",
+    "topic": "Least Common Multiples",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "7:40",
+      "8:10",
+      "8:30",
+      "9:10"
+    ],
+    "hint": "Find the first common multiple of 20 and 30.",
+    "solution": "The least common multiple is 60 minutes, so the next shared departure is 8:10."
+  },
+  {
+    "id": "g4-math-149",
+    "version": 4,
+    "prompt": "The first term is 2. Each next term is the previous term squared minus 1. What is the fourth term?",
+    "type": "text",
+    "topic": "Recursive Rules",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "3",
+      "8",
+      "48",
+      "576"
+    ],
+    "hint": "Apply the rule three times.",
+    "solution": "2 becomes 3, 3 becomes 8, and 8 becomes 63. The fourth term is 63."
+  },
+  {
+    "id": "g4-math-150",
+    "version": 4,
+    "prompt": "A password uses 2 different letters chosen from A, B, C, D, and E, with order important. How many passwords are possible?",
+    "type": "text",
+    "topic": "Counting Strategies",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "10",
+      "15",
+      "20",
+      "25"
+    ],
+    "hint": "Choose the first letter, then a different second letter.",
+    "solution": "There are 5 x 4 = 20 passwords."
   },
   {
     "id": "g4-math-151",
-    "version": 3,
-    "prompt": "A triangle has angles of 47° and 68°. What is the measure of the third angle?",
-    "type": "text",
-    "topic": "Geometry",
+    "version": 4,
+    "prompt": "A triangle has side lengths 5, 5, and 8. What type of triangle is it?",
+    "type": "choice",
+    "topic": "Classifying Shapes",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "65",
-      "65°"
+      "Isosceles"
     ],
-    "hint": "The angles in a triangle add to 180°.",
-    "solution": "180° − 47° − 68° = 65°."
+    "hint": "Look for equal side lengths.",
+    "solution": "Two sides have length 5, so the triangle is isosceles.",
+    "choices": [
+      "Scalene",
+      "Isosceles",
+      "Equilateral",
+      "Right"
+    ]
   },
   {
     "id": "g4-math-152",
-    "version": 3,
-    "prompt": "Four bags contain one different shape each: circle, square, triangle, and star. Bag 1 is not the circle or star. Bag 2 is not the triangle. Bag 3 is the square. Which shape is in Bag 1?",
-    "type": "choice",
-    "choices": [
-      "Circle",
-      "Square",
-      "Triangle",
-      "Star"
-    ],
-    "topic": "Logic",
+    "version": 4,
+    "prompt": "Three switches control three lamps in another room. You may enter the room once. What strategy identifies every switch?",
+    "type": "text",
+    "topic": "Experimental Logic",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "Triangle"
+      "Turn all on",
+      "Use different on times and feel the bulbs",
+      "Guess one",
+      "Impossible"
     ],
-    "hint": "Bag 3 already uses the square.",
-    "solution": "Bag 1 cannot be circle or star, and square is already in Bag 3, so Bag 1 contains the triangle."
+    "hint": "Use light and heat as two different clues.",
+    "solution": "Turn switch 1 on briefly, turn it off, turn switch 2 on, then enter. The lit, warm, and cold bulbs identify all three."
   },
   {
     "id": "g4-math-153",
-    "version": 3,
-    "prompt": "A tank is 3/5 full. After 12 liters are added, it is 4/5 full. What is the tank’s total capacity?",
+    "version": 4,
+    "prompt": "A 2-liter bottle is 3/4 full. How many milliliters of liquid are inside?",
     "type": "text",
-    "topic": "Fractions",
+    "topic": "Fractions and Measurement",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "60",
-      "60 liters"
+      "500",
+      "750",
+      "1,500",
+      "1,750"
     ],
-    "hint": "The added 12 liters represent 1/5 of the capacity.",
-    "solution": "The difference from 3/5 to 4/5 is 1/5. If 1/5 is 12 liters, the full capacity is 5 × 12 = 60 liters."
+    "hint": "Convert 2 liters to 2,000 milliliters first.",
+    "solution": "3/4 of 2,000 mL is 1,500 mL."
   },
   {
     "id": "g4-math-154",
-    "version": 3,
-    "prompt": "Which rule generates 4, 9, 19, 39, 79?",
-    "type": "choice",
-    "choices": [
-      "Add 5 each time",
-      "Multiply by 2, then add 1",
-      "Multiply by 2, then subtract 1",
-      "Add consecutive squares"
-    ],
-    "topic": "Patterns",
+    "version": 4,
+    "prompt": "A pattern has terms 1, 2, 6, 24, 120. What is the next term?",
+    "type": "text",
+    "topic": "Factorial Patterns",
     "difficulty": 5,
     "source": "core",
     "track": "core",
     "answers": [
-      "Multiply by 2, then add 1"
+      "240",
+      "360",
+      "600",
+      "720"
     ],
-    "hint": "Check 4 to 9 and 9 to 19.",
-    "solution": "4 × 2 + 1 = 9, 9 × 2 + 1 = 19, and the same rule continues."
+    "hint": "Each term is multiplied by the next whole number.",
+    "solution": "120 x 6 = 720."
   },
   {
     "source": "core",
@@ -1982,372 +1980,375 @@
   },
   {
     "id": "g4-math-134",
-    "version": 3,
-    "prompt": "A library has 48 shelves with about  nineteen books on each shelf. Which is the best estimate for the total number of books?",
+    "version": 4,
+    "prompt": "A 4 by 6 rectangle is split into equal squares. How many squares are there?",
     "type": "choice",
     "choices": [
-      "About 700",
-      "About 900",
-      "About 1,200",
-      "About 2,000"
-    ],
-    "topic": "Estimation",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "About 900"
-    ],
-    "hint": "Round 48 to 50 and 19 to 20.",
-    "solution": "50 × 20 = 1,000, so about 900 is the closest estimate to 48 × 19 = 912."
-  },
-  {
-    "id": "g4-math-135",
-    "version": 3,
-    "prompt": "A class collects 6 boxes of 24 cans. They recycle 34 cans and divide the rest equally among 5 bins. How many cans go in each bin?",
-    "type": "text",
-    "topic": "Multi-Step Problems",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "22",
-      "22 cans"
-    ],
-    "hint": "Multiply, subtract, then divide.",
-    "solution": "6 × 24 = 144. After recycling, 144 − 34 = 110, and 110 ÷ 5 = 22 cans per bin"
-  },
-  {
-    "id": "g4-math-136",
-    "version": 3,
-    "prompt": "Which digit can replace the box in 7□4 so that the number is divisible by 6?",
-    "type": "choice",
-    "choices": [
-      "1",
-      "3",
-      "6",
-      "9"
-    ],
-    "topic": "Divisibility",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "1"
-    ],
-    "hint": "A number divisible by 6 must be divisible by both 2 and 3.",
-    "solution": "The number is already even. Its digits must sum to a multiple of 3; 7 + 1 + 4 = 12, so 714 is divisible by 6."
-  },
-  {
-    "id": "g4-math-137",
-    "version": 3,
-    "prompt": "The sum of four consecutive whole numbers is 94. What is the greatest of the four numbers?",
-    "type": "text",
-    "topic": "Number Sense",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "25"
-    ],
-    "hint": "The average is halfway between the two middle numbers.",
-    "solution": "The four numbers are 22, 23, 24, and 25. Their sum is 94, so the greatest is 25."
-  },
-  {
-    "id": "g4-math-138",
-    "version": 3,
-    "prompt": "Two angles form a straight line. One angle is 68°. What is the other angle?",
-    "type": "choice",
-    "choices": [
-      "102°",
-      "112°",
-      "122°",
-      "248°"
-    ],
-    "topic": "Angles",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "112°"
-    ],
-    "hint": "Angles on a straight line add to 180°.",
-    "solution": "180° − 68° = 112°."
-  },
-  {
-    "id": "g4-math-139",
-    "version": 3,
-    "prompt": "A movie starts at 6:45 p.m. and lasts 1 hour  fifty-five minutes. What time does it end?",
-    "type": "text",
-    "topic": "Time and Patterns",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "8:40 p.m.",
-      "8:40"
-    ],
-    "hint": "Add 1 hour, then add 55 minutes.",
-    "solution": "6:45 p.m. + 1 hour = 7:45 p.m.; adding 55 minutes gives 8:40 p.m."
-  },
-  {
-    "id": "g4-math-140",
-    "version": 3,
-    "prompt": "Which fraction is closest to 1?",
-    "type": "choice",
-    "choices": [
-      "5/8",
-      "7/8",
-      "9/10",
-      "11/12"
-    ],
-    "topic": "Fractions",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "11/12"
-    ],
-    "hint": "Compare how far each fraction is from 1.",
-    "solution": "The distances from 1 are 3/8, 1/8, 1/10, and 1/12. Since 1/12 is smallest, 11/12 is closest."
-  },
-  {
-    "id": "g4-math-141",
-    "version": 3,
-    "prompt": "A two-digit number is 4 times the sum of its digits. The ones digit is 3 more than the tens digit. What is the number?",
-    "type": "text",
-    "topic": "Number Sense",
-    "difficulty": 4,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "48"
-    ],
-    "hint": "Test tens digit 1, 2, 3, and so on.",
-    "solution": "The digits 4 and 8 have sum 12, and 4 × 12 = 48. The ones digit is 3 more than the tens digit."
-  },
-  {
-    "id": "g4-math-142",
-    "version": 3,
-    "prompt": "A regular hexagon is divided by all of its diagonals from one vertex. Into how many triangles is it divided?",
-    "type": "choice",
-    "choices": [
-      "3",
-      "4",
-      "5",
-      "6"
+      "10",
+      "16",
+      "20",
+      "24"
     ],
     "topic": "Geometry",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "4"
+      "24"
     ],
-    "hint": "From one vertex, draw diagonals to every non-neighboring vertex.",
-    "solution": "A polygon with 6 sides is divided from one vertex into 6 − 2 = 4 triangles."
+    "hint": "Count rows times columns.",
+    "solution": "There are 4 x 6 = 24 squares."
   },
   {
-    "id": "g4-math-143",
-    "version": 3,
-    "prompt": "The first five terms of a pattern are 3, 7, 11, 15, and 19. What is the sum of the next three terms?",
+    "id": "g4-math-135",
+    "version": 4,
+    "prompt": "A store marks a $80 jacket down by 25 percent. What is the sale price?",
     "type": "text",
-    "topic": "Patterns and Sums",
+    "topic": "Percents",
     "difficulty": 4,
     "source": "core",
     "track": "core",
     "answers": [
-      "81"
+      "60",
+      "$60"
     ],
-    "hint": "The pattern increases by 4 each time.",
-    "solution": "The next three terms are 23, 27, and 31. Their sum is 23 + 27 + 31 = 81."
+    "hint": "Find one fourth of 80, then subtract it.",
+    "solution": "25 percent of 80 is 20, so the sale price is 80 - 20 = 60 dollars."
+  },
+  {
+    "id": "g4-math-136",
+    "version": 4,
+    "prompt": "The table shows 12, 18, 15, and 21 visitors on Monday through Thursday. What is the mean number of visitors?",
+    "type": "text",
+    "topic": "Data and Statistics",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "15",
+      "16",
+      "16.5",
+      "17"
+    ],
+    "hint": "Add all four values, then divide by 4.",
+    "solution": "The total is 66, and 66 / 4 = 16.5 visitors on average."
+  },
+  {
+    "id": "g4-math-137",
+    "version": 4,
+    "prompt": "A rectangle has area 48 square centimeters and a width of 6 centimeters. What is its perimeter?",
+    "type": "text",
+    "topic": "Area and Perimeter",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "20",
+      "28",
+      "36",
+      "56"
+    ],
+    "hint": "Find the length from area divided by width.",
+    "solution": "The length is 48 / 6 = 8. The perimeter is 2 x (8 + 6) = 28 cm."
+  },
+  {
+    "id": "g4-math-138",
+    "version": 4,
+    "prompt": "A robot moves 3 steps north, 4 steps east, 3 steps south, and 1 step west. How far is it from its start?",
+    "type": "text",
+    "topic": "Spatial Reasoning",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "1 step",
+      "3 steps",
+      "4 steps",
+      "11 steps"
+    ],
+    "hint": "Combine movements in the same direction.",
+    "solution": "The north and south movements cancel. The robot is 4 - 1 = 3 steps east of the start."
+  },
+  {
+    "id": "g4-math-139",
+    "version": 4,
+    "prompt": "A recipe needs 3 cups of flour for 8 muffins. How many cups are needed for 24 muffins?",
+    "type": "text",
+    "topic": "Ratios",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "6",
+      "9",
+      "12",
+      "24"
+    ],
+    "hint": "Twenty-four muffins is three times eight muffins.",
+    "solution": "The recipe is tripled, so 3 x 3 = 9 cups."
+  },
+  {
+    "id": "g4-math-140",
+    "version": 4,
+    "prompt": "A bag has 5 red, 3 blue, and 2 green counters. What is the probability of choosing a counter that is not red?",
+    "type": "choice",
+    "choices": [
+      "1/5",
+      "1/2",
+      "2/5",
+      "3/5"
+    ],
+    "topic": "Probability",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "1/2"
+    ],
+    "hint": "Count all counters and all non-red counters.",
+    "solution": "There are 5 non-red counters out of 10, so the probability is 5/10 = 1/2."
+  },
+  {
+    "id": "g4-math-141",
+    "version": 4,
+    "prompt": "A number is between 300 and 400. Its digits add to 12 and its tens digit is twice its ones digit. What is the number?",
+    "type": "text",
+    "topic": "Number Puzzles",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "336",
+      "354",
+      "363",
+      "372"
+    ],
+    "hint": "Test the tens and ones digits in each choice.",
+    "solution": "363 has digits summing to 12, and 6 is twice 3."
+  },
+  {
+    "id": "g4-math-142",
+    "version": 4,
+    "prompt": "A cube has edge length 4 units. What is the total length of all 12 edges?",
+    "type": "text",
+    "topic": "Three-Dimensional Geometry",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "16",
+      "32",
+      "48",
+      "64"
+    ],
+    "hint": "A cube has 12 equal edges.",
+    "solution": "12 x 4 = 48 units."
+  },
+  {
+    "id": "g4-math-143",
+    "version": 4,
+    "prompt": "A charity receives 2 dollars on day 1, 4 on day 2, 8 on day 3, and so on. How much is received on day 7?",
+    "type": "text",
+    "topic": "Exponential Patterns",
+    "difficulty": 4,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "64",
+      "96",
+      "128",
+      "256"
+    ],
+    "hint": "Double the amount each day.",
+    "solution": "The amounts are 2, 4, 8, 16, 32, 64, 128; day 7 is 128 dollars."
   },
   {
     "id": "g4-math-155",
-    "version": 3,
-    "prompt": "What is the least common multiple of 12 and 18?",
+    "version": 4,
+    "prompt": "Which number has exactly three different prime factors?",
     "type": "choice",
     "choices": [
-      "6",
-      "24",
+      "30",
       "36",
-      "216"
+      "45",
+      "49"
     ],
-    "topic": "Number Theory",
+    "topic": "Prime Factors",
     "difficulty": 6,
     "source": "core",
     "track": "core",
     "answers": [
-      "36"
+      "30"
     ],
-    "hint": "List multiples of each number until one matches.",
-    "solution": "Multiples of 12 include 12, 24, 36; multiples of 18 include 18, 36. The least common multiple is 36."
+    "hint": "Break each choice into prime factors.",
+    "solution": "30 = 2 x 3 x 5, which has three different prime factors."
   },
   {
     "id": "g4-math-156",
-    "version": 3,
-    "prompt": "A drawing uses a scale of 1 inch for 6 feet. A wall is 4 inches long in the drawing. How long is the real wall?",
+    "version": 4,
+    "prompt": "A cyclist travels 18 kilometers in 45 minutes. At the same rate, how far will the cyclist travel in 2 hours?",
     "type": "text",
-    "topic": "Scale and Measurement",
+    "topic": "Rate Problems",
     "difficulty": 6,
     "source": "core",
     "track": "core",
     "answers": [
-      "24",
-      "24 feet"
+      "36 km",
+      "42 km",
+      "48 km",
+      "54 km"
     ],
-    "hint": "Multiply the drawing length by 6 feet per inch.",
-    "solution": "4 × 6 = 24 feet."
+    "hint": "Two hours is 120 minutes; find the distance per minute.",
+    "solution": "18 / 45 = 0.4 km per minute, and 0.4 x 120 = 48 km."
   },
   {
     "id": "g4-math-157",
-    "version": 3,
-    "prompt": "A spinner has 4 equal sections: red, blue, green, and yellow. What is the probability of landing on red twice in a row?",
+    "version": 4,
+    "prompt": "Two fair coins are tossed. What is the probability of getting exactly one head?",
     "type": "choice",
     "choices": [
       "1/4",
-      "1/8",
-      "1/12",
-      "1/16"
+      "1/2",
+      "3/4",
+      "1"
     ],
-    "topic": "Probability",
+    "topic": "Probability Trees",
     "difficulty": 6,
     "source": "core",
     "track": "core",
     "answers": [
-      "1/16"
+      "1/2"
     ],
-    "hint": "Multiply the probability for the first spin by the probability for the second.",
-    "solution": "The probability is 1/4 × 1/4 = 1/16."
+    "hint": "List HH, HT, TH, and TT.",
+    "solution": "HT and TH are 2 of 4 equally likely outcomes, so the probability is 1/2."
   },
   {
     "id": "g4-math-158",
-    "version": 3,
-    "prompt": "A, B, and C each have a different favorite sport: soccer, tennis, and swimming. A does not like soccer. B does not like swimming. C likes tennis. What sport does A like?",
-    "type": "text",
-    "topic": "Logic",
-    "difficulty": 6,
-    "source": "core",
-    "track": "core",
-    "answers": [
-      "swimming"
-    ],
-    "hint": "C already has tennis; eliminate the choices for A and B.",
-    "solution": "C likes tennis. B cannot like swimming, so B likes soccer. Therefore A likes swimming."
-  },
-  {
-    "id": "g4-math-159",
-    "version": 3,
-    "prompt": "Which value of x makes 5x − 3 = 22 true?",
+    "version": 4,
+    "prompt": "Four books are arranged from shortest to tallest. The blue book is taller than red but shorter than green. Yellow is shorter than red. Which book is tallest?",
     "type": "choice",
-    "topic": "Expressions and Equations",
+    "topic": "Ordering Logic",
     "difficulty": 6,
     "source": "core",
     "track": "core",
     "answers": [
-      "5"
+      "Green"
     ],
-    "hint": "Add 3 to both sides, then divide by 5.",
-    "solution": "5x = 25, so x = 5.",
+    "hint": "Build the chain of comparisons.",
+    "solution": "Yellow < Red < Blue < Green, so green is tallest.",
     "choices": [
-      "4",
-      "5",
-      "6",
-      "7"
+      "Blue",
+      "Red",
+      "Green",
+      "Yellow"
     ]
   },
   {
-    "id": "g4-math-160",
-    "version": 3,
-    "prompt": "Point A is (2, 3) and point B is (2, 11). How many units apart are the points?",
+    "id": "g4-math-159",
+    "version": 4,
+    "prompt": "The average of 6, 10, and x is 12. What is x?",
     "type": "text",
-    "topic": "Coordinate Geometry",
+    "topic": "Equations and Averages",
     "difficulty": 6,
     "source": "core",
     "track": "core",
     "answers": [
-      "8",
-      "8 units"
-    ],
-    "hint": "Because the x-coordinates match, subtract the y-coordinates.",
-    "solution": "11 − 3 = 8 units."
-  },
-  {
-    "id": "g4-math-161",
-    "version": 3,
-    "prompt": "How many different 3-person committees can be chosen from 6 students?",
-    "type": "choice",
-    "choices": [
-      "12",
+      "14",
       "18",
       "20",
       "36"
     ],
-    "topic": "Combinatorics",
+    "hint": "The total must be 3 x 12.",
+    "solution": "The total is 36, so x = 36 - 6 - 10 = 20."
+  },
+  {
+    "id": "g4-math-160",
+    "version": 4,
+    "prompt": "A point starts at (-2, 4). It moves 5 units right and 7 units down. What are its new coordinates?",
+    "type": "text",
+    "topic": "Coordinate Transformations",
     "difficulty": 6,
     "source": "core",
     "track": "core",
     "answers": [
-      "20"
+      "(3,-3)",
+      "(-7,11)",
+      "(3,11)",
+      "(-3,3)"
     ],
-    "hint": "Count ordered choices, then remember committee order does not matter.",
-    "solution": "There are (6 × 5 × 4) ÷ (3 × 2 × 1) = 20 committees."
+    "hint": "Add to x for right and subtract from y for down.",
+    "solution": "(-2 + 5, 4 - 7) = (3, -3)."
+  },
+  {
+    "id": "g4-math-161",
+    "version": 4,
+    "prompt": "A committee must contain one adult and two children. There are 3 adults and 5 children. How many committees are possible?",
+    "type": "text",
+    "topic": "Combinations",
+    "difficulty": 6,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "15",
+      "20",
+      "30",
+      "60"
+    ],
+    "hint": "Choose the adult and then choose 2 of the 5 children.",
+    "solution": "3 x 10 = 30 committees."
   },
   {
     "id": "g4-math-162",
-    "version": 3,
-    "prompt": "A pitcher holds 2 1/2 liters. How many liters are in 3/5 of the pitcher?",
+    "version": 4,
+    "prompt": "A 12-cup container is filled to 5/6 of its capacity. Then 2 cups are removed. How many cups remain?",
     "type": "text",
-    "topic": "Fractions and Volume",
+    "topic": "Fraction Applications",
     "difficulty": 6,
     "source": "core",
     "track": "core",
     "answers": [
-      "3/2",
-      "1 1/2",
-      "1.5",
-      "1.5 liters"
+      "6",
+      "8",
+      "10",
+      "12"
     ],
-    "hint": "Convert 2 1/2 to 5/2, then multiply by 3/5.",
-    "solution": "(3/5) × (5/2) = 3/2 = 1 1/2 liters."
+    "hint": "Find 5/6 of 12 before subtracting.",
+    "solution": "5/6 of 12 is 10; 10 - 2 = 8 cups."
   },
   {
     "id": "g4-math-163",
-    "version": 3,
-    "prompt": "A sequence begins 1, 4, 10, 22, 46. What is the next term if the rule is multiply by 2 and add 2?",
-    "type": "choice",
-    "topic": "Patterns",
+    "version": 4,
+    "prompt": "A sequence starts 1, 3, 7, 15. Each term is twice the previous term plus 1. What is the sixth term?",
+    "type": "text",
+    "topic": "Recursive Sequences",
     "difficulty": 6,
     "source": "core",
     "track": "core",
     "answers": [
-      "94"
+      "31",
+      "63",
+      "127",
+      "255"
     ],
-    "hint": "Apply the rule to 46.",
-    "solution": "46 × 2 + 2 = 94.",
-    "choices": [
-      "92",
-      "94",
-      "96",
-      "98"
-    ]
+    "hint": "Continue from 15 two more times.",
+    "solution": "The fifth term is 31 and the sixth is 63."
   },
   {
     "id": "g4-math-164",
-    "version": 3,
-    "prompt": "A baker uses 2/3 cup of sugar for each batch. How much sugar is needed for 3 1/2 batches?",
+    "version": 4,
+    "prompt": "A 4 by 3 rectangle is divided into thirds along its length. What is the area of one third?",
     "type": "text",
-    "topic": "Fraction Operations",
+    "topic": "Fractional Area",
     "difficulty": 6,
     "source": "core",
     "track": "core",
     "answers": [
-      "7/3",
-      "2 1/3",
-      "2 1/3 cups",
-      "2.333"
+      "3",
+      "4",
+      "6",
+      "12"
     ],
-    "hint": "Multiply 2/3 by 7/2.",
-    "solution": "(2/3) × (7/2) = 7/3 = 2 1/3 cups."
+    "hint": "Find the whole area, then divide by 3.",
+    "solution": "The whole area is 12, and one third is 4 square units."
   }
 ]
