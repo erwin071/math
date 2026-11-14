@@ -1,0 +1,242 @@
+[
+  {
+    "id": "olympiad-l7-001",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Olympiad Word Problems",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Maya bought a notebook for $7 and a puzzle for $13. She paid with a $50 bill and received $30 change. After shopping she had $42. How much money did she have before shopping?",
+    "answers": [
+      "62",
+      "$62",
+      "62 dollars"
+    ],
+    "hint": "Find the total spent, then add it to the money she had afterward.",
+    "solution": "She spent $7 + $13 = $20. Therefore, before shopping she had $42 + $20 = $62."
+  },
+  {
+    "id": "olympiad-l7-002",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Ages and Differences",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Nora is 2 years older than Eli. Priya is 5 years older than Eli, and Sam is 3 years older than Priya. How much older than Nora is Sam?",
+    "answers": [
+      "6",
+      "6 years"
+    ],
+    "hint": "Express everyone’s age using Eli’s age.",
+    "solution": "Sam is 8 years older than Eli and Nora is 2 years older, so the difference is 6 years."
+  },
+  {
+    "id": "olympiad-l7-003",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Percent",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "In a chess club, 75% of members play online and 45% play in tournaments. If 15% do neither, what percent do both?",
+    "answers": [
+      "35",
+      "35%"
+    ],
+    "hint": "The percentage in at least one group is 85%.",
+    "solution": "The intersection is 75% + 45% − 85% = 35%."
+  },
+  {
+    "id": "olympiad-l7-004",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Algebraic Thinking",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Four pens and three notebooks cost $39. Two pens and five notebooks cost $37. What is the price of one pen?",
+    "answers": [
+      "6",
+      "$6",
+      "6 dollars"
+    ],
+    "hint": "Write two equations and eliminate one variable.",
+    "solution": "4p + 3n = 39 and 2p + 5n = 37. Solving gives n = 5 and p = 6."
+  },
+  {
+    "id": "olympiad-l7-005",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Averages",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Lena scored 7 points below the class average, Omar scored 4 points above it, and Wei scored 91. Their average was the class average. What was the class average?",
+    "answers": [
+      "88",
+      "88 points"
+    ],
+    "hint": "Let the average be A and set the three scores equal to 3A.",
+    "solution": "(A − 7) + (A + 4) + 91 = 3A, so A = 88."
+  },
+  {
+    "id": "olympiad-l7-006",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Counting",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Six students are available. How many different teams of exactly 2 students can be formed?",
+    "answers": [
+      "15",
+      "15 teams"
+    ],
+    "hint": "Count unordered pairs; AB is the same team as BA.",
+    "solution": "There are 6 × 5 ÷ 2 = 15 teams."
+  },
+  {
+    "id": "olympiad-l7-007",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Counting",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Every pair of people in a group shakes hands exactly once. If there are 21 handshakes, how many people are in the group?",
+    "answers": [
+      "7",
+      "7 people"
+    ],
+    "hint": "Use n(n − 1) ÷ 2 for n people.",
+    "solution": "n(n − 1) ÷ 2 = 21, so n = 7."
+  },
+  {
+    "id": "olympiad-l7-008",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Rate and Distance",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Two runners start together on a 240-meter circular track and run in the same direction. One runs 7 meters per second and the other 4 meters per second. How far has the slower runner gone when they first meet again?",
+    "answers": [
+      "320",
+      "320 meters"
+    ],
+    "hint": "The faster runner must gain one full lap.",
+    "solution": "The relative speed is 3 m/s, so they meet after 240 ÷ 3 = 80 seconds. The slower runner goes 4 × 80 = 320 meters."
+  },
+  {
+    "id": "olympiad-l7-009",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Percent",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "A game costs 25% more than it did last month. How many games can be bought now for the money that bought 45 games last month?",
+    "answers": [
+      "36",
+      "36 games"
+    ],
+    "hint": "Divide the old quantity by 1.25.",
+    "solution": "45 ÷ 1.25 = 36 games."
+  },
+  {
+    "id": "olympiad-l7-010",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Patterns",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "A machine produces 3 parts on day 1, 5 on day 2, 7 on day 3, and continues by increasing production by 2 parts each day. How many parts are produced in 30 days?",
+    "answers": [
+      "960",
+      "960 parts"
+    ],
+    "hint": "This is an arithmetic sequence; average the first and last terms.",
+    "solution": "The 30th term is 61. Total = 30 × (3 + 61) ÷ 2 = 960."
+  },
+  {
+    "id": "olympiad-l7-011",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Counting",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Eight students are arranged in two rows of four. Each student is taller than the student directly in front and the student to the right. How many height orders are possible?",
+    "answers": [
+      "14",
+      "14 arrangements"
+    ],
+    "hint": "Count the standard tableaux of a 2-by-4 grid.",
+    "solution": "The number of valid orders for a 2-by-4 grid is 14."
+  },
+  {
+    "id": "olympiad-l7-012",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Number Sense",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "A three-digit locker number is a multiple of 5. Its tens digit is the sum of its hundreds and ones digits, the digits sum to 18, and no digits repeat. What is the locker number?",
+    "answers": [
+      "495"
+    ],
+    "hint": "The ones digit is 0 or 5; combine the two digit conditions.",
+    "solution": "If the hundreds and ones digits sum to 9, the tens digit is 9. The valid multiple of 5 is 495."
+  },
+  {
+    "id": "olympiad-l7-013",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Optimization",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "A rectangle has perimeter 40 meters and whole-number side lengths. What is the greatest possible area?",
+    "answers": [
+      "100",
+      "100 square meters"
+    ],
+    "hint": "For a fixed perimeter, the rectangle is largest when its sides are equal.",
+    "solution": "The sides are 10 m and 10 m, giving area 100 square meters."
+  },
+  {
+    "id": "olympiad-l7-014",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Logic",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Ava lies on Mondays and Tuesdays and tells the truth on other days. Ben lies on Wednesdays and Thursdays and tells the truth on other days. On what day could they both truthfully or falsely say, “Tomorrow I will lie”?",
+    "answers": [
+      "Tuesday",
+      "Tuesday."
+    ],
+    "hint": "On each day, compare the truth of the statement with each speaker’s schedule.",
+    "solution": "On Tuesday, Ava is lying and tomorrow is a truth-telling day for her, so her statement is false. Ben is truthful and tomorrow is Wednesday, when he lies, so his statement is true. Both can say it on Tuesday."
+  },
+  {
+    "id": "olympiad-l7-015",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Logic",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Five students sit in chairs 1 through 5 around a circle. Kai sits next to both Lee and Mia. Rosa sits next to both Lee and Zoe. Kai’s and Mia’s chair numbers add to 6. Who must sit in chair 3?",
+    "answers": [
+      "Rosa"
+    ],
+    "hint": "List the possible circular arrangements, allowing the two directions.",
+    "solution": "The neighbor constraints and chair-number condition force Rosa into chair 3."
+  }
+]

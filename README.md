@@ -57,6 +57,7 @@ moems/         → MOEMS 官方免費資源（ICPS 官方建議準備來源）
 | `math/grade4-math-practice.txt` | 數學 | 四年級英文數學練習題與答案 |
 | `math/us-grade4-scope-and-level-map.md` | 數學 | 美國四年級（Common Core）範圍與練習題庫各 Level 涵蓋對照（備查文件） |
 | `mathcounts/` | 數學 | MathCounts 官方免費歷屆題庫（2025-2026 Chapter / State、School 樣本、Handbook 預覽）——ICPS 入學考官方建議練習來源 |
+| `olympiad.json` | 奧數 | 依去年與今年 Problem of the Week 題型重新創作的 Level 7 Olympiad 挑戰題（每題約 3–7 分鐘） |
 | `moems/` | 數學 | MOEMS 官方免費資源（Division E/M sample contests、2025-2026 每週一題、歷屆題彙整與解答）——ICPS 入學考官方建議練習來源 |
 
 ## 匿名使用統計
