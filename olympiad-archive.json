@@ -1,0 +1,290 @@
+[
+  {
+    "id": "olympiad-l7-026",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Number Sense",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "A three-digit number uses one prime digit, one square digit, and one digit that is neither prime nor square. The digits are different, and the number is not divisible by 3. What is the greatest possible number?",
+    "answers": [
+      "985"
+    ],
+    "hint": "Try the largest possible hundreds digit first, then check divisibility by 3.",
+    "solution": "Use 9 as the square digit, 8 as the digit that is neither prime nor square, and 5 as the prime digit. The greatest arrangement is 985. Its digit sum is 22, so it is not divisible by 3."
+  },
+  {
+    "id": "olympiad-l7-027",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Counting",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Takeru has three 1-cent stamps, two 5-cent stamps, and two 10-cent stamps. How many different postage amounts of at least one cent can Takeru make?",
+    "answers": [
+      "28",
+      "28 amounts"
+    ],
+    "hint": "Count the choices for each stamp type, including choosing zero of a type, then exclude the zero-total choice.",
+    "solution": "The 1-cent stamps can contribute 0, 1, 2, or 3 cents. The 5- and 10-cent stamps together can contribute 0, 5, 10, 15, 20, 25, or 30 cents. These make 7 groups of 4 amounts, so there are 28 different positive amounts."
+  },
+  {
+    "id": "olympiad-l7-028",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Word Problems",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Kelly made two purchases. She gave one cashier 0 for a jacket and received 4 change. Then she gave another cashier 0 for a book and received  change. After the purchases she had 1. How much money did she have before shopping?",
+    "answers": [
+      "90",
+      "0",
+      "90 dollars"
+    ],
+    "hint": "Find the amount spent on each purchase, then add the total spent to the money left.",
+    "solution": "She spent 50−14 = 36 dollars on the jacket and 20−7 = 13 dollars on the book. She spent 49 dollars total, so she started with 41+49 = 90 dollars."
+  },
+  {
+    "id": "olympiad-l7-029",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Ages and Differences",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Trini is 2 months older than Billy. Jason is 5 months older than Billy, and Kimberly is 3 months older than Jason. How much older than Trini is Kimberly?",
+    "answers": [
+      "6",
+      "6 months"
+    ],
+    "hint": "Express every age difference relative to Billy.",
+    "solution": "Trini is 2 months older than Billy. Kimberly is 5+3 = 8 months older than Billy. Therefore Kimberly is 8−2 = 6 months older than Trini."
+  },
+  {
+    "id": "olympiad-l7-030",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Algebraic Thinking",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "One balance shows that 1 square has the same weight as 2 triangles. A second balance shows that 1 square has the same weight as 6 circles. How many circles have the same weight as 2 triangles?",
+    "answers": [
+      "6",
+      "6 circles"
+    ],
+    "hint": "Use the square as the common weight.",
+    "solution": "Two triangles weigh the same as one square. One square weighs the same as six circles. Therefore two triangles weigh the same as six circles."
+  },
+  {
+    "id": "olympiad-l7-031",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Percent",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Last week Jessica won 25% of her checkers matches. Emily won the other 15 matches. How many matches did Jessica win?",
+    "answers": [
+      "5",
+      "5 matches"
+    ],
+    "hint": "Emily's 15 wins represent 75% of all matches.",
+    "solution": "If Jessica won 25%, Emily won 75%. Since 75% equals 15 matches, the total was 15÷0.75 = 20 matches. Jessica won 25% of 20, or 5 matches."
+  },
+  {
+    "id": "olympiad-l7-032",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Algebraic Thinking",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "At a sale, 4 shirts and 3 caps cost 3. Also, 2 shirts and 5 caps cost 9. How many dollars does one shirt cost?",
+    "answers": [
+      "7",
+      "",
+      "7 dollars"
+    ],
+    "hint": "Eliminate the price of the caps by multiplying the equations appropriately.",
+    "solution": "Let s be the shirt price and c the cap price. 4s+3c=43 and 2s+5c=39. Multiplying by 5 and 3 gives 20s+15c=215 and 6s+15c=117. Thus 14s=98, so s=7."
+  },
+  {
+    "id": "olympiad-l7-033",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Percent",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Of all the Mathletes, 70% own computers and 35% are in band. If 15% are in neither group, what percent are in both groups?",
+    "answers": [
+      "20",
+      "20%"
+    ],
+    "hint": "The percent in at least one group is 100% minus the percent in neither group.",
+    "solution": "The percent in at least one group is 100−15 = 85%. By inclusion-exclusion, both = 70+35−85 = 20%."
+  },
+  {
+    "id": "olympiad-l7-034",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Averages",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Amanda scored 6 points below the class average, Barb scored 10 points above it, and Colin scored 84. The average of their three scores equaled the class average. What was the class average?",
+    "answers": [
+      "88",
+      "88 points"
+    ],
+    "hint": "Let the class average be A and set the sum of the three scores equal to 3A.",
+    "solution": "(A−6)+(A+10)+84=3A. Simplifying gives 2A+88=3A, so A=88."
+  },
+  {
+    "id": "olympiad-l7-035",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Counting",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "There are 6 girls in a tennis class. How many different doubles teams of 2 girls can be formed?",
+    "answers": [
+      "15",
+      "15 teams"
+    ],
+    "hint": "Choose 2 girls from 6; the order of the players does not matter.",
+    "solution": "The number of pairs is 6×5÷2 = 15."
+  },
+  {
+    "id": "olympiad-l7-036",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Cycles and LCM",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "The word MATH repeats every 4 letters and the word OLYMPIADS repeats every 9 letters. Starting together, after how many letters will both words begin their cycles together again?",
+    "answers": [
+      "36",
+      "36 letters"
+    ],
+    "hint": "Find the least common multiple of 4 and 9.",
+    "solution": "The least common multiple of 4 and 9 is 36, so both cycles align again after 36 letters."
+  },
+  {
+    "id": "olympiad-l7-037",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Counting",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Every person in a room shakes hands with every other person exactly once. If there are 28 handshakes, how many people are in the room?",
+    "answers": [
+      "8",
+      "8 people"
+    ],
+    "hint": "For n people, the number of handshakes is n(n−1)÷2.",
+    "solution": "Solve n(n−1)÷2 = 28. Then n(n−1)=56, and 8×7=56, so n=8."
+  },
+  {
+    "id": "olympiad-l7-038",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Rate and Distance",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Boris and Natasha start together on a 300-meter circular track and run in the same direction. Boris runs 8 meters per second and Natasha runs 5 meters per second. How far has Natasha run when they first meet again?",
+    "answers": [
+      "500",
+      "500 meters"
+    ],
+    "hint": "The faster runner must gain one full lap. Use the difference in their speeds.",
+    "solution": "Their relative speed is 8−5 = 3 meters per second. Boris gains 300 meters in 300÷3 = 100 seconds. Natasha runs 5×100 = 500 meters."
+  },
+  {
+    "id": "olympiad-l7-039",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Logic",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Max lies on Fridays, Saturdays, and Sundays, and tells the truth on other days. Minnie lies on Tuesdays, Wednesdays, and Thursdays, and tells the truth on other days. On what day could they both say, “Tomorrow, I will lie”?",
+    "answers": [
+      "Thursday",
+      "Thursday."
+    ],
+    "hint": "Check whether each speaker is truthful or lying on each day, then compare with whether tomorrow is a lie day.",
+    "solution": "On Thursday, Max is truthful and tomorrow is Friday, when Max lies, so his statement is true. Minnie is lying on Thursday, but tomorrow is Friday, when she tells the truth, so her statement is false. Thus both can say the statement on Thursday."
+  },
+  {
+    "id": "olympiad-l7-040",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Percent",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "The price of a candy bar increased by 20%. How many candy bars can now be purchased for the amount of money that used to buy 36 candy bars?",
+    "answers": [
+      "30",
+      "30 candy bars"
+    ],
+    "hint": "The new price is 120% of the old price.",
+    "solution": "The same money buys 36÷1.2 = 30 candy bars at the new price."
+  },
+  {
+    "id": "olympiad-l7-041",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Counting",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "Six students of different heights are arranged in 3 rows of 2. Each student is taller than the student directly in front and the student to the right. How many arrangements are possible?",
+    "answers": [
+      "5",
+      "5 arrangements"
+    ],
+    "hint": "Count the valid height orders for a 3-by-2 grid.",
+    "solution": "The number of standard height orders for a 3-by-2 grid is the Catalan number C3 = 5."
+  },
+  {
+    "id": "olympiad-l7-042",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Patterns",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "A machine makes 4 toys on day 1, 7 on day 2, 10 on day 3, and continues by making 3 more toys each day. How many toys does it make in 25 days?",
+    "answers": [
+      "1000",
+      "1000 toys"
+    ],
+    "hint": "Use the arithmetic-series formula: number of terms times the average of the first and last terms.",
+    "solution": "The 25th term is 4+24×3 = 76. The total is 25×(4+76)÷2 = 1000 toys."
+  },
+  {
+    "id": "olympiad-l7-043",
+    "version": 1,
+    "source": "olympiad",
+    "track": "challenge",
+    "topic": "Number Sense",
+    "difficulty": 7,
+    "type": "text",
+    "prompt": "A three-digit locker number is a multiple of 5. Its tens digit is the sum of its hundreds and ones digits, the digits sum to 16, and no digit repeats. What is the locker number?",
+    "answers": [
+      "385"
+    ],
+    "hint": "The ones digit must be 0 or 5. Use the two digit-sum conditions to narrow the choices.",
+    "solution": "Let the digits be h, t, and u. Since t=h+u and h+t+u=16, we get 2t=16, so t=8. Then h+u=8. The number is a multiple of 5, so u is 0 or 5. The valid choice with distinct digits is u=5 and h=3, giving 385."
+  }
+]
