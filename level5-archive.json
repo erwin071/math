@@ -1,0 +1,199 @@
+[
+  {
+    "id": "g4-math-144",
+    "version": 4,
+    "prompt": "A number is increased by 5, then multiplied by 3 to get  thirty-six. What is the number?",
+    "type": "text",
+    "topic": "Inverse Operations",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "7",
+      "12",
+      "15",
+      "31"
+    ],
+    "hint": "Undo multiplication first, then subtraction.",
+    "solution": "36 / 3 = 12, and 12 - 5 = 7."
+  },
+  {
+    "id": "g4-math-145",
+    "version": 4,
+    "prompt": "A 5 by 5 by 5 cube is built from unit cubes. How many unit cubes are completely inside and cannot be seen from outside?",
+    "type": "text",
+    "topic": "Spatial Counting",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "8",
+      "27",
+      "54",
+      "125"
+    ],
+    "hint": "Remove the outside layer, leaving a 3 by 3 by 3 cube.",
+    "solution": "The hidden cubes form a 3 x 3 x 3 cube, so there are 27."
+  },
+  {
+    "id": "g4-math-146",
+    "version": 4,
+    "prompt": "Four students line up for a photo. How many different orders are possible?",
+    "type": "text",
+    "topic": "Permutations",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "4",
+      "8",
+      "12",
+      "24"
+    ],
+    "hint": "There are 4 choices for first place, then 3, then 2, then 1.",
+    "solution": "4 x 3 x 2 x 1 = 24 orders."
+  },
+  {
+    "id": "g4-math-147",
+    "version": 4,
+    "prompt": "A rectangular garden is 10 m by 6 m. A path 1 m wide runs inside every edge. What is the area inside the path?",
+    "type": "text",
+    "topic": "Composite Areas",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "24",
+      "32",
+      "40",
+      "48"
+    ],
+    "hint": "The inner rectangle is 8 m by 4 m.",
+    "solution": "The area inside the path is 8 x 4 = 32 square meters."
+  },
+  {
+    "id": "g4-math-148",
+    "version": 4,
+    "prompt": "A train leaves every 20 minutes and a bus every 30 minutes. They leave together at 7:10. When do they next leave together?",
+    "type": "text",
+    "topic": "Least Common Multiples",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "7:40",
+      "8:10",
+      "8:30",
+      "9:10"
+    ],
+    "hint": "Find the first common multiple of 20 and 30.",
+    "solution": "The least common multiple is 60 minutes, so the next shared departure is 8:10."
+  },
+  {
+    "id": "g4-math-149",
+    "version": 4,
+    "prompt": "The first term is 2. Each next term is the previous term squared minus 1. What is the fourth term?",
+    "type": "text",
+    "topic": "Recursive Rules",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "63"
+    ],
+    "hint": "Apply the rule three times.",
+    "solution": "2 becomes 3, 3 becomes 8, and 8 becomes 63. The fourth term is 63."
+  },
+  {
+    "id": "g4-math-150",
+    "version": 4,
+    "prompt": "A password uses 2 different letters chosen from A, B, C, D, and E, with order important. How many passwords are possible?",
+    "type": "text",
+    "topic": "Counting Strategies",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "10",
+      "15",
+      "20",
+      "25"
+    ],
+    "hint": "Choose the first letter, then a different second letter.",
+    "solution": "There are 5 x 4 = 20 passwords."
+  },
+  {
+    "id": "g4-math-151",
+    "version": 4,
+    "prompt": "A triangle has side lengths 5, 5, and 8. What type of triangle is it?",
+    "type": "choice",
+    "topic": "Classifying Shapes",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "Isosceles"
+    ],
+    "hint": "Look for equal side lengths.",
+    "solution": "Two sides have length 5, so the triangle is isosceles.",
+    "choices": [
+      "Scalene",
+      "Isosceles",
+      "Equilateral",
+      "Right"
+    ]
+  },
+  {
+    "id": "g4-math-152",
+    "version": 4,
+    "prompt": "Three switches control three lamps in another room. You may enter the room once. What strategy identifies every switch?",
+    "type": "text",
+    "topic": "Experimental Logic",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "Turn all on",
+      "Use different on times and feel the bulbs",
+      "Guess one",
+      "Impossible"
+    ],
+    "hint": "Use light and heat as two different clues.",
+    "solution": "Turn switch 1 on briefly, turn it off, turn switch 2 on, then enter. The lit, warm, and cold bulbs identify all three."
+  },
+  {
+    "id": "g4-math-153",
+    "version": 4,
+    "prompt": "A 2-liter bottle is 3/4 full. How many milliliters of liquid are inside?",
+    "type": "text",
+    "topic": "Fractions and Measurement",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "1500",
+      "1,500",
+      "1500 mL"
+    ],
+    "hint": "Convert 2 liters to 2,000 milliliters first.",
+    "solution": "3/4 of 2,000 mL is 1,500 mL."
+  },
+  {
+    "id": "g4-math-154",
+    "version": 4,
+    "prompt": "A pattern has terms 1, 2, 6, 24, 120. What is the next term?",
+    "type": "text",
+    "topic": "Factorial Patterns",
+    "difficulty": 5,
+    "source": "core",
+    "track": "core",
+    "answers": [
+      "240",
+      "360",
+      "600",
+      "720"
+    ],
+    "hint": "Each term is multiplied by the next whole number.",
+    "solution": "120 x 6 = 720."
+  }
+]
