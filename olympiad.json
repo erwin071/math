@@ -1,12 +1,157 @@
 [
-  {"id":"olympiad-predicted-001","version":3,"type":"text","prompt":"A rectangular grid has 2 rows and 3 columns of equal small rectangles. How many rectangles of all sizes are in the grid?","answers":["18"],"difficulty":3,"topic":"Counting Shapes","hint":"Choose two horizontal grid lines and two vertical grid lines.","solution":"There are 3 horizontal grid lines and 4 vertical grid lines. Choose 2 of the 3 horizontal lines and 2 of the 4 vertical lines: C(3,2) x C(4,2) = 3 x 6 = 18 rectangles.","source":"prediction","track":"challenge"},
-  {"id":"olympiad-predicted-002","version":3,"type":"text","prompt":"Using each of the digits 1, 2, 3, and 4 exactly once, how many four-digit numbers can be made that are divisible by 4?","answers":["12"],"difficulty":4,"topic":"Divisibility and Permutations","hint":"A number is divisible by 4 when its last two digits form a multiple of 4.","solution":"The possible last two digits are 12, 24, and 32. The remaining two digits can be arranged in 2 ways for each choice, giving 3 x 2 = 12 numbers.","source":"prediction","track":"challenge"},
-  {"id":"olympiad-predicted-003","version":3,"type":"text","prompt":"A two-digit number becomes 27 larger when its digits are reversed. What is the sum of all two-digit numbers with this property?","answers":["249"],"difficulty":4,"topic":"Digit Equations","hint":"If the number is 10a+b, its reverse is 10b+a.","solution":"Reversing gives 9(b-a)=27, so b-a=3. The numbers are 14, 25, 36, 47, 58, and 69. Their sum is 249.","source":"prediction","track":"challenge"},
-  {"id":"olympiad-predicted-004","version":3,"type":"text","prompt":"In how many ways can 50 cents be made using any number of 5-cent, 10-cent, and 25-cent coins? Coins of the same value are considered identical.","answers":["10"],"difficulty":4,"topic":"Systematic Counting","hint":"Separate the cases according to whether there are 0, 1, or 2 quarters.","solution":"With 0 quarters there are 6 solutions to 5a+10b=50. With 1 quarter there are 3 solutions to 5a+10b=25. With 2 quarters there is 1 solution. The total is 6+3+1=10.","source":"prediction","track":"challenge"},
-  {"id":"olympiad-predicted-005","version":3,"type":"text","prompt":"A bag has red and blue marbles in a ratio of 3 to 5. After 6 blue marbles are added, the ratio becomes 1 to 2. How many marbles were in the bag at first?","answers":["48","48 marbles"],"difficulty":4,"topic":"Ratios","hint":"Let the original numbers be 3k and 5k.","solution":"After adding blue marbles, 3k/(5k+6)=1/2. Thus 6k=5k+6, so k=6. The original total was 3k+5k=48 marbles.","source":"prediction","track":"challenge"},
-  {"id":"olympiad-predicted-006","version":3,"type":"text","prompt":"Two different numbers are chosen from 1, 2, 3, 4, and 5. What is the probability that their sum is even?","answers":["2/5","0.4"],"difficulty":3,"topic":"Probability Without Replacement","hint":"A sum is even when both numbers have the same parity.","solution":"There are 10 pairs in all. The even-sum pairs are the 3 pairs of odd numbers and the 1 pair of even numbers, for 4 pairs. The probability is 4/10=2/5.","source":"prediction","track":"challenge"},
-  {"id":"olympiad-predicted-007","version":3,"type":"text","prompt":"The angles of a triangle are in the ratio 2:3:4. What is the exterior angle next to the largest interior angle?","answers":["100","100 degrees"],"difficulty":3,"topic":"Angles","hint":"The three interior angles add to 180 degrees. An exterior angle and its adjacent interior angle add to 180 degrees.","solution":"One ratio unit is 180/9=20 degrees. The largest interior angle is 4x20=80 degrees, so its exterior angle is 180-80=100 degrees.","source":"prediction","track":"challenge"},
-  {"id":"olympiad-predicted-008","version":3,"type":"text","prompt":"Three boxes are labeled Apples, Oranges, and Mixed. Every label is wrong. What is the least number of fruits that must be drawn, without looking, to determine the correct label of every box?","answers":["1","1 fruit","one"],"difficulty":4,"topic":"Logic and Deduction","hint":"Draw from the box labeled Mixed, since it cannot actually be mixed.","solution":"One fruit drawn from the box labeled Mixed identifies that box's true fruit. The other two labels can then be corrected by elimination, because both are also wrong.","source":"prediction","track":"challenge"},
-  {"id":"olympiad-predicted-009","version":3,"type":"text","prompt":"The product of two consecutive positive integers is 156. What is their sum?","answers":["25"],"difficulty":3,"topic":"Consecutive Integers","hint":"Find two factors of 156 that differ by 1.","solution":"156=12x13, and 12 and 13 are consecutive. Their sum is 25.","source":"prediction","track":"challenge"},
-  {"id":"olympiad-predicted-010","version":3,"type":"text","prompt":"Start with 2. At each step, multiply the current number by 3 and then subtract 1. What number results after four steps?","answers":["122"],"difficulty":3,"topic":"Recursive Operations","hint":"Apply the same two operations one step at a time.","solution":"The sequence is 2, 5, 14, 41, 122. After four steps the result is 122.","source":"prediction","track":"challenge"}
+  {
+    "id": "olympiad-predicted-001",
+    "version": 3,
+    "type": "text",
+    "prompt": "A rectangular grid has 2 rows and 3 columns of equal small rectangles. How many rectangles of all sizes are in the grid?",
+    "answers": [
+      "18"
+    ],
+    "difficulty": 7,
+    "topic": "Counting Shapes",
+    "hint": "Choose two horizontal grid lines and two vertical grid lines.",
+    "solution": "There are 3 horizontal grid lines and 4 vertical grid lines. Choose 2 of the 3 horizontal lines and 2 of the 4 vertical lines: C(3,2) x C(4,2) = 3 x 6 = 18 rectangles.",
+    "source": "prediction",
+    "track": "challenge"
+  },
+  {
+    "id": "olympiad-predicted-002",
+    "version": 3,
+    "type": "text",
+    "prompt": "Using each of the digits 1, 2, 3, and 4 exactly once, how many four-digit numbers can be made that are divisible by 4?",
+    "answers": [
+      "12"
+    ],
+    "difficulty": 7,
+    "topic": "Divisibility and Permutations",
+    "hint": "A number is divisible by 4 when its last two digits form a multiple of 4.",
+    "solution": "The possible last two digits are 12, 24, and 32. The remaining two digits can be arranged in 2 ways for each choice, giving 3 x 2 = 12 numbers.",
+    "source": "prediction",
+    "track": "challenge"
+  },
+  {
+    "id": "olympiad-predicted-003",
+    "version": 3,
+    "type": "text",
+    "prompt": "A two-digit number becomes 27 larger when its digits are reversed. What is the sum of all two-digit numbers with this property?",
+    "answers": [
+      "249"
+    ],
+    "difficulty": 7,
+    "topic": "Digit Equations",
+    "hint": "If the number is 10a+b, its reverse is 10b+a.",
+    "solution": "Reversing gives 9(b-a)=27, so b-a=3. The numbers are 14, 25, 36, 47, 58, and 69. Their sum is 249.",
+    "source": "prediction",
+    "track": "challenge"
+  },
+  {
+    "id": "olympiad-predicted-004",
+    "version": 3,
+    "type": "text",
+    "prompt": "In how many ways can 50 cents be made using any number of 5-cent, 10-cent, and 25-cent coins? Coins of the same value are considered identical.",
+    "answers": [
+      "10"
+    ],
+    "difficulty": 7,
+    "topic": "Systematic Counting",
+    "hint": "Separate the cases according to whether there are 0, 1, or 2 quarters.",
+    "solution": "With 0 quarters there are 6 solutions to 5a+10b=50. With 1 quarter there are 3 solutions to 5a+10b=25. With 2 quarters there is 1 solution. The total is 6+3+1=10.",
+    "source": "prediction",
+    "track": "challenge"
+  },
+  {
+    "id": "olympiad-predicted-005",
+    "version": 3,
+    "type": "text",
+    "prompt": "A bag has red and blue marbles in a ratio of 3 to 5. After 6 blue marbles are added, the ratio becomes 1 to 2. How many marbles were in the bag at first?",
+    "answers": [
+      "48",
+      "48 marbles"
+    ],
+    "difficulty": 7,
+    "topic": "Ratios",
+    "hint": "Let the original numbers be 3k and 5k.",
+    "solution": "After adding blue marbles, 3k/(5k+6)=1/2. Thus 6k=5k+6, so k=6. The original total was 3k+5k=48 marbles.",
+    "source": "prediction",
+    "track": "challenge"
+  },
+  {
+    "id": "olympiad-predicted-006",
+    "version": 3,
+    "type": "text",
+    "prompt": "Two different numbers are chosen from 1, 2, 3, 4, and 5. What is the probability that their sum is even?",
+    "answers": [
+      "2/5",
+      "0.4"
+    ],
+    "difficulty": 7,
+    "topic": "Probability Without Replacement",
+    "hint": "A sum is even when both numbers have the same parity.",
+    "solution": "There are 10 pairs in all. The even-sum pairs are the 3 pairs of odd numbers and the 1 pair of even numbers, for 4 pairs. The probability is 4/10=2/5.",
+    "source": "prediction",
+    "track": "challenge"
+  },
+  {
+    "id": "olympiad-predicted-007",
+    "version": 3,
+    "type": "text",
+    "prompt": "The angles of a triangle are in the ratio 2:3:4. What is the exterior angle next to the largest interior angle?",
+    "answers": [
+      "100",
+      "100 degrees"
+    ],
+    "difficulty": 7,
+    "topic": "Angles",
+    "hint": "The three interior angles add to 180 degrees. An exterior angle and its adjacent interior angle add to 180 degrees.",
+    "solution": "One ratio unit is 180/9=20 degrees. The largest interior angle is 4x20=80 degrees, so its exterior angle is 180-80=100 degrees.",
+    "source": "prediction",
+    "track": "challenge"
+  },
+  {
+    "id": "olympiad-predicted-008",
+    "version": 3,
+    "type": "text",
+    "prompt": "Three boxes are labeled Apples, Oranges, and Mixed. Every label is wrong. What is the least number of fruits that must be drawn, without looking, to determine the correct label of every box?",
+    "answers": [
+      "1",
+      "1 fruit",
+      "one"
+    ],
+    "difficulty": 7,
+    "topic": "Logic and Deduction",
+    "hint": "Draw from the box labeled Mixed, since it cannot actually be mixed.",
+    "solution": "One fruit drawn from the box labeled Mixed identifies that box's true fruit. The other two labels can then be corrected by elimination, because both are also wrong.",
+    "source": "prediction",
+    "track": "challenge"
+  },
+  {
+    "id": "olympiad-predicted-009",
+    "version": 3,
+    "type": "text",
+    "prompt": "The product of two consecutive positive integers is 156. What is their sum?",
+    "answers": [
+      "25"
+    ],
+    "difficulty": 7,
+    "topic": "Consecutive Integers",
+    "hint": "Find two factors of 156 that differ by 1.",
+    "solution": "156=12x13, and 12 and 13 are consecutive. Their sum is 25.",
+    "source": "prediction",
+    "track": "challenge"
+  },
+  {
+    "id": "olympiad-predicted-010",
+    "version": 3,
+    "type": "text",
+    "prompt": "Start with 2. At each step, multiply the current number by 3 and then subtract 1. What number results after four steps?",
+    "answers": [
+      "122"
+    ],
+    "difficulty": 7,
+    "topic": "Recursive Operations",
+    "hint": "Apply the same two operations one step at a time.",
+    "solution": "The sequence is 2, 5, 14, 41, 122. After four steps the result is 122.",
+    "source": "prediction",
+    "track": "challenge"
+  }
 ]
